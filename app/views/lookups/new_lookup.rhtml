@@ -1,0 +1,15 @@
+<%-
+  @title = 'Lookups'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>New Lookup</h1>
+
+<%= form_tag :controller => 'lookups', :action => 'create_lookup' %>
+  <%= render :partial => 'form_lookup' %>
+  <%= submit_tag "Create" %>
+<%= end_form %>
+
+<%= form_tag :controller => 'lookups', :action => 'index' %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>

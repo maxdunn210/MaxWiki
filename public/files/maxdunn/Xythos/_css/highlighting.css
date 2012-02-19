@@ -1,0 +1,688 @@
+/* TOP NAVIGATION
+************************************************************/
+body.education a#n-education {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+body.government a#n-government {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+body.business a#n-business {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+body.developers a#n-developers {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+body.oems a#n-oems {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+body.partners a#n-partners {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+body.products a#n-products {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+body.solutions a#n-solutions {
+    background-image: url(../_media/nav_over_bg.gif);
+    color: #001D77;
+    display: inline;
+    float: left;
+    margin: 0;
+    margin: 0 0 0 5px;
+}
+
+/* EDUCATION
+************************************************************/
+body.s-overview a#s-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-products a#s-products {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+	text-decoration: none;
+}
+
+body.s-news a#s-news {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+	text-decoration: none;
+}
+
+body.s-case-studies a#s-case-studies {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+	text-decoration: none;
+}
+
+/* BUSINESS
+************************************************************/
+body.s-overview a#s-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-products a#s-products {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-case-studies a#s-case-studies {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-news a#s-news {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* DEVELOPERS
+************************************************************/
+body.s-overview a#s-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-news a#s-news {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* GOVERNMENT
+************************************************************/
+body.s-overview a#s-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-products a#s-products {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-news a#s-news {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-case-studies a#s-case-studies {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* PARTNERS
+************************************************************/
+body.s-overview a#s-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-partners a#s-partners {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-news a#s-news {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* RESOURCES
+************************************************************/
+body.s-whitepapers a#s-whitepapers {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-datasheets a#s-datasheets {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-case-studies a#s-case-studies {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-web-seminars a#s-web-seminars {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* SERVICES
+************************************************************/
+body.s-implementation a#s-implementation {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-customization a#s-customization {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-training a#s-training {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ABOUT
+************************************************************/
+body.s-board a#s-board {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-management a#s-management {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-careers a#s-careers {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ABOUT - CONTACT
+************************************************************/
+body.s-contact a#s-contact {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-contact-sales a#s-contact-sales {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-contact-support a#s-contact-support {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-contact-hr a#s-contact-hr {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-contact-press a#s-contact-press {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* NEWS
+************************************************************/
+body.s-media-coverage a#s-media-coverage {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-events a#s-events {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-press-releases a#s-press-releases {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* OEMS
+************************************************************/
+body.s-overview a#s-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-products a#s-products {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-benefits a#s-benefits {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-partners a#s-partners {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-news a#s-news {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* PRODUCTS
+************************************************************/
+body.s-overview a#s-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-enterprise-document a#s-enterprise-document {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-digital-locker-suite a#s-digital-locker-suite {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-webfile-development a#s-webfile-development {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-webfile-server a#s-webfile-server {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-enterprise a#s-enterprise {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-digital-locker a#s-digital-locker {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-xythos-drive a#s-xythos-drive {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-developer-studio a#s-developer-studio {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* PRODUCTS - WEBFILE SERVER
+************************************************************/
+body.s-webfile-server-components a#s-webfile-server-components {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-webfile-server-technology a#s-webfile-server-technology {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-webfile-server-features a#s-webfile-server-features {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-webfile-server-benefits a#s-webfile-server-benefits {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* PRODUCTS - ENTERPRISE DOCUMENT MANAGER
+************************************************************/
+body.s-enterprise-document-manager-benefits a#s-enterprise-document-manager-benefits {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-enterprise-document-manager-features a#s-enterprise-document-manager-features2 {
+    background-image: url(../_media/nav-arrow-down.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.ss-features-document-mgmt a#s-enterprise-document-manager-features2 {
+    background-image: url(../_media/nav-arrow-down.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.ss-features-document-mgmt a#ss-features-document-mgmt {
+    background-image: url(../_media/nav-circle.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 9px;
+    background-repeat: no-repeat;
+}
+
+body.ss-features-records-mgmt a#ss-features-records-mgmt {
+    background-image: url(../_media/nav-circle.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 9px;
+    background-repeat: no-repeat;
+}
+
+/* PRODUCTS - DIGITAL LOCKER
+************************************************************/
+body.s-digital-locker-features a#s-digital-locker-features {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-digital-locker-benefits a#s-digital-locker-benefits {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* PRODUCTS - XYTHOS DRIVE
+************************************************************/
+body.s-xythos-drive-features a#s-xythos-drive-features {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-xythos-drive-benefits a#s-xythos-drive-benefits {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* PRODUCTS - XYTHOS DRIVE
+************************************************************/
+body.s-developer_studio_features a#s-developer_studio_features {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-developer_studio_benefits a#s-developer_studio_benefits {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* SOLUTIONS
+************************************************************/
+body.s-research-overview a#s-research-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-compliance-overview a#s-compliance-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.s-extranet-overview a#s-extranet-overview {
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* SOLUTIONS - RESEARCH
+************************************************************/
+body.s-research-grants-management a#s-research-grants-management {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-research-collaboration a#s-research-collaboration {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-research-manage-research-assets a#s-research-manage-research-assets {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* SOLUTIONS - COMPLIANCE
+************************************************************/
+body.s-compliance-21-cfr-11 a#s-compliance-21-cfr-11 {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-compliance-basel-II a#s-compliance-basel-II {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-compliance-hipaa a#s-compliance-hipaa {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* SOLUTIONS - EXTRANET
+************************************************************/
+body.s-extranet-attachments a#s-extranet-attachments {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-extranet-workspaces a#s-extranet-workspaces {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+body.s-extranet-authentication a#s-extranet-authentication {
+    background-image: url(../_media/nav-arrow.gif);
+    color: #000;
+    text-decoration: none;
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+}
+
+/* SOLUTIONS - Integrations
+************************************************************/
+body.s-integrations-overview a#s-integrations-overview,
+body.s-integrations-JSR-170 a#s-integrations-JSR-170,
+body.s-integrations-filebridge a#s-integrations-filebridge
+{
+    background-image: url(../_media/leftnav_roll.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    text-decoration: none;
+}

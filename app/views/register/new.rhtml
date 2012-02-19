@@ -1,0 +1,15 @@
+<%
+  @title = 'Register'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h1>New player</h1>
+
+<%= form_tag :action => 'create' %>
+  <%= render_partial 'edit_info' %>
+  <br>
+  <%= submit_tag "Create" %>
+<%= end_form %>
+<%= form_tag :action => 'redirect_to_last_player_list' %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>

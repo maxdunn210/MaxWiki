@@ -1,0 +1,221 @@
+/* Pawprint theme stylesheet 
+  Place any theme specific styles here.
+*/
+
+/****** General ******/
+
+body, table, td { 
+  font-size: 9pt; 
+  font-family: Verdana; 
+  color:#000000; 
+  font-weight: regular;
+}
+
+body {  
+  background: url(../images/bg.jpg); 
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color:#9999cc; 
+  font-family: Verdana; 
+  font-size: 9pt; 
+  font-weight: bold; 
+  text-decoration:underline;
+}
+
+a:hover {
+  color: #cc0000; 
+  text-decoration: underline;
+}
+
+a:active {
+  color: #cc0000; 
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Comic Sans MS; 
+  font-size: 10pt; 
+  color:#336699; 
+  font-weight: regular;
+}
+
+h1 {
+  font-size: 18pt;
+  font-weight: bold;
+  color: #606060;
+  padding-top: 8pt;
+  padding-bottom: 12pt;
+}
+
+.bordered th {	
+  background: #c1c1c1;
+}
+	
+.bordered th a {	
+  font-weight: bold; 
+}
+
+/******** Widths ********/
+#border, #top, #bottom { width: 910px; }
+#container, #header, #footer { width: 890px; }
+#left_column { width: 250px; }
+.middle_column_narrow { width: 330px; }
+.middle_column_wide { width: 580px; }
+.middle_column_full { width: 739px; }
+#right_column { width: 150px; }
+#right_column .box { width: 150px; }
+	
+/****** Container ******/
+
+#top {
+  display: inline; /* Needed for IE, otherwise grey block shows */
+}
+
+#border {
+  background: url(../images/bg.jpg); 
+}
+
+/***** Header *****/
+
+#header {
+	height: 140px;
+  background: url(../images/bg.jpg);
+}
+
+#container {
+  background: url(../images/bg.jpg); 
+}
+
+/****** Menu ******/
+
+#menu {
+  height: 0;
+}
+
+/****** Buffer ******/
+
+#buffer_header {
+  background: url(../images/round_top_640.png) right no-repeat;
+  height: 16px;
+}
+
+/****** Left Column ******/
+
+
+#left_column {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-right: solid 0px;		
+  background: url(../images/bg.jpg); 
+}
+
+.left_menu {
+  border-bottom: solid 0;
+ }
+ 
+.left_menu img {
+  vertical-align: middle; 
+ }
+  
+.left_menu li.submenu {
+  text-transform: none;
+  border-top: 0;
+}
+
+.left_menu li {
+  text-align: left;
+  display: block;
+ }
+
+.left_menu a,
+.left_menu a:visited {
+  font-family: Comic Sans MS; 
+  font-size: 12pt; 
+  font-weight: regular;
+  display: inline;
+	color: white;
+	background: url(../images/bg.jpg); 
+	border-left: 0px;				
+	text-decoration: none;
+  text-align: left;
+}
+
+.left_menu a:hover, 
+.left_menu .selected,
+.left_menu a:visited.selected {
+	border-left: 0px;				
+	color: rgb(74, 15, 194);
+	/* IE needs this repeated */
+  font-family: Comic Sans MS; 
+  font-size: 12pt; 
+  font-weight: regular;
+	text-decoration: none;
+}
+
+/****** Middle Column ******/
+
+#middle_column {
+	padding-left: 30px;
+	padding-right: 30px;
+	border-left: solid 0px;	
+  background-color: #EFECFE;
+}
+
+#middle_column .edit_block { 
+  float: left;
+  padding-left: 10px;
+}  
+
+.byline { 
+  float: left; 
+}
+
+.byline a { 
+  font-size: 100%; 
+  font-style: italic; 
+}
+ 
+/****** Right Column ******/
+
+#right_column {
+}
+
+/****** Footer ******/
+
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+	color: white;
+	background: url(../images/bg.jpg); 
+	font-size: 11px;
+}
+
+#footer {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+#footer .edit_block { 
+  float: right;
+  margin: 0px;
+}
+
+#buffer_footer {
+  background: url(../images/round_bottom_640.png) right no-repeat;
+  height: 16px;
+}
+
+
+#bottom {
+  display: inline; /* Needed for IE, otherwise grey block shows */
+}
+
+/****** Specific for this theme ******/
+

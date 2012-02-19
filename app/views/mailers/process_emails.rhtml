@@ -1,0 +1,39 @@
+<%-
+  @title = 'Process Emails'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Process Emails</h1>
+
+<% if @emails.nil? or @emails.empty? %>
+
+<p>No emails processed</p>
+
+<% else %>
+
+
+<p><%= @emails.size %> emails processed</p>
+
+<p>
+<% for email in @emails %>
+  <%= "#{email.to} #{email.status}" %><br/>
+<% end %>
+</p>
+
+<% end %>
+
+<table>
+	<tr>
+	  <td>
+      <%= form_tag :controller => 'emails', :action => 'send_emails'  %> 
+        <%= submit_tag "Send Emails" %>
+      <%= end_form %>
+		</td>
+
+	  <td>
+      <%= form_tag :controller => 'mailers', :action => 'view', :id => @mailer  %> 
+        <%= submit_tag "Back" %>
+      <%= end_form %>
+		</td>
+	</tr>
+</table>

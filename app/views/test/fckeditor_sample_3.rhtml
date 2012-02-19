@@ -1,0 +1,43 @@
+<h1>
+FCKeditor - JavaScript - Sample 3
+</h1>
+<div>
+This is fckeditor as it is integrated into MaxWiki. Dragging the Rails icon into the editor should display "DROPPED!".
+</div>
+<hr />
+
+<div id="debug">
+</div>
+	<hr />
+
+	<div id='edit_area' class='edit_area'>
+
+	<form action="sampleposteddata.asp" method="post" target="_blank">
+		<script type="text/javascript">
+var oFCKeditor = new FCKeditor( 'content' ) ;
+oFCKeditor.Config["CustomConfigurationsPath"] = "/javascripts/myfckconfigs.js"  ;    
+oFCKeditor.ToolbarSet = 'WikiBasic';
+oFCKeditor.Value	= 'some text' ; 
+oFCKeditor.Height	= 300 ;
+oFCKeditor.Create() ;
+		</script>
+	</form>
+
+	</div>
+	
+<hr>	
+<%= image_tag( 'rails.png', :id => 'drag_item', :class => 'drag_item' ) %>
+
+<%= draggable_element( 'drag_item', :revert => true, :ghosting => true ) %>
+
+<script type="text/javascript">
+//<![CDATA[
+Droppables.add("edit_area", {
+  hoverclass:'edit_area_active', 
+  onDrop: function(element) {  
+    $('debug').innerHTML += ' DROPPED!'; return true;
+  }
+ } 
+);
+//]]>
+</script>

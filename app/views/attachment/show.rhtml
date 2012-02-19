@@ -1,0 +1,23 @@
+<%= form_tag({:controller => 'attachment', :action => 'file_upload', :page_name => @page_name},
+             {:target => 'upload_frame', :multipart => true} ) %>                                
+
+File <%= file_field "stored_file", "stored_file" %> 
+<%= submit_tag("Upload", :onclick => "Element.show('upload_indicator')") %>
+  
+<%= link_to_remote('refresh list', :update => 'file_list',
+                    :loading => "Element.show('upload_indicator')",
+                    :complete => "Element.hide('upload_indicator')",
+                    :url => {:action => 'update',
+                             :page_name => @page_name}) %>    
+                             
+&nbsp;<%= image_tag("indicator1.gif", :id => 'upload_indicator', :style => 'display:none') %>
+                              
+<%= end_form %>  
+<br />
+
+<div id="file_list"> 
+  <%= render :partial => 'file_list' %>
+</div>
+
+<iframe id="upload_frame" name="upload_frame" style="width:0px;height:0px;border:0px" src=""></iframe>
+

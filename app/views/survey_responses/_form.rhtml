@@ -1,0 +1,28 @@
+<%= error_messages_for 'survey_response' %>
+
+<table>
+  <tr>
+    <td><label for="survey_response_submitter_name">Submitter name</label></td>
+    <td><%= text_field 'survey_response', 'submitter_name'  %></td>
+  </tr>
+
+  <tr>
+    <td><label for="survey_response_user_id">User ID</label></td>
+    <td><%= text_field 'survey_response', 'user_id'  %></td>
+  </tr>
+
+  <tr>
+    <td><label for="survey_response_session_id">Session ID</label></td>
+    <td><%= text_field 'survey_response', 'session_id'  %></td>
+  </tr>
+
+  <% for question in @survey_response.survey.survey_questions %>
+    <% detail = @survey_response.find_answer_by_question_id(question.id) %>
+    <% answer_text = detail.nil? ? '' : detail.answer %>
+    <tr>
+      <td><label for="answers[<%= question.id %>]"><%= question.name %></label></td>
+      <td><%= text_field_tag "answers[#{question.id}]", answer_text, :size => 40  %></td>
+    </tr>
+  <% end %>
+  
+</table>

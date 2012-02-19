@@ -1,0 +1,70 @@
+/*** Styles for vidcamp site ***/
+
+/* Colors
+  Blue rgb(133,145,255)
+  Lighter blue rgb(159,168,255)
+  Green rgb(157,255,135)
+  Light green rgb(210,255,201)
+*/
+
+/****** General ******/
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: rgb(133,145,255);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*** Header main banner ***/
+#header {
+  position: relative;
+  color: gray;
+  width: 800px;
+	height: 150px;
+	background: url(divcamplogo.jpg) repeat-x;
+}
+
+#header a, 
+#header a:hover, 
+#header .selected {
+  margin: 0px;
+  padding: 1px 3px 1px 3px;
+  color: gray;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/****** Menu ******/
+
+#menu {
+	background: url(menu.png);
+}
+
+#menu a, 
+#menu li a {
+	color: rgb(157,255,135);
+}
+
+#menu a:hover, 
+#menu .selected {
+	color: rgb(210,255,201);
+}
+
+/****** Left Column ******/
+
+.left_menu a:hover, 
+.left_menu a.selected,
+.left_menu a:visited.selected {
+	border-left: solid 5px rgb(159,168,255);				
+	background-color: rgb(255,255,255);	
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+
+/****** Footer ******/
+
+#footer {
+	border-top: solid 1px rgb(159,168,255);
+}

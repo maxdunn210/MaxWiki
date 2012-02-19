@@ -1,0 +1,24 @@
+<%
+  @title = 'Verify Signup'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h3><%= @title %></h3>
+<%= error_messages_for('user') %>
+
+<p>If you already signed up for an account, but still need to verify your account, 
+enter your email address below and a verification email will be sent. </p>
+
+<%= form_tag :controller => 'user', :action => 'verify_signup' %>
+  <p>
+    <label for="user_email">Email</label>
+    <%= text_field 'user', 'email' %>
+  </p>
+
+  <p>
+  <div class="button_bar">
+    <%= submit_tag 'Submit Request', :action => 'verify_signup' %>
+    <%= link_to 'Cancel', :action => 'index' %>
+  </div>
+  </p>
+<%= end_form %>

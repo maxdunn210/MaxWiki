@@ -1,0 +1,12 @@
+<%
+  @title = 'List Players'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>Player List</h1>
+
+<%= render_partial 'player_table' %>
+<%= pagination_template(@players, :show_checked_only => true) %>
+
+<%= button_to 'Add Player', :controller => 'register', :action => 'new' %>
+

@@ -1,0 +1,6 @@
+#!/usr/local/bin/ruby
+
+require 'vendor/plugins/ar_mailer-1.1.0/lib/action_mailer/ar_sendmail'
+
+ActionMailer::ARSendmail.run
+

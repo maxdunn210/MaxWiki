@@ -1,0 +1,316 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--- This web site is powered by MaxWiki - http://www.maxwiki.com --->
+
+  <title>
+    Test Web Site - HTML Sample
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+  <meta name="robots" content="index,follow" />
+
+  <!-- Google Sitemap verification -->
+  <META name="google-site-verification" content="66666777777888889999999" />
+  
+  <link href="/stylesheets/main.css?1313435027" media="all" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/main_print.css?1313435027" media="print" rel="stylesheet" type="text/css" />
+
+  <link href="/images/calendar/theme.css?1313435014" media="all" rel="stylesheet" type="text/css" />
+  
+  
+  <script src="/javascripts/prototype.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/calendar.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/calendar-en.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/calendar-setup.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/application.js?1313434915" type="text/javascript"></script> 
+  <script src="/javascripts/../ckeditor/ckeditor.js?1313435013" type="text/javascript"></script>
+  
+      <script type='text/javascript'>
+    var func = function() {
+      if (readCookie('role') == 'Admin') {
+        showClass('role_Admin');
+        showClass('role_Editor');
+        showClass('role_User');
+        showClass('role_Public');
+      } else if (readCookie('role') == 'Editor') {
+        showClass('role_Editor');
+        showClass('role_User');
+        showClass('role_Public');
+      } else if (readCookie('role') == 'User') {
+        showClass('role_User');
+        showClass('role_Public');
+      } else  {
+        showClass('role_Public');
+        showClass('role_none');
+      }
+    }
+    onloadInit();
+    onloadAdd(func);
+    </script>
+
+  
+  <style type="text/css">
+    
+    
+  </style>
+  
+  
+  	<link href="http://www.cachetest.com/rss_with_headlines" rel="alternate" title="RSS" type="application/rss+xml" />
+  	<link href="http://www.cachetest.com/rss_with_content" rel="alternate" title="RSS" type="application/rss+xml" />
+  
+</head>
+
+
+  <body>
+
+
+	<div id="top">&nbsp;</div>
+	<div id="border">
+		<div id="container">
+			<div id="header">	
+  <div class=left_block>
+  <h1>MaxWiki Header</h1>
+</div>
+
+  
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/header" class="edit_link" name="Edit header" title="Edit header"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+
+</div>
+
+			
+			
+			  <div id="menu">
+  * <a class="existing_page_link" href="/">Home</a>
+ * <a class="existing_page_link" href="/about_us">About Us</a>
+ * <a class="existing_page_link" href="/registration">Registration</a>
+ * <a class="existing_page_link" href="/schedules">Schedules</a> 
+ * <span class="new_page_link"><a href="/volunteering">Volunteering?</a></span> 
+ * <a class="existing_page_link" href="/teams">Teams</a> 
+ * <a class="existing_page_link" href="/faq">FAQs</a>  
+ * <%= link_to "My Account", :controller => "user", :action => "index" %> 
+ * <div class="role_Admin" style="display:none">
+ <%= link_to("Admin", {:controller => "reg_admin", :action => "index"}) %> </div>
+
+  
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/menu" class="edit_link" name="Edit menu" title="Edit menu"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+
+</div>
+
+      
+			
+
+      
+        <div id="buffer_header">
+        
+        </div>
+      
+
+			
+  <div id="left_column">
+    
+
+
+
+<div class="role_Editor" style="display:none">
+  <div class="edit_block">
+    <a href="/_action/wiki/new/HTML%20Sample_left" accesskey="E" class="edit_link" name="New HTML Sample_left" title="New HTML Sample_left"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>
+  </div>
+</div>  
+
+ 
+
+  </div>
+  
+  
+<div id="middle_column" class="middle_column_wide">
+  
+
+	 
+	
+	
+
+  
+    
+	  
+
+
+
+<h1>Test Textile</h1>
+
+        <p>This page has some plain textile on it to test converting to html.</p>
+
+
+        <h2>Textile Tests</h2>
+
+        <p><strong>Bold Text</strong> <em>italic text</em></p>
+
+
+<ul>
+        <li>Bullet A</li>
+        <li>Bullet B</li>
+</ul>
+
+<ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+</ol>
+
+        <table class='bordered'>
+                <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                </tr>
+                <tr>
+                        <td>Cell 3</td>
+                        <td>Cell 4</td>
+                </tr>
+        </table>
+
+
+
+        <p>Line 1<br />
+Line 2<br />
+Line 3</p>
+
+
+
+        <h2>Link Tests</h2>
+
+        <p><a class='existing_page_link' href='/Test'>Test</a> Link to existing page</p>
+
+
+        <p><span class='new_page_link'><a href='/Test+new+page'>Test new page?</a></span> Link to a new page</p>
+
+
+        <p><img src='/images/add.gif' alt='' /> Test image</p>
+
+
+        <h2>Preformatted test</h2>
+
+<code>
+<pre>
+Preformatted code.
+&lt;h1&gt;Sample Code&lt;/h1&gt;
+</pre>
+</code>
+        <h2>Nowiki test</h2>
+
+<div class='left_block'>
+<a href='/HomePage'>
+  <img alt='Tri-Cites Little League Baseball' border='0' src='/themes/baseball/images/TCLLinitialslogo2.gif' width='54' height='52'></a>
+<a href='/HomePage'>
+<img border='0' src='/themes/baseball/images/tcll_text.gif'></a>
+</div>
+<p>My email is: <script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%6d%61%78%40%74%65%73%74%2e%63%6f%6d%22%3e%6d%61%78%40%74%65%73%74%2e%63%6f%6d%3c%2f%61%3e%27%29%3b'))</script></p>
+
+        <h2>Include test</h2>
+
+<ul class='left_menu'>
+  <li class='submenu'><a href="/about_us">About Us</a></li>
+  <li><a href="/contact_us">Contact Us</a></li>
+</ul>
+
+<hr>
+<a class="existing_page_link" href="/navigation">Search</a>
+
+
+        <p>Include End</p>
+
+
+	
+	    
+    
+          
+  
+    <div class="byline">    
+  
+    Created on March  7, 2006 09:20:57 
+    
+      by <span class="new_page_link"><a href="/Max+Dunn">Max Dunn?</a></span>
+    
+    (127.0.0.1)
+    
+      
+      (1523 characters / 0.0 pages)
+    
+  </div>
+
+    
+    
+		
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_edit/html_sample" class="edit_link" name="Edit HTML Sample" title="Edit HTML Sample"><img alt="Edit" src="/images/edit.gif?1313435014" /> Edit Page</a> 
+
+	  <a href="/_action/wiki/new" class="edit_link" name="Add Page" title="Add Page"><img alt="Plus" src="/images/plus.gif?1313435014" /> Add Page</a> 
+  </div>
+  
+  
+</div>
+
+
+ 
+	
+</div>
+  
+  
+  
+
+			<div id="buffer_footer"></div>
+			<div id="footer">
+
+  
+    
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/footer" class="edit_link" name="Edit footer" title="Edit footer"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+
+    <p>&copy;2006 &#8211; Tri-Cities Pacific Little League</p>
+
+  
+  
+  
+</div>
+		</div> <!-- container -->
+	</div> <!-- border -->
+	<div id="bottom">&nbsp;</div>
+	
+  
+</body>
+</html>

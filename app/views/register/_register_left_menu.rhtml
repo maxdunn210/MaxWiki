@@ -1,0 +1,9 @@
+<ul class="left_menu">
+  <li class="title">REGISTRATION STEPS:</li>
+	<%= tag_li_href_selected("1. Setup Account", {:controller => "register", :action => "setup"}, "setup") %>
+	<%= tag_li_href_selected("2. Complete Forms", {:controller => "register", :action => "new"}, "new|create") %>
+	<%= tag_li_href_selected("3. Check Information", {:controller => "register", :action => "list"}, "list|show|edit|update|delete_confirm") %>
+	<%= tag_li_href_selected("4. Volunteer Information", {:controller => "register", :action => "volunteer"}, "volunteer") %>
+	<%= tag_li_href_selected("5. Submit Payment", {:controller => "register", :action => "pay"}, "pay|pay_later") %>
+	<%= tag_li_href_selected("6. Provide Documents", {:controller => "register", :action => "document"}, "document") %>
+</ul>	

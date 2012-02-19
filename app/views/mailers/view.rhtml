@@ -1,0 +1,51 @@
+<%-
+  @title = 'Mailers'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>View Mailer</h1>
+
+ <%= render :partial => 'view' %>
+
+<br />
+
+<table>
+	<tr>
+	  <td>
+      <%= form_tag :controller => 'mailers', :action => 'edit', :id => @mailer %>
+        <%= submit_tag 'Edit' %>
+      <%= end_form %>	
+    </td>
+    
+		<td>
+		<%= form_tag :controller => 'mailers', :action => 'destroy', :id => @mailer %>
+		  <%= submit_tag "Delete" %>
+		<%= end_form %>
+		</td>
+
+		<td>
+		<%= form_tag :controller => 'mailers', :action => 'list' %>
+		  <%= submit_tag "Cancel" %>
+		  &nbsp;
+		<%= end_form %>
+		</td>
+	</tr>
+</table>
+
+<br />
+
+<table>
+	<tr>
+	  <td>
+      <%= form_tag :controller => 'mailers', :action => 'send_test', :id => @mailer %> 
+        <%= submit_tag "Test" %>
+      <%= end_form %>
+		</td>
+
+	  <td>
+      <%= form_tag :controller => 'mailers', :action => 'process_emails', :id => @mailer %> 
+        <%= submit_tag "Process" %>
+      <%= end_form %>
+		</td>
+	</tr>
+</table>

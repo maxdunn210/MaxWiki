@@ -1,0 +1,15 @@
+<%= error_messages_for 'mailer_subscription' %>
+
+<table>
+<!--[form:mailer_subscription]-->
+<tr><td><label for="mailer_subscription_subscribed">Subscribed</label></td>
+<td><%= check_box 'mailer_subscription', 'subscribed'  %></td></tr>
+
+<tr><td><label for="mailer_subscription_updated_at">Updated at</label></td>
+<td><%= datetime_select 'mailer_subscription', 'updated_at'  %></td></tr>
+
+<tr><td><label for="mailer_subscription_updated_by">Updated by</label></td>
+<td><%= text_field 'mailer_subscription', 'updated_by'  %></td></tr>
+<!--[eoform:mailer_subscription]-->
+
+</table>

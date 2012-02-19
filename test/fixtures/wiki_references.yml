@@ -1,0 +1,1260 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  created_at          :datetime      not null
+#  updated_at          :datetime      not null
+#  page_id             :integer(11)   default(0), not null
+#  referenced_name     :string(60)    default(), not null
+#  link_type           :string(1)     default(), not null
+#
+
+--- 
+wiki_reference_100: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 5
+  id: 100
+  referenced_name: Teams
+  created_at: 2006-03-07 09:43:44 -08:00
+wiki_reference_460: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  page_id: 47
+  id: 460
+  wiki_id: 1 
+  referenced_name: HomePage
+  created_at: 2006-02-28 10:05:45 -08:00
+wiki_reference_235: 
+  updated_at: 2005-12-22 16:06:45 -08:00
+  link_type: L
+  page_id: 17
+  id: 235
+  wiki_id: 1 
+  referenced_name: Contact Us
+  created_at: 2005-12-22 16:06:45 -08:00
+wiki_reference_432: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 432
+  wiki_id: 1 
+  referenced_name: "Minors: Padres"
+  created_at: 2006-02-28 10:00:43 -08:00
+wiki_reference_291: 
+  updated_at: 2006-02-13 16:56:39 -08:00
+  link_type: L
+  page_id: 5
+  id: 291
+  wiki_id: 1 
+  referenced_name: About Us
+  created_at: 2006-02-13 16:56:39 -08:00
+wiki_reference_404: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 404
+  wiki_id: 1 
+  referenced_name: "Minors: Giants"
+  created_at: 2006-02-28 09:58:23 -08:00
+wiki_reference_461: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  page_id: 47
+  id: 461
+  wiki_id: 1 
+  referenced_name: Teams
+  created_at: 2006-02-28 10:05:45 -08:00
+wiki_reference_433: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 433
+  wiki_id: 1 
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-02-28 10:00:43 -08:00
+wiki_reference_208: 
+  updated_at: 2005-12-20 12:46:44 -08:00
+  link_type: L
+  page_id: 15
+  id: 208
+  wiki_id: 1 
+  referenced_name: HomePage
+  created_at: 2005-12-20 12:46:44 -08:00
+wiki_reference_405: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 405
+  wiki_id: 1 
+  referenced_name: "Minors: Padres"
+  created_at: 2006-02-28 09:58:23 -08:00
+wiki_reference_292: 
+  updated_at: 2006-02-13 16:56:39 -08:00
+  link_type: L
+  page_id: 5
+  id: 292
+  wiki_id: 1 
+  referenced_name: Registration
+  created_at: 2006-02-13 16:56:39 -08:00
+wiki_reference_462: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  page_id: 47
+  id: 462
+  wiki_id: 1 
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 10:05:45 -08:00
+wiki_reference_434: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: I
+  page_id: 44
+  id: 434
+  wiki_id: 1 
+  referenced_name: Teams_Menu
+  created_at: 2006-02-28 10:00:43 -08:00
+wiki_reference_209: 
+  updated_at: 2005-12-20 12:47:13 -08:00
+  link_type: L
+  page_id: 26
+  id: 209
+  wiki_id: 1 
+  referenced_name: HomePage
+  created_at: 2005-12-20 12:47:13 -08:00
+wiki_reference_406: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 406
+  wiki_id: 1 
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-02-28 09:58:23 -08:00
+wiki_reference_293: 
+  updated_at: 2006-02-13 16:56:39 -08:00
+  link_type: L
+  page_id: 5
+  id: 293
+  wiki_id: 1 
+  referenced_name: Schedules
+  created_at: 2006-02-13 16:56:39 -08:00
+wiki_reference_490: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  page_id: 50
+  id: 490
+  wiki_id: 1 
+  referenced_name: Juniors Schedule
+  created_at: 2006-03-07 09:43:44 -08:00
+wiki_reference_463: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  page_id: 47
+  id: 463
+  wiki_id: 1 
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-02-28 10:05:45 -08:00
+wiki_reference_435: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  page_id: 45
+  id: 435
+  wiki_id: 1 
+  referenced_name: HomePage
+  created_at: 2006-02-28 10:01:14 -08:00
+wiki_reference_407: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: I
+  page_id: 38
+  id: 407
+  wiki_id: 1 
+  referenced_name: Teams_Menu
+  created_at: 2006-02-28 09:58:23 -08:00
+wiki_reference_294: 
+  updated_at: 2006-02-13 16:56:39 -08:00
+  link_type: L
+  page_id: 5
+  id: 294
+  wiki_id: 1 
+  referenced_name: Volunteering
+  created_at: 2006-02-13 16:56:39 -08:00
+wiki_reference_491: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  page_id: 50
+  id: 491
+  wiki_id: 1 
+  referenced_name: Majors Schedule
+  created_at: 2006-03-07 09:43:44 -08:00
+wiki_reference_464: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  page_id: 47
+  id: 464
+  wiki_id: 1 
+  referenced_name: "Minors: As"
+  created_at: 2006-02-28 10:05:45 -08:00
+wiki_reference_239: 
+  updated_at: 2005-12-24 15:17:53 -08:00
+  link_type: L
+  page_id: 1
+  id: 239
+  wiki_id: 1 
+  referenced_name: volunteering
+  created_at: 2005-12-24 15:17:53 -08:00
+wiki_reference_436: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  page_id: 45
+  wiki_id: 1 
+  id: 436
+  referenced_name: Teams
+  created_at: 2006-02-28 10:01:14 -08:00
+wiki_reference_295: 
+  updated_at: 2006-02-13 16:56:39 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 5
+  id: 295
+  referenced_name: Sponsoring
+  created_at: 2006-02-13 16:56:39 -08:00
+wiki_reference_408: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 40
+  id: 408
+  referenced_name: HomePage
+  created_at: 2006-02-28 09:59:11 -08:00
+wiki_reference_492: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 50
+  id: 492
+  referenced_name: Minors Schedule
+  created_at: 2006-03-07 09:43:44 -08:00
+wiki_reference_465: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 47
+  id: 465
+  referenced_name: "Minors: Giants"
+  created_at: 2006-02-28 10:05:45 -08:00
+wiki_reference_437: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 45
+  id: 437
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 10:01:14 -08:00
+wiki_reference_182: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 19
+  id: 182
+  referenced_name: HomePage
+  created_at: 2005-12-20 12:39:13 -08:00
+wiki_reference_296: 
+  updated_at: 2006-02-13 16:56:39 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 5
+  id: 296
+  referenced_name: FAQ
+  created_at: 2006-02-13 16:56:39 -08:00
+wiki_reference_409: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 40
+  id: 409
+  referenced_name: Teams
+  created_at: 2006-02-28 09:59:11 -08:00
+wiki_reference_493: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 50
+  id: 493
+  referenced_name: Farm Schedule
+  created_at: 2006-03-07 09:43:44 -08:00
+wiki_reference_466: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 47
+  id: 466
+  referenced_name: "Minors: Padres"
+  created_at: 2006-02-28 10:05:45 -08:00
+wiki_reference_438: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 45
+  id: 438
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-02-28 10:01:14 -08:00
+wiki_reference_183: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 19
+  id: 183
+  referenced_name: About Us
+  created_at: 2005-12-20 12:39:13 -08:00
+wiki_reference_494: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 50
+  id: 494
+  referenced_name: T-Ball Schedule
+  created_at: 2006-03-07 09:43:44 -08:00
+wiki_reference_210: 
+  updated_at: 2005-12-20 12:47:39 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 27
+  id: 210
+  referenced_name: HomePage
+  created_at: 2005-12-20 12:47:39 -08:00
+wiki_reference_269: 
+  updated_at: 2006-02-11 09:46:18 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 12
+  id: 269
+  referenced_name: HomePage
+  created_at: 2006-02-11 09:46:18 -08:00
+wiki_reference_439: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 45
+  id: 439
+  referenced_name: "Minors: As"
+  created_at: 2006-02-28 10:01:14 -08:00
+wiki_reference_184: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 19
+  id: 184
+  referenced_name: Tri-Cities Board
+  created_at: 2005-12-20 12:39:13 -08:00
+wiki_reference_381: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  wiki_id: 1 
+  page_id: 35
+  id: 381
+  referenced_name: HomePage
+  created_at: 2006-02-28 09:50:18 -08:00
+wiki_reference_495: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 495
+  referenced_name: HomePage
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_467: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: L
+  page_id: 47
+  id: 467
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-02-28 10:05:45 -08:00
+  wiki_id: 1 
+wiki_reference_185: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  link_type: L
+  page_id: 19
+  id: 185
+  referenced_name: Boundaries
+  created_at: 2005-12-20 12:39:13 -08:00
+  wiki_id: 1 
+wiki_reference_382: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 382
+  referenced_name: Teams
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_240: 
+  updated_at: 2005-12-24 15:17:54 -08:00
+  link_type: L
+  page_id: 1
+  id: 240
+  referenced_name: boundaries
+  created_at: 2005-12-24 15:17:54 -08:00
+  wiki_id: 1 
+wiki_reference_496: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 496
+  referenced_name: Schedules
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_468: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  link_type: I
+  page_id: 47
+  id: 468
+  referenced_name: Teams_Menu
+  created_at: 2006-02-28 10:05:45 -08:00
+  wiki_id: 1 
+wiki_reference_186: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  link_type: L
+  page_id: 19
+  id: 186
+  referenced_name: League Levels
+  created_at: 2005-12-20 12:39:13 -08:00
+  wiki_id: 1 
+wiki_reference_383: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 383
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_497: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 497
+  referenced_name: Seniors Schedule
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_410: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  page_id: 40
+  id: 410
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 09:59:11 -08:00
+  wiki_id: 1 
+wiki_reference_187: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  link_type: L
+  page_id: 19
+  id: 187
+  referenced_name: Contact Us
+  created_at: 2005-12-20 12:39:13 -08:00
+  wiki_id: 1 
+wiki_reference_384: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 384
+  referenced_name: Seniors Schedule
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_498: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 498
+  referenced_name: Juniors Schedule
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_411: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  page_id: 40
+  id: 411
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-02-28 09:59:11 -08:00
+  wiki_id: 1 
+wiki_reference_188: 
+  updated_at: 2005-12-20 12:40:20 -08:00
+  link_type: L
+  page_id: 24
+  id: 188
+  referenced_name: HomePage
+  created_at: 2005-12-20 12:40:20 -08:00
+  wiki_id: 1 
+wiki_reference_385: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 385
+  referenced_name: Juniors Schedule
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_440: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  page_id: 45
+  id: 440
+  referenced_name: "Minors: Giants"
+  created_at: 2006-02-28 10:01:14 -08:00
+  wiki_id: 1 
+wiki_reference_499: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 499
+  referenced_name: Majors Schedule
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_412: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  page_id: 40
+  id: 412
+  referenced_name: "Minors: As"
+  created_at: 2006-02-28 09:59:11 -08:00
+  wiki_id: 1 
+wiki_reference_189: 
+  updated_at: 2005-12-20 12:40:20 -08:00
+  link_type: L
+  page_id: 24
+  id: 189
+  referenced_name: About Us
+  created_at: 2005-12-20 12:40:20 -08:00
+  wiki_id: 1 
+wiki_reference_386: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 386
+  referenced_name: Majors Schedule
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_244: 
+  updated_at: 2005-12-24 15:19:39 -08:00
+  link_type: W
+  page_id: 29
+  id: 244
+  referenced_name: Suzanne Dunn
+  created_at: 2005-12-24 15:19:39 -08:00
+  wiki_id: 1 
+wiki_reference_441: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  page_id: 45
+  id: 441
+  referenced_name: "Minors: Padres"
+  created_at: 2006-02-28 10:01:14 -08:00
+  wiki_id: 1 
+wiki_reference_413: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  page_id: 40
+  id: 413
+  referenced_name: "Minors: Giants"
+  created_at: 2006-02-28 09:59:11 -08:00
+  wiki_id: 1 
+wiki_reference_387: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 387
+  referenced_name: Minors Schedule
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_245: 
+  updated_at: 2005-12-24 15:19:39 -08:00
+  link_type: W
+  page_id: 29
+  id: 245
+  referenced_name: Max Dunn
+  created_at: 2005-12-24 15:19:39 -08:00
+  wiki_id: 1 
+wiki_reference_442: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: L
+  page_id: 45
+  id: 442
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-02-28 10:01:14 -08:00
+  wiki_id: 1 
+wiki_reference_103: 
+  updated_at: 2005-12-19 22:08:40 -08:00
+  link_type: L
+  page_id: 10
+  id: 103
+  referenced_name: Schedules
+  created_at: 2005-12-19 22:08:40 -08:00
+  wiki_id: 1 
+wiki_reference_414: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  page_id: 40
+  id: 414
+  referenced_name: "Minors: Padres"
+  created_at: 2006-02-28 09:59:11 -08:00
+  wiki_id: 1 
+wiki_reference_388: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 388
+  referenced_name: Farm Schedule
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_246: 
+  updated_at: 2005-12-24 15:19:39 -08:00
+  link_type: W
+  page_id: 29
+  id: 246
+  referenced_name: Steve Cousins
+  created_at: 2005-12-24 15:19:39 -08:00
+  wiki_id: 1 
+wiki_reference_443: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  link_type: I
+  page_id: 45
+  id: 443
+  referenced_name: Teams_Menu
+  created_at: 2006-02-28 10:01:14 -08:00
+  wiki_id: 1 
+wiki_reference_301: 
+  updated_at: 2006-02-18 23:12:02 -08:00
+  link_type: L
+  page_id: 13
+  id: 301
+  referenced_name: boundaries
+  created_at: 2006-02-18 23:12:02 -08:00
+  wiki_id: 1 
+wiki_reference_415: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: L
+  page_id: 40
+  id: 415
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-02-28 09:59:11 -08:00
+  wiki_id: 1 
+wiki_reference_416: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  link_type: I
+  page_id: 40
+  id: 416
+  referenced_name: Teams_Menu
+  created_at: 2006-02-28 09:59:11 -08:00
+  wiki_id: 1 
+wiki_reference_389: 
+  updated_at: 2006-02-28 09:50:18 -08:00
+  link_type: L
+  page_id: 35
+  id: 389
+  referenced_name: T-Ball Schedule
+  created_at: 2006-02-28 09:50:18 -08:00
+  wiki_id: 1 
+wiki_reference_190: 
+  updated_at: 2005-12-20 12:40:20 -08:00
+  link_type: L
+  page_id: 24
+  id: 190
+  referenced_name: Tri-Cities Board
+  created_at: 2005-12-20 12:40:20 -08:00
+  wiki_id: 1 
+wiki_reference_500: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 500
+  referenced_name: Minors Schedule
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_417: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 417
+  referenced_name: HomePage
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_191: 
+  updated_at: 2005-12-20 12:40:20 -08:00
+  link_type: L
+  page_id: 24
+  id: 191
+  referenced_name: Boundaries
+  created_at: 2005-12-20 12:40:20 -08:00
+  wiki_id: 1 
+wiki_reference_501: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 501
+  referenced_name: Farm Schedule
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_418: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 418
+  referenced_name: Teams
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_502: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: L
+  page_id: 8
+  id: 502
+  referenced_name: T-Ball Schedule
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_419: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 419
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_192: 
+  updated_at: 2005-12-20 12:40:20 -08:00
+  link_type: L
+  page_id: 24
+  id: 192
+  referenced_name: League Levels
+  created_at: 2005-12-20 12:40:20 -08:00
+  wiki_id: 1 
+wiki_reference_193: 
+  updated_at: 2005-12-20 12:40:20 -08:00
+  link_type: L
+  page_id: 24
+  id: 193
+  referenced_name: Contact Us
+  created_at: 2005-12-20 12:40:20 -08:00
+  wiki_id: 1 
+wiki_reference_503: 
+  updated_at: 2006-03-07 09:44:28 -08:00
+  link_type: I
+  page_id: 8
+  id: 503
+  referenced_name: schedule_left_menu
+  created_at: 2006-03-07 09:44:28 -08:00
+  wiki_id: 1 
+wiki_reference_390: 
+  updated_at: 2006-02-28 09:50:19 -08:00
+  link_type: I
+  page_id: 35
+  id: 390
+  referenced_name: Teams_Menu
+  created_at: 2006-02-28 09:50:19 -08:00
+  wiki_id: 1 
+wiki_reference_194: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  link_type: L
+  page_id: 23
+  id: 194
+  referenced_name: HomePage
+  created_at: 2005-12-20 12:41:10 -08:00
+  wiki_id: 1 
+wiki_reference_504: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 504
+  referenced_name: HomePage
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_478: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 478
+  referenced_name: HomePage
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_195: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  link_type: L
+  page_id: 23
+  id: 195
+  referenced_name: About Us
+  created_at: 2005-12-20 12:41:10 -08:00
+  wiki_id: 1 
+wiki_reference_505: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 505
+  referenced_name: Schedules
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_420: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 420
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_479: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 479
+  referenced_name: Teams
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_196: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  link_type: L
+  page_id: 23
+  id: 196
+  referenced_name: Tri-Cities Board
+  created_at: 2005-12-20 12:41:10 -08:00
+  wiki_id: 1 
+wiki_reference_506: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 506
+  referenced_name: Seniors Schedule
+  wiki_id: 1 
+  created_at: 2006-03-07 09:49:36 -08:00
+wiki_reference_421: 
+  wiki_id: 1 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 421
+  referenced_name: "Minors: As"
+  created_at: 2006-02-28 09:59:56 -08:00
+wiki_reference_197: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  link_type: L
+  page_id: 23
+  id: 197
+  referenced_name: Boundaries
+  created_at: 2005-12-20 12:41:10 -08:00
+  wiki_id: 1 
+wiki_reference_507: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 507
+  referenced_name: Juniors Schedule
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_422: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 422
+  referenced_name: "Minors: Giants"
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_198: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  link_type: L
+  page_id: 23
+  id: 198
+  referenced_name: League Levels
+  created_at: 2005-12-20 12:41:10 -08:00
+  wiki_id: 1 
+wiki_reference_508: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 508
+  referenced_name: Majors Schedule
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_423: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 423
+  referenced_name: "Minors: Padres"
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_199: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  link_type: L
+  page_id: 23
+  id: 199
+  referenced_name: Contact Us
+  created_at: 2005-12-20 12:41:10 -08:00
+  wiki_id: 1 
+wiki_reference_509: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 509
+  referenced_name: Minors Schedule
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_424: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: L
+  page_id: 42
+  id: 424
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_480: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 480
+  referenced_name: "Majors: Giants"
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_452: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 452
+  referenced_name: HomePage
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_425: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  link_type: I
+  page_id: 42
+  id: 425
+  referenced_name: Teams_Menu
+  created_at: 2006-02-28 09:59:56 -08:00
+  wiki_id: 1 
+wiki_reference_481: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 481
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_453: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 453
+  referenced_name: Teams
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_426: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 426
+  referenced_name: HomePage
+  created_at: 2006-02-28 10:00:43 -08:00
+  wiki_id: 1 
+wiki_reference_482: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 482
+  referenced_name: "Minors: As"
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_399: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 399
+  referenced_name: HomePage
+  created_at: 2006-02-28 09:58:23 -08:00
+  wiki_id: 1 
+wiki_reference_454: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 454
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_510: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 510
+  referenced_name: Farm Schedule
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_455: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 455
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_483: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 483
+  referenced_name: "Minors: Giants"
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_427: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 427
+  referenced_name: Teams
+  created_at: 2006-02-28 10:00:43 -08:00
+  wiki_id: 1 
+wiki_reference_456: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 456
+  referenced_name: "Minors: As"
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_200: 
+  updated_at: 2005-12-20 12:41:46 -08:00
+  link_type: L
+  page_id: 25
+  id: 200
+  referenced_name: HomePage
+  created_at: 2005-12-20 12:41:46 -08:00
+  wiki_id: 1 
+wiki_reference_484: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 484
+  referenced_name: "Minors: Padres"
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_428: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 428
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 10:00:43 -08:00
+  wiki_id: 1 
+wiki_reference_511: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: L
+  page_id: 57
+  id: 511
+  referenced_name: T-Ball Schedule
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_512: 
+  updated_at: 2006-03-07 09:49:36 -08:00
+  link_type: I
+  page_id: 57
+  id: 512
+  referenced_name: schedule_left_menu
+  created_at: 2006-03-07 09:49:36 -08:00
+  wiki_id: 1 
+wiki_reference_457: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 457
+  referenced_name: "Minors: Giants"
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_201: 
+  updated_at: 2005-12-20 12:41:46 -08:00
+  link_type: L
+  page_id: 25
+  id: 201
+  referenced_name: About Us
+  created_at: 2005-12-20 12:41:46 -08:00
+  wiki_id: 1 
+wiki_reference_485: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: L
+  page_id: 31
+  id: 485
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_429: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 429
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-02-28 10:00:43 -08:00
+  wiki_id: 1 
+wiki_reference_458: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 458
+  referenced_name: "Minors: Padres"
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_202: 
+  updated_at: 2005-12-20 12:41:46 -08:00
+  link_type: L
+  page_id: 25
+  id: 202
+  referenced_name: Tri-Cities Board
+  created_at: 2005-12-20 12:41:46 -08:00
+  wiki_id: 1 
+wiki_reference_486: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  link_type: I
+  page_id: 31
+  id: 486
+  referenced_name: teams_menu
+  created_at: 2006-03-03 16:15:05 -08:00
+  wiki_id: 1 
+wiki_reference_230: 
+  updated_at: 2005-12-22 16:06:44 -08:00
+  link_type: L
+  page_id: 17
+  id: 230
+  referenced_name: HomePage
+  created_at: 2005-12-22 16:06:44 -08:00
+  wiki_id: 1 
+wiki_reference_231: 
+  updated_at: 2005-12-22 16:06:45 -08:00
+  link_type: L
+  page_id: 17
+  id: 231
+  referenced_name: About Us
+  created_at: 2005-12-22 16:06:45 -08:00
+  wiki_id: 1 
+wiki_reference_203: 
+  updated_at: 2005-12-20 12:41:46 -08:00
+  link_type: L
+  page_id: 25
+  id: 203
+  referenced_name: Boundaries
+  created_at: 2005-12-20 12:41:46 -08:00
+  wiki_id: 1 
+wiki_reference_400: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 400
+  referenced_name: Teams
+  created_at: 2006-02-28 09:58:23 -08:00
+  wiki_id: 1 
+wiki_reference_459: 
+  updated_at: 2006-02-28 10:03:52 -08:00
+  link_type: L
+  page_id: 33
+  id: 459
+  referenced_name: "Minors: Yankees"
+  created_at: 2006-02-28 10:03:52 -08:00
+  wiki_id: 1 
+wiki_reference_487: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  page_id: 50
+  id: 487
+  referenced_name: HomePage
+  created_at: 2006-03-07 09:43:44 -08:00
+  wiki_id: 1 
+wiki_reference_488: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  page_id: 50
+  id: 488
+  referenced_name: Schedules
+  created_at: 2006-03-07 09:43:44 -08:00
+  wiki_id: 1 
+wiki_reference_401: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 401
+  referenced_name: "Majors: Giants"
+  created_at: 2006-02-28 09:58:23 -08:00
+  wiki_id: 1 
+wiki_reference_204: 
+  updated_at: 2005-12-20 12:41:46 -08:00
+  link_type: L
+  page_id: 25
+  id: 204
+  referenced_name: League Levels
+  created_at: 2005-12-20 12:41:46 -08:00
+  wiki_id: 1 
+wiki_reference_232: 
+  updated_at: 2005-12-22 16:06:45 -08:00
+  link_type: L
+  page_id: 17
+  id: 232
+  referenced_name: Tri-Cities Board
+  created_at: 2005-12-22 16:06:45 -08:00
+  wiki_id: 1 
+wiki_reference_233: 
+  updated_at: 2005-12-22 16:06:45 -08:00
+  link_type: L
+  page_id: 17
+  id: 233
+  referenced_name: Boundaries
+  created_at: 2005-12-22 16:06:45 -08:00
+  wiki_id: 1 
+wiki_reference_402: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 402
+  referenced_name: "Majors: Mariners"
+  created_at: 2006-02-28 09:58:23 -08:00
+  wiki_id: 1 
+wiki_reference_205: 
+  updated_at: 2005-12-20 12:41:46 -08:00
+  link_type: L
+  page_id: 25
+  id: 205
+  referenced_name: Contact Us
+  created_at: 2005-12-20 12:41:46 -08:00
+  wiki_id: 1 
+wiki_reference_430: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 430
+  referenced_name: "Minors: As"
+  created_at: 2006-02-28 10:00:43 -08:00
+  wiki_id: 1 
+wiki_reference_489: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  link_type: L
+  page_id: 50
+  id: 489
+  referenced_name: Seniors Schedule
+  created_at: 2006-03-07 09:43:44 -08:00
+  wiki_id: 1 
+wiki_reference_234: 
+  updated_at: 2005-12-22 16:06:45 -08:00
+  link_type: L
+  page_id: 17
+  id: 234
+  referenced_name: League Levels
+  created_at: 2005-12-22 16:06:45 -08:00
+  wiki_id: 1 
+wiki_reference_290: 
+  updated_at: 2006-02-13 16:56:39 -08:00
+  link_type: L
+  page_id: 5
+  id: 290
+  referenced_name: HomePage
+  created_at: 2006-02-13 16:56:39 -08:00
+  wiki_id: 1 
+wiki_reference_403: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  link_type: L
+  page_id: 38
+  id: 403
+  referenced_name: "Minors: As"
+  created_at: 2006-02-28 09:58:23 -08:00
+  wiki_id: 1 
+wiki_reference_431: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  link_type: L
+  page_id: 44
+  id: 431
+  referenced_name: "Minors: Giants"
+  created_at: 2006-02-28 10:00:43 -08:00
+  wiki_id: 1 
+  

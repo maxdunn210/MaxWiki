@@ -1,0 +1,178 @@
+/* Site specific styles for InPower */
+/* Colors: 
+
+*/
+
+/******** Widths ********/
+#border, #top, #bottom { width: 1000px; }
+#container, #header, #footer { width: 1000px; }
+#left_column { width: 200px; }
+.middle_column_narrow { width: 570px; }
+.middle_column_wide { width: 720px; }
+.middle_column_full { width: 880px; }
+#right_column { width: 200px; }
+#right_column .box { width: 200px; }
+
+body { 
+  background: url(main_bg.jpg);
+}
+
+#top {
+  margin-top: 20px;
+}
+
+#border {
+  background: white;
+}
+
+/*** Header main banner ***/
+#header {
+	height: 182px;
+	color: black;
+	background: url(header_text2_bg.gif)
+}
+
+#menu {
+  height: 52px;
+  line-height: 50px;
+  font-size: 13px;
+  margin: 0px auto;
+  padding: 0px;
+  border-bottom: none;			
+  color: white;
+  background: url(menu_bg.gif);
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#menu a, 
+#menu li a {
+  font-weight: normal;
+	padding: 0px 15px 0px 15px;
+	border-right:1px solid #007bca;
+}
+
+#buffer_header {
+  height: 0px;
+}
+
+#buffer_footer {
+  height: 0px;
+  background: none;
+}
+
+#left_column {
+  border-right: none; 
+}
+
+.left_menu {  
+  width: 150px;
+  border-bottom: none;
+} 
+
+
+.left_menu a,
+.left_menu a:visited,
+.left_menu a:hover, 
+.left_menu .selected,
+.left_menu a:visited.selected {
+  font-weight: normal;
+  text-align: right;
+  text-decoration: none;
+}
+
+.left_menu a:hover, 
+.left_menu .selected {
+  border-left: solid 5px rgb(0, 111, 186);				
+  background-color: rgb(178, 212, 234);	
+}
+
+#middle_column {
+  border-left: none;
+}
+
+#middle_column h1, 
+#middle_column h2, 
+#middle_column h3 {
+  clear: both;
+  border-bottom: 0;
+  font-size: 22px;
+	font-weight: normal;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #4E4A38;
+}
+
+#middle_column h1 {
+  border-bottom: 1px solid #D1D1D1;
+  margin: 5px 0px;
+  padding: 5px 5px;
+}
+
+
+#middle_column h2, 
+#middle_column h3 {
+  color: #898989;
+  font-size: 15px;
+}
+
+#middle_column h3 {
+  font-size: 14px;
+}
+
+#middle_column h4 {
+  text-decoration: underline;
+}
+
+#middle_column h5 {
+  font-size: 1em;
+}
+
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+	padding: 0px 10px 0px 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+	background: none;
+}
+
+#footer {
+  height: 80px;
+	padding-top: 0px;
+  border-top: 0;
+  border-bottom: 0;
+  font-size: 11px;
+  color: white;
+	background: url(footer_bg.gif);
+}
+
+#footer a {
+  color: rgb(240,240,240);
+  text-decoration: none;
+  font-weight: normal; 
+}
+
+#footer a:hover,
+#footer a:active {
+  text-decoration: underline;
+}
+
+#footer .edit_block { 
+  float: left;
+  margin-top: 6px;
+  margin-left: 0px;
+}
+
+#footer .left_block {
+  float: left;
+  margin-left: 0px;
+}
+
+#footer .right_block {
+  float: right;
+  text-align: right;
+	margin-top: 18px;
+  margin-right: 20px;
+  padding: 0px;
+}

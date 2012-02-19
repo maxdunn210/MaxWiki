@@ -1,0 +1,32 @@
+<%-
+  @title = 'Mailer Send Test'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Mailer Send Test</h1>
+
+<p>A test email was queued:</p>
+
+<p>
+<b>To:</b> <%= @user.email %><br/>
+<b>Subject:</b> <%= @subject %><br/>
+<b>Page name:</b> <%= @page.name %><br/>
+</p>
+
+<br />
+
+<table>
+	<tr>
+	  <td>
+      <%= form_tag :controller => 'emails', :action => 'send_emails'  %> 
+        <%= submit_tag "Send Email" %>
+      <%= end_form %>
+		</td>
+
+	  <td>
+      <%= form_tag :controller => 'mailers', :action => 'view', :id => @mailer  %> 
+        <%= submit_tag "Back" %>
+      <%= end_form %>
+		</td>
+	</tr>
+</table>

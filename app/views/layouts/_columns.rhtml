@@ -1,0 +1,39 @@
+<% if @left_column_show %>
+  <div id="left_column">
+  <%= render(:partial => @left_column_partial, :locals => @left_column_hash) %>
+  </div>
+<% end %>  
+  
+<div id="middle_column" class="middle_column_<%= @middle_column_size %>">
+  
+
+	<% if flash[:notice] -%>
+	  <div class="msg_notice"><%= escape_preserving_linefeeds flash[:notice] %></div>
+	<% end -%> 
+	
+	<% if flash[:error] -%> 
+	  <div class="msg_error"><%= escape_preserving_linefeeds(flash[:error]) %></div>
+	<% end -%>
+
+  <% if false %>
+	<%= flash_cookie_tag 'msg_notice' %>
+	<%= flash_cookie_tag 'msg_error' %>
+	<% end %>
+    
+	<%= @content_for_layout %>
+	
+	<% if @controller.controller_name == 'wiki' and @controller.action_name == 'show' %>    
+    <% if !MY_CONFIG[:byline_under_footer] %>
+      <%= render :partial => 'layouts/byline' %>
+    <% end %>
+    
+		<%= render(:partial => 'layouts/edit_links', :locals => {:edit_page => @page, :edit_name => @page.name, :edit_labels => true}) %> 
+	<% end %>
+</div>
+  
+<% if @right_column_show %>
+  <div id="right_column">
+    <%= render(:partial => @right_column_partial, :locals => @right_column_hash) %>
+  </div>
+<% end %>  
+  

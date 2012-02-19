@@ -1,0 +1,19 @@
+<ul class="left_menu">
+<li class="title">My Account Menu</li>
+  <% unless logged_in? %>
+		<%= tag_li_href_selected("Login", {:controller => "user", :action => "login"}, "login") %>
+		
+		<% if @wiki.has_page?("Signup") %>
+		  <%= tag_li_href_selected("Signup", {:controller => "wiki", :action => "show", :id => "Signup"}, "/Signup") %>
+		<% else %>
+		  <%= tag_li_href_selected("Signup", {:controller => "user", :action => "signup"}, "-signup") %>
+		<% end %>
+		
+		<%= tag_li_href_selected("Verify Signup", {:controller => "user", :action => "verify_signup"}, "verify_signup") %>
+		<%= tag_li_href_selected("Reset Password", {:controller => "user", :action => "reset_password"}, "reset_password") %>
+	<% else %>
+		<%= tag_li_href_selected("Logout", {:controller => "user", :action => "logout"}, "logout") %>
+		<%= tag_li_href_selected("Edit My Information", {:controller => "user", :action => "edit"}, "edit") %>
+		<%= tag_li_href_selected("Change Password", {:controller => "user", :action => "change_password"}, "change_password") %>
+	<% end %>
+</ul>

@@ -1,0 +1,21 @@
+<%
+  @title = 'SVN Update'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu'
+%>
+
+<h3>Update web site from SVN</h3>
+
+<p>Please enter your SVN username and password to update the web site:</p>
+
+<%= form_tag :action =>'do_svn_update' %>
+  <table>
+  <tr>
+  <td>SVN Username:</td><td> <%= text_field 'reg_admin', 'svn_username' %></td>
+  </tr><tr>
+  <td>SVN Password:</td><td> <%= password_field 'reg_admin', 'svn_password' %></td>
+  </tr>
+  </table>
+  <%= submit_tag('Submit') %>
+  
+<%= end_form %>
+

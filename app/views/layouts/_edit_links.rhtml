@@ -1,0 +1,32 @@
+<% if edit_page.nil? %>
+
+<div class="role_Editor" style="display:none">
+  <div class="edit_block">
+    <%= link_to(image_tag('edit.gif'), 
+    {:controller => 'wiki', :action => 'new', :id => edit_name}, 
+    {:class => 'edit_link', :accesskey => 'E', :name => "New #{edit_name}", :title => "New #{edit_name}"})
+    %>
+  </div>
+</div>  
+
+<% else %>
+
+<div class="role_<%= edit_page.access_write %>" style="display:none">
+  <% if defined?(edit_labels) && edit_labels %>
+  <div class="edit_block">
+	  <%= edit_page_link(edit_page) %> 
+
+	  <%= add_page_link(edit_page) %> 
+  </div>
+  
+  <% else %>
+  <div class="edit_block">
+	  <%= link_to(image_tag('edit.gif'), 
+	    {:controller => 'wiki', :action => 'edit', :id => edit_page.link}, 
+	    {:class => 'edit_link', :name => "Edit #{edit_page.name}", :title => "Edit #{edit_page.name}"}) %>   
+  </div>
+  <% end %>
+</div>
+
+
+<% end %>

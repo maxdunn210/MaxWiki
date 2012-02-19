@@ -1,0 +1,49 @@
+<%-
+  @title = 'Teams'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Teams</h1>
+
+<%- if  @teams.nil? or @teams.empty? -%>
+
+<p>(No Team records)</p>
+
+<%- else -%>  
+
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('teams.name, league.name', :caption => 'Name') %>
+	    <%= sort_header_tag('league.name, teams.name', :caption => 'League') %>
+	    <%= sort_header_tag('level.name, league.name, teams.name', :caption => 'Level') %>
+	    <%= sort_header_tag('manager', :caption => 'Manager') %>
+  </tr>
+	  
+	<% for team in @teams -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(team.name.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'teams', :action => 'edit', :id => team.id 
+					else
+					  display_name
+					end
+					-%></td>
+					<td><%=h team.league.name rescue '' %></td>
+		      <td><%=h team.level.name rescue '' %></td>
+		      <td><%=h team.manager %></td>
+	  </tr>
+	<% end -%>
+</table>
+
+<%= pagination_template(@teams) %>
+
+<% end -%>
+  
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'teams', :action => 'new' %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

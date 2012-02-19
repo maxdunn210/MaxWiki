@@ -1,0 +1,15 @@
+<% list_height = 200 # This should be in config %>
+
+<div id="webdav_browser">
+  <%= render :partial => 'webdav_browser', 
+    :locals => { :connection => 'bar', :drag => true, :list_height => list_height, :show_checkout => false} %>
+</div>
+
+<%= form_remote_tag(:update => "webdav_browser",
+    :url => { :controller => "webdav", :action => "browser_connection_info", 
+      :drag => true, :list_height => list_height, :show_checkout => false, :connection => 'bar'},
+    :loading => "Element.show('indicator')",
+  	:complete => "Element.hide('indicator')"   ) %>
+   <%= render :partial => "webdav_connection_info", :locals => {:connection => 'bar'} %>
+   <%= submit_tag('Go') %>
+ <%= end_form	%>

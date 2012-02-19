@@ -1,0 +1,261 @@
+<h2><%=h @player.full_name %> (League Age: <%= @player.league_age %>)</h2>
+<table>
+<tr>
+<td style="vertical-align:top">
+  <b>Address:</b><br>
+	<%=h @household.address %><br>
+	<%=h @household.city %>, CA <%=h @household.zip %><br>
+	<br>
+	<b>Grade:</b> <%=h @player.grade %><br>
+	<b>School:</b> <%=h @player.school %><br>
+	<b>Teacher:</b> <%=h @player.teacher %>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+	<b>Birthday:</b> <%=h @player.birthday %><br>
+	<b>Years Experience:</b> <%=h @player.years_exp %><br> 
+	<b>Played last year:</b> <%=h @player.lastlevel %><br>
+	<b>Shirt size:</b> <%=h @player.shirtsize %><br>
+	<b>Pants size:</b> <%=h @player.pantsize %><br>
+	<b>Would like to play with (no guarantees):</b><br>
+	<%=h @player.note %>
+</td>
+</tr>
+</table>
+<br>
+  
+<h3>Parents/Legal Guardians</h3>
+<table>
+<tr>
+<td style="vertical-align:top">
+	<b><%=h @adult1.full_name %> </b><br>
+	<%=h @adult1.home_phone %> (home #)<br>
+	<%=h @adult1.work_phone %> (work #)<br>
+	<%=h @adult1.cell_phone %> (cell #)<br>
+	<%=h @adult1.email  %>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+	<b><%=h @adult2.full_name %> </b><br>
+	<%=h @adult2.home_phone %> (home #)<br>
+	<%=h @adult2.work_phone %> (work #)<br>
+	<%=h @adult2.cell_phone %> (cell #)<br>
+	<%=h @adult2.email  %>
+</td>
+</tr>
+</table>
+<br>
+
+<h3>Health Information</h3>
+<p>
+<b>Little League Baseball does not limit participation in its activities on the 
+basis of disability.</b> 
+<font size="1">
+	Participation in Little League Baseball requires the ability to run, throw,
+	swing a bat, and catch a ball.  Additionally, participation requires the capacity 
+	to understand the rules of the game.  Does your child have any current condition that limits his/her
+	ability to participate in this activity?  
+</font>
+<b>You answered:</b> <%=h @player.limitation %>
+</p>
+
+<table>
+<tr>
+<td style="vertical-align:top">
+  <b>Health Plan:</b> <%=h @doctor.healthplan %>
+	<br><b>Policy Number:</b> <%=h @doctor.policy_num %><br>
+  <b>Physician: </b>
+	<%=h @doctor.physician_name %> (<%=h @doctor.physician_tel %>)<br>
+
+	<b>Address:</b> 
+	<%=h @doctor.physician_addr  %><br>
+  
+	<b>Allergies:</b> 
+	<%=h @player.allergies %>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+	<b>Emergency Contact </b>(In case the parents/guardians cannot be reached)<br>
+	<%=h @emer_contact.full_name %> (<%=h @emer_contact.relationship  %>)<br>
+	<%=h @emer_contact.home_phone %> (home #)<br>
+	<%=h @emer_contact.work_phone %> (work #)<br>
+	<%=h @emer_contact.cell_phone %> (cell #)
+</td>
+</tr>
+</table>
+<br>
+
+<h3>Documentation and Signature</h3>
+<p>
+<font size="1">
+	I the Parent/Guardian of the above named player, hereby give my approval for 
+	the player to participate in all Little League activities, including transportation to and from 
+	activities.
+</font>
+</p>
+
+<p>
+<font size="1">
+	I know that participation in baseball may result in serious injury and 
+	protective equipment does not prevent all injuries to players. I do hereby waive, release, 
+	absolve, indemnify, and agree to hold harmless, the local league, Little League Baseball, Inc, 
+	the organizers, sponsors, participants, and persons transporting my/our child to and from 
+	activities for any claim arising out of any injury to my/our child, whether the result of 
+	negligence of for any other cause, except to the extent and in the amount covered by 
+	accident of liability insurance.
+</font>
+</p>
+
+<p>	
+<font size="1">
+  I will furnish a certified birth certificate, or other acceptable "proof of age" document, 
+	to the local league officials.
+</font>
+</p>
+
+<p>
+<font size="1">
+	I certify that my/our child resides in the above listed address.
+</font>
+</p>
+
+<p>
+<font size="1">
+	Little League rules are strict on playing in the local league where the player lives. 
+	Little League insurance coverage is valid only for players residing in the local league 
+	boundaries and/or players granted valid waivers.
+</font>
+</p>
+<br>
+
+<table>
+	<tr>
+		<td>Parent/Guardian Signature</td><td>____________________________________</td>
+		<td>Date</td>
+		<td>__________________</td>
+	</tr>
+</table>
+<br>
+
+<% if @show_admin_info -%>
+	<h3>Admin Information</h3>
+	<p>
+	<table>
+	   <tr>
+	      <td><b>Info checked?</b></td>
+	      <td><%=h ApplicationHelper::to_yesno(@player.info_checked)  %></td>
+          <td>&nbsp;&nbsp;</td>
+
+          <td><b>Address checked?</b></td>
+  		  <td><%=h ApplicationHelper::to_yesno(@player.address_checked) %></td>
+	   </tr>
+
+	   <tr>
+	      <td><b>Age checked?</b></td>
+	      <td><%=h ApplicationHelper::to_yesno(@player.age_checked)  %></td>
+          <td>&nbsp;&nbsp;</td>
+
+	      <td><b>Waiver required?</b></td>
+	      <td><%=h ApplicationHelper::to_yesno(@player.waiver_required) %></td>
+	   </tr>
+	
+       <tr>
+  	      <td><b>Form printed?</b></td>
+  		  <td><%=h ApplicationHelper::to_yesno(@player.form_printed) %></td>
+          <td>&nbsp;&nbsp;</td>
+
+          <td><b>Signed form received?</b></td>
+  		  <td><%=h ApplicationHelper::to_yesno(@player.signed_form_received) %></td>
+  	   </tr>	
+
+       <tr>
+          <td><b>Tryout required?</b></td>
+  		  <td><%=h ApplicationHelper::to_yesno(@player.tryout_required) %></td>
+          <td>&nbsp;&nbsp;</td>
+
+          <td><b>Tryout date:</b></td>
+          <td><%=h @player.tryout_date %></td>
+  	   </tr>	
+	   
+	   <tr>
+		  <td><b>Team Name:</b></td> 
+          <td><%=h @team.name rescue '' %></td>
+          <td>&nbsp;&nbsp;</td>
+
+		  <td><b>Level:</b></td> 
+          <td><%=h @team.level.name rescue '' %></td>   
+	   </tr>
+       
+       <table>	  
+	      <tr>
+	         <td><b>Remarks:</b></td> 
+		     <td><%=h @player.remarks %></td>
+          </tr>
+       </table>
+	   
+       <h3>Fees and Deposits</h3>
+
+	   <table>
+	   	  <tr>
+             <td>&nbsp;</td>
+	         <td><b>Amount</b></td>
+             <td>&nbsp;</td>
+	         <td><b>Paid On</b></td>
+             <td>&nbsp;</td>
+		     <td><b>Paid By</b></td>
+  	      </tr>	
+	   	  
+		  <tr>
+	         <td><b>Registration Fee Paid:</b></td>
+	         <td><%=h sprintf("$%-10.2f",@player.fee_paid.to_f) %></td>
+             <td>&nbsp;</td>
+
+	         <td><%=h @player.fee_paid_on %></td>
+             <td>&nbsp;</td>
+          
+  		     <td><%=h @player.fee_paid_by %></td>
+  	      </tr>	
+       
+	   	  <tr>
+	         <td><b>Volunteer Fee:</b></td>
+	         <td><%=h sprintf("$%-10.2f",@household.volunteer_feepaid.to_f) %></td>
+             <td>&nbsp;</td>
+
+	         <td><%=h @household.volunteer_feepaid_on %></td>
+             <td>&nbsp;</td>
+          
+  		     <td><%=h @household.volunteer_feepaid_by %></td>
+  	      </tr>	
+	   
+	   	  <tr>
+	         <td><b>Deposit:</b></td>
+	         <td><%=h sprintf("$%-10.2f",@household.snackshack_deposit.to_f) %></td>
+             <td>&nbsp;</td>
+
+	         <td><%=h @household.snackshack_depositpaid_on %></td>
+             <td>&nbsp;</td>
+          
+  		     <td><%=h @household.snackshack_depositpaid_by %></td>
+  	      </tr>	
+	   
+	   	  <tr>
+	         <td><b>Refund:</b></td>
+	         <td><%=h sprintf("$%-10.2f",@household.snackshack_refund.to_f) %></td>
+             <td>&nbsp;</td>
+
+	         <td><%=h @household.snackshack_refunded_on %></td>
+             <td>&nbsp;</td>
+          
+  		     <td><%=h @household.snackshack_refunded_by %></td>
+  	      </tr>	
+	   </table>
+	
+	</table>
+	</p>
+<% end -%>

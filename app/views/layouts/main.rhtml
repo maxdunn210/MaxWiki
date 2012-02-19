@@ -1,0 +1,89 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--- This web site is powered by MaxWiki - http://www.maxwiki.com --->
+
+  <title>
+    <%= config_site_name %> - <%= @title %>
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+  <meta name="robots" content="<%= @robots_metatag_value %>" />
+
+  <!-- Google Sitemap verification -->
+  <META name="google-site-verification" content="<%= @wiki.config[:google_sitemap_verification] %>" />
+  
+  <%= maxwiki_stylesheet_link_tags %>
+  <%= stylesheet_link_tag "/images/calendar/theme", :media => "all" %>
+  <%= favicon_link_tag %>
+  
+  <%= javascript_include_tag :defaults, "calendar", "calendar-en", "calendar-setup"%> 
+  <%= javascript_include_tag '../ckeditor/ckeditor' %>
+  
+  <%= role_script %>
+  
+  <style type="text/css">
+    <%= @style_additions %>
+    <%= @wiki ? @wiki.additional_style : '' %>
+  </style>
+  
+  <% if @wiki %>
+  	<%= auto_discovery_link_tag(:rss, :controller => 'wiki', :action => 'rss_with_headlines') %>
+  	<%= auto_discovery_link_tag(:rss, :controller => 'wiki', :action => 'rss_with_content') %>
+  <% end %>
+</head>
+
+<% if @body_tag -%>
+  <body <%= @body_tag %>>
+<% else -%>
+  <body>
+<% end -%>
+
+	<div id="top">&nbsp;</div>
+	<div id="border">
+		<div id="container">
+			<%= render(:partial => 'layouts/header') %>
+			
+			<% unless MY_CONFIG[:hide_menu] %>
+			  <%= render(:partial => 'layouts/menu') %>
+      <% end %>
+			
+
+      <% if MY_CONFIG[:buffer_header_short] && (@page.nil? || @page.name != "HomePage") %>
+        <div id="buffer_header_short"></div>
+      <% else %>
+        <div id="buffer_header">
+        <% if MY_CONFIG[:menu_in_header_buffer_on_home_page] && @page && @page.name == "HomePage" %>
+          <div id='menu_in_header'>
+			      <%= render_layout_section('menu') %> <%# MD Debug %>
+			    </div>
+			  <% end %>
+        </div>
+      <% end %>
+
+			<%= render :partial => 'layouts/columns' %>
+			<div id="buffer_footer"></div>
+			<%= render(:partial => 'layouts/footer') %>
+		</div> <!-- container -->
+	</div> <!-- border -->
+	<div id="bottom">&nbsp;</div>
+	
+  <% unless @wiki.config[:google_analytics].blank? %>
+	<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try{
+    var pageTracker = _gat._getTracker("<%= @wiki.config[:google_analytics] %>");
+    pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+  <% end %>
+</body>
+</html>

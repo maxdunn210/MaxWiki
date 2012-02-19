@@ -1,0 +1,126 @@
+/* Theme stylesheet 
+  Place any theme specific styles here.
+*/
+
+
+/****** Specific for this theme ******/
+
+#header .logo,
+#header .logo a,
+#header .logo a:hover, 
+#header .logo .selected,
+#header .logo img  {
+  display: block;
+  border: 0;
+  border-width: 0px;
+	margin: 0px;
+	padding: 0px;
+} 
+
+/****** General ******/
+
+body { 
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+h1, h2, h3, h4, h5 {
+}
+
+.bordered th {	
+  background: #c1c1c1;
+}
+	
+.bordered th a {	
+  font-weight: bold; 
+}
+
+/****** Container ******/
+
+#border {
+}
+
+/***** Header *****/
+
+#header {
+	height: 200px;
+	background: #cccccc url(../images/header.png) repeat-x center;
+}
+
+#header .left_block {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#header .middle_block {
+}
+
+#header .right_block {
+}
+
+#header h1 {
+  font-size: 2.4em;
+}
+
+#header h2 {
+  font-size: 1.3em;
+}
+
+#header h3 {
+  font-size: 0.9em;
+}
+
+/****** Menu ******/
+
+#menu {
+}
+
+#menu a, 
+#menu li a {
+}
+
+#menu a:hover, 
+#menu .selected {
+}
+
+/****** Buffer ******/
+
+
+/****** Left Column ******/
+
+.left_menu a:hover, 
+.left_menu a.selected,
+.left_menu a:visited.selected {
+}
+
+/****** Middle Column ******/
+
+#middle_column {
+}
+
+#middle_column_wide {
+}
+
+/****** Right Column ******/
+
+#right_column {
+}
+
+/****** Footer ******/
+
+#footer {
+}
+
+#bottom {
+
+}

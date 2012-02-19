@@ -1,0 +1,56 @@
+<% show_checkout = false unless defined?(show_checkout) 
+   suppress_head = false unless defined?(suppress_head) 
+%>
+
+<% if defined?(list_height) && (list_height != 0) && list_height != '0' %>
+  <div class="webdav_list" style="height:<%= list_height %>px">
+<% else %>
+  <div class="webdav_list">
+<% end %>
+
+<% unless suppress_head %>
+  <h1>Directory: <%= @webdav.current_path %></h1>
+<% end %>
+
+<% if @webdav.error? %>
+  <%= @webdav.error_msg %>
+<% elsif @webdav.list.empty? %>
+  This directory is empty.
+<% else %>
+    <table>
+      <tr>
+        <th>Name</th>
+        <% if @webdav.properties %>
+          <% for property in @webdav.properties %>
+          <th><%= property.titlecase %></th>
+          <% end %>
+        <% end %>
+   			<% if show_checkout %>
+        <th>Check-out</th>
+        <% end %>
+      </tr>
+      
+    <% for element in @webdav.list %>
+      <tr valign="center">
+    			<td>
+          <%= webdav_link(element, connection, drag, list_height, show_checkout) %>
+    			</td>
+    			<% if @webdav.properties %>
+            <% for property in @webdav.properties %>
+            <td><%= element.properties[property] %></td>
+            <% end %>
+          <% end %>
+    			<% if show_checkout %>
+      			<td align="center">
+      			<%= webdav_edit_link(element) %>
+      			</td>
+    			<% end %>
+      </tr>
+    <% end %>
+    </table>
+<% end %>
+</div>
+
+<%= drag_map_javascript(@drag_map) %>
+
+<%= no_cache %>

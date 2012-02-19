@@ -1,0 +1,15 @@
+<%-
+  @title = 'Mailers'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Edit Mailer</h1>
+
+<%= form_tag :controller => 'mailers', :action => 'update', :id => @mailer %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<%= end_form %>
+
+<%= form_tag :controller => 'mailers', :action => 'view', :id => @mailer  %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>

@@ -1,0 +1,11 @@
+<%
+  @title = 'Logged out'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h3><%= @title %></h3>
+
+<p>You are now logged out of the system...</p>
+
+<%= link_to ' Login again', :action => 'login' %>
+

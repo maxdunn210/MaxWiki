@@ -1,0 +1,51 @@
+<%-
+  @title = 'Mailer Groups'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Mailer Groups</h1>
+
+<%- if  @mailer_groups.nil? or @mailer_groups.empty? -%>
+
+<p>(No Mailer Group records)</p>
+
+<%- else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('name', :caption => 'Name') %>
+	    <%= sort_header_tag('description', :caption => 'Description') %>
+	    <%= sort_header_tag('user_filter', :caption => 'User filter') %>
+	    <%= sort_header_tag('auto_subscribe', :caption => 'Auto subscribe') %>
+  </tr>
+	  
+	<% for mailer_group in @mailer_groups -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(mailer_group.name.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'mailer_groups', :action => 'edit', :id => mailer_group.id 
+					else
+					  display_name
+					end
+					-%></td>
+		      <td><%=h mailer_group.description %></td>
+		      <td><%=h mailer_group.user_filter %></td>
+		      <td><%=h mailer_group.auto_subscribe %></td>
+	  </tr>
+	<% end -%>
+</table>
+</div>
+
+<%= pagination_template(@mailer_groups) %>
+
+<% end -%>
+  
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'mailer_groups', :action => 'new' %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

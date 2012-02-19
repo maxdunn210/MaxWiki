@@ -1,0 +1,45 @@
+<table>
+<tr>
+
+<td>
+<% unless logged_in? %>
+
+<table>
+<tr>
+<td>
+<%= form_tag({:controller => 'user', :action => 'login'}, {:method => 'get'}) %>
+  <%= submit_tag "Login" %>
+    &nbsp;
+<%= end_form %>
+</td>
+
+<td>
+<%= form_tag({:controller => 'user', :action => 'signup'}, {:method => 'get'}) %>
+  <%= submit_tag "Signup for a New Account" %>
+    &nbsp;
+<%= end_form %>
+</td>
+
+<td>
+<%= form_tag({:controller => 'user', :action => 'reset_password'}, {:method => 'get'}) %>
+  <%= submit_tag "Reset Password" %>
+    &nbsp;
+<%= end_form %>
+</td>
+</tr>
+
+</table>
+
+<% else %>
+
+<%= form_tag :action => 'index' %>
+  <%= submit_tag "Continue" %>
+    &nbsp;
+<%= end_form %>
+
+<% end %>
+
+</td>
+
+</tr>
+</table>

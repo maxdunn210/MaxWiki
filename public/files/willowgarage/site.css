@@ -1,0 +1,294 @@
+/* Site specific styles for willowgarage */
+/* Colors: 
+  Green in logo strip: rgb(123, 198, 35)
+  Green in Willow logo: rgb(205, 226, 161)
+  Gray background in middle column: rgb(187, 187, 187)
+  Gray in left column: rgb(42, 44, 41)
+  Orange text in menu: rgb(255, 115, 14)
+  Blue bar background in middle column H1: rgb(69, 108, 145)
+  Blue box background on home page: rgb(69, 108, 145)
+*/
+
+body, table, td { 
+  font-size: 10pt; 
+  font-family: Verdana, Kalimati, sans-serif; 
+  color: gray;
+  font-weight: regular;
+  background: black;
+}
+
+#border {
+  background: none;
+}
+
+#container {
+  background: rgb(42, 44, 41);
+}
+
+/********* Fonts ********/
+.left_menu a,
+.left_menu a:visited,
+.left_menu a:hover, 
+.left_menu .selected,
+.left_menu a:visited.selected,
+#menu,
+#middle_column h1, 
+#middle_column h2, 
+#middle_column h3,
+#middle_column h4,
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block {
+  font-family: Courier New, FreeMono, Verdana, sans-serif;
+}
+
+/******** Widths ********/
+#border, #top, #bottom { width: 925px; }
+#container, #header, #footer { width: 925px; }
+#left_column { width: 180px; }
+.middle_column_narrow { width: 540px; }
+.middle_column_wide { width: 635px; }
+.middle_column_full { width: 855px; }
+#right_column { width: 150px; }
+#right_column .box { width: 150px; }
+
+
+/*** Header main banner ***/
+#header {
+	height: 90px;
+	color: black;
+	background: url(logo_home.jpg) no-repeat bottom left black;
+}
+
+#header .left_block {
+  float: left;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+#header .right_block {
+  float: right;
+  text-align: right;
+  overflow: hidden;
+  margin-top: 10px
+  margin-right: 0px;
+  padding: 0px;
+}
+
+#header .edit_block { 
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}  
+
+#header a, 
+#header a:hover, 
+#header .selected {
+  color: rgb(125,125,125);
+  font-size: 9px;
+  font-weight: normal;  
+}  
+
+#buffer_header {
+  height: 265px;
+  background: url(top4.jpg);
+}
+
+#buffer_header_short {
+  height: 0px;
+  background: black;
+}
+
+#left_column {
+  color: white;
+  padding-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 5px;
+  border-right: solid 0px;		
+  background: rgb(42, 44, 41);
+}
+
+#left_column p,
+#left_column #breadcrumb,
+#left_column .edit_block,
+#left_column .plugins,
+#left_column .markup_help,
+#left_column h1, 
+#left_column h2,
+#left_column h3,
+#left_column h4,
+#left_column h5 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#menu_in_header {
+  width: 220px;
+  float: right;
+  padding-top: 25px;
+}
+
+/* Using 'inherit' for background color solves the problem of having the 
+menus both in the header on a gray background and in the left column on a
+different gray. But since 'inherit' isn't supported on IE, set it manually here */
+#menu_in_header .left_menu a,
+#menu_in_header .left_menu a:visited,
+#menu_in_header .left_menu a:hover, 
+#menu_in_header .left_menu .selected,
+#menu_in_header .left_menu a:visited.selected {
+  background-color: rgb(31,33,30);
+}
+
+/*** Left Menu ***/
+.left_menu {
+  border-bottom: 0px;
+  margin: 0px;
+}
+
+.left_menu li {
+  display: block;
+  padding-bottom: 11px;
+}
+
+.left_menu li.submenu {
+  text-transform: none;
+  border-top: 0;
+}
+
+.left_menu ul.submenu {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  margin-left: 20px;
+}
+
+.left_menu a {
+  padding-top: 0px;
+  padding=bottom: 0px;
+  padding-right: 5px;
+  padding-left: 0px;
+ }
+ 
+.left_menu a,
+.left_menu a:visited,
+.left_menu a:hover, 
+.left_menu .selected,
+.left_menu a:visited.selected {
+  font-weight: normal;
+  font-size: 12pt;
+  line-height: 12pt;
+  text-align: left;
+  text-decoration: none;
+  border-left: 0;
+  background-color: rgb(42, 44, 41);
+  color: white;
+}
+
+.left_menu a:hover, 
+.left_menu .selected,
+.left_menu a:visited.selected {
+	color: rgb(255, 115, 14);
+}
+
+/*** Middle Column ***/
+#middle_column {
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+	padding-left: 45px;
+	padding-right: 40px;  
+  background: rgb(187, 187, 187);
+	border-left: solid 0px;	  
+}
+
+#middle_column h1, 
+#middle_column h2, 
+#middle_column h3,
+#middle_column h4 {
+  clear: both;
+}
+
+#middle_column h1 {
+  color: white;
+  font-size: 20px;
+  line-height: 34px;
+  border-bottom: 0;
+  margin-left: -45px;
+  margin-right: -40px;
+  margin-top: -15px;
+  padding-left: 45px;
+  background: rgb(69, 108, 145);
+}
+
+#middle_column h3 {
+  border: none;
+  text-decoration: underline;
+}
+
+#middle_column h4 {
+  border: none;
+  text-decoration: none;
+}
+
+.byline { 
+  clear: both;
+  padding-top: 1em; 
+  font-size: 80%; 
+  font-style: italic; 
+  margin-bottom: 1em; 
+  color: #404040;
+ }
+
+#buffer_footer {
+  height: 0px;
+	background: none;
+}
+
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+  background-color: black;
+  padding-top: 3px;
+}
+
+#footer {
+  border-top: 0;
+  border-bottom: 0;
+  font-size: 11px;
+  color: rgb(150,150,150);
+}
+
+#footer a {
+  color: rgb(100,100,100);
+  text-decoration: none;
+  font-weight: normal; 
+}
+
+#footer a:hover,
+#footer a:active {
+  text-decoration: underline;
+}
+
+#footer .edit_block { 
+  float: left;
+  margin-top: 6px;
+  margin-left: 0px;
+}
+
+#footer .left_block {
+  float: left;
+  margin-left: 0px;
+}
+
+#footer .right_block {
+  float: right;
+  text-align: right;
+  margin-right: 0px;
+  padding: 0px;
+}

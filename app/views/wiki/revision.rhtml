@@ -1,0 +1,40 @@
+<% 
+  @title = "#{@page.plain_name} (Rev ##{@revision_number})" 
+  @left_column_partial = 'revision_menu'
+%>
+
+<div id="revision" style="display: none">
+  <%= @revision.display_content %>
+</div>
+
+<div id="changes" style="display: block">
+  <p style="background: #eee; padding: 3px; border: 1px solid silver">
+    <small>
+      Showing changes from revision #<%= @revision_number - 1 %> to #<%= @revision_number %>:
+      <ins class="diffins">Added</ins> | <del class="diffdel">Removed</del>
+    </small>
+  </p>
+
+  <%= @revision.display_diff %>
+</div>
+
+<div class="byline">
+  <%= "Revision #@revision_number from #{format_date(@revision.revised_at)} by" %>
+  <%= link_to_page @revision.author %>
+</div>
+
+<script language="Javascript">
+  function toggleChanges() {
+    if (document.getElementById("changes").style.display == "none") {
+      document.getElementById("changes").style.display  = "block";
+      document.getElementById("revision").style.display = "none";
+      document.getElementById("show_changes").style.display  = "none";
+      document.getElementById("hide_changes").style.display = "inline";
+    } else {
+      document.getElementById("changes").style.display  = "none";
+      document.getElementById("revision").style.display = "block";
+      document.getElementById("show_changes").style.display  = "inline";
+      document.getElementById("hide_changes").style.display = "none";
+    }
+  }
+</script>

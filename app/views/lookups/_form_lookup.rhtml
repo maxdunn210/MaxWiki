@@ -1,0 +1,41 @@
+<%= error_messages_for 'lookup' %>
+
+<!--[form:lookup]-->
+<table  class="table_spacing">
+  <tr>
+    <td>
+			<label for="lookup_kind">Type</label><br/>
+			<%= select(:lookup, :kind, Lookup::list_kinds) %>
+		</td>
+		<td>
+			<label for="lookup_display_order">Order</label><br/>
+			<%= text_field 'lookup', 'display_order', :size => 3  %>
+		</td>
+	</tr>
+</table>
+
+<table  class="table_spacing">
+  <tr>
+    <td>
+			<label for="lookup_name">Name</label><br/>
+			<%= text_field 'lookup', 'name'  %>
+		</td>
+		<td>
+			<label for="lookup_short_name">Short name</label><br/>
+			<%= text_field 'lookup', 'short_name', :size => 5  %>
+		</td>
+	</tr>
+</table>
+
+<table  class="table_spacing">
+  <tr>
+    <td>
+			<label for="lookup_page_name">Page Name</label><br/>
+			<%= text_field 'lookup', 'page_name'  %>
+		</td>
+	</tr>
+</table>
+
+
+<!--[eoform:lookup]-->
+

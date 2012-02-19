@@ -1,0 +1,17 @@
+<h1>
+FCKeditor - JavaScript - Sample 2
+</h1>
+<div>
+This page is in RHTML, but it does not use any MaxWiki variables. It *does* use the maxwiki fck config file.
+</div>
+<hr />
+
+<script type="text/javascript">
+var oFCKeditor = new FCKeditor( 'content' ) ;
+oFCKeditor.Config["CustomConfigurationsPath"] = "/javascripts/myfckconfigs.js"  ;  
+oFCKeditor.ToolbarSet = 'WikiBasic';  
+oFCKeditor.Height	= 300 ;
+oFCKeditor.Value	= 'This is some <strong>sample text<\/strong>. You are using <a href="http://www.fckeditor.net/">FCKeditor<\/a>.' ;
+oFCKeditor.Create() ;
+</script>
+<br />

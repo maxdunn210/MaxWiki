@@ -1,0 +1,53 @@
+<%
+  @title = 'Export Users'
+%>
+
+<h1>User Report</h1>
+
+<% if @users.empty? -%>  
+  No Users
+<% else -%>
+The table below is designed to be copied and pasted into a spreadsheet.
+  <table>
+    <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Email</th>
+	    <th>Company</th>
+	    <th>Home</th>
+	    <th>Work</th>
+	    <th>Cell</th>
+	    <th>Verified</th>
+	    <th>Paid</th>
+	    <th>Paid By</th>
+	    <th>Waiting List Num</th>
+	    <th>Role</th>
+	    <th>Created on</th>
+	    <th>Updated on</th>
+    </tr>
+
+    <% for user in @users %>
+      <tr>
+        <td><%=h user.firstname %></td>
+        <td><%=h user.lastname %></td>
+        <td><%=h user.email %></td>
+        <td><%=h user.company %></td>
+        <td><%=h user.home_phone %></td>
+        <td><%=h user.work_phone %></td>
+        <td><%=h user.cell_phone %></td>
+        <td><%=h user.verified? %></td>
+        <td><%=h user.paid? %></td>
+        <td><%=h user.paid_by %></td>
+        <td><%=h user.wait_list_pos %></td>
+        <td><%=h user.role %></td>
+        <td><%=h user.created_at.strftime('%Y-%m-%d %H:%M') rescue '' %></td>
+        <td><%=h user.updated_at.strftime('%Y-%m-%d %H:%M') rescue '' %></td>
+      </tr>
+    <% end %>
+
+  </table>
+  
+   <p>&nbsp;</p>
+
+
+<% end -%>

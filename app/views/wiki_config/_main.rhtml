@@ -1,0 +1,22 @@
+<table>
+  <% for item in WikiConfig.config_items %>
+    <tr>
+      <td>
+        <label for="<%=item[:id]%>"><%=item[:label]%></label>
+      </td>
+      <td>
+        <% if item[:choices].nil? %>
+          <input id="<%=item[:id]%>" name="config[<%=item[:var]%>]" type="text" value="<%=@wiki.config[item[:var]]%>"
+          <% if item[:size] %>size="<%=item[:size]%>"<% end %>
+           />
+        <% else %>   
+          <select id="<%=item[:id]%>" name="config[<%=item[:var]%>]">
+          <% for value in item[:choices] %>
+            <option value="<%=value%>" <%= 'selected="selected"' if value == @wiki.config[item[:var]] %>><%=value.capitalize%></option>
+          <% end %>
+          </select>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>

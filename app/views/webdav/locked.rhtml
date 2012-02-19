@@ -1,0 +1,15 @@
+<%
+  @title = "Locked"
+%>
+
+<h1>Locked</h1>
+
+<% if @webdav.error? && @webdav.error_msg != 'Locked' %>
+<%= @webdav.extended_error_msg%>
+<% else %>
+
+<p><%= link_to(@file_name, @file_url) %> is locked by <%= @webdav.item.locked_by %></p>
+
+<% end %>
+  
+<%= button_to('Back', webdav_last_list_url) %>  

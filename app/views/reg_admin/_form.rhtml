@@ -1,0 +1,105 @@
+<!-- Show the errors, if any -->
+<%- if @user %> <%= error_messages_for 'user' %> <% end -%>
+
+<table>
+  <tr>
+    <td><label for="user_firstname">First</label></td>
+    <td><%= text_field 'user', 'firstname' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_lastname">Last</label></td>
+    <td><%= text_field 'user', 'lastname' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_company">Company</label></td>
+    <td><%= text_field 'user', 'company' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_login">Login</label></td>
+    <td><%= text_field 'user', 'login' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_email">Email</label></td>
+    <td><%= text_field 'user', 'email' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_home_phone">Home #</label></td>
+    <td><%= text_field 'user', 'home_phone' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_work_phone">Work #</label></td>
+    <td><%= text_field 'user', 'work_phone' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_cell_phone">Cell #</label></td>
+    <td><%= text_field 'user', 'cell_phone' %></td>
+    <td>&nbsp;</td>
+  </tr>
+	<tr>
+		<td><label for="user_relationship">Relationship</label></td>
+		<td><%= text_field 'user', 'relationship' %></td>
+    <td>&nbsp;</td>
+	</tr>
+  	<tr>
+		<td><label for="user_household_id">Household ID</label></td>
+		<td><%= text_field 'user', 'household_id', :size => 5 %></td>
+    <td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><label for="user_adultnum">Adult Num</label></td>
+		<td><%= text_field 'user', 'adultnum', :size => 5 %></td>
+    <td>&nbsp;</td>
+	</tr>
+  <tr>
+    <td><label for="user_verified">Verified?</label></td>
+    <td><%= check_box 'user', 'verified' %></td>
+    <td>&nbsp;</td>
+  </tr>
+	<tr>
+		<td><label for="user_wait_list_pos">Wait List Position</label></td>
+		<td><%= text_field 'user', 'wait_list_pos', :size => 3 %></td>
+    <td>&nbsp;</td>
+	</tr>
+  <tr>
+    <td><label for="user_paid">Paid?</label></td>
+    <td><%= check_box 'user', 'paid' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_paid_by">Paid By</label></td>
+    <td><%= text_field 'user', 'paid_by' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_role">Role</label></td>
+		<td><%= select("user", "role", [''] + WikiConfig.roles) %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_deleted">Deleted?</label></td>
+    <td><%= check_box 'user', 'deleted' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_delete_after">Delete After</label></td>
+    <td><%= text_field 'user', 'delete_after' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_auth_provider">Authorization Provider</label></td>
+    <td><%= text_field 'user', 'auth_provider' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="user_auth_extra">Authorization Extra</label></td>
+    <td><%= text_field 'user', 'auth_extra' %></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>

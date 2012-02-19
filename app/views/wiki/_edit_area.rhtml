@@ -1,0 +1,4 @@
+<%# The textarea content needs to be all on one line, otherwise when editing or creating a new page, 
+extra spaces or lines will be inserted at the top. %>
+
+<textarea name="content" id="content" class="content"><%= h(flash[:content] || @page_content) %></textarea>

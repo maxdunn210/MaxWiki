@@ -1,0 +1,284 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(10)   not null
+#  email               :string(60)    default(), not null
+#  firstname           :string(50)    
+#  lastname            :string(50)    
+#  household_id        :integer(11)   default(0), not null
+#  home_phone          :string(20)    
+#  work_phone          :string(20)    
+#  cell_phone          :string(20)    
+#  relationship        :string(50)    
+#  adultnum            :integer(11)   default(0), not null
+#  login               :string(80)    default(), not null
+#  salted_password     :string(40)    default(), not null
+#  salt                :string(40)    default(), not null
+#  verified            :integer(11)   default(0)
+#  role                :string(40)    
+#  security_token      :string(40)    
+#  token_expiry        :datetime      
+#  deleted             :integer(11)   default(0)
+#  delete_after        :datetime      
+#
+
+adult_bob: 
+  id: 1003
+  wiki_id: 1 
+  work_phone: ''
+  lastname: Test
+  firstname: Bob
+  adultnum: 3
+  relationship: ''
+  cell_phone: ''
+  home_phone: ''
+  deleted: 0
+  household_id: 1001
+  email: bob@test.com
+  login: bob
+  salted_password: 8580026a70e3c5dbde4cedaf2656643ebe2b225a # atest
+  salt: 7afb5de9e90e86be256d2c94c319652c1e6fecc0
+  verified: 1
+  role: User
+
+adult_existing_bob: 
+  id: 1051
+  wiki_id: 1 
+  work_phone: ''
+  lastname: Test
+  firstname: Existin Bob
+  adultnum: 3
+  relationship: ''
+  cell_phone: ''
+  home_phone: ''
+  deleted: 0
+  household_id: 1001
+  email: existingbob@test.com
+  login: existingbob
+  salted_password: ef94c16f6c124a4e84cc215c164767bfa25f6e92 # atest
+  salt: fc76daa7bc4e4b7833375cf9deca38beee4c5581
+  verified: 1    
+
+adult_longbob: 
+  id: 1052
+  wiki_id: 1 
+  work_phone: ''
+  lastname: Test
+  firstname: Long Bob
+  adultnum: 3
+  relationship: ''
+  cell_phone: ''
+  home_phone: ''
+  deleted: 0
+  household_id: 1001
+  email: longbob@test.com
+  login: longbob
+  salted_password: 65c50ba3cd2d6ed1bc9587f510a18a5829883204 # alongtest
+  salt: c068e3671780f16898c0a8295ae8d82cc59713e2
+  verified: 1
+  
+adult_delete_bob1: 
+  id: 1053
+  wiki_id: 1 
+  work_phone: ''
+  lastname: Test
+  firstname: Delete Bob 1
+  adultnum: 3
+  relationship: ''
+  cell_phone: ''
+  home_phone: ''
+  deleted: 0
+  household_id: 1001
+  email: deletebob1@test.com
+  login: deletebob1
+  salted_password: 3caa4025fec5113f563423c07028e272e641dfe5 # alongtest
+  salt: c068e3671780f16898c0a8295ae8d82cc59713e2
+  verified: 1
+  role: User
+  
+adult_delete_bob2: 
+  id: 1054
+  wiki_id: 1 
+  work_phone: ''
+  lastname: Test
+  firstname: Delete Bob 2
+  adultnum: 3
+  relationship: ''
+  cell_phone: ''
+  home_phone: ''
+  deleted: 0
+  household_id: 1001
+  email: deletebob2@test.com
+  login: deletebob2
+  salted_password: 3caa4025fec5113f563423c07028e272e641dfe5 # alongtest
+  salt: c068e3671780f16898c0a8295ae8d82cc59713e2
+  verified: 1
+  role: User
+  
+adult_max_test: 
+  id: 1000
+  wiki_id: 1 
+  work_phone: 408-555-3456
+  lastname: Dunn
+  firstname: Max
+  adultnum: 1
+  relationship: ''
+  cell_phone: ''
+  home_phone: 408-555-1212
+  household_id: 1006
+  email: max@test.com
+  login: max@test.com
+  role: User
+  delete_after: 
+  security_token: 
+  token_expiry: 
+  deleted: 0
+  verified: 1
+  salt: 8f5ea5a6b5cce60230f7bb1002988c3b6178cd6e
+  salted_password: 64f8161f98980a879cca9a21756272c8cec3eb43 # password
+
+adult_signup_test: 
+  id: 1105
+  wiki_id: 1 
+  work_phone: 408-555-3456
+  lastname: Dunn
+  firstname: Admin
+  adultnum: 1
+  relationship: ''
+  cell_phone: ''
+  home_phone: 408-555-1212
+  household_id: 1006
+  email: signup@test.com
+
+adult_max_admin: 
+  id: 1018
+  wiki_id: 1 
+  work_phone: 408-555-3456
+  lastname: Dunn
+  firstname: Admin
+  adultnum: 1
+  relationship: ''
+  cell_phone: ''
+  home_phone: 408-555-1212
+  household_id: 1005
+  email: admin@test.com
+  login: admin@test.com
+  role: Admin
+  delete_after: 
+  security_token: f99ad49ad4c90392c404c7bb647fdbd13542a0ce
+  token_expiry: 2006-03-09 16:50:17 -08:00
+  deleted: 0
+  verified: 1
+  salt: 8f5ea5a6b5cce60230f7bb1002988c3b6178cd6e
+  salted_password: 64f8161f98980a879cca9a21756272c8cec3eb43 # password
+
+adult_max_editor: 
+  id: 1008
+  wiki_id: 1 
+  work_phone: 408-922-1234
+  lastname: Dunn Editor
+  firstname: Max
+  adultnum: 1
+  relationship: ''
+  cell_phone: 408-569-9185
+  home_phone: 408-250-2037
+  household_id: 1003
+  email: editor@test.com
+  login: editor@test.com
+  role: Editor
+  delete_after: 
+  security_token: 
+  token_expiry: 
+  deleted: 0
+  verified: 1
+  salt: 8f5ea5a6b5cce60230f7bb1002988c3b6178cd6e
+  salted_password: 64f8161f98980a879cca9a21756272c8cec3eb43 # password
+
+adult_different_wiki: 
+  work_phone: None
+  wiki_id: 2
+  salt: ''
+  delete_after: 
+  security_token: 
+  role: 
+  lastname: Dunn
+  id: 1009
+  firstname: Suzanne
+  adultnum: 2
+  relationship: 
+  cell_phone: 408-621-3981
+  token_expiry: 
+  home_phone: "(Same)"
+  deleted: 0
+  verified: 0
+  salted_password: ''
+  login: ''
+  household_id: 1003
+  email: suzanne@test.com
+  
+adult_nil_email: 
+  work_phone: 408-pat-work
+  wiki_id: 1 
+  salt: ''
+  delete_after: 
+  security_token: 
+  role: 
+  lastname: Rondas
+  id: 1010
+  firstname: Patty
+  adultnum: 3
+  relationship: Friend
+  cell_phone: 408-pat-cell
+  token_expiry: 
+  home_phone: 408-pat-home
+  deleted: 0
+  verified: 0
+  salted_password: ''
+  login: 'Nil_Email'
+  household_id: 1006
+  email:
+
+adult_blank_email: 
+  wiki_id: 1 
+  work_phone: ''
+  salt: 09a621b09f4e7e68ad46ccd524d4ca5578365fe2
+  delete_after: 
+  security_token: a61071fa39c1b3730fa3ffa9811886c10d83ab9c
+  role: Editor
+  lastname: Dunn
+  id: 1002
+  firstname: Suzanne
+  adultnum: 2
+  relationship: 
+  cell_phone: ''
+  token_expiry: 2006-01-26 20:18:55 -08:00
+  home_phone: ''
+  deleted: 0
+  verified: 1
+  salted_password: d90a0b002c2bc005e94b11a87dd961f47d0ada65
+  login: Blank Email
+  household_id: 1006
+  email: ""
+
+adult_max_wiki_2: 
+  id: 1200
+  wiki_id: 2 
+  work_phone: 408-555-3456
+  lastname: Dunn_2
+  firstname: Max_2
+  adultnum: 1
+  relationship: ''
+  cell_phone: ''
+  home_phone: 408-555-1212
+  household_id: 1006
+  email: max@test.com
+  login: max@test.com
+  role: User
+  delete_after: 
+  security_token: 
+  token_expiry: 
+  deleted: 0
+  verified: 1
+  salt: 8f5ea5a6b5cce60230f7bb1002988c3b6178cd6e
+  salted_password: 64f8161f98980a879cca9a21756272c8cec3eb43 # password
+
+  

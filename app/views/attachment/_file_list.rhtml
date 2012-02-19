@@ -1,0 +1,51 @@
+<% if @error_msg -%>
+  <div class="msg_error"><%= @error_msg %></div>
+<% end -%>
+
+<% if @attachments %>
+ <small>
+    (You can drag the attachment links or images into the edit area.)
+    <table border=0 cellpadding=4 cellspacing=4 >
+      <tr><td></td><td align=left><b>Filename</b></td>
+           <td align=left><b>Size</b></td>
+           <td align=left><b>Date</b></td>
+           <td align=left><b>Action</b></td>
+      </tr>
+    <% for attachment in @attachments %>   
+      <tr>
+           <td align= right>
+           <% target = @attachment_directory+'/'+attachment[:filename] %>
+           <% if attachment[:filename] =~ /.*\.(jpg|png|JPG|jpeg|gif|GIF)/ %>
+             <%= link_to(image_tag( "#{@attachment_directory}/#{attachment[:filename]}",
+                                    :class => 'image'), target, :target => '_blank') %>                         
+             
+           <% else %>
+             <%= link_to(image_tag( icon(attachment[:filename], false)), 
+                          target, {:style => 'color:red', :target => '_blank'})%>
+           <% end %>
+           </td>
+           <td>
+      
+           <%= link_to(truncate(attachment[:filename], 30), target, :target => '_blank') %>  
+           </td>              
+           <td align=right><%=attachment[:filesize]%></td>
+           <td><%=attachment[:filedate]%></td>
+           <td><%= link_to_remote( 'delete', :update => 'file_list',
+                        :confirm => 
+                        "Are you sure? If you delete a file it will not be visible on the page!",
+                        :loading => "Element.show('upload_indicator')",
+                        :complete => "Element.hide('upload_indicator')",
+                        :url => { :controller => 'attachment',
+                                  :action => 'delete',
+                                  :page_name => @page_name,
+                                  :filename => attachment[:filename] } ) %>   
+           </td></tr>           
+    <% end %> 
+    </table>
+  </small>
+<% end %>
+
+
+
+
+

@@ -1,0 +1,22 @@
+<%-
+  @title = 'Emails Sent'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Emails Sent</h1>
+
+<% if @emails.nil? or @emails.empty? %>
+
+<p>No emails sent</p>
+
+<% else %>
+
+<p><%= @emails.size %> emails sent</p>
+
+<p>
+<% for email in @emails %>
+  <%= "#{email.to} #{email.status}" %><br/>
+<% end %>
+</p>
+
+<% end %>

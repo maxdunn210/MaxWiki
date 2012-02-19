@@ -1,0 +1,246 @@
+/* Theme stylesheet 
+  Place any theme specific styles here.
+*/
+
+/****** General ******/
+
+body { 
+	background: #4C4C4C;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: rgb(10, 60, 100);
+  text-decoration: underline;
+  font-weight: normal; 
+}
+
+A:link { 
+  color: #E97300;
+}
+
+A:visited { 
+  color: #B55B04;
+}
+
+A:active, 
+A:hover { 
+  color: #A61903;
+}
+
+h1, h2, h3, h4, h5 {
+  color: rgb(50, 50, 50);
+}
+
+.bordered th {	
+  background: #c1c1c1;
+}
+	
+.bordered th a {	
+  font-weight: bold; 
+}
+
+/****** Container ******/
+
+#border {
+	width: 760px; 
+	background: url(../images/border.gif) top center repeat-y;
+}
+
+#container {
+	width: 750px;
+	background-color: rgb(255,255,255);
+}
+
+/***** Header *****/
+
+#header {
+  width: 750px;
+	height: 76px;
+	background: #0A124F;  
+}
+
+#header .left_block {
+  margin-top: 10px;
+}
+
+/****** Menu ******/
+
+#menu {
+	height: 23px;
+	border-top: solid 0px rgb(69,136,176);		
+	border-bottom: solid 0px rgb(69,136,176);			
+	line-height: 23px;
+  background: #FFCD57;
+}
+
+#menu a, 
+#menu li a {
+  color: #0A124F;
+	background-color: inherit;
+}
+
+#menu li a {
+	padding: 0px 10px 0px 10px;
+	border-right: solid 2px #0A124F;
+}
+
+#menu a:hover, 
+#menu .selected {
+	color: #560A2B;
+}
+
+/****** Buffer ******/
+
+#buffer_header,
+#buffer_header_short {
+  clear: both;
+	width: 750px;
+	height: 240px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: left;
+	background: url('../images/buffer_header.jpg') no-repeat;
+}
+
+#buffer_header_short {
+	height: 102px;
+	background: url('../images/buffer_header_short.jpg') no-repeat;
+}
+
+/****** Left Column ******/
+
+#left_column {
+	width: 180px;
+}
+
+.left_menu {	
+  border-bottom: solid 0px;
+}	
+
+
+.left_menu li a:link, 
+.left_menu li a:visited, 
+.left_menu li a:hover,
+.left_menu li.not_selectable {
+	text-decoration: none;
+  text-align: left;	
+ 	font-weight: normal;
+	color: #000000;
+	display: block;
+  border-left: solid 0px;	
+	background: url('../images/left_menu.gif') no-repeat;
+	padding-top: 3px;
+	padding-bottom: 0px;
+  height: 17px;
+	width: 170px;
+	padding-left: 15px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 155px;
+}
+
+.left_menu li a:hover {
+	background: url('../images/left_menu_over.gif') no-repeat;
+}
+
+.left_menu li a.selected {
+	background: url('../images/left_menu_selected.gif') no-repeat;
+	font-weight: bold;
+}
+
+.left_menu li.title, 
+.submenu a:link, 
+.left_menu .submenu a:visited, 
+.left_menu .submenu a:hover {
+  text-align: left;	
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+	display: block;
+	height: 17px;
+	width: 170px;
+	padding-left: 15px;
+	padding-top: 3px;
+	padding-bottom: 0px;
+	background: url('../images/left_menu_header.gif') no-repeat;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 155px;
+
+}
+
+.left_menu .submenu a:hover {
+	background: url('../images/left_menu_header_over.gif') no-repeat;
+}
+
+.left_menu .submenu a.selected  {
+	background: url('../images/left_menu_header_selected.gif') no-repeat;
+	font-weight: bold;
+}
+
+.left_menu li.group a {
+	display: block;
+	text-align: left;	
+	padding: 3px 7px 2px 6px;
+	color: rgb(125,125,125);
+	text-decoration: none;
+	font-weight: bold;
+	height: 13px;
+	font-size: 11px;
+}	
+	
+
+.left_menu li.group a:hover {
+	background: url('../images/left_menu_header_over.gif') no-repeat;
+}
+
+.left_menu li.group .selected  {
+	background-image: url('../images/left_menu_header_current.gif');
+	font-weight: bold;
+}
+
+/****** Middle Column ******/
+
+.middle_column_narrow {
+  width: 330px; /* Subtract 2px for IE */
+}
+
+.middle_column_wide {
+  width: 518px; /* Subtract 2px for IE */
+}
+
+.middle_column_full {
+  width: 725px; /* Subtract 2px for IE */
+}
+/****** Right Column ******/
+
+#right_column {
+	width: 200px;
+}
+
+/****** Footer ******/
+
+#footer {
+	width: 750px;  /* Needed for IE6 */
+	height: 30px;
+	border-top: solid 1px rgb(33,99,140);
+	border-bottom: solid 1px rgb(150,150,150);
+	background-color: rgb(204,204,204);
+	color: rgb(100,100,100);
+	font-size: 10px;
+}
+
+#bottom {
+  clear: both;
+	width: 760px;
+	background: #4C4C4C;
+}
+
+/****** Specific for this theme ******/
+
+.table_spacing td {
+	padding-right: 20px;
+}

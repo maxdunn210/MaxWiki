@@ -1,0 +1,344 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--- This web site is powered by MaxWiki - http://www.maxwiki.com --->
+
+  <title>
+    Test Web Site - HomePage
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+  <meta name="robots" content="index,follow" />
+
+  <!-- Google Sitemap verification -->
+  <META name="google-site-verification" content="66666777777888889999999" />
+  
+  <link href="/stylesheets/main.css?1313435027" media="all" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/main_print.css?1313435027" media="print" rel="stylesheet" type="text/css" />
+
+  <link href="/images/calendar/theme.css?1313435014" media="all" rel="stylesheet" type="text/css" />
+  
+  
+  <script src="/javascripts/prototype.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/calendar.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/calendar-en.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/calendar-setup.js?1313434915" type="text/javascript"></script>
+<script src="/javascripts/application.js?1313434915" type="text/javascript"></script> 
+  <script src="/javascripts/../ckeditor/ckeditor.js?1313435013" type="text/javascript"></script>
+  
+      <script type='text/javascript'>
+    var func = function() {
+      if (readCookie('role') == 'Admin') {
+        showClass('role_Admin');
+        showClass('role_Editor');
+        showClass('role_User');
+        showClass('role_Public');
+      } else if (readCookie('role') == 'Editor') {
+        showClass('role_Editor');
+        showClass('role_User');
+        showClass('role_Public');
+      } else if (readCookie('role') == 'User') {
+        showClass('role_User');
+        showClass('role_Public');
+      } else  {
+        showClass('role_Public');
+        showClass('role_none');
+      }
+    }
+    onloadInit();
+    onloadAdd(func);
+    </script>
+
+  
+  <style type="text/css">
+    
+    
+  </style>
+  
+  
+  	<link href="http://www.maxwiki.com/rss_with_headlines" rel="alternate" title="RSS" type="application/rss+xml" />
+  	<link href="http://www.maxwiki.com/rss_with_content" rel="alternate" title="RSS" type="application/rss+xml" />
+  
+</head>
+
+
+  <body>
+
+
+	<div id="top">&nbsp;</div>
+	<div id="border">
+		<div id="container">
+			<div id="header">	
+  <div class=left_block>
+  <h1>MaxWiki Header</h1>
+</div>
+
+  
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/header" class="edit_link" name="Edit header" title="Edit header"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+
+</div>
+
+			
+			
+			  <div id="menu">
+  * <a class="existing_page_link" href="/">Home</a>
+ * <a class="existing_page_link" href="/about_us">About Us</a>
+ * <a class="existing_page_link" href="/registration">Registration</a>
+ * <a class="existing_page_link" href="/schedules">Schedules</a> 
+ * <span class="new_page_link"><a href="/volunteering">Volunteering?</a></span> 
+ * <a class="existing_page_link" href="/teams">Teams</a> 
+ * <a class="existing_page_link" href="/faq">FAQs</a>  
+ * <%= link_to "My Account", :controller => "user", :action => "index" %> 
+ * <div class="role_Admin" style="display:none">
+ <%= link_to("Admin", {:controller => "reg_admin", :action => "index"}) %> </div>
+
+  
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/menu" class="edit_link" name="Edit menu" title="Edit menu"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+
+</div>
+
+      
+			
+
+      
+        <div id="buffer_header">
+        
+        </div>
+      
+
+			
+  <div id="left_column">
+  
+  <p>&nbsp;</p>
+<center>
+<a href="Registration"><img src="/images/btn_register.gif" style="border:0;" alt="" /></a>
+</center>
+
+  <p>&nbsp;</p>
+
+  
+
+
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/homepage_left" class="edit_link" name="Edit HomePage_left" title="Edit HomePage_left"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+ 
+
+  </div>
+  
+  
+<div id="middle_column" class="middle_column_narrow">
+  
+
+	 
+	
+	
+
+  
+    
+	  
+
+
+
+<h1>Welcome</h1>
+
+	<p>Welcome to the official site of Tri-Cities Little League where baseball is our universal language and kids worldwide come together to play ball.  Our goal is to promote the game, build friendships, skills and teamwork, and most of all, have a lot of fun.</p>
+
+
+	<h1>News</h1>
+
+<ul>
+	<li><b>Early Bird Discount</b>. Register for the 2006 season on or before December 31st, 2005 and take advantage of our &#8220;Early Bird&#8221; discount.</li>
+</ul>
+
+<ul>
+	<li><b>Online Registration</b>. We now make it easy for you to register for Spring 2006 with our new <a href="/register">online registration</a>. Register your child online, 24/7 directly from home. We still have walk-in and mail-in registration as well.</li>
+</ul>
+
+<ul>
+	<li><b>Tryouts for the Spring 2006 Season</b>. Tryouts will begin at the end of January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and times.</li>
+</ul>
+
+<ul>
+	<li><b>Umpire-in-Chief Needed!</b> No previous umpiring experience needed. The duties for this position are mostly administrative dealing with scheduling of umpires for league games this season. If interested, email us at <a href="mailto:president@tricitiesbaseball.org">president@tricitiesbaseball.org</a></li>
+</ul>
+
+<ul>
+	<li><b>Volunteers</b>. Tri-Cities Little League thrives on parents willing to put their time and effort into making this a great experience for the kids. Without <a class="existing_page_link" href="/volunteering">volunteers</a>, Tri-Cities couldn’t survive. You <span class="caps">CAN</span> make a difference. No prior experience necessary.</li>
+</ul>
+
+<ul>
+	<li><b>Boundaries</b>. Do you live within the Tri-Cities <span class="new_page_link"><a href="/boundaries">boundaries?</a></span>? Check to see if you can play with Tri-Cities.</li>
+</ul>
+
+<ul>
+	<li><b>Stay Informed</b>
+For up-to-date information, refer to this website or join our email list:
+<a href="mailto:tcll-interest@yahoogroups.com">tcll-interest@yahoogroups.com</a>.
+You can join it yourself by going directly to the Yahoo! Group:<br>
+<a href="http://sports.groups.yahoo.com/group/tcll-interest">http://sports.groups.yahoo.com/group/tcll-interest</a><br /></li>
+</ul>
+
+
+	
+	    
+    
+          
+  
+    <div class="byline">    
+  
+    <a href="/_action/wiki/revision/homepage?rev=18">Revised</a> on December 24, 2006 15:17:53 
+    
+      by <a class="existing_page_link" href="/admin">Admin</a>
+    
+    (127.0.0.1)
+    
+      
+      (1845 characters / 0.0 pages)
+    
+  </div>
+
+    
+    
+		
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_edit/homepage" class="edit_link" name="Edit HomePage" title="Edit HomePage"><img alt="Edit" src="/images/edit.gif?1313435014" /> Edit Page</a> 
+
+	  <a href="/_action/wiki/new" class="edit_link" name="Add Page" title="Add Page"><img alt="Plus" src="/images/plus.gif?1313435014" /> Add Page</a> 
+  </div>
+  
+  
+</div>
+
+
+ 
+	
+</div>
+  
+
+  <div id="right_column">
+    
+  <div style="background:#ddd; padding: 10px 4px; text-align: center">
+	<h6>Tri-Cities Sponsors</h6>
+
+	<p>Thank you to all of the sponsors who support Tri-Cities Little League!</p>
+
+
+	<p><a href="http://www.symantec.com"><img src="/images/symanteclogo.gif" alt="" /></a></p>
+
+
+	<p>Hanson Permanente Cement, Inc.</p>
+
+
+	<p><a href="http://www.cicerospizza.com">Cicero’s Pizza</a><br /></p>
+
+
+	<p><a href="http://www.fjlsanjose.com">Frankie, Johnnie &#38; Luigi Too!</a><br /></p>
+
+
+	<p><a href="http://www.elephantbar.com">Elephant Bar</a><br /></p>
+
+
+	<p>Valley Athletic</p>
+
+
+	<p>Pacific Northstar Mechanical</p>
+
+
+	<p>Ted Johnston</p>
+
+
+	<p>Family Day Care</p>
+
+
+	<p><a href="http://www.farnuminspection.com"><span class="caps">FARNUM</span> Inspection Service</a><br /></p>
+
+
+</div>
+
+  <p>&nbsp;</p>
+
+  
+
+
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/homepage_right" class="edit_link" name="Edit HomePage_right" title="Edit HomePage_right"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+ 
+
+  </div>
+  
+  
+
+			<div id="buffer_footer"></div>
+			<div id="footer">
+
+  
+    
+
+<div class="role_Editor" style="display:none">
+  
+  <div class="edit_block">
+	  <a href="/_action/wiki/edit/footer" class="edit_link" name="Edit footer" title="Edit footer"><img alt="Edit" src="/images/edit.gif?1313435014" /></a>   
+  </div>
+  
+</div>
+
+
+
+    <p>&copy;2006 &#8211; Tri-Cities Pacific Little League</p>
+
+  
+  
+  
+</div>
+		</div> <!-- container -->
+	</div> <!-- border -->
+	<div id="bottom">&nbsp;</div>
+	
+  
+</body>
+</html>

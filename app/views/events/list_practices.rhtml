@@ -1,0 +1,40 @@
+<%
+  @title = 'Practices'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<% unless @suppress_head %>
+  <h1>Practice Schedule</h1>
+<% end %>  
+
+<%= no_cache %>
+
+<table class='bordered'>
+  <tr>
+    <%= sort_header_tag('date_time, home_team.name', :caption => 'Date') %>
+    <%= sort_header_tag('date_time, home_team.name', :caption => 'Time') %>
+    <% if @show_level %>
+  		<%= sort_header_tag('home_team_level.name, date_time', :caption => 'Level') %>
+  	<% end %>	
+		<%= sort_header_tag('home_team_league.name, home_team.name, date_time', :caption => 'Home') %>
+    <%= sort_header_tag('location.short_name, date_time', :caption => 'Location') %>
+    <%= sort_header_tag('note, date_time', :caption => 'Note') %>
+  </tr>
+  
+<% for event in @events %>
+  <tr>
+			<td><%= list_edit_link(format_event_date(event.date_time), :controller => 'events', :action => 'edit', :id => event) %></td>
+      <td><%= format_event_time_and_duration(event.date_time, event.length) %></td>
+      <% if @show_level %>
+	  	  <td><%= event.home_team.level.name rescue '' %></td>
+    	<% end %>	
+      <td><%= event.home_team.league_and_name rescue '' %></td>
+      <td><%= page_link(event.location.short_name, event.location.page_name) rescue '' %></td>
+      <td><%= format_notes(event,@team) %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= pagination_template(@events, :show_past => true) %>
+<%= add_buttons Event::PRACTICE %>  
+  

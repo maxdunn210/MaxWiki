@@ -1,0 +1,68 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  name                :string(40)    
+#  level_id            :integer(11)   
+#  manager             :string(60)    
+#  league_id           :integer(11)   
+#  page_name           :string(100)   
+#
+
+--- 
+Giants: 
+  id: 1
+  wiki_id: 1 
+  name: Giants
+  league_id: 8
+  level_id: 5 #Majors
+  manager: Albert Lum
+  
+Marlins: 
+  id: 2
+  wiki_id: 1 
+  name: Marlins
+  league_id: 8
+  level_id: 5 #Majors
+  manager: Trevor LaSpina
+  
+As: 
+  id: 3
+  wiki_id: 1 
+  name: As
+  league_id: 8
+  level_id: 4 #Minors
+  manager: Steve Cousins
+  
+Unassigned_none: 
+  id: 4
+  wiki_id: 1 
+  name: Unassigned
+  league_id: 8
+  level_id: 13
+  manager: ''
+  
+Unassigned_Farm: 
+  id: 5
+  wiki_id: 1 
+  name: Unassigned
+  league_id: 8
+  level_id: 3
+  manager: ''
+ 
+CA_As:
+  id: 6
+  wiki_id: 1 
+  name: As
+  league_id: 9 # CA
+  level_id: 5 #Majors
+  manager: 
+  
+Blue_Jays:
+  id: 7
+  wiki_id: 1 
+  name: Blue Jays
+  league_id: 8 # CA
+  level_id: 4 #Minors
+  manager: 
+  
+  

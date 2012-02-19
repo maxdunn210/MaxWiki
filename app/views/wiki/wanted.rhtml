@@ -1,0 +1,26 @@
+<%
+  @title = "Wanted Pages" 
+  @left_column_partial = 'navigation'
+%>
+
+<h2>Wanted Pages
+  <br/>
+  <small style="font-size: 12px">
+    <i>Pages that don't exist but are referenced by other pages in <%= @set_name %></i>
+  </small>
+</h2>
+
+<% if @page_names_that_are_wanted.empty? %>
+  (None)
+<% else %>
+  <ul>
+    <% @page_names_that_are_wanted.each do |wanted_page_name| %>
+      <li><%= link_to_page(wanted_page_name, @wiki) %> wanted by <%=
+          @wiki.select(:all_pages).pages_that_reference(wanted_page_name).collect { |referring_page|            
+            link_to_existing_page referring_page
+          }.sort.join(", ")
+%></li>
+    <% end %>
+  </ul>
+<% end %>
+

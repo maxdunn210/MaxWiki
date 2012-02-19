@@ -1,0 +1,52 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  address             :string(100)   
+#  city                :string(100)   
+#  zip                 :string(20)    
+#  session_id          :string(80)    
+#
+
+--- 
+household_1001: 
+  city: San Jose
+  zip: "95129"
+  session_id: 1ee1ba542b52e7b5233f0d119d4c58ac
+  id: 1001
+  wiki_id: 1 
+  address: 1488 Pine Grove Way
+household_1002: 
+  city: San Jose
+  zip: "95129"
+  session_id: 9f020db0fb5bc1766272629ba654f10f
+  id: 1002
+  wiki_id: 1 
+  address: 1234 Royal Ann Drive
+household_1003: 
+  city: San Jose
+  zip: "95129"
+  session_id: ec0faba51eeb4ce8c00a1c0bfd81013e
+  id: 1003
+  wiki_id: 1 
+  address: 1488 Pine Grove Way
+household_1005: 
+  city: 
+  zip: ''
+  session_id: ca1494e4c586af2ebe3816ec191e6e8b
+  id: 1005
+  wiki_id: 1 
+  address: ''
+household_1006: 
+  city: 
+  zip: asdf
+  session_id: 28a832f4f8ec81b0a4780b69bae45c9b
+  id: 1006
+  wiki_id: 1 
+  address: zsdf
+household_1007: 
+  city: 
+  zip: ''
+  session_id: e003771d172ac578499d262d0f8a2383
+  id: 1007
+  wiki_id: 1 
+  address: ''

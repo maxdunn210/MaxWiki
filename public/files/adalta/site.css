@@ -1,0 +1,38 @@
+/*** Adalta site.css ***/
+/* Colors:
+Orange rgb(248,98,7) 
+Blue rgb(0,0,255)
+Gray background rgb(227,227,227)
+*/
+
+body { 
+	background: rgb(227,227,227);
+}
+
+#border {
+  background: none;
+}
+
+#container {
+  border-left: solid 1px rgb(185,185,185);
+  border-right: solid 1px rgb(185,185,185);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: rgb(248,98,7);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header {
+  width: 800px;
+	height: 150px;
+	background: url(summit_foto.jpg) repeat-x;
+}
+
+#menu {
+	background: rgb(248,98,7);
+}

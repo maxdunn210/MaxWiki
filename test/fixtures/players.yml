@@ -1,0 +1,245 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  household_id        :integer(11)   default(0), not null
+#  firstname           :string(50)    default(), not null
+#  lastname            :string(50)    default(), not null
+#  birthday            :date          not null
+#  years_exp           :integer(11)   
+#  lastlevel           :string(20)    
+#  grade               :string(20)    
+#  school              :string(40)    
+#  teacher             :string(40)    
+#  note                :string(255)   
+#  shirtsize           :string(20)    
+#  pantsize            :string(20)    
+#  limitation          :string(100)   
+#  allergies           :string(100)   default(), not null
+#  age_checked         :boolean(1)    
+#  waiver_required     :boolean(1)    
+#  fee_paid            :float         default(0.0)
+#  fee_paid_on         :date          
+#  fee_paid_by         :string(255)   
+#  created_at          :datetime      
+#  updated_at          :datetime      
+#  referred_by         :string(255)   
+#  team_id             :integer(11)   
+#
+
+--- 
+Claire_Dunn: 
+  id: 1005
+  wiki_id: 1 
+  firstname: Claire
+  lastname: Dunn
+  team_id: 3
+  age_checked: false
+  updated_at: 2006-02-18 10:30:20 -08:00
+  grade: 1st
+  lastlevel: Never played
+  shirtsize: Youth Small
+  teacher: Ms. Ma
+  pantsize: Youth Small
+  note: Coach Steve
+  fee_paid_on: 2006-02-18
+  birthday: 1999-01-18
+  waiver_required: true
+  limitation: "No"
+  allergies: CA
+  years_exp: 0
+  school: Meyerholz
+  referred_by: 
+  household_id: 1006
+  fee_paid: 0
+  fee_paid_by: 
+  created_at: 2006-02-13 17:30:42 -08:00
+  
+Maxie_Dunn: 
+  id: 1006
+  wiki_id: 1 
+  firstname: Maxie
+  lastname: Dunn
+  team_id: 
+  age_checked: false
+  updated_at: 2006-03-16 07:01:49 -08:00
+  grade: Kindergarten
+  lastlevel: Never played
+  shirtsize: Youth Small
+  teacher: ''
+  pantsize: Youth Small
+  note: ''
+  fee_paid_on: 2006-03-16
+  birthday: 1995-08-15
+  waiver_required: true
+  limitation: "No"
+  allergies: ''
+  years_exp: 0
+  school: Blue Hills
+  referred_by: 
+  household_id: 1006
+  fee_paid: 0
+  fee_paid_by: 
+  created_at: 2006-02-18 21:13:04 -08:00
+  
+Birthday_Before: 
+  id: 1004
+  wiki_id: 1 
+  firstname: Jamie
+  lastname: Birthday Before
+  birthday: 1997-04-30
+  team_id: 8
+  age_checked: false
+  updated_at: 2006-02-18 11:43:32 -08:00
+  grade: Kindergarten
+  lastlevel: Never played
+  shirtsize: Youth Small
+  teacher: ''
+  pantsize: Youth Small
+  note: ''
+  fee_paid_on: 2006-02-18
+  waiver_required: true
+  limitation: "No"
+  allergies: ''
+  years_exp: 0
+  school: Blue Hills
+  referred_by: 
+  household_id: 1006
+  fee_paid: 140.0
+  fee_paid_by: 
+  info_checked: true
+  created_at: 2006-02-13 17:29:51 -08:00
+  
+Birthday_After: 
+  id: 1007
+  wiki_id: 1 
+  firstname: Joey
+  lastname: Birthday After
+  birthday: 1997-05-01
+  team_id: 
+  age_checked: 
+  updated_at: 2006-02-18 21:16:33 -08:00
+  grade: Kindergarten
+  lastlevel: Never played
+  shirtsize: Youth Small
+  teacher: ''
+  pantsize: Youth Small
+  note: ''
+  fee_paid_on: 
+  waiver_required: true
+  limitation: "No"
+  allergies: ''
+  years_exp: 0
+  school: Blue Hills
+  referred_by: 
+  household_id: 1005
+  fee_paid: 0.0
+  fee_paid_by: 
+  created_at: 2006-02-18 21:16:33 -08:00
+  info_checked: true
+player_1008: 
+  team_id: 5
+  wiki_id: 1 
+  age_checked: true
+  updated_at: 2006-02-18 22:43:55 -08:00
+  grade: Kindergarten
+  lastlevel: Never played
+  shirtsize: Youth Small
+  lastname: Dunn
+  id: 1008
+  firstname: Maxie
+  teacher: asdf
+  pantsize: Youth Small
+  note: zsdf
+  fee_paid_on: 2006-02-18
+  birthday: 1988-02-18
+  waiver_required: true
+  limitation: "No"
+  allergies: none
+  years_exp: 0
+  school: Blue Hills
+  referred_by: 
+  household_id: 1005
+  fee_paid: 300.0
+  fee_paid_by: 
+  created_at: 2006-02-18 22:36:47 -08:00
+  info_checked: true
+player_1009: 
+  team_id: 1
+  wiki_id: 1 
+  age_checked: false
+  updated_at: 2006-03-21 10:26:48 -08:00
+  grade: Kindergarten
+  lastlevel: T-Ball
+  shirtsize: Youth Small
+  lastname: Test5
+  id: 1009
+  firstname: Max
+  teacher: ''
+  pantsize: Youth Small
+  note: ''
+  fee_paid_on: 2006-03-21
+  birthday: 1988-03-11
+  waiver_required: true
+  limitation: "No"
+  allergies: ''
+  years_exp: 1
+  school: Blue Hills
+  referred_by: 
+  household_id: 1005
+  fee_paid: 140.00
+  fee_paid_by: 
+  created_at: 2006-03-11 09:21:08 -08:00
+  info_checked: true
+player_1001: 
+  team_id: 1
+  wiki_id: 1 
+  age_checked: false
+  updated_at: 2006-02-17 22:46:42 -08:00
+  grade: Kindergarten
+  lastlevel: Never played
+  shirtsize: Youth Small
+  lastname: Dunn
+  id: 1001
+  firstname: Max
+  teacher: ''
+  pantsize: Youth Small
+  note: ''
+  fee_paid_on: 2006-01-25
+  birthday: 1988-01-06
+  waiver_required: true
+  limitation: "No"
+  allergies: ''
+  years_exp: 0
+  school: Blue Hills
+  referred_by: 
+  household_id: 1005
+  fee_paid: 0.0
+  fee_paid_by: 
+  created_at: 
+  info_checked: true
+player_1002: 
+  team_id: 3
+  wiki_id: 1 
+  age_checked: false
+  updated_at: 2006-02-17 22:28:43 -08:00
+  grade: 5th
+  lastlevel: Never played
+  shirtsize: Youth Small
+  lastname: Cou
+  id: 1002
+  firstname: Andrew
+  teacher: ''
+  pantsize: Youth Small
+  note: ''
+  fee_paid_on: 2006-01-26
+  birthday: 1995-06-07
+  waiver_required: true
+  limitation: "No"
+  allergies: ''
+  years_exp: 5
+  school: McAuliffe
+  referred_by: 
+  household_id: 1002
+  fee_paid: 0.0
+  fee_paid_by: 
+  created_at: 2006-01-26 14:04:46 -08:00

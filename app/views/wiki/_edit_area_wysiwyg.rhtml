@@ -1,0 +1,22 @@
+<textarea name="content" id="content" class="content"><%= h(flash[:content] || @page_content) %></textarea>
+
+<script type="text/javascript">
+	  CKEDITOR.replace('content',
+		{
+			customConfig: '/javascripts/myckconfigs.js',
+			pageLink: "<%= @page.link %>",
+      height: 400
+		});
+</script>
+
+
+<!-- foo_script type="text/javascript">
+    ckInit = CKEDITOR.replace( 'content'),
+      {
+        customConfig: "/javascripts/myfckconfigs.js?fck263"    
+        config.pageLink: "<%= @page.link %>" 
+        config.height: 400
+        config.toolbarSet: 'WikiBasic'
+      }); //
+ onloadAdd(ckInit);      
+</script -->

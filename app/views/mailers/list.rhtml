@@ -1,0 +1,53 @@
+<%-
+  @title = 'Mailers'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Mailers</h1>
+
+<%- if  @mailers.nil? or @mailers.empty? -%>
+
+<p>(No Mailer records)</p>
+
+<%- else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('mailers.name', :caption => 'Name') %>
+	    <%= sort_header_tag('subject', :caption => 'Subject') %>
+	    <%= sort_header_tag('page', :caption => 'Page') %>
+	    <%= sort_header_tag('mailer_group.name, mailers.name', :caption => 'Group') %>
+	    <%= sort_header_tag('additional_filter', :caption => 'Additional filter') %>
+  </tr>
+	  
+	<% for mailer in @mailers -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(mailer.name.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'mailers', :action => 'view', :id => mailer.id 
+					else
+					  display_name
+					end
+					-%></td>
+		      <td><%=h mailer.subject %></td>
+		      <td><%= page_link(mailer.page) %></td>
+					<td><%=h mailer.mailer_group.name rescue '' %></td>
+		      <td><%=h mailer.additional_filter %></td>
+	  </tr>
+	<% end -%>
+</table>
+</div>
+
+<%= pagination_template(@mailers) %>
+
+<% end -%>
+  
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'mailers', :action => 'new' %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

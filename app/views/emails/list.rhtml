@@ -1,0 +1,52 @@
+<%-
+  @title = 'Emails'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Emails</h1>
+
+<% if  @emails.nil? or @emails.empty? -%>
+
+<p>(No Email records)</p>
+
+<% else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('emails.to', :caption => 'To') %>
+	    <%= sort_header_tag('mailer.name, emails.to', :caption => 'Mailer') %>
+	    <%= sort_header_tag('status', :caption => 'Status') %>
+	    <%= sort_header_tag('last_send_attempt', :caption => 'Last send attempt') %>
+	    <%= sort_header_tag('created_at', :caption => 'Created at') %>
+	    <%= sort_header_tag('updated_at', :caption => 'Updated at') %>
+  </tr>
+	  
+	<% for email in @emails -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(email.to.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'emails', :action => 'edit', :id => email.id 
+					else
+					  display_name
+					end
+					-%></td>
+					<td><%=h email.mailer.name rescue '' %></td>
+		      <td><%=h email.status %></td>
+		      <td><%=h email.last_send_attempt %></td>
+		      <td><%=h format_date(email.created_at) %></td>
+		      <td><%=h format_date(email.updated_at) %></td>
+	  </tr>
+	<% end -%>
+</table>
+</div>
+
+<%= pagination_template(@emails) %>
+
+<% end -%>  
+ 
+<%= button_to "Delete All", {:controller => 'emails', :action => 'delete_all'}, {:confirm => "Are you sure you want to delete all emails?"} %>
+

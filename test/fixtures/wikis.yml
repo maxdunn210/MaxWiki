@@ -1,0 +1,68 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  created_at          :datetime      not null
+#  updated_at          :datetime      not null
+#  name                :string(60)    default(), not null
+#  address             :string(60)    default(), not null
+#  password            :string(60)    
+#  additional_style    :string(255)   
+#  allow_uploads       :integer(11)   default(1)
+#  published           :integer(11)   default(0)
+#  count_pages         :integer(11)   default(0)
+#  markup              :string(50)    default(textile)
+#  color               :string(6)     default(008B26)
+#  max_upload_size     :integer(11)   default(100)
+#  safe_mode           :integer(1)    default(0)
+#  brackets_only       :integer(11)   default(0)
+#
+
+--- 
+wiki_1: 
+  name: maxwiki
+  description: MaxWiki
+  updated_at: 2005-12-17 15:24:52 -08:00
+  count_pages: 1
+  safe_mode: 0
+  published: 1
+  brackets_only: 1
+  id: 1
+  allow_uploads: 1
+  color: DA0006
+  additional_style: ""
+  max_upload_size: 100
+  markup: textile
+  created_at: 2005-11-19 16:49:57 -08:00
+  config: 
+    :flickr_id: 29281775@N00
+    :google_key: ABQIAAAArk3wBzn5p0hIazFBq9_qyhST1bNX-9n7VkKSae1-XOAh9teVNBS6ymVuwzaqyNmd_idOAEOlNJoScA
+    :flickr_key: c1dd096037d33c250fa4dbe9d3a8f2a3
+    :site_name: Test Web Site
+    :flickr_shared_secret: be90cf6866325c8e
+    :jooconverter: /Applications/jooconverter-2.1.0/lib/jooconverter-2.1.0.jar
+    :youtube_key: u8VJg3uvnM4
+    :email_from: info@maxwiki.com
+    :signup_cc_to: info@maxwiki.com
+    :google_sitemap_verification: "66666777777888889999999"
+    :amazon_key: 0XPTBGCTMB4S1B18QC82
+    :google_ad_client: pub-1111111
+    :xythos_authentication: http://local.xythos.com:8080/Users/#{login}@maxwiki.com
+    :xythos_default_role: Editor
+wiki_2: 
+  name: maxwiki2
+  description: MaxWiki Test 2
+  updated_at: 2006-12-17 15:24:52 -08:00
+  count_pages: 1
+  safe_mode: 0
+  published: 1
+  brackets_only: 1
+  id: 2
+  allow_uploads: 1
+  color: DA0006
+  additional_style: ""
+  max_upload_size: 100
+  markup: textile
+  created_at: 2006-11-19 16:49:57 -08:00
+  config: 
+    :site_name: Test Web Site 2
+    

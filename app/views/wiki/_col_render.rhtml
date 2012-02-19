@@ -1,0 +1,7 @@
+<% if col_page %>
+  <%= render_with_erb(col_page.display_content) rescue "Problem with #{col_name}" %>
+  <p>&nbsp;</p>
+
+<% end %>  
+
+<%= render(:partial => 'layouts/edit_links', :locals => {:edit_page => col_page, :edit_name => col_name}) %> 

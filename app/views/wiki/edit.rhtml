@@ -1,0 +1,129 @@
+<% 
+  action_create = false
+  if controller.action_name == 'new'
+    action_create = true
+    if @page.name
+      @title = "Creating #{@page.name}"
+    else
+      @title = "Creating a new page"
+    end
+  elsif controller.action_name == 'rollback'
+    @title = "Rollback to #{@page.name} Rev ##{@revision_number}"
+  else
+    @title = "Editing #{@page.name}"
+  end
+  @hide_navigation = true
+  
+  @left_column_partial = 'edit_help'
+%>
+
+<%= form_tag({ :action => 'save', :link => @page.link, :content_type => @page_content_type},
+             {'name' => 'editForm', 'id' => 'editForm', 'method' => 'post'}) %>
+             
+		<label for="page_name">Page Name: </label>
+		<%= text_field_tag("page_name", @page.name) %>
+	  (<a onclick="Toggle.display('permalink'); return false;" href="#">edit permalink</a>)
+		
+			<label for="page_kind">Page Type? </label>
+		<%= radio_button('page', 'kind', 'Blank') %>Blank
+		<%= radio_button('page', 'kind', 'Titled') %>Titled            
+		<%= radio_button('page', 'kind', 'Blog') %>Blog      
+		<%= radio_button('page', 'kind', 'Post') %>Blog Post      
+
+    <p id="permalink" style="display: none;">
+    <br />
+    <label for="page_link">Permalink: &nbsp;</label>
+    <%= text_field_tag("page_link", @page.link) %>
+    </p>    
+
+  <p>
+    <div id='edit_area' class='edit_area'>
+  	  <% if @editor == 'textile' %>
+  	    <%= render :partial => "edit_area" %>
+  	  <% else %>
+  	    <%= render :partial => "edit_area_wysiwyg" %>
+  	  <% end %>
+    </div>
+  </p>
+  
+  <p>
+		<label for="page_parent">Parent Page </label>
+		<% parent_name = @page.parent.name rescue nil %>
+		<% page_names = [''] + @pages.map {|p| p.name} %>
+		<%= select_tag("page_parent", options_for_select(page_names, parent_name)) %>
+	</p>
+	
+	<% if Role.check_role(@page.access_permissions) %>
+  <p>
+		<label for="page_access_read">Access: Read </label>
+		<%= select("page", "access_read", @roles) %>
+
+		<label for="page_access_write"> Write </label>
+		<%= select("page", "access_write", @roles) %>
+
+		<label for="page_access_permissions"> Permissions </label>
+		<%= select("page", "access_permissions", @roles) %>
+  </p>
+  <% end %>
+  
+	<p>
+		<input type="submit" value="Save" accesskey="s"/> as <b><%= @author %></b>
+		<%= hidden_field_tag :author, @author %>
+		<% unless action_create %>
+	    <%= link_to('Cancel', {:action => 'cancel_edit', :link => @page.link},
+        {:accesskey => 'c'}) %>
+		  <small>(unlocks page)</small>
+		<% end %>
+	</p>
+<%= end_form %>
+
+<hr>
+
+<% if @editor != 'textile' %>
+  <%= render :partial => 'plugins' %>
+<% end %>
+
+<br/>
+
+<div id=edit_plugin>
+
+</div>	
+
+<%# unfortunately, didn't get drop_receiving_element() to work for this on IE (FireFox ok).... %>
+<script type="text/javascript">
+//<![CDATA[
+
+<% if @editor == 'textile' %>
+Droppables.add("content", {
+  hoverclass:'content_active', 
+  onDrop: function(element) {
+    insertAtCursor(document.editForm.content, mapArray[element.id] );
+  }
+ } 
+);
+
+function drag_and_drop_media_dblclick( id ) {
+  insertAtCursor(document.editForm.content, mapArray[id] );
+}
+
+<% else %>
+Droppables.add("edit_area", {
+  hoverclass:'edit_area_active', 
+  onDrop: function(element) {  
+    addDropped2Fck( 'content', element.id )  
+  }
+ } 
+);
+
+function drag_and_drop_media_dblclick( id ) {
+  addDropped2Fck('content', id);
+}
+
+<% end %>
+
+                         
+//]]>
+</script>
+
+
+

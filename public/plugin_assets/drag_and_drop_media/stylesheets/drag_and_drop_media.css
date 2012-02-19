@@ -1,0 +1,60 @@
+.drag_and_drop_media_selection { 
+  display:block;
+  margin: 0px;
+  padding: 10px;                   
+  color: #666;                                     
+  font-size: 80%;
+  /*
+  background: #CCC;
+  border: 1px solid black;
+  */
+}   
+.drag_and_drop_media_selection form {
+  display:inline;
+} 
+.drag_and_drop_media_selection a { 
+  display:inline;
+  color: #666; 
+}                                                     
+.drag_and_drop_media_input { 
+  background: lightyellow; 
+  color: red;
+  width: 100px;
+}         
+.drag_and_drop_media_submit { 
+  font-size: 90%;
+}          
+.drag_and_drop_media_thumbnail { 
+  float:left;
+  margin: 10px 2px 2px 2px;
+  cursor: move;
+} 
+.drag_and_drop_media_description {
+  float:left;
+  background: white;
+  font-size: 70%;
+  width: 160px;
+  border: 1px solid black;
+  margin: 5px;
+}
+.drag_and_drop_media_arrow { 
+  float:left;
+  overflow: hidden;
+  border: none;
+  margin: 10px 2px 2px 2px;
+}  
+.drag_and_drop_media_indicator {
+  margin-top: 0px;
+}                       
+.drag_and_drop_media_droppable{ 
+  color: red;
+  border: 1px solid red;
+}           
+#drag_and_drop_media_drop_area { 
+  background: grey;
+  margin: 20px;
+  padding: 10px;  
+  height: auto; 
+  width: 40%;
+  border: 1px solid black;
+}

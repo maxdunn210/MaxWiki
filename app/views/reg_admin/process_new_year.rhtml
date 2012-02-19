@@ -1,0 +1,24 @@
+<%
+  @title = 'Process New Year'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+
+<h1>Process New Year</h1>
+
+<% if @players.nil? or @players.empty? %>
+
+<p>No players processed</p>
+
+<% else %>
+
+
+<p><%= @players.size %> Players processed</p>
+
+<p>
+<% for player in @players %>
+  <%= "#{player.full_name}" %><br/>
+<% end %>
+</p>
+
+<% end %>

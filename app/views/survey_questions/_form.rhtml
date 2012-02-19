@@ -1,0 +1,29 @@
+<%= error_messages_for 'survey_question' %>
+
+<%= hidden_field 'survey_question', 'survey_id' %>
+
+<table>
+<!--[form:survey_question]-->
+<tr><td><label for="survey_question_name">Name</label></td>
+<td><%= text_field 'survey_question', 'name'  %></td></tr>
+
+<tr><td><label for="survey_question_question">Question</label></td>
+<td><%= text_area 'survey_question', 'question', :rows => 2  %></td></tr>
+
+<tr><td><label for="survey_question_order">Order</label></td>
+<td><%= text_field 'survey_question', 'display_order', :size => 5 %></td></tr>
+
+<tr><td><label for="survey_question_input_type">Type</label></td>
+<td><%= select 'survey_question', 'input_type', ['select','text_field','text_area'] %></td></tr>
+
+<tr><td><label for="survey_question_choices">Choices</label></td>
+<td><%= text_field 'survey_question', 'choices'  %></td></tr>
+
+<tr><td><label for="survey_question_mandatory">Mandatory</label></td>
+<td><%= check_box 'survey_question', 'mandatory'  %></td></tr>
+
+<tr><td><label for="survey_question_html_options">Html options</label></td>
+<td><%= text_field 'survey_question', 'html_options'  %></td></tr>
+<!--[eoform:survey_question]-->
+
+</table>

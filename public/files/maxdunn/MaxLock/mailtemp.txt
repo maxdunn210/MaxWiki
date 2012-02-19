@@ -1,0 +1,24 @@
+To: password@maxlock.com
+From: [required-email]
+Subject: Password Request
+
+First Name: [required-firstname]
+Last Name:  [required-lastname]
+Email:      [required-email]
+Company:    [required-company]
+Title:            [title]
+Type of Business: [business]
+Address:          [address]
+City:             [city]
+State/province:   [state]
+Country:          [country]
+Postal Code:      [postcode]
+Phone:            [phone]
+
+                    Area of interest: [interest]
+           How did you hear about us? [info]
+How do you plan to use your download? [using]
+      What synthesis tool do you use? [synthesis_tools]
+    What simulation tools do you use? [simulation_tools]
+What Xilinx FPGA families do you use? [fpga_families]
+         Would you like to subscribe? [more_info]

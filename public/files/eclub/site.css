@@ -1,0 +1,199 @@
+/*** EClub.css ***/
+/* Colors:
+ * 
+GreyBlue: rgb(64,89, 104)
+LightBlue: rgb(86, 156, 190)
+LightBlueGray: rgb(162, 191, 201)
+Olive: rgb(158, 166, 21)
+Red (link): rgb(181, 19, 24)
+*/
+
+body { 
+	background:  white;
+}
+
+p, div {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0.8em;
+}
+	
+#border {
+  background: none;
+}
+
+#container {
+  border-left: none;
+  border-right: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: rgb(181, 19, 24);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/****** Header ******/
+#header {
+  width: 800px;
+	height: 0;
+}
+
+/****** Menu ******/
+.menu { width: 800px; }
+
+#menu {
+  height: 116px;
+  background: rgb(64,89, 104);
+  color: rgb(200, 200, 200);
+	line-height: 60px;
+}
+
+#menu a,
+#menu li a {
+  font-size: 18px;
+	font-weight: bold;
+}
+
+
+#menu li a {
+  border-right: solid 2px white; 
+}
+
+#menu ul.menu {
+  margin: 0;
+  padding: 0;
+  color: rgb(162, 191, 201);
+  background: rgb(64,89, 104);
+  border-top: none;
+  border-bottom: none;
+	padding-top: 20px;
+  border-left: solid 2px white;
+}
+
+#menu ul.menu li  {
+  color:  rgb(162, 191, 201);
+  display: inline;
+  list-style: none;
+}
+
+#menu ul.menu a:hover,
+#menu ul.menu a.selected,
+#menu ul.menu a.selected:hover {
+  color:  white;
+  background: rgb(64,89, 104);
+}
+
+/* set the color of the selected menu items */
+#menu ul.menu li a:hover,
+#menu ul.menu li a.selected {
+	color: white;
+}	
+
+/* set the style of the non-selected menu items */
+#menu ul.menu li a {
+  color: rgb(162, 191, 201);
+  text-decoration: none;
+} 
+
+#menu .edit_block { 
+  position: absolute;
+  top: 3px;
+  right: 1px;
+}  
+
+/****** Left Column ******/
+#left_column {
+	margin-top: 45px;
+	width: 160px;
+	border-top: solid 6px rgb(64,89, 104);
+	border-right: none;  
+	padding-right: 20px;
+}
+
+/****** Middle Column ******/
+
+#middle_column {
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;  
+  line-height: 20px;
+	color: rgb(64,89, 104);
+  padding-top: 15px;
+  padding-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: inherit;
+	border-left: none;	
+}
+
+#middle_column h1, 
+#middle_column h2, 
+#middle_column h3, 
+#middle_column h4 {
+  clear: both;
+  border-bottom: none;
+  font-weight: normal;
+  font-size: 1.3em;
+  color: rgb(86, 156, 190);
+}
+
+#middle_column h1 {
+  font-size: 2.0em;
+	font-weight: normal;
+  border-bottom: solid 6px rgb(64,89, 104);
+  padding-bottom: 10px;
+}
+
+#middle_column h2,
+#middle_column h3 {
+  font-size: 1.6em;
+}
+  
+#middle_column h3 {
+  clear: none; 
+}
+
+#middle_column h4 {
+  text-decoration: underline;
+}
+
+#middle_column h5 {
+  font-size: 1em;
+}
+
+/****** Footer ******/
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block 
+ {
+  background-color: white;
+  color: rgb(50,50,50);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+#footer a,
+#footer p,
+#footer div {
+  color: rgb(64,89, 104);
+}
+
+#footer a:hover
+ {
+  color: black;
+}
+
+#footer {
+  margin: 0px auto;
+  padding-top: 20px;
+  border-top: none;
+  border-bottom: none;
+  font-size: 10px;
+  border-top: solid 3px rgb(64,89, 104); 	
+}

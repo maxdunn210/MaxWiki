@@ -1,0 +1,77 @@
+<% @title = "Create Wiki '#{@wiki.name}'" %>
+
+<h1>Create Wiki '<%= @wiki.name %>'</h1>
+
+<% if @wiki_exists %>
+ <p><div class="msg_error"><%= escape_preserving_linefeeds(flash[:error]) %></div></p>
+<% else %> 
+
+<p>Congratulations on setting up your wiki.</p>
+
+<p>Since this is the first time that this wiki has been accessed,
+we need to set the name, theme, admin password and email.</p>
+
+<p>After creating the wiki, you can login with username "admin" and the password
+you selected to further configure the wiki.</p>
+
+<%= form_tag :controller => 'admin', :action => 'create_wiki' %>
+
+<%= error_messages_for 'wiki' %>
+<% if flash[:error] %>
+ <p><div class="msg_error"><%= escape_preserving_linefeeds(flash[:error]) %></div><p>
+<% end %>
+
+<table>
+
+  <% if @wiki_name.blank? %>
+  <tr>
+    <td>
+      <label for="wiki_name">Name</label>
+    </td>
+    <td><%= text_field 'wiki', 'name' %></td>
+  </tr>
+  <% end %> 
+
+  <tr>
+    <td>
+      <label for="wiki_description">Description</label>
+    </td>
+    <td><%= text_field 'wiki', 'description' %></td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="theme">Theme</label>
+    </td>
+    <td>
+      <select id="theme" name="theme">
+        <% for theme in WikiConfig.themes %>
+          <option value="<%=theme%>" <%= 'selected="selected"' if theme == @theme %>><%= theme.capitalize %></option>
+        <% end %>
+      </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for='email'>Email</label>
+    </td>
+    <td><%= text_field_tag('email', @email) %></td>
+  </tr>
+
+  <tr>
+    <td>Password:</td>
+    <td><%= password_field_tag('password') %></td>
+  </tr>
+  <tr>
+    <td>Confirm:</td>
+    <td><%= password_field_tag('password_confirmation') %></td>
+  </tr>
+
+</table>
+
+<p><%= submit_tag "Create Wiki" %></p>
+
+<%= end_form %>
+
+<% end %>

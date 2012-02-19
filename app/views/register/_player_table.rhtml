@@ -1,0 +1,27 @@
+<table>
+  <tr>
+		<%= sort_header_tag('lastname', :caption => 'Name') %>
+		<%= sort_header_tag('birthday', :caption => 'League<br>Age') %>
+		<%= sort_header_tag('level.name, lastname', :caption => 'Level') %>
+		<%= sort_header_tag('team.name,lastname', :caption => 'Team') %>
+		<%= sort_header_tag('fee_paid,lastname', :caption => 'Paid?') %>
+		<%= sort_header_tag('address_checked,lastname', :caption => 'Address<br>Checked?') %>
+		<%= sort_header_tag('signed_form_received,lastname', :caption => 'Form<br>Received?') %>
+		<%= sort_header_tag('tryout_required,lastname', :caption => 'Tryout<br>Required?') %>
+	</tr>
+
+  <% for player in @players -%>
+    <tr>
+      <% display_name = player.full_name.strip.empty? ? '(Blank)' : h(player.full_name) %>
+      <td><%= link_to display_name , :action => 'show', :id => player %></td>
+      <td>&nbsp; &nbsp; <%=h player.league_age %></td>
+		  <td><%=h player.team.level.name rescue '' %></td>
+ 		  <td><%=h player.team.name rescue '' %></td>
+		  <td><%=h ApplicationHelper::to_yesno(player.fee_paid.to_f > 0) %></td>
+		  <td><%=h ApplicationHelper::to_yesno(player.address_checked) %></td>
+		  <td><%=h ApplicationHelper::to_yesno(player.signed_form_received) %></td>
+		  <td><%=h ApplicationHelper::to_yesno(player.tryout_required) %></td>
+     </tr>
+  <% end -%>
+
+</table>

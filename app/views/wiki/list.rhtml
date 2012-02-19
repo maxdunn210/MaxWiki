@@ -1,0 +1,39 @@
+<%
+  @title = "All Pages" 
+  @left_column_partial = 'navigation'
+%>
+
+<h2>All Pages
+  <br/>
+  <small style="font-size: 12px">
+    <i>All pages in <%= @set_name %></i>
+  </small>
+</h2>
+
+<table>
+  <% @pages.each do |page| %>
+  <tr>
+    <td><%= link_to_existing_page page %></td>
+    <td> <span class="role_Admin" style="display:none">
+        &nbsp; &nbsp; 
+          <%= link_to('(Delete)', 
+                   { :action => 'delete_page', :return_to => 'list',
+                     :page => page.name },
+                   { :confirm => "Are you sure you want to delete '#{page.name}' page?" }) %>
+        &nbsp;
+          <%= link_to('(Info)', 
+                    :controller => 'pages', :action => 'edit', :id => page.id,
+                    :return_to => 'list') %>
+        </span>            
+     </td>
+  </tr>
+  <% end %>
+</table>
+
+<% if @wiki.count_pages? %>
+  <% total_chars = @pages.characters %>
+  <p>
+    <small>All content:<%= total_chars %>chars / approx.<%= sprintf("%-.1f", (total_chars / 2275 )) %>printed pages</small>
+  </p>
+<% end %>
+

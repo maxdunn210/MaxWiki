@@ -1,0 +1,44 @@
+<%
+  @title = 'Users'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>User List</h1>
+
+<div class='scroll_area'>
+
+<table class='bordered'>
+  <tr>
+    <%= sort_header_tag('lastname', :caption => 'Name') %>
+		<% n = 1 -%>
+		<% MY_CONFIG[:user_list_columns].each do |col| -%>
+	  <%= sort_header_tag(col[:name], :caption => col[:caption]) %>
+		<% n += 1 -%>
+		<% end -%>
+  </tr>
+
+  <% for user in @users %>
+    <tr>
+      <% display_name = user.full_name.strip.empty? ? '(Blank)' : h(user.full_name) %>
+      <td><%= link_to display_name , :action => 'edit_user', :id => user %></td>
+			<% n = 1 -%>
+			<% MY_CONFIG[:user_list_columns].each do |col| -%>
+      <td><%=h user.send(col[:name]) %></td>
+			<% n += 1 -%>
+			<% end -%>
+     </tr>
+  <% end %>
+
+</table>
+
+</div>
+
+<%= pagination_template(@users) %>
+
+ 
+<%= form_tag( {:action => 'new_user'}, {:method => 'get'} ) %>
+  <%= submit_tag "Add Another" %>
+<%= end_form %>
+
+
+

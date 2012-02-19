@@ -1,0 +1,24 @@
+<%= no_cache %>
+
+<% if @players.blank? %>
+<p>(No players found)</p>
+<% else %>
+  <% if Role.check_role(ROLE_EDITOR) %>
+    <table class='bordered'>
+      <% for player in @players -%>
+        <tr>
+          <td><%= player.full_name %></td><td><%= mail_to(player.household.adult1.email) rescue '(Error)' %></td><td><%= player.household.adult1.home_phone rescue '(Error)' %></td>
+        </tr>
+      <% end -%>
+    </table>
+    <br />
+    <p><i>(Note: This is the Editor's view which includes last names, emails and phone numbers. 
+    In Public view, only the first name and last initial is shown.)</i></p>
+  <% else %>
+    <ul>
+      <% for player in @players -%>
+        <li><%= player.name_and_initial %></li>
+      <% end -%>
+    </ul>
+  <% end %>
+<% end %>

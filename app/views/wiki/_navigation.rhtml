@@ -1,0 +1,21 @@
+<ul class="left_menu">
+  <li class="submenu"><%= tag_href_selected("Navigation") %></li>
+  <%= tag_li_href_selected("All Pages", {:controller => "wiki", :action => "list"}, "list") %>
+  <% if Role.check_role(ROLE_EDITOR) %>
+    <%= tag_li_href_selected("Wanted", {:controller => "wiki", :action => "wanted"}, "wanted") %>
+    <%= tag_li_href_selected("Orphan", {:controller => "wiki", :action => "orphan"}, "orphan") %>
+  <% end %>  
+  <%= tag_li_href_selected("Recently Revised", {:controller => "wiki", :action => "recently_revised"}, "recently_revised") %>
+  <%= tag_li_href_selected("Authors", {:controller => "wiki", :action => "authors"}, "authors") %>
+  <%= tag_li_href_selected("Feeds", {:controller => "wiki", :action => "feeds"}, "feeds") %>
+  <%= tag_li_href_selected("Export", {:controller => "wiki", :action => "export"}, "export") %>
+</ul>	
+
+<div class="edit_block">
+    <%= form_tag({ :controller => 'wiki', :action => 'search'},
+                 {'class' => 'search_form', 'method' => 'get'}) %>
+      <input type="text" class="search_field" name="query" value="Search"
+             onfocus="this.value == 'Search' ? this.value = '' : true"
+             onblur="this.value == '' ? this.value = 'Search' : true" />
+    <%= end_form %>
+</div>

@@ -1,0 +1,17 @@
+<table class="table_spacing">
+<tr>
+	<td>
+		<label for="controller_last_level">Level</label><br/>
+    <%= select(:controller, :last_level, Lookup::list(Lookup::LEVEL)) %>
+    <%= observe_field(:controller_last_level, 
+      :update => "teams_select", 
+      :url => { :controller => "events", :action => "change_level", :kind => @event.kind },
+	    :loading => "Element.show('indicator')",
+  	  :complete => "Element.hide('indicator')") %>
+    </td>
+</tr>	
+</table>
+
+<div id="teams_select">
+  <%= render( :partial => 'teams_select' ) %>
+</div>

@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <td>
+      <label for="signup_ask_company">Ask For Company?</label>
+    </td>
+    <td><%= check_box(:config, :signup_ask_company, {}, 'boolean:true', 'boolean:false') %></td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="signup_survey">Signup Survey?</label>
+    </td>
+    <td><%= select(:config, :signup_survey, Survey.list, { :include_blank => true }) %></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>

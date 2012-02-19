@@ -1,0 +1,97 @@
+/*** Header main banner ***/
+#header {
+  width: 800px;
+	height: 151px;
+	background: url(shesgeeky.gif) repeat-x;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.6em;
+  margin-top: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+  display: block;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0px;
+ 
+}
+
+h1 {
+  margin-top: 0em;
+  font-size: 1.5em;
+ color: rgb(8, 50, 80);
+}
+
+h3 {
+  font-size: 1.0em;
+}
+
+h4 {
+  font-size: 1.0em;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+/******** Widths ********/
+#border, #top, #bottom { width: 820px; }
+#container, #header, #footer { width: 800px; }
+#left_column { width: 130px; }
+.middle_column_narrow { width: 430px; }
+.middle_column_wide { width: 580px; }
+.middle_column_full { width: 740px; }
+#right_column { width: 150px; }
+#right_column .box { width: 150px; }
+
+/****** Left Column ******/
+#left_column {
+  padding-left: 7px;
+  padding-right: 10px;
+}
+
+#left_column p {
+line-height: 1.2em;
+}
+
+#left_column h2 {
+font-size: 1.0em;
+margin-top: 20px;
+}
+
+
+/****** Middle Column ******/
+#middle_column {
+  padding-top: 20px;
+  padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 40px;
+}
+
+#middle_column p {
+	line-height: 1.5em;
+}
+
+#middle_column li {
+	margin-bottom: 0.5em;
+	line-height: 1.5;
+}
+
+#middle_column h2 {
+	margin-top: 25px;
+	color: rgb(8, 50, 80);
+	font-size: 1.2em;
+  border-bottom: 0;
+} 
+
+#middle_column h3 {
+  color: rgb(8, 50, 80);
+  font-size: 1.0em;
+  border-bottom: 0;
+}
+
+

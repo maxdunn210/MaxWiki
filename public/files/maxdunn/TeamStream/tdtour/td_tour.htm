@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<title>TeamDrive Tour</title>
+</head>
+
+<body TEXT="#000000" BGCOLOR="#FFFFFF" topmargin=0 leftmargin=0>
+<script LANGUAGE="JavaScript">
+<!--
+
+var curpic = 0, leftarrow = 0, reset= 1, rightarrow = 5;
+
+arrows = new Array("left_empty.gif", "res_empty.gif", "right_empty.gif", "left_arr.gif", "reset.gif", "right_arr.gif");
+tourpics = new Array(9);
+arrpics = new Array(arrows.length);
+
+for(m = 1; m < 10; m++) 
+{
+  tourpics[m - 1] = new Image(); 
+  tourpics[m - 1].src = "pic" + m + ".gif";
+}
+
+for(m = 0; m < arrows.length; m++) 
+{
+  arrpics[m] = new Image(); 
+  arrpics[m].src = arrows[m];
+}
+ 
+function advance(opcode)
+{
+ if(opcode == 1) {
+   if(curpic < 8) curpic++;
+   if(curpic == 8) rightarrow = 2;
+
+   leftarrow = 3;
+   reset= 4;
+ }
+ else if(opcode == 2) {
+   if(curpic > 0) curpic--;
+   if(curpic == 0) {leftarrow = 0; reset= 1;}
+
+   rightarrow = 5;
+ } 
+ else if(opcode == 3) {
+   curpic = 0;
+   leftarrow = 0;
+   rightarrow = 5;
+   reset= 1;
+ } 
+
+ document.tourform.tdtour.src = tourpics[curpic].src;
+ window.focus();
+
+ document.tourform.bkbtn.src = arrpics[leftarrow].src;
+ document.tourform.res.src = arrpics[reset].src;
+ document.tourform.fwdbtn.src = arrpics[rightarrow].src;
+
+}
+   
+// close scripts -->
+</script>
+
+
+<form name="tourform">
+  <center>
+  <table border=0 cellpadding=0 cellspacing=0 align=center>
+  <tr><td align=center bgcolor="#cccccc" height=25><img src="empty.gif" width=1 height=25 align=bottom><font face="Verdana" size=4 color="#000000"><b>TeamDrive Tour</b></font></td></tr>
+  <tr><td align=center valign=top width="350">
+  <img src="pic1.gif" name="tdtour" width="350" height="350"></td></tr>
+  <tr><td align=center bgcolor="#cccccc" height="80"><img src="empty.gif" border="0" width="1" height="80" align=top>
+  <a href="javascript:advance(2)"><img src="left_empty.gif" name="bkbtn" border="0" width="50" height="44"></a>
+  <a href="javascript:advance(3)"><img src="res_empty.gif" name="res" border="0" width="49" height="44"></a> <a
+  href="javascript:advance(1)"><img src="right_arr.gif" name="fwdbtn" border="0" width="50" height="44"></a>
+  </td></tr></table>
+  </center>
+</form>
+</body>
+</html>

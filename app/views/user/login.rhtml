@@ -1,0 +1,23 @@
+<%
+  @title = 'Login'
+  @left_column_partial = 'layouts/auto_left_menu'
+%>
+
+<h3>Please login</h3>
+<%= error_messages_for('user') %>
+
+<%= form_tag :controller => 'user', :action => 'login' %>
+  <table>
+    <tr>
+      <td><label for='user_login'>Email:</label></td>
+      <td><%= text_field 'user', 'login'  %></td>
+    </tr>
+    <tr>
+      <td><label for='user_password'>Password:</label></td>
+      <td><%= password_field 'user', 'password'  %></td>
+    </tr>  
+    <tr colspan=2>
+      <td><%= submit_tag 'Login' %></td>
+    </tr>
+  </table>
+<%= end_form %>

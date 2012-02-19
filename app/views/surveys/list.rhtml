@@ -1,0 +1,53 @@
+<%-
+  @title = 'Surveys'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Surveys</h1>
+
+<%- if  @surveys.nil? or @surveys.empty? -%>
+
+<p>(No Survey records)</p>
+
+<%- else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('name', :caption => 'Name') %>
+	    <%= sort_header_tag('description', :caption => 'Description') %>
+	    <th>&nbsp;</th>
+	    <th>&nbsp</th>
+	    <th>&nbsp</th>
+  </tr>
+	  
+	<% for survey in @surveys -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(survey.name.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'surveys', :action => 'edit', :id => survey.id 
+					else
+					  display_name
+					end
+					-%></td>
+		      <td><%=h survey.description %></td>
+		      <td><%= link_to('Questions', :controller => 'survey_questions', :action => 'list', :survey_id => survey.id) %></td>
+		      <td><%= link_to('Answers', :controller => 'survey_responses', :action => 'list', :survey_id => survey.id) %></td>	  
+		      <td><%= link_to('Export', :controller => 'survey_responses', :action => 'export', :survey_id => survey.id) %></td>	  
+		</tr>    
+	<% end -%>
+</table>
+</div>
+
+<%= pagination_template(@surveys) %>
+
+<% end -%>
+  
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'surveys', :action => 'new' %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

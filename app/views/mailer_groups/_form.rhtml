@@ -1,0 +1,18 @@
+<%= error_messages_for 'mailer_group' %>
+
+<table>
+<!--[form:mailer_group]-->
+<tr><td><label for="mailer_group_name">Name</label></td>
+<td><%= text_field 'mailer_group', 'name'  %></td></tr>
+
+<tr><td><label for="mailer_group_description">Description</label></td>
+<td><%= text_field 'mailer_group', 'description'  %></td></tr>
+
+<tr><td><label for="mailer_group_user_filter">User filter</label></td>
+<td><%= text_field 'mailer_group', 'user_filter'  %></td></tr>
+
+<tr><td><label for="mailer_group_auto_subscribe">Auto subscribe</label></td>
+<td><%= check_box 'mailer_group', 'auto_subscribe'  %></td></tr>
+<!--[eoform:mailer_group]-->
+
+</table>

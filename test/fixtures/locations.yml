@@ -1,0 +1,266 @@
+--- 
+location_137: 
+  name: Oklahoma
+  id: 137
+  short_name: OK
+  parent_location_id: 2
+location_115: 
+  name: Indiana
+  id: 115
+  short_name: IN
+  parent_location_id: 2
+location_1: 
+  name: World
+  id: 1
+  short_name: World
+  parent_location_id: 0
+location_104: 
+  name: Arkansas
+  id: 104
+  short_name: AR
+  parent_location_id: 2
+location_126: 
+  name: Missouri
+  id: 126
+  short_name: MO
+  parent_location_id: 2
+location_148: 
+  name: Washington
+  id: 148
+  short_name: WA
+  parent_location_id: 2
+location_149: 
+  name: West Virginia
+  id: 149
+  short_name: WV
+  parent_location_id: 2
+location_127: 
+  name: Montana
+  id: 127
+  short_name: MT
+  parent_location_id: 2
+location_105: 
+  name: California
+  id: 105
+  short_name: CA
+  parent_location_id: 2
+location_2: 
+  name: United States
+  id: 2
+  short_name: US
+  parent_location_id: 1
+location_116: 
+  name: Iowa
+  id: 116
+  short_name: IA
+  parent_location_id: 2
+location_138: 
+  name: Oregon
+  id: 138
+  short_name: OR
+  parent_location_id: 2
+location_139: 
+  name: Pennsylvania
+  id: 139
+  short_name: PA
+  parent_location_id: 2
+location_117: 
+  name: Kansas
+  id: 117
+  short_name: KA
+  parent_location_id: 2
+location_106: 
+  name: Colorado
+  id: 106
+  short_name: CO
+  parent_location_id: 2
+location_128: 
+  name: Nebraska
+  id: 128
+  short_name: NE
+  parent_location_id: 2
+location_150: 
+  name: Wisconsin
+  id: 150
+  short_name: WI
+  parent_location_id: 2
+location_151: 
+  name: Wyoming
+  id: 151
+  short_name: WY
+  parent_location_id: 2
+location_129: 
+  name: Nevada
+  id: 129
+  short_name: NV
+  parent_location_id: 2
+location_107: 
+  name: Connecticut
+  id: 107
+  short_name: CT
+  parent_location_id: 2
+location_118: 
+  name: Kentucky
+  id: 118
+  short_name: KY
+  parent_location_id: 2
+location_140: 
+  name: Rhode Island
+  id: 140
+  short_name: RI
+  parent_location_id: 2
+location_141: 
+  name: South Carolina
+  id: 141
+  short_name: SC
+  parent_location_id: 2
+location_119: 
+  name: Louisiana
+  id: 119
+  short_name: LA
+  parent_location_id: 2
+location_108: 
+  name: Delaware
+  id: 108
+  short_name: DE
+  parent_location_id: 2
+location_130: 
+  name: New Hampshire
+  id: 130
+  short_name: NH
+  parent_location_id: 2
+location_131: 
+  name: New Jersey
+  id: 131
+  short_name: NJ
+  parent_location_id: 2
+location_109: 
+  name: District of Columbia
+  id: 109
+  short_name: DC
+  parent_location_id: 2
+location_120: 
+  name: Maine
+  id: 120
+  short_name: ME
+  parent_location_id: 2
+location_142: 
+  name: South Dakota
+  id: 142
+  short_name: SD
+  parent_location_id: 2
+location_143: 
+  name: Tennessee
+  id: 143
+  short_name: TN
+  parent_location_id: 2
+location_121: 
+  name: Maryland
+  id: 121
+  short_name: MD
+  parent_location_id: 2
+location_110: 
+  name: Florida
+  id: 110
+  short_name: FL
+  parent_location_id: 2
+location_132: 
+  name: New Mexico
+  id: 132
+  short_name: NM
+  parent_location_id: 2
+location_133: 
+  name: New York
+  id: 133
+  short_name: NY
+  parent_location_id: 2
+location_111: 
+  name: Georgia
+  id: 111
+  short_name: GA
+  parent_location_id: 2
+location_122: 
+  name: Massachusetts
+  id: 122
+  short_name: MA
+  parent_location_id: 2
+location_144: 
+  name: Texas
+  id: 144
+  short_name: TX
+  parent_location_id: 2
+location_145: 
+  name: Utah
+  id: 145
+  short_name: UT
+  parent_location_id: 2
+location_123: 
+  name: Michigan
+  id: 123
+  short_name: MI
+  parent_location_id: 2
+location_101: 
+  name: Alabama
+  id: 101
+  short_name: AL
+  parent_location_id: 2
+location_112: 
+  name: Hawaii
+  id: 112
+  short_name: HI
+  parent_location_id: 2
+location_134: 
+  name: North Carolina
+  id: 134
+  short_name: NC
+  parent_location_id: 2
+location_135: 
+  name: North Dakota
+  id: 135
+  short_name: ND
+  parent_location_id: 2
+location_113: 
+  name: Idaho
+  id: 113
+  short_name: ID
+  parent_location_id: 2
+location_102: 
+  name: Alaska
+  id: 102
+  short_name: AK
+  parent_location_id: 2
+location_124: 
+  name: Minnesota
+  id: 124
+  short_name: MN
+  parent_location_id: 2
+location_146: 
+  name: Vermont
+  id: 146
+  short_name: VT
+  parent_location_id: 2
+location_147: 
+  name: Virginia
+  id: 147
+  short_name: VA
+  parent_location_id: 2
+location_125: 
+  name: Mississippi
+  id: 125
+  short_name: MS
+  parent_location_id: 2
+location_103: 
+  name: Arizona
+  id: 103
+  short_name: AZ
+  parent_location_id: 2
+location_114: 
+  name: Illinois
+  id: 114
+  short_name: IL
+  parent_location_id: 2
+location_136: 
+  name: Ohio
+  id: 136
+  short_name: OH
+  parent_location_id: 2

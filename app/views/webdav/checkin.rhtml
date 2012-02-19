@@ -1,0 +1,20 @@
+<% @title = "Checkin" %>
+
+<h1>Checkin</h1>
+
+<% if @webdav.error? && @webdav.error_msg != 'File is not locked' %>
+  <%= @webdav.extended_error_msg %>
+<% else %>
+
+  <p>Checking in <%= @file_name %></p>
+
+  <%= render :partial => "webdav_upload", :locals => {:connection => 'checkin', :no_insert => true} %>
+
+<% end %>
+
+<table>
+  <tr>
+    <td><%= button_to('Done (Unlock)', :action => 'unlock', :connection_id => @connection_id, :path => @file_path) %></td>
+    <td><%= button_to('Back', webdav_last_list_url) %></td>
+  </tr>
+</table>

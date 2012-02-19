@@ -1,0 +1,21 @@
+<%= error_messages_for 'mailer' %>
+
+<table>
+<!--[form:mailer]-->
+<tr><td><label for="mailer_name">Name</label></td>
+<td><%= text_field 'mailer', 'name'  %></td></tr>
+
+<tr><td><label for="mailer_subject">Subject</label></td>
+<td><%= text_field 'mailer', 'subject'  %></td></tr>
+
+<tr><td><label for="mailer_page">Page</label></td>
+<td><%= text_field 'mailer', 'page'  %></td></tr>
+
+<tr><td><label for="mailer_group">Group</label></td>
+<td><%= select 'mailer', 'mailer_group_id', @group_list  %></td></tr>
+
+<tr><td><label for="mailer_additional_filter">Additional filter</label></td>
+<td><%= text_field 'mailer', 'additional_filter'  %></td></tr>
+<!--[eoform:mailer]-->
+
+</table>

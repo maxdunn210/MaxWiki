@@ -1,0 +1,12 @@
+<%
+  @title = 'Configuration'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>Configuration</h1>
+
+<ol>
+<% for item in WIKI_CONFIG_ITEMS %>
+<li><%= link_to(item[:title], :action => 'config', :template => item[:template]) %></li>
+<% end %>
+</ol>

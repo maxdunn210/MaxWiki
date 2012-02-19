@@ -1,0 +1,54 @@
+<%
+  @title = 'Orphan Check'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>Orphan Check</h1>
+
+<h2>Orphan Households</h2>
+
+<% if @orphan_households.empty? %>
+  <p>No orphan households</p>
+<% else %>
+	<p>
+	<% for household in @orphan_households %>
+	  <%= "ID=#{household.id}, Address=#{household.address}" %><br/>
+	<% end %>
+	</p>
+<% end %>
+
+<h2>Orphan Players</h2>
+
+<% if @orphan_players.empty? %>
+  <p>No orphan players</p>
+<% else %>
+	<p>
+	<% for player in @orphan_players %>
+	  <%= "ID=#{player.id}, Name=#{player.full_name}, Household ID=#{player.household_id}" %><br/>
+	<% end %>
+	</p>
+<% end %>
+
+<h2>Orphan Adults</h2>
+
+<% if @orphan_adults.empty? %>
+  <p>No orphan adults</p>
+<% else %>
+	<p>
+	<% for adult in @orphan_adults %>
+	  <%= "ID=#{adult.id}, Name=#{adult.full_name}, Num=#{adult.adultnum}, Household ID=#{adult.household_id}" %><br/>
+	<% end %>
+	</p>
+<% end %>
+
+<h2>Orphan Doctors</h2>
+
+<% if @orphan_doctors.empty? %>
+  <p>No orphan doctors</p>
+<% else %>
+	<p>
+	<% for doctor in @orphan_doctors %>
+	  <%= "ID=#{doctor.id}, Name=#{doctor.physician_name}, Household ID=#{doctor.household_id}" %><br/>
+	<% end %>
+	</p>
+<% end %>

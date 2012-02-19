@@ -1,0 +1,9 @@
+
+We left a gap in the migrations, i.e. 028 and 029 do not (always) exist.
+
+Why is there a gap in the migrations?
+
+Because migration 028 was for the Okaapi plugin, which not everybody will use.
+
+And migration 029 was left out to see whether gaps in migrations work. They do, apparently.
+

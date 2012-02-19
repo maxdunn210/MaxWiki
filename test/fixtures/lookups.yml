@@ -1,0 +1,118 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  kind                :string(40)    
+#  name                :string(40)    
+#  short_name          :string(10)    
+#  display_order       :integer(11)   
+#  page_name           :string(100)   
+#
+
+--- 
+lookup_1: 
+  id: 1
+  wiki_id: 1 
+  name: T-Ball
+  kind: Level
+  short_name: TB
+  display_order: 20
+  
+lookup_2: 
+  id: 2
+  wiki_id: 1 
+  name: ''
+  kind: Level
+  short_name: ''
+  display_order: 10
+  
+lookup_3: 
+  id: 3
+  wiki_id: 1 
+  name: Farm
+  kind: Level
+  short_name: FA
+  display_order: 30
+  
+lookup_4: 
+  id: 4
+  wiki_id: 1 
+  name: Minors
+  kind: Level
+  short_name: MI
+  display_order: 40
+
+lookup_5: 
+  id: 5
+  wiki_id: 1 
+  name: Majors
+  kind: Level
+  short_name: MA
+  display_order: 50
+
+lookup_6: 
+  id: 6
+  wiki_id: 1 
+  name: Juniors
+  kind: Level
+  short_name: JR
+  display_order: 60
+
+lookup_7: 
+  id: 7
+  name: Seniors
+  wiki_id: 1 
+  kind: Level
+  short_name: SR
+  display_order: 70
+  
+lookup_league_tri_cities: 
+  id: 8
+  wiki_id: 1 
+  name: Tri-Cities
+  kind: League
+  short_name: TC
+  display_order: 10
+  
+lookup_league_cupertino_american: 
+  id: 9
+  wiki_id: 1 
+  name: Cupertino American
+  kind: League
+  short_name: CA
+  display_order: 20
+  
+lookup_location_wilson: 
+  id: 10
+  wiki_id: 1 
+  name: Wilson Park
+  kind: Location
+  short_name: Wilson
+  display_order: 10
+  page_name: Wilson Park
+
+lookup_location_miller: 
+  id: 11
+  wiki_id: 1 
+  name: Miller Middle School
+  kind: Location
+  short_name: Miller
+  display_order: 20
+  page_name: Miller
+
+lookup_location_blank: 
+  id: 12
+  wiki_id: 1 
+  name:
+  kind: Location
+  short_name: 
+  display_order: 1
+  
+lookup_none: 
+  id: 13
+  name: 
+  wiki_id: 1 
+  kind: Level
+  short_name: 
+  display_order: 1
+  
+  

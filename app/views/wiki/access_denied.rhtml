@@ -1,0 +1,13 @@
+<% 
+  @title = "Access Denied"
+%>
+
+<h1>Access Denied</h1>
+
+<p>You are not allowed to <%= @access_attempted %> page '<%= @page.name || @page.link %>'. 
+Your current role is '<%= @current_role %>' 
+but you need at least an '<%= @needed_role %>' role to <%= @access_attempted %> this page.</p>
+
+<p>You may <%= link_to 'login', :controller => 'user', :action => 'login' %> and try again.</p>
+
+

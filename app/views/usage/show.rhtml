@@ -1,0 +1,37 @@
+<h1>Usage Data</h1>
+
+<%= form_tag :controller => 'wiki', :action => 'show', :link => @return_link %>
+
+<p>
+  <select id="location" name="location">
+    <% for location in Location.names %>
+      <option value="<%= location %>" <%= 'selected="selected"' if location == @location %>><%= location %></option>
+    <% end %>
+  </select>
+</p>
+
+<p><%= submit_tag "Show Usage" %></p>
+
+<%= end_form %>
+
+<table border=1>
+  <tr>
+  <th>Location</th>
+  <% @categories.each do |category| %>
+    <th><%= category[:name] %><br /><%= category[:unit] %></th>
+  <% end %>
+  </tr>
+  <% @locations.each do |location| %>
+    <tr>
+    <td><%= location[:name] %></td>
+    <% @categories.each do |category| %>
+      <td style="text-align: center;"><%= location[category[:name]] %>&nbsp;</td>
+    <% end %>  
+    </tr>
+  <% end %>  
+</table>
+
+<p>&nbsp;</p>
+<img src="<%= @graph_web_filename %>" />
+
+<!-- no_cache -->

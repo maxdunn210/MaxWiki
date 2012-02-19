@@ -1,0 +1,225 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  kind                :string(40)    
+#  name                :string(40)    
+#  date_time           :datetime      
+#  home_team_id        :integer(11)   
+#  location_id         :integer(11)   
+#  note                :string(200)   
+#  length              :integer(11)   
+#  visitor_team_id     :integer(11)   
+#  home_team_note      :string(200)   
+#  visitor_team_note   :string(200)   
+#
+
+giants_game:
+  id: 1
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-03-30 10:00:00
+  length: 90
+  home_team_id: 1
+  location_id: 10
+  visitor_team_id: 2
+  note: Check field status
+  home_team_note: Giants arrive at 9:15
+  visitor_team_note: Marlins arrive at 9:30
+  
+giants_practice:
+  id: 2
+  wiki_id: 1 
+  kind: Practice
+  name: Practice
+  date_time: 2016-04-15 00:00:00
+  length: 120
+  home_team_id: 1
+  location_id: 11
+  visitor_team_id:
+  note:
+  home_team_note:
+  visitor_team_note:
+  
+opening_day:  
+  id: 3
+  wiki_id: 1 
+  kind: Event
+  name: Opening Ceremonies
+  date_time: 2016-03-18 00:00:00 -08:00
+  length:
+  home_team_id: 
+  visitor_team_id:
+  location_id: 10
+  note: 'Rain or shine!'
+  home_team_note:
+  visitor_team_note:
+  
+null_test:  
+  id: 4
+  wiki_id: 1 
+  kind: Event
+  name: Nothing
+  date_time: 2016-03-18 00:00:00 -08:00
+  length:
+  home_team_id: 
+  visitor_team_id:
+  location_id:
+  note:
+  home_team_note:
+  visitor_team_note:
+
+marlins_game:
+  id: 5
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-04-30 10:00:00
+  length: 120
+  home_team_id: 2
+  location_id: 10
+  visitor_team_id: 6
+  note:
+  home_team_note:
+  visitor_team_note: Marlins arrive at 9:30
+  
+conflict_game:
+  id: 6
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-03-30 9:00:00
+  length: 90
+  home_team_id: 3
+  location_id: 10
+  visitor_team_id: 4
+  note: Conflicts with Giants game (game)
+  home_team_note:
+  visitor_team_note:
+  
+conflict_overlap_practice:
+  id: 7
+  wiki_id: 1 
+  kind: Practice
+  name: Practice
+  date_time: 2016-03-30 11:00:00
+  length: 90
+  home_team_id: 5
+  location_id: 10
+  visitor_team_id:
+  note: Conflicts with Giants game (overlap practice)
+  home_team_note:
+  visitor_team_note:
+  
+conflict_short_practice:
+  id: 8
+  wiki_id: 1 
+  kind: Practice
+  name: Practice
+  date_time: 2016-03-30 10:30:00
+  length: 30
+  home_team_id: 5
+  location_id: 10
+  visitor_team_id:
+  note: Conflicts with Giants game (short practice)
+  home_team_note:
+  visitor_team_note:
+  
+conflict_long_practice:
+  id: 9
+  wiki_id: 1 
+  kind: Practice
+  name: Practice
+  date_time: 2016-03-30 9:30:00
+  length: 180
+  home_team_id: 5
+  location_id: 10
+  visitor_team_id:
+  note: Conflicts with Giants game (long practice)
+  home_team_note:
+  visitor_team_note:
+  
+non_conflict_game:
+  id: 10
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-03-30 8:30:00
+  length: 90
+  home_team_id: 3
+  location_id: 10
+  visitor_team_id: 4
+  note: Ends right when Giants game starts
+  home_team_note:
+  visitor_team_note:
+  
+non_conflict_practice:
+  id: 11
+  wiki_id: 1 
+  kind: Practice
+  name: Practice
+  date_time: 2016-03-30 11:30:00
+  length: 120
+  home_team_id: 5
+  location_id: 10
+  visitor_team_id:
+  note: Start right when Giants game end
+  home_team_note:
+  visitor_team_note:
+  
+non_conflict_field:
+  id: 12
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-03-30 10:00:00
+  length: 90
+  home_team_id: 1
+  location_id: 11
+  visitor_team_id: 2
+  note: Doesn't conflict, different field
+  home_team_note:
+  visitor_team_note:
+  
+non_conflict_zero_length:
+  id: 13
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-03-30 10:00:00
+  length:
+  home_team_id: 1
+  location_id: 10
+  visitor_team_id: 2
+  note: Doesn't conflict, zero length
+  home_team_note:
+  visitor_team_note:
+  
+non_conflict_blank_location:
+  id: 14
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-03-30 10:00:00
+  length: 90
+  home_team_id: 1
+  location_id: 12
+  visitor_team_id: 2
+  note: Doesn't conflict, blank location
+  home_team_note:
+  visitor_team_note:
+
+as_game:
+  id: 15
+  wiki_id: 1 
+  kind: Game
+  name: Game
+  date_time: 2016-05-3 10:00:00
+  length: 120
+  home_team_id: 3
+  location_id: 10
+  visitor_team_id: 7
+  note:
+  home_team_note:
+  visitor_team_note: 
+    

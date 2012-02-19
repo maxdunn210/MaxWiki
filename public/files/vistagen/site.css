@@ -1,0 +1,143 @@
+/* Site specific styles for Vistagen */
+/* Colors: 
+     Blue menu: rgb(74, 149, 189);
+     Orange menu: rgb(255, 153, 0);
+     Green Text: rgb(70, 140, 4);
+     Olive text: rgb(157, 157, 46);
+     background: rgb(244, 246, 245);
+*/
+
+/******** Widths ********/
+#border, #top, #bottom { width: 820px; }
+#container, #header, #footer { width: 800px; }
+#left_column { width: 150px; }
+.middle_column_narrow { width: 370px; }
+.middle_column_wide { width: 590px; }
+.middle_column_full { width: 750px; }
+#right_column { width: 150px; }
+#right_column .box { width: 150px; }
+
+a {
+  color: rgb(157, 157, 46);
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+a:hover {
+	color: #009966;
+  text-decoration: none;
+}
+
+a:active {
+	color: #00CC33;
+  text-decoration: none;
+}
+
+body { 
+  padding-top: 10px;
+  background: rgb(244, 246, 245);
+}
+
+#border {
+  background: none;
+}
+
+/*** Header main banner ***/
+#header {
+/*	height: 190px; */
+  height: 100%;
+	background: none;
+}
+
+/****
+#buffer_header,
+#buffer_header_short {
+  height: 156px;
+  background: url('../attachments/trikes/header/nature_panorama_banner.jpg') repeat-x;
+}
+
+
+#buffer_header_short {
+  background: none;
+  height: 0;
+}
+****/
+
+#menu {
+  background: rgb(74, 149, 189);
+}
+
+#menu a, 
+#menu li a {
+  font-weight: normal;	
+  color: white; 
+}
+
+#menu li a {
+  border-right: solid 4px white;
+}
+
+#menu a:hover, 
+#menu .selected {
+  color: rgb(255, 153, 0);
+}
+
+#left_column {
+	border-right: none;
+  background-color: white;
+}
+
+#middle_column {
+	padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;	
+  border-left: none;  
+}
+
+#middle_column h1,
+#middle_column h2,
+#middle_column h3 {
+  color: rgb(75, 151, 4);
+	font-weight: normal;
+	font-family: Arial, Helvetica;
+}	
+	
+#middle_column h1 {	
+  font-size: 24px;
+}
+
+#middle_column h2 {
+  font-size: 18px;
+  border-bottom: none;
+}
+
+#middle_column h3 {
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: none;
+	padding-top: 5px;	
+  padding-bottom: 5px;  }
+
+
+#footer {
+  height: 50px;
+  color: gray;
+  background-color: rgb(244, 246, 245);
+  border-top: none;
+  border-bottom: none;
+}
+
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+  background-color: inherit;
+}
+
+#footer .left_block {
+	margin-left: 0px;
+}
+
+#footer .right_block {
+  margin-right: 0px;
+}

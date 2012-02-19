@@ -1,0 +1,11 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  created_at          :datetime      not null
+#  updated_at          :datetime      not null
+#  web_id              :integer(11)   default(0), not null
+#  file_name           :string(255)   default(), not null
+#  description         :string(255)   default(), not null
+#
+
+--- {}

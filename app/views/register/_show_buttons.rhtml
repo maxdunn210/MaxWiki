@@ -1,0 +1,41 @@
+<table>
+<tr>
+<% unless @player.info_checked %>
+<td>
+<%= form_tag :action => 'confirm_player_info', :id => @player %>
+  <%= submit_tag "All Information Ok?" %>
+    &nbsp;
+<%= end_form %>
+</td>
+<% end %>
+
+<td>
+<%= form_tag :action => 'edit', :id => @player %>
+  <%= submit_tag "Edit" %>
+    &nbsp;
+<%= end_form %>
+</td>
+
+<td>
+<%= form_tag :action => 'delete_confirm', :id => @player %>
+  <%= submit_tag "Delete" %>
+  &nbsp;
+<%= end_form %>
+</td>
+
+<td>
+<%= form_tag( { :action => 'print', :id => @player }, { :target => "_blank" }) %>
+  <%= submit_tag "Print"%>
+  &nbsp;
+<%= end_form %>
+</td>
+
+<td>
+<%= form_tag :action => 'redirect_to_last_player_list' %> 
+  <%= submit_tag "Back" %>
+  &nbsp;
+<%= end_form %>
+</td>
+
+</tr>
+</table>

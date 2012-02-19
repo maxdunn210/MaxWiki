@@ -1,0 +1,26 @@
+<%
+  @title = "Checkout"
+%>
+
+<h1>Checkout</h1>
+
+<% if @webdav.error? && @webdav.error_msg != 'Locked' %>
+<%= @webdav.extended_error_msg%>
+<% else %>
+
+<p><%= link_to(@file_name, @file_url) %> has been locked and is ready for downloading.</p>
+
+<h4>Here are the instructions for downloading the file:</h4>
+
+<p>Link: <%= link_to(@file_name, @file_url) %></p>
+
+<ul>
+<li>Mac Firefox: Ctrl-click the link and choose "Save Link As"</li>
+<li>Mac Safari: Ctrl-click the link and choose "Save Link File to the Desktop" </li>
+<li>Windows Internet Explorer: Right-click the link and choose "Save Target As"</li>
+<li>Windows Firefox: : Right-click the link and choose "Save Link As"</li>
+</ul>
+
+<% end %>
+
+<%= button_to('Back', webdav_last_list_url) %>    

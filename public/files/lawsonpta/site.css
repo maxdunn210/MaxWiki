@@ -1,0 +1,14 @@
+/*** Header main banner ***/
+#header {
+  position: relative;
+  width: 800px;
+	height: 150px;
+	background: url(Lawson_08.jpg) repeat-x;
+}
+
+#header .left_block {
+  float: left;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-top: 5px;
+}

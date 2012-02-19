@@ -1,0 +1,153 @@
+--- 
+mailer_giants_game: 
+  name: Team Test
+  mailer_group_id: 2
+  subject: Giants game coming up!
+  id: 1
+  additional_filter: ""
+  page: Test
+  wiki_id: 1
+mailer_10022: 
+  name: No Payment Yet
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp Payment
+  id: !int:Fixnum 10022
+  additional_filter: ":paid => false, :wait_list_pos => 0"
+  page: Email-No Payment Yet
+  wiki_id: !int:Fixnum 10012
+mailer_10033: 
+  name: Tryouts Delayed
+  mailer_group_id: !int:Fixnum 10010
+  subject: Tryouts Delayed Due To Rain
+  id: !int:Fixnum 10033
+  additional_filter: info_checked = 1 and (adultnum = 1 or adultnum = 2) and birthday >= '1994/05/01' and birthday <= '1999/04/30'
+  page: Test
+  wiki_id: 1
+mailer_10023: 
+  name: One Day Decision
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp - One Day
+  id: !int:Fixnum 10023
+  additional_filter: ""
+  page: Email-One Day Decision
+  wiki_id: !int:Fixnum 10012
+mailer_10024: 
+  name: Found More Room
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp - Found More Room
+  id: !int:Fixnum 10024
+  additional_filter: wait_list_pos > 0
+  page: Email-Wait List More Room
+  wiki_id: !int:Fixnum 10012
+mailer_10025: 
+  name: No Payment Yet 2
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp Payment
+  id: !int:Fixnum 10025
+  additional_filter: ":paid => false"
+  page: Email-No Payment Yet
+  wiki_id: !int:Fixnum 10012
+mailer_10026: 
+  name: Demo Info
+  mailer_group_id: !int:Fixnum 10013
+  subject: "Ruby on Rails Camp: Demo Info Needed"
+  id: !int:Fixnum 10026
+  additional_filter: ":wait_list_pos => 0"
+  page: EMail-Demo Info
+  wiki_id: !int:Fixnum 10012
+mailer_10027: 
+  name: No Payment Yet 3
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp Payment Deadline Tuesday
+  id: !int:Fixnum 10027
+  additional_filter: ":paid => false, :wait_list_pos => 0"
+  page: Email-No Payment Yet 2
+  wiki_id: !int:Fixnum 10012
+mailer_10005: 
+  name: Registration Email Reminder
+  mailer_group_id: !int:Fixnum 10010
+  subject: Sign Up for Baseball Now!
+  id: !int:Fixnum 10005
+  additional_filter: ""
+  page: Registration Email Reminder
+  wiki_id: 1
+mailer_10006: 
+  name: Registration Reminder 2
+  mailer_group_id: !int:Fixnum 10010
+  subject: Sign Up for Baseball Now!
+  id: !int:Fixnum 10006
+  additional_filter: ""
+  page: Registration Reminder 2
+  wiki_id: 1
+mailer_10028: 
+  name: Camp Coming Up
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp Coming Up
+  id: !int:Fixnum 10028
+  additional_filter: ":wait_list_pos => 0"
+  page: Email-CampComingUp
+  wiki_id: !int:Fixnum 10012
+mailer_10029: 
+  name: Camp Tomorrow
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp Tomorrow!
+  id: !int:Fixnum 10029
+  additional_filter: ":wait_list_pos => 0"
+  page: Email-Camp Tomorrow
+  wiki_id: !int:Fixnum 10012
+mailer_10007: 
+  name: Registration Reminder 3
+  mailer_group_id: !int:Fixnum 10010
+  subject: Last Day to Sign Up for Baseball!
+  id: !int:Fixnum 10007
+  additional_filter: ""
+  page: Registration Reminder 3
+  wiki_id: 1
+mailer_10008: 
+  name: Reg Completion Inst
+  mailer_group_id: !int:Fixnum 10010
+  subject: Tri-Cities LL Registration Part 2-- PLEASE READ
+  id: !int:Fixnum 10008
+  additional_filter: ""
+  page: Reg Completion Inst
+  wiki_id: 1
+mailer_10030: 
+  name: Wait List Accepted
+  mailer_group_id: !int:Fixnum 10013
+  subject: Ruby on Rails Camp Acceptance
+  id: !int:Fixnum 10030
+  additional_filter: wait_list_pos > 0
+  page: Email-Wait List Accepted
+  wiki_id: !int:Fixnum 10012
+mailer_10031: 
+  name: Goodbye
+  mailer_group_id: !int:Fixnum 10013
+  subject: "Ruby on Rails Camp Goodbye "
+  id: !int:Fixnum 10031
+  additional_filter: ""
+  page: Email-Goodbye
+  wiki_id: !int:Fixnum 10012
+mailer_10009: 
+  name: Registration Reminder 4
+  mailer_group_id: !int:Fixnum 10010
+  subject: Haven't Signed Up for Baseball Yet? PLEASE READ!
+  id: !int:Fixnum 10009
+  additional_filter: ""
+  page: Registration Reminder 4
+  wiki_id: 1
+mailer_10020: 
+  name: Welcome
+  mailer_group_id: !int:Fixnum 10013
+  subject: Welcome to Ruby on Rails Camp 2006!
+  id: !int:Fixnum 10020
+  additional_filter: ":paid => true"
+  page: Email-Welcome
+  wiki_id: !int:Fixnum 10012
+mailer_10021: 
+  name: Two Day Question
+  mailer_group_id: !int:Fixnum 10013
+  subject: Extend Ruby on Rails Camp to Two Days?
+  id: !int:Fixnum 10021
+  additional_filter: ""
+  page: Email-Two Day Question
+  wiki_id: !int:Fixnum 10012

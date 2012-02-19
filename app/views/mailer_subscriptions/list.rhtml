@@ -1,0 +1,49 @@
+<%-
+  @title = 'Mailer Subscriptions'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Mailer Subscriptions</h1>
+
+<%- if  @mailer_subscriptions.nil? or @mailer_subscriptions.empty? -%>
+
+<p>(No Mailer Subscription records)</p>
+
+<%- else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('subscribed', :caption => 'Subscribed') %>
+	    <%= sort_header_tag('updated_at', :caption => 'Updated at') %>
+	    <%= sort_header_tag('updated_by', :caption => 'Updated by') %>
+  </tr>
+	  
+	<% for mailer_subscription in @mailer_subscriptions -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(mailer_subscription.subscribed.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'mailer_subscriptions', :action => 'edit', :id => mailer_subscription.id 
+					else
+					  display_name
+					end
+					-%></td>
+		      <td><%=h mailer_subscription.updated_at %></td>
+		      <td><%=h mailer_subscription.updated_by %></td>
+	  </tr>
+	<% end -%>
+</table>
+</div>
+
+<%= pagination_template(@mailer_subscriptions) %>
+
+<% end -%>
+  
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'mailer_subscriptions', :action => 'new' %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

@@ -1,0 +1,10 @@
+<%
+  @title = 'Register'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h1>Player List</h1>
+
+<%= render_partial 'player_table' %>
+<%= pagination_template(@players) %>
+<%= render_partial 'list_buttons' %>

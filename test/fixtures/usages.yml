@@ -1,0 +1,531 @@
+--- 
+usage_1043: 
+  kind: Electricity
+  location_id: 143
+  id: 1043
+  value: 1633.0
+usage_10: 
+  kind: Water
+  location_id: 110
+  id: 10
+  value: 153.0
+usage_31: 
+  kind: Water
+  location_id: 131
+  id: 31
+  value: 125.0
+usage_29: 
+  kind: Water
+  location_id: 129
+  id: 29
+  value: 315.0
+usage_1001: 
+  kind: Electricity
+  location_id: 101
+  id: 1001
+  value: 1586.0
+usage_1022: 
+  kind: Electricity
+  location_id: 122
+  id: 1022
+  value: 734.0
+usage_11: 
+  kind: Water
+  location_id: 111
+  id: 11
+  value: 153.0
+usage_32: 
+  kind: Water
+  location_id: 132
+  id: 32
+  value: 163.0
+usage_1002: 
+  kind: Electricity
+  location_id: 102
+  id: 1002
+  value: 935.0
+usage_1023: 
+  kind: Electricity
+  location_id: 123
+  id: 1023
+  value: 852.0
+usage_1044: 
+  kind: Electricity
+  location_id: 144
+  id: 1044
+  value: 1275.0
+usage_12: 
+  kind: Water
+  location_id: 112
+  id: 12
+  value: 207.0
+usage_33: 
+  kind: Water
+  location_id: 133
+  id: 33
+  value: 135.0
+usage_54: 
+  kind: Water
+  location_id: 2
+  id: 54
+  value: 152.0
+usage_1024: 
+  kind: Electricity
+  location_id: 124
+  id: 1024
+  value: 1052.0
+usage_1045: 
+  kind: Electricity
+  location_id: 145
+  id: 1045
+  value: 1001.0
+usage_34: 
+  kind: Water
+  location_id: 134
+  id: 34
+  value: 117.0
+usage_1003: 
+  kind: Electricity
+  location_id: 103
+  id: 1003
+  value: 986.0
+usage_1046: 
+  kind: Electricity
+  location_id: 146
+  id: 1046
+  value: 840.0
+usage_1004: 
+  kind: Electricity
+  location_id: 104
+  id: 1004
+  value: 1421.0
+usage_1025: 
+  kind: Electricity
+  location_id: 125
+  id: 1025
+  value: 1381.0
+usage_13: 
+  kind: Water
+  location_id: 113
+  id: 13
+  value: 189.0
+usage_1005: 
+  kind: Electricity
+  location_id: 105
+  id: 1005
+  value: 653.0
+usage_1026: 
+  kind: Electricity
+  location_id: 126
+  id: 1026
+  value: 1574.0
+usage_1047: 
+  kind: Electricity
+  location_id: 147
+  id: 1047
+  value: 1589.0
+usage_14: 
+  kind: Water
+  location_id: 114
+  id: 14
+  value: 142.0
+usage_35: 
+  kind: Water
+  location_id: 135
+  id: 35
+  value: 99.0
+usage_2001: 
+  kind: Car
+  location_id: 2
+  id: 2001
+  value: 12.0
+usage_1006: 
+  kind: Electricity
+  location_id: 106
+  id: 1006
+  value: 897.0
+usage_1050: 
+  kind: Electricity
+  location_id: 150
+  id: 1050
+  value: 956.0
+usage_1027: 
+  kind: Electricity
+  location_id: 127
+  id: 1027
+  value: 1333.0
+usage_1048: 
+  kind: Electricity
+  location_id: 148
+  id: 1048
+  value: 1549.0
+usage_15: 
+  kind: Water
+  location_id: 115
+  id: 15
+  value: 110.0
+usage_36: 
+  kind: Water
+  location_id: 136
+  id: 36
+  value: 129.0
+usage_1030: 
+  kind: Electricity
+  location_id: 130
+  id: 1030
+  value: 779.0
+usage_1007: 
+  kind: Electricity
+  location_id: 107
+  id: 1007
+  value: 958.0
+usage_1051: 
+  kind: Electricity
+  location_id: 151
+  id: 1051
+  value: 1493.0
+usage_1028: 
+  kind: Electricity
+  location_id: 128
+  id: 1028
+  value: 1461.0
+usage_0: 
+  kind: kind
+  location_id: 0
+  id: 0
+  value: 0.0
+usage_1049: 
+  kind: Electricity
+  location_id: 149
+  id: 1049
+  value: 1856.0
+usage_16: 
+  kind: Water
+  location_id: 116
+  id: 16
+  value: 131.0
+usage_37: 
+  kind: Water
+  location_id: 137
+  id: 37
+  value: 196.0
+usage_1010: 
+  kind: Electricity
+  location_id: 110
+  id: 1010
+  value: 1210.0
+usage_1031: 
+  kind: Electricity
+  location_id: 131
+  id: 1031
+  value: 766.0
+usage_1008: 
+  kind: Electricity
+  location_id: 108
+  id: 1008
+  value: 1259.0
+usage_1052: 
+  kind: Electricity
+  location_id: 2
+  id: 1052
+  value: 1131.0
+usage_1029: 
+  kind: Electricity
+  location_id: 129
+  id: 1029
+  value: 896.0
+usage_1: 
+  kind: Water
+  location_id: 101
+  id: 1
+  value: 187.0
+usage_40: 
+  kind: Water
+  location_id: 140
+  id: 40
+  value: 113.0
+usage_17: 
+  kind: Water
+  location_id: 117
+  id: 17
+  value: 155.0
+usage_38: 
+  kind: Water
+  location_id: 138
+  id: 38
+  value: 165.0
+usage_1032: 
+  kind: Electricity
+  location_id: 132
+  id: 1032
+  value: 774.0
+usage_1009: 
+  kind: Electricity
+  location_id: 109
+  id: 1009
+  value: 733.0
+usage_2: 
+  kind: Water
+  location_id: 102
+  id: 2
+  value: 128.0
+usage_20: 
+  kind: Water
+  location_id: 120
+  id: 20
+  value: 80.0
+usage_18: 
+  kind: Water
+  location_id: 118
+  id: 18
+  value: 130.0
+usage_41: 
+  kind: Water
+  location_id: 141
+  id: 41
+  value: 141.0
+usage_39: 
+  kind: Water
+  location_id: 139
+  id: 39
+  value: 119.0
+usage_1011: 
+  kind: Electricity
+  location_id: 111
+  id: 1011
+  value: 1426.0
+usage_3: 
+  kind: Water
+  location_id: 103
+  id: 3
+  value: 211.0
+usage_21: 
+  kind: Water
+  location_id: 121
+  id: 21
+  value: 155.0
+usage_42: 
+  kind: Water
+  location_id: 142
+  id: 42
+  value: 124.0
+usage_19: 
+  kind: Water
+  location_id: 119
+  id: 19
+  value: 168.0
+usage_1012: 
+  kind: Electricity
+  location_id: 112
+  id: 1012
+  value: 591.0
+usage_1033: 
+  kind: Electricity
+  location_id: 133
+  id: 1033
+  value: 606.0
+usage_4: 
+  kind: Water
+  location_id: 104
+  id: 4
+  value: 158.0
+usage_43: 
+  kind: Water
+  location_id: 143
+  id: 43
+  value: 156.0
+usage_22: 
+  kind: Water
+  location_id: 122
+  id: 22
+  value: 116.0
+usage_1013: 
+  kind: Electricity
+  location_id: 113
+  id: 1013
+  value: 1770.0
+usage_1034: 
+  kind: Electricity
+  location_id: 134
+  id: 1034
+  value: 1565.0
+usage_5: 
+  kind: Water
+  location_id: 105
+  id: 5
+  value: 181.0
+usage_23: 
+  kind: Water
+  location_id: 123
+  id: 23
+  value: 115.0
+usage_44: 
+  kind: Water
+  location_id: 144
+  id: 44
+  value: 202.0
+usage_1035: 
+  kind: Electricity
+  location_id: 135
+  id: 1035
+  value: 1952.0
+usage_1014: 
+  kind: Electricity
+  location_id: 114
+  id: 1014
+  value: 980.0
+usage_45: 
+  kind: Water
+  location_id: 145
+  id: 45
+  value: 286.0
+usage_6: 
+  kind: Water
+  location_id: 106
+  id: 6
+  value: 209.0
+usage_7: 
+  kind: Water
+  location_id: 107
+  id: 7
+  value: 124.0
+usage_1015: 
+  kind: Electricity
+  location_id: 115
+  id: 1015
+  value: 1441.0
+usage_24: 
+  kind: Water
+  location_id: 124
+  id: 24
+  value: 102.0
+usage_1036: 
+  kind: Electricity
+  location_id: 136
+  id: 1036
+  value: 1224.0
+usage_1037: 
+  kind: Electricity
+  location_id: 137
+  id: 1037
+  value: 1509.0
+usage_25: 
+  kind: Water
+  location_id: 125
+  id: 25
+  value: 126.0
+usage_8: 
+  kind: Water
+  location_id: 108
+  id: 8
+  value: 121.0
+usage_1016: 
+  kind: Electricity
+  location_id: 116
+  id: 1016
+  value: 1143.0
+usage_46: 
+  kind: Water
+  location_id: 146
+  id: 46
+  value: 99.0
+usage_26: 
+  kind: Water
+  location_id: 126
+  id: 26
+  value: 156.0
+usage_9: 
+  kind: Water
+  location_id: 109
+  id: 9
+  value: 0.0
+usage_1017: 
+  kind: Electricity
+  location_id: 117
+  id: 1017
+  value: 1162.0
+usage_47: 
+  kind: Water
+  location_id: 147
+  id: 47
+  value: 102.0
+usage_1038: 
+  kind: Electricity
+  location_id: 138
+  id: 1038
+  value: 1518.0
+usage_1040: 
+  kind: Electricity
+  location_id: 140
+  id: 1040
+  value: 633.0
+usage_1041: 
+  kind: Electricity
+  location_id: 141
+  id: 1041
+  value: 1640.0
+usage_1039: 
+  kind: Electricity
+  location_id: 139
+  id: 1039
+  value: 1106.0
+usage_48: 
+  kind: Water
+  location_id: 148
+  id: 48
+  value: 173.0
+usage_50: 
+  kind: Water
+  location_id: 150
+  id: 50
+  value: 116.0
+usage_1020: 
+  kind: Electricity
+  location_id: 120
+  id: 1020
+  value: 836.0
+usage_1018: 
+  kind: Electricity
+  location_id: 118
+  id: 1018
+  value: 1645.0
+usage_27: 
+  kind: Water
+  location_id: 127
+  id: 27
+  value: 165.0
+usage_1021: 
+  kind: Electricity
+  location_id: 121
+  id: 1021
+  value: 1223.0
+usage_1019: 
+  kind: Electricity
+  location_id: 119
+  id: 1019
+  value: 1560.0
+usage_49: 
+  kind: Water
+  location_id: 149
+  id: 49
+  value: 105.0
+usage_30: 
+  kind: Water
+  location_id: 130
+  id: 30
+  value: 78.0
+usage_28: 
+  kind: Water
+  location_id: 128
+  id: 28
+  value: 193.0
+usage_51: 
+  kind: Water
+  location_id: 151
+  id: 51
+  value: 217.0
+usage_1042: 
+  kind: Electricity
+  location_id: 142
+  id: 1042
+  value: 1489.0

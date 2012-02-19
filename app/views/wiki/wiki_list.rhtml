@@ -1,0 +1,18 @@
+<% @title = "Wikis" %>
+
+<ul>
+<% @wikis.each do |wiki| %>
+  <li>
+    <% if wiki.published %>
+      <%= link_to_page 'HomePage', wiki, wiki.description, :mode => 'publish' %>
+      (read-only) /
+      <%= link_to_page 'HomePage', wiki, 'editable version', :mode => 'show' %> (requires login)
+    <% else %>
+      <%= link_to_page 'HomePage', wiki, wiki.description, :mode => 'show' %>
+    <% end %>
+    <div class="byline" style="margin-bottom: 0px">
+      <%= wiki.pages.length %> pages by <%= wiki.authors.length %> authors
+    </div>
+  </li>
+<% end %>
+</ul>

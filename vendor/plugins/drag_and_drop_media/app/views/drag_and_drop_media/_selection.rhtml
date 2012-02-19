@@ -1,0 +1,83 @@
+<div style="float:left">
+    <% if @visible %>
+      <%= form_remote_tag( :update => @media+"_selection",
+                                     :loading => "Element.show('" + @media + "indicator')",
+                                     :complete => "Element.hide('" + @media + "indicator')",
+                           :url => { :controller => "drag_and_drop_media", 
+                                     :action => "update_display",
+                                     :media => @media  } ) %>                                                                            
+          <B><%=@media%>:</B> search by tag:
+            <%= text_field_tag :tags, @tags, :class => 'drag_and_drop_media_input' %> 
+          and/or username:
+            <%= text_field_tag :user, @user, :class => 'drag_and_drop_media_input' %>
+        
+          <%= submit_tag "Search " + @media, :class => 'drag_and_drop_media_submit' %>
+      <%= end_form %>   
+    <% end -%> 
+    
+    <% if @hideable == 'yes' %>
+      <%= link_to_remote( ( @visible ? "hide" : "show " + @media + " selector" ), 
+                            :update => @media+"_selection",
+                            :loading => "Element.show('" + @media + "indicator')",
+                            :complete => "Element.hide('" + @media + "indicator')",
+                            :url => { :controller => "drag_and_drop_media", 
+                                      :action => "toggle_display",
+                                      :media => @media,
+                                      :hideable => @hideable } ) %>
+    
+    <% end %>  
+    <br/>
+      
+    <% if @visible %>
+      <% if @items.nil? %>
+        <p>There was an error retrieving your items from <%= @media%>.</p>
+      <% elsif @items.size == 0 %>
+        <p>No items were found at <%= @media%> !!! </p>
+      <% else %> 
+        <% if @page > 1 %>
+          <%= link_to_remote( image_tag( 'topSliderPageLeft.gif', 
+                              :class => 'drag_and_drop_media_arrow' ), 
+                              :update => @media+"_selection",
+                              :loading => "Element.show('" + @media + "indicator')",
+                              :complete => "Element.hide('" + @media + "indicator')",
+                              :url => { :controller => "drag_and_drop_media", 
+                                        :action => "scroll_left",
+                                        :media => @media } ) %>
+      	<% else %>
+          <%= image_tag('topSliderPageLeftDisabled.gif', :class => 'drag_and_drop_media_arrow') %>
+        <% end %>
+     
+        <% for item in @items %>
+          <%= media_draggable_icon(@media.to_sym, item) %>
+        <% end %>
+    
+        <% if @drag_map %>
+          <%= drag_map_javascript(@drag_map) %>
+        <% end %>
+    
+        <% if @items.length == @per_page %>
+          <%= link_to_remote( image_tag( 'topSliderPageRight.gif', 
+                              :class => 'drag_and_drop_media_arrow'), 
+                              :update => @media+"_selection",
+                              :loading => "Element.show('" + @media + "indicator')",
+                              :complete => "Element.hide('" + @media + "indicator')",
+                              :url => { :controller => "drag_and_drop_media", 
+                                        :action => "scroll_right",
+                                        :media => @media } ) %>
+    
+        <% end %>	
+      <% end %>	
+      
+    <% end %>	
+     
+    <br style="clear:both" />
+    <%= image_tag("indicator.gif", :id => @media+'indicator', 
+                  :style => 'display:none', :class => 'drag_and_drop_media_indicator' ) %>
+    
+    <% if @visible %>  
+      <small>
+        <%= @media%> search took <%= number_with_precision(@search_time,2) %> seconds. 
+      </small>
+    <% end %> 
+
+</div>

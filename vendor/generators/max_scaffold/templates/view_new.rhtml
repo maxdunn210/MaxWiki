@@ -1,0 +1,15 @@
+<%%-
+  @title = '<%= plural_name.titleize %>'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>New <%= singular_name.titleize %></h1>
+
+<%%= start_form_tag :controller => '<%= controller_name %>', :action => 'create' %>
+  <%%= render :partial => 'form' %>
+  <%%= submit_tag "Create" %>
+<%%= end_form_tag %>
+
+<%%= start_form_tag :controller => '<%= controller_name %>', :action => 'index' %> 
+  <%%= submit_tag "Cancel" %>
+<%%= end_form_tag %>

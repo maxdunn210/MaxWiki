@@ -1,0 +1,31 @@
+<%-
+  @title = 'Mailer Process Auto Subscriptions'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Mailer Process Auto Subscriptions</h1>
+
+
+<%- if  @new_subscriptions.nil? or @new_subscriptions.empty? -%>
+
+<p>(No new subscriptions added)</p>
+
+<%- else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+    <th>User</th>
+    <th>Group</th>
+  </tr>
+	  
+	<% for subscription in @new_subscriptions -%>
+	  <tr>
+      <td><%=h subscription.user_id %></td>
+      <td><%=h subscription.mailer_group_id %></td>
+	  </tr>
+	<% end -%>
+</table>
+</div>
+
+<%- end -%>

@@ -1,0 +1,28 @@
+<%-
+  @title = 'Survey Questions'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Edit Survey Question</h1>
+
+<%= form_tag :controller => 'survey_questions', :action => 'update', :id => @survey_question, :survey_id => @survey_id  %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<%= end_form %>
+
+<table>
+	<tr>
+		<td>
+		<%= form_tag :controller => 'survey_questions', :action => 'index', :survey_id => @survey_id %> 
+		  <%= submit_tag "Cancel" %>
+		<%= end_form %>
+		</td>
+		
+		<td>
+		<%= form_tag :controller => 'survey_questions', :action => 'destroy', :id => @survey_question, :survey_id => @survey_id %>
+		  <%= submit_tag "Delete" %>
+		  &nbsp;
+		<%= end_form %>
+		</td>
+	</tr>
+</table>

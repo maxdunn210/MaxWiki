@@ -1,0 +1,22 @@
+<%
+  @title = "Orphan Pages" 
+  @left_column_partial = 'navigation'
+%>
+
+<h2>Orphaned Pages
+  <br/>
+  <small style="font-size: 12px">
+    <i>Pages in <%= @set_name %> that no other pages reference</i>
+  </small>
+</h2>
+
+<% if @pages_that_are_orphaned.empty? %>
+  (None)
+<% else %>
+  <ul>
+    <% @pages_that_are_orphaned.each do |orphan_page| %>
+      <li><%= link_to_existing_page orphan_page %></li>
+    <% end %>
+  </ul>
+<% end %>
+

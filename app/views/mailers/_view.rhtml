@@ -1,0 +1,19 @@
+<%= error_messages_for 'mailer' %>
+
+<table class='bordered'>
+<tr><td><b>Name:</b></td>
+<td><%=h @mailer.name  %></td></tr>
+
+<tr><td><b>Subject:</b></td>
+<td><%=h @mailer.subject  %></td></tr>
+
+<tr><td><b>Page:</b></td>
+<td><%= page_link(@mailer.page)  %></td></tr>
+
+<tr><td><b>Group:</b></td>
+<td><%=h @mailer.mailer_group.name rescue '' %></td></tr>
+
+<tr><td><b>Additional filter:</b></td>
+<td><%=h @mailer.additional_filter  %></td></tr>
+
+</table>

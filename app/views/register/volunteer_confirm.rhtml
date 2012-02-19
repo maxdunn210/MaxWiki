@@ -1,0 +1,42 @@
+<%
+  @title = 'Register'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h1>Volunteer Job Information</h1>
+
+<% if @existing_response.nil? %>
+  <p> Survey Response for user <%= @user.firstname %> not found" </p>
+<% else %>
+  <table>
+    <%  @questions.each do |question_name| %>
+    <tr>
+  	  <td>
+		<%= question_name %>
+	  </td>
+      <td>
+		<%= @existing_response.find_answer_by_question_name(question_name).answer %>
+	  </td>
+    </tr>
+    <% end %>
+  </table>
+<% end %>
+
+<table>
+<tr>
+	<td>
+	  <%= form_tag({:controller => 'register', :action => 'pay'}) %>
+	    <%= submit_tag('Continue') %>
+	    &nbsp;
+	  <%= end_form %>
+	</td>
+		
+	<td>
+	  <%= form_tag({:controller => 'register', :action => 'volunteer'}) %>
+	    <%= submit_tag('Back') %>
+	    &nbsp;
+	  <%= end_form %>
+	</td>
+</tr>
+</table>
+

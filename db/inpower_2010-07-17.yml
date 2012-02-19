@@ -1,0 +1,979 @@
+--- 
+schema_info: 
+- version: 40
+--- 
+plugin_schema_info: []
+
+--- 
+sessions: []
+
+--- 
+adults: 
+- work_phone: 
+  wait_list_pos: 0
+  salt: 2b1b1ec5c447c4b0eb1ba4b01445532b8fa43231
+  question1: 
+  company: 
+  updated_at: 2010-07-16 20:38:49.801574 -07:00
+  question2: 
+  delete_after: 
+  question3: 
+  question4: 
+  security_token: 
+  role: Admin
+  paid: false
+  lastname: Admin
+  id: 907
+  firstname: 
+  adultnum: 0
+  relationship: 
+  cell_phone: 
+  token_expiry: 
+  home_phone: 
+  deleted: 0
+  auth_extra: 
+  verified: 1
+  auth_provider: 
+  salted_password: 26df39885fc0fe58031dac2345f343969eeddffe
+  login: admin
+  household_id: 0
+  wiki_id: 84
+  paid_by: 
+  email: mdunn@maxdunn.com
+  created_at: 2010-07-16 20:38:49.801574 -07:00
+- work_phone: ""
+  wait_list_pos: 0
+  salt: 8df7e86e97d856bde0ad4537d6f2fec68bc878a3
+  question1: 
+  company: ""
+  updated_at: 2010-07-16 20:40:36.259498 -07:00
+  question2: 
+  delete_after: 
+  question3: 
+  question4: 
+  security_token: 4038e161232c0eeb082a145694d54171cb08eaee
+  role: Admin
+  paid: false
+  lastname: Dunn
+  id: 908
+  firstname: Max
+  adultnum: 0
+  relationship: ""
+  cell_phone: ""
+  token_expiry: 2010-07-17 20:40:09 -07:00
+  home_phone: ""
+  deleted: 0
+  auth_extra: f
+  verified: 1
+  auth_provider: ""
+  salted_password: 1a3786706c7dbf2ce80ae9bc25d23651bc7810c4
+  login: max@maxdunn.com
+  household_id: 0
+  wiki_id: 84
+  paid_by: ""
+  email: max@maxdunn.com
+  created_at: 2010-07-16 20:40:09.643100 -07:00
+--- 
+doctors: []
+
+--- 
+emails: []
+
+--- 
+events: []
+
+--- 
+households: []
+
+--- 
+lookups: []
+
+--- 
+mailer_groups: []
+
+--- 
+mailer_subscriptions: []
+
+--- 
+mailers: []
+
+--- 
+pages: 
+- name: Welcome
+  updated_at: 2010-07-16 20:38:52.069766 -07:00
+  locked_by: 
+  kind: 
+  id: 1724
+  locked_at: 
+  link: welcome
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:52.037366 -07:00
+  access_read: Public
+- name: header
+  updated_at: 2010-07-16 20:56:02.705555 -07:00
+  locked_by: " Admin"
+  kind: 
+  id: 1720
+  locked_at: 
+  link: header
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:50.877270 -07:00
+  access_read: Public
+- name: menu
+  updated_at: 2010-07-16 21:42:51.887702 -07:00
+  locked_by: " Admin"
+  kind: 
+  id: 1721
+  locked_at: 
+  link: menu
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:51.436637 -07:00
+  access_read: Public
+- name: Technology
+  updated_at: 2010-07-16 21:43:37.043817 -07:00
+  locked_by: 
+  kind: 
+  id: 1726
+  locked_at: 
+  link: technology
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 21:43:36.954808 -07:00
+  access_read: Public
+- name: Partners
+  updated_at: 2010-07-16 21:44:07.088081 -07:00
+  locked_by: 
+  kind: 
+  id: 1727
+  locked_at: 
+  link: partners
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 21:44:07.037563 -07:00
+  access_read: Public
+- name: About Us
+  updated_at: 2010-07-16 21:44:22.057869 -07:00
+  locked_by: 
+  kind: 
+  id: 1728
+  locked_at: 
+  link: about_us
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 21:44:21.873215 -07:00
+  access_read: Public
+- name: Investor Relations
+  updated_at: 2010-07-16 21:44:39.612275 -07:00
+  locked_by: 
+  kind: 
+  id: 1729
+  locked_at: 
+  link: investor_relations
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 21:44:39.482244 -07:00
+  access_read: Public
+- name: footer
+  updated_at: 2010-07-17 10:37:29.038436 -07:00
+  locked_by: " Admin"
+  kind: 
+  id: 1722
+  locked_at: 
+  link: footer
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:51.787632 -07:00
+  access_read: Public
+- name: Solar Ecosystem
+  updated_at: 2010-07-17 13:55:16.701155 -07:00
+  locked_by: " Admin"
+  kind: 
+  id: 1725
+  locked_at: 
+  link: solar_ecosystem
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 21:43:15.628186 -07:00
+  access_read: Public
+- name: HomePage
+  updated_at: 2010-07-17 15:29:35.410591 -07:00
+  locked_by: " Admin"
+  kind: 
+  id: 1723
+  locked_at: 
+  link: homepage
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:51.832925 -07:00
+  access_read: Public
+- name: Solar Ecosystem_left
+  updated_at: 2010-07-17 15:39:11.088615 -07:00
+  locked_by: " Admin"
+  kind: 
+  id: 1730
+  locked_at: 
+  link: solar_ecosystem_left
+  access_write: Editor
+  parent_id: 
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-17 15:36:09.060134 -07:00
+  access_read: Public
+- name: Product R&D
+  updated_at: 2010-07-17 15:41:26.167383 -07:00
+  locked_by: 
+  kind: 
+  id: 1731
+  locked_at: 
+  link: product_r_d
+  access_write: Editor
+  parent_id: 1725
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-17 15:41:26.115702 -07:00
+  access_read: Public
+- name: Manufacturing
+  updated_at: 2010-07-17 15:41:49.987300 -07:00
+  locked_by: 
+  kind: 
+  id: 1732
+  locked_at: 
+  link: manufacturing
+  access_write: Editor
+  parent_id: 1725
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-17 15:41:49.823897 -07:00
+  access_read: Public
+- name: Installation
+  updated_at: 2010-07-17 15:42:10.060439 -07:00
+  locked_by: 
+  kind: 
+  id: 1733
+  locked_at: 
+  link: installation
+  access_write: Editor
+  parent_id: 1725
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-17 15:42:10.008947 -07:00
+  access_read: Public
+- name: Transmission
+  updated_at: 2010-07-17 15:42:32.429218 -07:00
+  locked_by: 
+  kind: 
+  id: 1734
+  locked_at: 
+  link: transmission
+  access_write: Editor
+  parent_id: 1725
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-17 15:42:32.343006 -07:00
+  access_read: Public
+- name: Financing
+  updated_at: 2010-07-17 15:43:03.972298 -07:00
+  locked_by: " Admin"
+  kind: 
+  id: 1735
+  locked_at: 
+  link: financing
+  access_write: Editor
+  parent_id: 1725
+  access_permissions: Admin
+  wiki_id: 84
+  created_at: 2010-07-17 15:42:48.464385 -07:00
+  access_read: Public
+--- 
+players: []
+
+--- 
+revisions: 
+- content_type: textile
+  updated_at: 2010-07-16 20:38:51.141789 -07:00
+  page_id: 1720
+  author: system
+  id: 4552
+  revised_at: 2010-07-16 20:38:50.689219 -07:00
+  ip: admin
+  content: |
+    <div class=left_block>
+    
+    h1. MaxWiki Header
+    
+    </div>
+    
+    <div class=right_block>
+    
+    <%= login_block %>
+    
+    </div>
+
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:51.141789 -07:00
+- content_type: textile
+  updated_at: 2010-07-16 20:38:51.442543 -07:00
+  page_id: 1721
+  author: system
+  id: 4553
+  revised_at: 2010-07-16 20:38:51.412736 -07:00
+  ip: admin
+  content: |
+    * [[HomePage|Home]]
+    * [[Products]]
+    * [[About Us]]
+    * [[Contact Us]]
+    * <%= link_to 'My Account', :controller => 'user', :action => 'index' %>
+    * <div class='role_Admin' style='display:none'><%= link_to('Admin', {:controller => 'reg_admin', :action => 'index'}) %> </div>
+
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:51.442543 -07:00
+- content_type: textile
+  updated_at: 2010-07-16 20:38:51.791534 -07:00
+  page_id: 1722
+  author: system
+  id: 4554
+  revised_at: 2010-07-16 20:38:51.767591 -07:00
+  ip: admin
+  content: |-
+    <div class=right_block>
+    <b>Copyright (c) 2010</b>
+    </div>
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:51.791534 -07:00
+- content_type: textile
+  updated_at: 2010-07-16 20:38:51.907172 -07:00
+  page_id: 1723
+  author: system
+  id: 4555
+  revised_at: 2010-07-16 20:38:51.812805 -07:00
+  ip: admin
+  content: |
+    h1. Home Page
+    
+    This is a sample home page.
+
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:51.907172 -07:00
+- content_type: textile
+  updated_at: 2010-07-16 20:38:52.042466 -07:00
+  page_id: 1724
+  author: system
+  id: 4556
+  revised_at: 2010-07-16 20:38:52.016559 -07:00
+  ip: admin
+  content: |
+    h1. Welcome
+    
+    <%= no_cache %>
+    
+    You are now logged in to <%= config_site_name %> as '<%= session_user_name %>' with role '<%= session_role_name %>'.
+    
+    <% if user_info_incomplete %>
+    
+    h2. Updating Your Information
+    
+    Your information is not complete. Please take a moment to update your <%= link_to("account information", :controller => 'user',  :action => 'edit') %>.
+    
+    <% end %>
+    
+    <div class="role_Editor" style="display:none">
+    
+    h2. Editing a Page
+    
+    <img src="/images/edit.gif" align="bottom" alt="Edit Icon" />On any page where this edit icon appears at the bottom, you can edit the page by clicking on the icon.
+    
+    </div>        
+
+  wiki_id: 84
+  created_at: 2010-07-16 20:38:52.042466 -07:00
+- content_type: html
+  updated_at: 2010-07-16 20:56:02.573411 -07:00
+  page_id: 1720
+  author: " Admin"
+  id: 4557
+  revised_at: 2010-07-16 20:56:02.543523 -07:00
+  ip: 127.0.0.1
+  content: ""
+  wiki_id: 84
+  created_at: 2010-07-16 20:56:02.573411 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:10:49.259023 -07:00
+  page_id: 1722
+  author: " Admin"
+  id: 4558
+  revised_at: 2010-07-16 21:10:49.249607 -07:00
+  ip: 127.0.0.1
+  content: |-
+    <div class="right_block">
+    <div class="role_none" style="display: none;"><a href="/_action/user/signup">Signup</a> |</div>
+    <%= login_block %> |
+    <div class="role_Admin" style="display: none;"><a href="/_action/reg_admin">Admin</a> |</div>
+    <div class="role_Editor" style="display: none;"><a href="/_action/wiki/list">Pages</a> |</div>
+    <b>Copyright&copy; 2010 In-Power Solar, LLC</b><br />
+    Powered by <a href="http://www.maxwiki.com">MaxWiki</a></div>
+  wiki_id: 84
+  created_at: 2010-07-16 21:10:49.259023 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:42:51.711899 -07:00
+  page_id: 1721
+  author: " Admin"
+  id: 4559
+  revised_at: 2010-07-16 21:42:51.701275 -07:00
+  ip: 127.0.0.1
+  content: |
+    <ul>
+    	<li>
+    		<a href="/">Home</a></li>
+    	<li>
+    		<a href="/solar_ecosystem">Solar Ecosystem</a></li>
+    	<li>
+    		<a href="/technology">Technology</a></li>
+    	<li>
+    		<a href="/partners">Partners</a></li>
+    	<li>
+    		<a href="/about_us">About Us</a></li>
+    	<li>
+    		<a href="/investor_relations">Investor Relations</a></li>
+    </ul>
+
+  wiki_id: 84
+  created_at: 2010-07-16 21:13:43.530537 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:43:37.005594 -07:00
+  page_id: 1726
+  author: " Admin"
+  id: 4561
+  revised_at: 2010-07-16 21:43:36.934887 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Technology</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-16 21:43:37.005594 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:43:51.249250 -07:00
+  page_id: 1725
+  author: " Admin"
+  id: 4560
+  revised_at: 2010-07-16 21:43:51.239177 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Solar Ecosystem</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-16 21:43:15.665571 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:44:07.051717 -07:00
+  page_id: 1727
+  author: " Admin"
+  id: 4562
+  revised_at: 2010-07-16 21:44:07.017641 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Partners</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-16 21:44:07.051717 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:44:22.016081 -07:00
+  page_id: 1728
+  author: " Admin"
+  id: 4563
+  revised_at: 2010-07-16 21:44:21.852115 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	About Us</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-16 21:44:22.016081 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:44:39.542876 -07:00
+  page_id: 1729
+  author: " Admin"
+  id: 4564
+  revised_at: 2010-07-16 21:44:39.458954 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Investor Relations</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-16 21:44:39.542876 -07:00
+- content_type: html
+  updated_at: 2010-07-16 21:47:37.002120 -07:00
+  page_id: 1723
+  author: " Admin"
+  id: 4565
+  revised_at: 2010-07-16 21:47:36.990758 -07:00
+  ip: 127.0.0.1
+  content: |
+    <div class="body_small" style="width: 280px; float: left; margin-top: 20px; margin-right: 5px; margin-bottom: 15px; margin-left: 20px; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; color: rgb(0, 0, 0); font-family: Times; font-size: medium; ">
+    	<h2 class="welcome" style="color: rgb(78, 74, 56); font: normal normal normal 22px/normal Tahoma, Geneva, sans-serif; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(209, 209, 209); margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 5px; padding-right: 35px; padding-bottom: 5px; padding-left: 35px; background-image: url(http://in-powersolar.com/images/h2_welcome.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    		<br class="Apple-interchange-newline" />
+    		Overview</h2>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		<span style="font: normal normal normal 15px/normal Arial, Helvetica, sans-serif; color: rgb(137, 137, 137); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">Excepteur sint cupidatat non proident.</span></p>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">tempor incididunt</a>&nbsp;ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">reprehenderit in voluptate</a>&nbsp;velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="body_small" style="width: 280px; float: left; margin-top: 20px; margin-right: 5px; margin-bottom: 15px; margin-left: 20px; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; color: rgb(0, 0, 0); font-family: Times; font-size: medium; ">
+    	<h2 class="what" style="color: rgb(78, 74, 56); font: normal normal normal 22px/normal Tahoma, Geneva, sans-serif; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(209, 209, 209); margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 5px; padding-right: 35px; padding-bottom: 5px; padding-left: 35px; background-image: url(http://in-powersolar.com/images/h2_what.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    		Our Mission</h2>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		<span style="font: normal normal normal 15px/normal Arial, Helvetica, sans-serif; color: rgb(137, 137, 137); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">Duis aute irure dolor in reprehenderit.</span></p>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    	<p class="testt" style="font: normal normal normal 10px/normal Arial, Helvetica, sans-serif; color: rgb(141, 141, 141); line-height: 1.8em; padding-top: 20px; padding-right: 10px; padding-bottom: 20px; padding-left: 10px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-image: url(http://in-powersolar.com/images/bg_testimonials.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; width: 230px; height: 102px; text-align: center; background-position: 50% 0%; background-repeat: no-repeat no-repeat; ">
+    		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="body_small" style="width: 280px; float: left; margin-top: 20px; margin-right: 5px; margin-bottom: 15px; margin-left: 20px; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; color: rgb(0, 0, 0); font-family: Times; font-size: medium; ">
+    	<h2 class="serv" style="color: rgb(78, 74, 56); font: normal normal normal 22px/normal Tahoma, Geneva, sans-serif; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(209, 209, 209); margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 5px; padding-right: 35px; padding-bottom: 5px; padding-left: 35px; background-image: url(http://in-powersolar.com/images/h2_serv.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    		Our Values</h2>
+    	<ul style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(52, 151, 196); list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+    		<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    			<h1>
+    				&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Consectetur adipisicing elit sed.</a></h1>
+    		</li>
+    		<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    			&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Ipsum dolor sit amet.</a></li>
+    		<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    			&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Excepteur sint occaecat cupidatat.</a></li>
+    		<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    			&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Voluptate velit esse cillum.</a></li>
+    		<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    			&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Quis nostrud exercitation.</a></li>
+    		<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    			&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Laboris nisi ut aliquip.</a></li>
+    		<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    			&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Duis aute irure dolor.</a></li>
+    	</ul>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; "><img alt="picture" border="0" height="26" src="images/read_more.gif" width="111" /></a></p>
+    </div>
+    <div class="clr" style="clear: both; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; color: rgb(0, 0, 0); font-family: Times; font-size: medium; ">
+    	&nbsp;</div>
+    <div class="body_small" style="width: 280px; float: left; margin-top: 20px; margin-right: 5px; margin-bottom: 15px; margin-left: 20px; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; color: rgb(0, 0, 0); font-family: Times; font-size: medium; ">
+    	<h2 class="tets" style="color: rgb(78, 74, 56); font: normal normal normal 22px/normal Tahoma, Geneva, sans-serif; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(209, 209, 209); margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 5px; padding-right: 35px; padding-bottom: 5px; padding-left: 35px; background-image: url(http://in-powersolar.com/images/h2_tets.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    		Aspiration</h2>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		<em style="font: italic normal normal 13px/normal Arial, Helvetica, sans-serif; color: rgb(141, 141, 141); ">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</em></p>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; float: right; "><strong>-Officia Deserunt</strong></a></p>
+    </div>
+    <div class="body_big" style="width: 605px; float: left; margin-top: 20px; margin-right: 5px; margin-bottom: 15px; margin-left: 20px; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; color: rgb(0, 0, 0); font-family: Times; font-size: medium; ">
+    	<h2 class="Featur" style="color: rgb(78, 74, 56); font: normal normal normal 22px/normal Tahoma, Geneva, sans-serif; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(209, 209, 209); margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 5px; padding-right: 35px; padding-bottom: 5px; padding-left: 35px; background-image: url(http://in-powersolar.com/images/h2_Featur.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    		in-Power Solar Ecosystem</h2>
+    	<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	<ul style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(64, 64, 64); list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 5px; margin-right: 20px; margin-bottom: 5px; margin-left: 20px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+    		<li style="background-image: url(http://in-powersolar.com/images/ul_li_feat.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 2px; padding-right: 20px; padding-bottom: 2px; padding-left: 20px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    			Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</li>
+    		<li style="background-image: url(http://in-powersolar.com/images/ul_li_feat.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 2px; padding-right: 20px; padding-bottom: 2px; padding-left: 20px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    			Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    		<li>
+    			&nbsp;</li>
+    	</ul>
+    </div>
+
+  wiki_id: 84
+  created_at: 2010-07-16 21:47:37.002120 -07:00
+- content_type: html
+  updated_at: 2010-07-17 10:36:21.677338 -07:00
+  page_id: 1725
+  author: " Admin"
+  id: 4566
+  revised_at: 2010-07-17 10:36:21.667887 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	<img alt="" src="/files/inpower/icon_welcome.gif" style="width: 27px; height: 27px; " />&nbsp;Local Eco-Innovation</h1>
+    <div>
+    	Domestic production of solar modules is becoming more and more essential as the demand for solar modules in the US is expected to rise to over 4,000 MW in a few years and there is currently very little capacity to produce these modules domestically. &nbsp; Solar modules are large and continuing to grow larger to maximize power output. &nbsp;The combination of modules growing in size and decreasing in price makes importing them less and less financially viable. &nbsp; Finally, solar modules are required to continue to function effectively for over 20 years and many imported products will struggle to meet this reliability standard.</div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	A robust and sustainable local solar energy program requires local manufacturing and supply, proximity to energy transmission capability, local customers purchasing energy from local solar installations, and a financial model that minimizes upfront costs to make solar energy affordable and accessible to a large segment of the community.</div>
+
+  wiki_id: 84
+  created_at: 2010-07-17 10:24:53.717963 -07:00
+- content_type: html
+  updated_at: 2010-07-17 10:37:29.006775 -07:00
+  page_id: 1722
+  author: " Admin"
+  id: 4567
+  revised_at: 2010-07-17 10:37:28.996907 -07:00
+  ip: 127.0.0.1
+  content: |
+    <div class="right_block">
+    	
+    	<div class="role_none" style="display: none;">
+    		<a href="/_action/user/signup">Signup</a> |</div>
+    <%= login_block %>	|
+    	<div class="role_Admin" style="display: none;">
+    		<a href="/_action/reg_admin">Admin</a> |</div>
+    	<div class="role_Editor" style="display: none;">
+    		<a href="/_action/wiki/list">Pages</a> |</div>
+    	<b>Copyright&copy; 2010 In-Power Solar, LLC</b><br />
+    	<p>
+    		<br />
+    <br />
+    
+    		Powered by <a href="http://www.maxwiki.com">MaxWiki</a></p>
+    </div>
+
+  wiki_id: 84
+  created_at: 2010-07-17 10:37:03.379270 -07:00
+- content_type: html
+  updated_at: 2010-07-17 13:55:16.638728 -07:00
+  page_id: 1725
+  author: " Admin"
+  id: 4568
+  revised_at: 2010-07-17 13:55:16.629484 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	<img alt="" src="/files/inpower/icon_welcome.gif" style="width: 27px; height: 27px; " />&nbsp;Local Eco-Innovation</h1>
+    <h2>
+    	Domestic Production</h2>
+    <p>
+    	Domestic production of solar modules is becoming more and more essential as the demand for solar modules in the US is expected to rise to over 4,000 MW in a few years and there is currently very little capacity to produce these modules domestically. &nbsp; Solar modules are large and continuing to grow larger to maximize power output. &nbsp;The combination of modules growing in size and decreasing in price makes importing them less and less financially viable. &nbsp; Finally, solar modules are required to continue to function effectively for over 20 years and many imported products will struggle to meet this reliability standard.</p>
+    <h2>
+    	Local Manufacturing</h2>
+    <p>
+    	A robust and sustainable local solar energy program requires local manufacturing and supply, proximity to energy transmission capability, local customers purchasing energy from local solar installations, and a financial model that minimizes upfront costs to make solar energy affordable and accessible to a large segment of the community.</p>
+
+  wiki_id: 84
+  created_at: 2010-07-17 13:55:16.638728 -07:00
+- content_type: html
+  updated_at: 2010-07-17 15:29:35.328748 -07:00
+  page_id: 1723
+  author: " Admin"
+  id: 4569
+  revised_at: 2010-07-17 15:29:35.318838 -07:00
+  ip: 127.0.0.1
+  content: |-
+    <p>
+    	[% full_page %]</p>
+    <table align="center" border="0" cellpadding="10" cellspacing="10">
+    	<tbody>
+    		<tr>
+    			<td style="vertical-align: top; width: 330px; ">
+    				<h1>
+    					<img alt="" src="/files/inpower/icon_welcome.gif" style="width: 27px; height: 27px; " />&nbsp;Overview</h1>
+    				<h2>
+    					Excepteur&nbsp;sint&nbsp;cupidatat&nbsp;non&nbsp;proident.</h2>
+    				<p>
+    					Lorem ipsum dolor sit amet consectetur adipisicing elit,sed do eiusmod&nbsp;<a href="#">tempor incididunt</a>&nbsp;&nbsp;ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolorin<a href="#">reprehenderit</a><a href="#"> in voluptate</a> velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.</p>
+    			</td>
+    			<td style="vertical-align: top; width: 360px; ">
+    				<h1>
+    					<img alt="" src="/files/inpower/icon_what.gif" style="width: 27px; height: 27px; " />&nbsp;Our Mission</h1>
+    				<h2>
+    					Duis aute irure dolor in reprehenderit.</h2>
+    				<p>
+    					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    				<p style="background: url(/files/inpower/bg_testimonials.gif) no-repeat; padding: 10px; padding-right: 40px; height: 102px;">
+    					<span style="font-size:11px;"><span class="Apple-style-span" style="color: rgb(141, 141, 141); font-family: Arial, Helvetica, sans-serif; ">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></span></p>
+    			</td>
+    			<td style="vertical-align: top; width: 300px; ">
+    				<h1>
+    					<img alt="" src="/files/inpower/icon_serv.gif" style="width: 27px; height: 27px; " />&nbsp;Our Values</h1>
+    				<ul style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(52, 151, 196); list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: Times; font-size: medium; ">
+    					<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    						&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Consectetur adipisicing elit sed.</a></li>
+    					<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    						&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Ipsum dolor sit amet.</a></li>
+    					<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    						&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Excepteur sint occaecat cupidatat.</a></li>
+    					<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    						&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Voluptate velit esse cillum.</a></li>
+    					<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    						&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Quis nostrud exercitation.</a></li>
+    					<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    						&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Laboris nisi ut aliquip.</a></li>
+    					<li style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+    						&bull;&nbsp;<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; ">Duis aute irure dolor.</a></li>
+    				</ul>
+    				<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-family: Times; font-size: medium; ">
+    					<span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 19px; "><a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; "><img alt="Read More ..." src="/files/inpower/read_more.gif" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 111px; height: 26px; " /></a></span></p>
+    			</td>
+    		</tr>
+    		<tr>
+    			<td style="vertical-align: top; width: 300px; ">
+    				<h1>
+    					<img alt="" src="/files/inpower/icon_tets.gif" style="width: 27px; height: 27px; " />&nbsp;Aspiration</h1>
+    				<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-family: Times; font-size: medium; ">
+    					<em style="font: italic normal normal 13px/normal Arial, Helvetica, sans-serif; color: rgb(141, 141, 141); ">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</em></p>
+    				<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-family: Times; font-size: medium; ">
+    					<a href="#" style="text-decoration: underline; color: rgb(52, 151, 196); line-height: 1.8em; float: right; "><strong>-Officia Deserunt</strong></a></p>
+    			</td>
+    			<td colspan="2" rowspan="1" style="vertical-align: top; width: 300px; ">
+    				<h1>
+    					<img alt="" src="/files/inpower/icon_featur.gif" style="width: 27px; height: 27px; " />&nbsp;in-Power Solar Ecosystem</h1>
+    				<p style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(65, 65, 65); line-height: 1.8em; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-family: Times; font-size: medium; ">
+    					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    				<ul style="font: normal normal normal 11px/normal Arial, Helvetica, sans-serif; color: rgb(64, 64, 64); list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 5px; margin-right: 20px; margin-bottom: 5px; margin-left: 20px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: Times; font-size: medium; ">
+    					<li style="background-image: url(http://in-powersolar.com/images/ul_li_feat.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 2px; padding-right: 20px; padding-bottom: 2px; padding-left: 20px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    						Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</li>
+    					<li style="background-image: url(http://in-powersolar.com/images/ul_li_feat.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 2px; padding-right: 20px; padding-bottom: 2px; padding-left: 20px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 50%; background-repeat: no-repeat no-repeat; ">
+    						Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    				</ul>
+    			</td>
+    		</tr>
+    	</tbody>
+    </table>
+  wiki_id: 84
+  created_at: 2010-07-17 14:13:31.148910 -07:00
+- content_type: html
+  updated_at: 2010-07-17 15:39:10.876852 -07:00
+  page_id: 1730
+  author: " Admin"
+  id: 4570
+  revised_at: 2010-07-17 15:39:10.867233 -07:00
+  ip: 127.0.0.1
+  content: |
+    <ul class="left_menu">
+    	<li class="submenu">
+    		<a href="/solar_ecosystem">Solar Ecosystem</a></li>
+    	<li>
+    		<a href="/product_r_d">Product R&amp;D</a></li>
+    	<li>
+    		<a href="/manufacturing">Manufacturing</a></li>
+    	<li>
+    		<a href="/installation">Installation</a></li>
+    	<li>
+    		<a href="/transmission">Transmission</a></li>
+    	<li>
+    		<a href="/financing">Financing</a></li>
+    </ul>
+
+  wiki_id: 84
+  created_at: 2010-07-17 15:36:09.232131 -07:00
+- content_type: html
+  updated_at: 2010-07-17 15:41:26.129944 -07:00
+  page_id: 1731
+  author: " Admin"
+  id: 4571
+  revised_at: 2010-07-17 15:41:26.093599 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Product R&amp;D</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-17 15:41:26.129944 -07:00
+- content_type: html
+  updated_at: 2010-07-17 15:41:49.948597 -07:00
+  page_id: 1732
+  author: " Admin"
+  id: 4572
+  revised_at: 2010-07-17 15:41:49.803149 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Manufacturing</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-17 15:41:49.948597 -07:00
+- content_type: html
+  updated_at: 2010-07-17 15:42:10.023986 -07:00
+  page_id: 1733
+  author: " Admin"
+  id: 4573
+  revised_at: 2010-07-17 15:42:09.989332 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Installation</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-17 15:42:10.023986 -07:00
+- content_type: html
+  updated_at: 2010-07-17 15:42:32.389596 -07:00
+  page_id: 1734
+  author: " Admin"
+  id: 4574
+  revised_at: 2010-07-17 15:42:32.322849 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Transmission</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-17 15:42:32.389596 -07:00
+- content_type: html
+  updated_at: 2010-07-17 15:43:03.911188 -07:00
+  page_id: 1735
+  author: " Admin"
+  id: 4575
+  revised_at: 2010-07-17 15:43:03.901636 -07:00
+  ip: 127.0.0.1
+  content: |
+    <h1>
+    	Financing</h1>
+
+  wiki_id: 84
+  created_at: 2010-07-17 15:42:48.478115 -07:00
+--- 
+survey_answers: []
+
+--- 
+survey_questions: []
+
+--- 
+survey_responses: []
+
+--- 
+surveys: []
+
+--- 
+teams: []
+
+--- 
+wiki_files: []
+
+--- 
+wiki_references: 
+- updated_at: 2010-07-16 21:42:51.872414 -07:00
+  link_type: W
+  page_id: 1721
+  id: 3737
+  wiki_id: 84
+  referenced_name: ""
+  created_at: 2010-07-16 21:42:51.872414 -07:00
+- updated_at: 2010-07-16 21:42:51.879842 -07:00
+  link_type: L
+  page_id: 1721
+  id: 3739
+  wiki_id: 84
+  referenced_name: Technology
+  created_at: 2010-07-16 21:42:51.879842 -07:00
+- updated_at: 2010-07-16 21:42:51.877921 -07:00
+  link_type: L
+  page_id: 1721
+  id: 3738
+  wiki_id: 84
+  referenced_name: Solar Ecosystem
+  created_at: 2010-07-16 21:42:51.877921 -07:00
+- updated_at: 2010-07-16 21:42:51.881545 -07:00
+  link_type: L
+  page_id: 1721
+  id: 3740
+  wiki_id: 84
+  referenced_name: Partners
+  created_at: 2010-07-16 21:42:51.881545 -07:00
+- updated_at: 2010-07-16 21:42:51.883030 -07:00
+  link_type: L
+  page_id: 1721
+  id: 3741
+  wiki_id: 84
+  referenced_name: About Us
+  created_at: 2010-07-16 21:42:51.883030 -07:00
+- updated_at: 2010-07-16 21:42:51.884569 -07:00
+  link_type: L
+  page_id: 1721
+  id: 3742
+  wiki_id: 84
+  referenced_name: Investor Relations
+  created_at: 2010-07-16 21:42:51.884569 -07:00
+- updated_at: 2010-07-17 15:39:11.073176 -07:00
+  link_type: L
+  page_id: 1730
+  id: 3749
+  wiki_id: 84
+  referenced_name: Solar Ecosystem
+  created_at: 2010-07-17 15:39:11.073176 -07:00
+- updated_at: 2010-07-17 15:39:11.078793 -07:00
+  link_type: L
+  page_id: 1730
+  id: 3750
+  wiki_id: 84
+  referenced_name: Product R&D
+  created_at: 2010-07-17 15:39:11.078793 -07:00
+- updated_at: 2010-07-17 15:39:11.080503 -07:00
+  link_type: L
+  page_id: 1730
+  id: 3751
+  wiki_id: 84
+  referenced_name: Manufacturing
+  created_at: 2010-07-17 15:39:11.080503 -07:00
+- updated_at: 2010-07-17 15:39:11.082003 -07:00
+  link_type: L
+  page_id: 1730
+  id: 3752
+  wiki_id: 84
+  referenced_name: Installation
+  created_at: 2010-07-17 15:39:11.082003 -07:00
+- updated_at: 2010-07-17 15:39:11.083931 -07:00
+  link_type: L
+  page_id: 1730
+  id: 3753
+  wiki_id: 84
+  referenced_name: Transmission
+  created_at: 2010-07-17 15:39:11.083931 -07:00
+- updated_at: 2010-07-17 15:39:11.085553 -07:00
+  link_type: L
+  page_id: 1730
+  id: 3754
+  wiki_id: 84
+  referenced_name: Financing
+  created_at: 2010-07-17 15:39:11.085553 -07:00
+--- 
+wikis: 
+- name: inpower
+  updated_at: 2010-07-16 20:39:31.280340 -07:00
+  count_pages: 0
+  config: 
+    :signup_cc_to: mdunn@maxdunn.com
+    :theme: maxwiki
+    :google_sitemap_verification: ""
+    :youtube_key: ""
+    :google_ad_client: ""
+    :google_key: ""
+    :flickr_key: ""
+    :default_role: User
+    :site_name: In-Power Solar
+    :amazon_key: ""
+    :google_analytics: ""
+    :email_from: mdunn@maxdunn.com
+    :editor: WYSIWYG
+  safe_mode: 0
+  published: 0
+  brackets_only: 1
+  id: 84
+  description: In-Power Solar
+  allow_uploads: 1
+  wiki_file_next_num: 0
+  color: 008B26
+  additional_style: 
+  max_upload_size: 100
+  markup: textile
+  created_at: 2010-07-16 20:38:49.398967 -07:00

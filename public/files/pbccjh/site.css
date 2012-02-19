@@ -1,0 +1,190 @@
+/* PBCCJH Style Sheet */
+
+body { 
+  background: rgb(1, 119, 58);
+}
+
+p {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+a {
+  color: rgb(230, 99, 6);
+  font-weight: normal; 
+  text-decoration: underline;
+}
+
+a:hover,
+a:active {
+  color: rgb(230, 199, 106);
+}
+
+#border, #top, #bottom { width: 802px; }
+#container, #header, #footer { width: 800px; }
+#left_column { width: 150px; }
+.middle_column_narrow { width: 470px; }
+.middle_column_wide { width: 620px; }
+.middle_column_full { width: 780px; }
+#right_column { width: 150px; }
+#right_column .box { width: 150px; }
+
+#top {
+  margin-top: 20px;
+}
+
+#border {
+  padding: 10px;
+  background-image: none;
+  background-color: rgb(221, 221, 221);
+}
+  
+#container {
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  background: white;
+}
+
+#header {
+  height: 150px;
+  background: url(/files/pbccjh/header.jpg) no-repeat;
+  border-bottom: 1px solid black;
+}
+
+#menu {
+  height: 20px;
+  line-height: 20px;
+  background: rgb(1, 119, 58);
+  border-top: 5px solid rgb(221, 221, 221);
+  border-bottom: 5px solid rgb(221, 221, 221);
+}
+
+#menu a, 
+#menu li a {
+  font-weight: normal;
+  font-size: 12px;
+  color: white;
+  background-color: inherit;
+}
+
+#menu a:hover, 
+#menu a:active { 
+  color: white;
+  background-color: rgb(230, 99, 6);
+}
+
+#menu .edit_block { 
+  margin-top: 1px;
+} 
+
+#buffer_header {
+ border-top: 1px solid black;
+}
+  
+#middle_column h1 { 
+  color: rgb(1, 119, 58);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#middle_column h2 { 
+  color: rgb(230, 99, 6);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  border: none;
+}
+
+#middle_column ul {
+  list-style: none;
+  line-height: 15px;
+  padding: 0; 
+  padding-left: 10px;
+}
+
+#middle_column li {
+  padding-bottom: 6px;
+  padding-left: 15px;
+  background: url(/files/pbccjh/orange_bullet.gif) top left no-repeat;
+}
+
+/* CONTACT BLOCK */
+#contact-list {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 90%;
+}
+
+#contact-list ul, #contact-list tr {
+	list-style: none;
+	}
+
+#contact-list ul li, #contact-list tr td {
+	list-style-image: none;
+	vertical-align: top;
+	width: 45%;
+	margin: 5px 5px;
+	padding: 7px 7px;
+	background-color: #EEE;
+	border: 1px dashed #CCC;
+	}
+
+#contact-list h1,
+#contact-list h2,
+#contact-list h3,
+#contact-list h4 {
+  border-bottom: none;
+	text-decoration: none;
+}
+
+#contact-list h3 {
+	color: rgb(230,99,6);
+	font-size: 20px;
+	font-style: italic;
+	font-family: times, serif;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#contact-list h4 a:link,
+#contact-list h4 a:visited {
+	color: rgb(230,99,6); 	/* DARKER ORANGE */
+	font-size: 10px;
+	font-family: verdana;
+	font-weight: bold;
+	}
+
+
+#contact-list h4 a:hover {
+	color: rgb(230,199,106);	/* LIGHT ORANGE */
+	font-size: 10px;
+	font-family: verdana;
+	font-weight: bold;
+	}
+
+
+#contact-list img {
+	border: 1px solid black;
+	padding: 0px;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	}
+
+
+#contact-list p {
+	font-family: verdana;
+	font-size: 12px;
+	text-align: justify;
+	margin: 0px;
+	padding: 15px 0px 0px 0px;
+	}
+
+#contact-list p strong {
+	font-weight: bold;
+	color: rgb(230,99,6);
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 3px 0px;
+	}

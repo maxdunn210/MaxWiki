@@ -1,0 +1,131 @@
+/* Theme stylesheet 
+  Place any theme specific styles here.
+*/
+
+/* Colors
+  Dark red: rgb(116,14,28)
+  Red: rgb(152,26,33)
+  Light red: rgb(179,85,76)
+  Really light red: rgb(224,171,166)
+*/
+
+/****** General ******/
+
+body { 
+	background: rgb(150,150,150);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: rgb(116,14,28);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+}
+
+.bordered th {	
+  background: #c1c1c1;
+}
+	
+.bordered th a {	
+  font-weight: bold; 
+}
+
+/****** Container ******/
+
+#border {
+}
+
+/***** Header *****/
+
+#header {
+	height: 150px;
+	background: url(../images/banner3.jpg) repeat-x;
+}
+
+#header .middle_block {
+  position: absolute;
+  top: 35px;
+  right: 5px;
+  text-align: left;
+}
+
+#header h1 {
+  font-size: 2.4em;
+}
+
+#header h2 {
+  font-size: 1.3em;
+}
+
+#header h3 {
+  font-size: 0.9em;
+}
+
+/****** Menu ******/
+
+#menu {
+	background: url(../images/menu.png);
+}
+
+#menu a, 
+#menu li a {
+	color: rgb(255,255,255);
+}
+
+#menu a:hover, 
+#menu .selected {
+	color: rgb(224,171,166);
+}
+
+/****** Buffer ******/
+
+
+/****** Left Column ******/
+
+.left_menu a:hover, 
+.left_menu a.selected,
+.left_menu a:visited.selected {
+	border-left: solid 5px rgb(152,26,33);				
+	background-color: rgb(224,171,166);	
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+
+/****** Middle Column ******/
+
+#middle_column {
+}
+
+#middle_column_wide {
+}
+
+/****** Right Column ******/
+
+#right_column {
+}
+
+/****** Footer ******/
+
+#footer {
+	border-top: solid 1px rgb(152,26,33);
+}
+
+#bottom {
+
+}
+
+/****** Specific for this theme ******/
+

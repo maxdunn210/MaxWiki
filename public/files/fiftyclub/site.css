@@ -1,0 +1,155 @@
+/*** fiftyclub.css ***/
+/* Colors:
+Gray rgb(142,163,174) Title bar
+Dark Green rgb(85,117,75) "5" in 50%
+Light Green rgb(161,189,58) "0" in 50% and Login background
+Medium Green rgb(102,102,50) Heading 1
+Medium Blue/Gray rgb(80,122,145) Heading 2
+Orange rbg(20,153,50) signup bar, Heading 3
+*/
+
+body { 
+	background: rgb(255,255,255);
+}
+
+p, div {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0.8em;
+	color: rgb(60,60,60);
+}
+	
+#border {
+  background: none;
+}
+
+#container {
+  border-left: none;
+  border-right: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: rgb(80,122,145);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/****** Header ******/
+
+#header {
+  width: 800px;
+	height: 75px;
+	background: none;
+	color: rgb(80,122,145);
+}
+
+#header h1,
+#header h2,
+#header h3  {
+  font-weight: normal;
+	color: rgb(80,122,145);
+  margin: 0px;
+  padding: 0px;
+}  
+
+#header h1 {
+  font-size: 3.0em;
+}  
+
+#header h2 {
+  font-size: 2.0em;
+}  
+
+#header h3 {
+  font-size: 1.3em;
+}  
+
+#header a, 
+#header a:hover, 
+#header .selected {
+  margin: 0px;
+  padding: 0;
+  color: rgb(250,250,250);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header a:hover, 
+#header .selected {
+  text-decoration: underline;
+}
+
+/****** Menu ******/
+
+#menu {
+	background: rgb(142,163,174);
+}
+
+/****** Middle Column ******/
+
+#middle_column {
+  padding-top: 15px;
+  padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: inherit;
+	border-left: none;	
+	color: rgb(50,50,50);
+}
+
+#middle_column h1, 
+#middle_column h2, 
+#middle_column h3, 
+#middle_column h4 {
+  clear: both;
+  border-bottom: none;
+  font-weight: normal;
+  font-size: 1.3em;
+  color: rgb(80,122,145);
+}
+
+#middle_column h1 {
+  color: rgb(102,102,50);
+  border-bottom: dashed 1px rgb(142,163,174);
+  padding-bottom: 10px;
+}
+
+#middle_column h2,
+#middle_column h3 {
+  font-size: 1.6em;
+}
+  
+#middle_column h3 {
+  clear: none; 
+}
+
+#middle_column h4 {
+  text-decoration: underline;
+}
+
+#middle_column h5 {
+  font-size: 1em;
+}
+
+/****** Footer ******/
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#footer {
+  margin: 0px auto;
+  padding-top: 20px;
+  border-top: dashed 1px rgb(142,163,174);
+  border-bottom: none;
+  font-size: 10px;
+}

@@ -1,0 +1,101 @@
+/* Theme stylesheet 
+  Place any theme specific styles here.
+*/
+
+/****** General ******/
+
+body { 
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+h1, h2, h3, h4, h5 {
+}
+
+.bordered th {	
+}
+	
+.bordered th a {	
+}
+
+/****** Container ******/
+
+#border {
+}
+
+/***** Header *****/
+
+#header {
+	height: 150px;
+	background: url(../images/header.jpg) repeat-x;
+}
+
+#header .middle_block {
+}
+
+#header h1 {
+}
+
+#header h2 {
+}
+
+#header h3 {
+}
+
+/****** Menu ******/
+
+#menu {
+}
+
+#menu a, 
+#menu li a {
+}
+
+#menu a:hover, 
+#menu .selected {
+}
+
+/****** Buffer ******/
+
+
+/****** Left Column ******/
+
+.left_menu a:hover, 
+.left_menu a.selected,
+.left_menu a:visited.selected {
+}
+
+/****** Middle Column ******/
+
+#middle_column {
+}
+
+#middle_column_wide {
+}
+
+/****** Right Column ******/
+
+#right_column {
+}
+
+/****** Footer ******/
+
+#footer {
+}
+
+#bottom {
+
+}
+
+/****** Specific for this theme ******/
+

@@ -1,0 +1,6 @@
+# Logfile created on Thu Dec 04 17:21:53 -0800 2008 by /
+D, [2008-12-04T17:21:53.231857 #3667] DEBUG -- : TRACING ON Thu Dec 04 17:21:53 -0800 2008
+Thu Dec 04 17:22:11 -0800 2008 REQUEST /_action/fckeditor/command
+0.0.0.0:3000 -- THREADS: 1 -----
+	KEYS:
+		-- #<Thread:0x2ff065c>: [:started_on]

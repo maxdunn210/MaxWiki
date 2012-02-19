@@ -1,0 +1,20 @@
+<p>Dear <%= @username %>,</p>
+
+<p>Welcome to <%= @app_name %>!</p>
+
+<p>We received your registration information. If you are paying online, we will receive 
+notification when your PayPal payment is complete and will then mark your child as paid.</p>
+
+<p>Please check the information below to make sure that it is complete and accurate. 
+If you need to make any changes, you can 
+<a href="<%= @url %>">edit your information</a> 
+at any time.</p>
+
+<p>
+Before your child can play, we will need to receive a signed copy of the statement at the 
+bottom of this form.
+</p>
+
+<%= render(:partial => '/register/show_info') %>
+
+  

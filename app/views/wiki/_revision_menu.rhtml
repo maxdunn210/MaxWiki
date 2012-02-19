@@ -1,0 +1,64 @@
+<ul class="left_menu">
+<li class="title">Revisions Menu</li>
+
+<% link_text = "Forward in time (#{@revision.page.revisions.length - @revision_number - 1} more)" %>
+<% if @revision_number < @page.revisions.length - 1 %>
+  <li>
+    <%= link_to(link_text,
+        {:action => 'revision', :link => @page.link, 
+        :rev => @revision_number + 1})
+  %>
+  </li>  
+<% else %>
+  <li class="not_selectable">
+    <%= link_text %>
+  </li>
+<% end %>
+
+<% link_text = "Back in time (#{@revision_number} more)" %>
+<% if @revision_number > 0 %>
+  <li>
+  <%= link_to(link_text,
+        {:action => 'revision', :link => @page.link, 
+         :rev => @revision_number - 1})
+  %>
+  </li>
+<% else %>
+  <li class="not_selectable">
+    <%= link_text %>
+  </li>  
+<% end %>
+
+<li>
+<%= link_to('Show current', 
+      {:action => 'show', :link => @page.link})
+%>
+</li>
+
+<li>
+<%= link_to('Rollback', 
+      {:action => 'rollback', :link => @page.link, 
+       :rev => @revision_number})
+%>
+</li>
+
+<% if @revision_number <= 0 %>
+  <li class="not_selectable">
+    Hide changes
+  </li>
+<% else %>
+	<li>
+	  <span id="show_changes" style="display: none">
+	    <a href="#" onClick="toggleChanges(); return false;">See changes</a>
+	  </span>
+	  <span id="hide_changes" style="display: block">
+	    <a href="#" onClick="toggleChanges(); return false;">Hide changes</a>
+	  </span>
+	</li>  
+<% end %>
+
+</ul>
+
+<%= render :partial => 'layouts/inbound_links' %>
+
+

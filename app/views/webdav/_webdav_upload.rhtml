@@ -1,0 +1,27 @@
+<div id="webdav_upload">
+   
+<%= form_tag_with_upload_progress({:controller => 'webdav', :action => 'upload', :page_name => @page.name, 
+   :connection => connection, :no_insert => no_insert},
+  {:finish => "$('message').innerHTML = arguments[0]; Element.hide('indicator')", :loading => "Element.show('indicator')"}, 
+  {:controller => 'webdav'}) %>
+                
+<% unless defined?(hide_connection_info) && hide_connection_info %>                 
+  <%= render :partial => "webdav_connection_info", :locals => {:connection => connection} %>
+<% end %>
+
+<br/>
+<br/>
+  File <%= file_field "upload", "file" %> 
+  <%= submit_tag "Upload" %>
+
+<%= end_form %>  
+
+<div class=progress_bar>
+<%= upload_status_tag %>
+</div> 
+   
+<div class=upload_status id="message"></div>
+
+</div>
+
+ 

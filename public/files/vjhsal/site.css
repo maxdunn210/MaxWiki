@@ -1,0 +1,7 @@
+/*** Header main banner ***/
+#header {
+  position: relative;
+  width: 800px;
+	height: 150px;
+	background: url(mascots.png) repeat-x;
+}

@@ -1,0 +1,55 @@
+<html>
+ <head>
+  <title>maxlock Online order Form</title>
+ </head>
+ <body bgcolor=#FFFFFF text=#000000>
+  <center>
+   <h1>maxlock Online Order Form</h1>
+  </center>
+
+<p><hr size=7 width=75%><p>
+<form method=POST action="http://maxlock.com/cgi-bin/cgiemail/forms/order.txt">
+<INPUT TYPE=HIDDEN VALUE="http://maxlock.com/" name="success">
+<INPUT TYPE=HIDDEN name="required-to" size=25 value="maxlock@maxlock.com">
+<INPUT TYPE=HIDDEN VALUE="maxlock Order form" name="subject">
+
+
+<center>
+<table border>
+<tr>
+<th align=left>Name: </th><td><input type=text name="name" size=40><br></td>
+</tr><tr>
+<th align=left>E-Mail: </th><td><input type=text name="email" size=40><br></td>
+</tr><tr>
+<th align=left>Company: </th><td><input type=text name="company" size=40><br></td>
+</tr><tr>
+<th align=left>Street Address: </th><td><input type=text name="street" size=40><br></td> 
+</tr><tr>
+<th align=left>City, State, Zip: </th><td><input type=text name="city" size=20>, <input type=text name="state" size=2 maxlength=2> <input type=text name="zip" size=10 maxlength=10><br></td> </tr>
+</tr><tr>
+<th align=left>Phone: </th><td><input type=text name="phone" size=12 maxlength=12><br></td>
+</tr><tr>
+<th align=left>Services Requested: </th><td><select name="number"> 
+<option selected>
+<option>Basic Services $29.95
+<option>Business Services $49.95
+<option>Advanced Services $79.95
+<option>Other
+</select> If Other: <input type=text name="amount" size=10><br></td>
+</tr><tr>
+<th align=left>Comments: </th><td><textarea COLS=40 ROWS=4 name="comments"></textarea><br></td> 
+</tr><tr>
+<td><STRONG>Payment Type</STRONG></td>
+<td align=center><input type=radio name="type" value="MC">MasterCard <input type=radio name="type" value="Visa"> Visa <input type=radio name="type" value="Amex"> Amex
+</tr><tr>
+<td><STRONG>Credit Card number</STRONG></td>
+<td><input type=text name="card" size=30> exp:<input type=text name="exp" size=10>
+</tr><tr>
+<th colspan=2><input type=submit value="Submit"> <input type=reset><br></th> </tr>
+</table>
+</center>
+<p><hr size=7 width=75%><br>
+<ul>
+<li><a href="./">maxlock</a>
+</ul>
+</body></html>

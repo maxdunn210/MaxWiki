@@ -1,0 +1,20 @@
+# Logfile created on Thu Dec 04 17:21:53 -0800 2008 by /
+D, [2008-12-04T17:21:53.231262 #3667] DEBUG -- : TRACING ON Thu Dec 04 17:21:53 -0800 2008
+Thu Dec 04 17:22:10 -0800 2008 FILES OPEN BEFORE REQUEST /_action/fckeditor/command
+--- 
+/Users/maxdunn/user/maxwiki/log/development.log: 1
+log/mongrel_debug/objects.log: 2
+log/mongrel_debug/rails.log: 1
+log/mongrel_debug/files.log: 1
+log/mongrel_debug/threads.log: 1
+log/mongrel_debug/access.log: 1
+
+FILES OPEN AT EXIT
+--- 
+/Users/maxdunn/user/maxwiki/log/development.log: 1
+log/mongrel_debug/objects.log: 2
+log/mongrel_debug/rails.log: 1
+log/mongrel_debug/files.log: 1
+log/mongrel_debug/threads.log: 1
+log/mongrel_debug/access.log: 1
+

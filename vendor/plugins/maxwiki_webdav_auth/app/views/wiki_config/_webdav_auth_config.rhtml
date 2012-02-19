@@ -1,0 +1,83 @@
+<table>
+  <tr>
+    <td>
+      <label for="xythos_url">Xythos URL</label>
+    </td>
+    <td>
+      <input id="xythos_url" name="config[xythos_url]" value="<%= @wiki.config[:xythos_url] %>" size="50" type="text" />
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <p>This is the URL of the Xythos server.
+    Examples include:</p>
+      <code>
+        <pre>http://xythos.mydomain.com</pre>
+      </code>
+
+      <code>
+        <pre>http://xythos.mydomain.com:8080</pre>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="xythos_authentication">Authentication Path</label>
+    </td>
+    <td>
+      <input id="xythos_authentication" name="config[xythos_authentication]" value="<%= @wiki.config[:xythos_authentication] %>" size="50" type="text" />
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <p>This is the path of the authorization directory. To check if the user is authorized, a file will be created in this directory. 
+    So this directory should only allow writes by the owner. In the path, add #{login} where the user's login should be placed.
+    Examples include:</p>Internal Xythos user-model example:
+      <code>
+        <pre>/Users/#{login}</pre>
+      </code>LDAP user-model example:
+      <code>
+        <pre>/Users/#{login}@ldap.com</pre>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="xythos_principal">Principal Path</label>
+    </td>
+    <td>
+      <input id="xythos_principal" name="config[xythos_principal]" value="<%= @wiki.config[:xythos_principal] %>" size="50" type="text" />
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <p>This is the principal path which is used to retrieve the user name. 
+    In the path, add #{login} where the user's login should be placed.
+    Examples include:</p>Internal Xythos user-model example:
+      <code>
+        <pre>/xythoswfs/principals/users/#{login}</pre>
+      </code>
+
+      <code>
+        <pre>/xythoswfs/principals/ldap/ldap.com/#{login}</pre>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="xythos_default_role">Default Role</label>
+    </td>
+    <td>
+      <select id="xythos_default_role" name="config[xythos_default_role]"><%= options_for_select(WikiConfig.roles, @wiki.config[:xythos_default_role]) %></select>
+    </td>
+  </tr>
+  <td>&nbsp;</td>
+  <td>
+    <p>This is the role which users will initially be assigned. 
+    Usually this will be 'Editor', but it could also be 'User' in order
+    to have a chance to verify the user and then manually change the role.</p>
+  </td>
+</table>

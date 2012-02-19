@@ -1,0 +1,57 @@
+<%%-
+  @title = '<%= plural_name.titleize %>'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1><%= plural_name.titleize %></h1>
+
+<%%- if  @<%= plural_name %>.nil? or @<%= plural_name %>.empty? -%>
+
+<p>(No <%= singular_name.titleize %> records)</p>
+
+<%%- else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	  <%- for column in eval(model_name, TOPLEVEL_BINDING).content_columns -%>
+	    <%%= sort_header_tag('<%= column.name %>', :caption => '<%= column.human_name %>') %>
+	  <%- end -%>
+  </tr>
+	  
+	<%% for <%= singular_name %> in @<%= plural_name %> -%>
+	  <tr>
+		  <%- 
+		  first_item = true
+		  for column in eval(model_name, TOPLEVEL_BINDING).content_columns -%>
+		    <%- 
+		    if first_item 
+		      first_item = false
+		      -%><td>
+		    	<%%=
+					display_name = h(<%= "#{singular_name}.#{column.name}" %>.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => '<%= controller_name %>', :action => 'edit', :id => <%= "#{singular_name}"%>.id 
+					else
+					  display_name
+					end
+					-%></td>
+		    <%- else -%>
+		      <td><%%=h <%= "#{singular_name}.#{column.name}" %> %></td>
+		    <%- end -%>
+		  <%- end -%>
+	  </tr>
+	<%% end -%>
+</table>
+</div>
+
+<%%= pagination_template(<%= "@#{singular_name}_pages" %>) %>
+
+<%% end -%>
+  
+<%% if Role.check_role(ROLE_EDITOR) -%>  
+	<%%= start_form_tag :controller => '<%= controller_name %>', :action => 'new' %>
+	  <%%= submit_tag "Add Another" %>
+	<%%= end_form_tag %>
+<%% end %>

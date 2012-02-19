@@ -1,0 +1,28 @@
+<%-
+  @title = 'Mailer Groups'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Edit Mailer Group</h1>
+
+<%= form_tag :controller => 'mailer_groups', :action => 'update', :id => @mailer_group %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<%= end_form %>
+
+<table>
+	<tr>
+		<td>
+		<%= form_tag :controller => 'mailer_groups', :action => 'index' %> 
+		  <%= submit_tag "Cancel" %>
+		<%= end_form %>
+		</td>
+		
+		<td>
+		<%= form_tag :controller => 'mailer_groups', :action => 'destroy', :id => @mailer_group %>
+		  <%= submit_tag "Delete" %>
+		  &nbsp;
+		<%= end_form %>
+		</td>
+	</tr>
+</table>

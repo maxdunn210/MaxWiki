@@ -1,0 +1,34 @@
+<%
+  @title = 'Overview'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>Admin Overview</h1>
+
+
+<% if MY_CONFIG[:tric] %>
+<p>
+  Total players in system: <%= @total_players %><br/>
+  Total players checked: <%= @total_players_checked %><br/>
+  Total players paid: <%= @total_players_paid %>
+</p>
+<% end %>
+
+<p>
+  Total users: <%= @total_users %>
+  <% if @total_paid %>
+	  <br/>
+	  Total users paid: <%= @total_paid %>
+  <% end %>
+
+  <% if @total_not_paid %>
+	  <br/>
+	  Total users not paid: <%= @total_not_paid %>
+  <% end %>
+
+  <% if @total_waiting_list %>
+	  <br/>
+	  Total users on waiting list: <%= @total_waiting_list %>
+  <% end %>
+  
+</p>

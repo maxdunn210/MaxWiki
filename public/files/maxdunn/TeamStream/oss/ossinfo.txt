@@ -1,0 +1,1615 @@
+Here are some of the Internet Data Storage players:
+
+Big Players
+-----------
+
+==================================================================================================
+                                             eGroups
+==================================================================================================
+http://www.egroups.com
+http://www.egroups.com/info/tour/tour5.html
+
+ADDRESS:
+San Francisco office:
+350 Brannan Street
+San Francisco, CA 94107
+Phone: (415) 546-2700
+Fax: (415) 546-2801
+
+Redwood City office:
+2688 Middlefield Road, Suite C
+Redwood City, CA 94063
+Phone: (650) 216-3300
+Fax: (650) 216-3399
+
+EMAILS:
+support@egroups.com
+suggestion@egroups.com
+info@onelist.com
+press@egroups.com
+jobs@egroups.com
+partners@egroups.com
+sales@egroups.com
+
+MANAGEMENT:
+President & CEO: Michael Klein
+Senior VP of Product Development: Rikk Carey
+VP of Marketing: Jacqueline Maartense
+VPof Business Development: Marcus Riecke
+
+USERS: 15.000.000 (April 2000)
+
+FUNDING:
+eGroups has raised $60 million in capital to date from investors including:
+CMGI@Ventures, Sequoia Capital, Atlas Venture, Bertelsmann Ventures, Bank of America Ventures, Comdisco Ventures, Recruit Co., NTT-X, The Nomura Securities Corporation, Impress Corporation
+
+REGISTERED:
+no, the maxlock server was down - the registration is half way through
+
+
+==================================================================================================
+                                             Visto
+==================================================================================================
+www.visto.com
+- My Visto: integrated calendar, email, address book and file storage
+service and bookmarks
+- My Groups: Create interactive groups where family and friends can stay in
+touch, share photos, plan events, and more
+- Visto Events: A rich database of public events (movies, television,
+sports, and more) to add directly to your personal and group calendars.
+- Synchronization software (I don't know if it works for files or only
+calendars, etc)
+- 15Mb free,  no banner option for $20/year. Extra 25Mb is $25/year
+- Visto Corporation, Mountain View,  was founded in August 1996
+- $31M funding in summer of 1999
+
+USERS:
+800,000 members, Sep 20, 1999
+1.000.000 members, Nov 10, 1999
+
+COMPANY STATUS: private
+
+SALES RANGE:$2.5m to $5m
+
+MANAGEMENT:
+VP of marketing: Bill Perkins
+president and CEO: Dough Brackbill
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+Hint answer: top color car
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+ADDRESS:
+Visto Corporation
+1937 Landings Drive
+Mountain View CA 94043
+phone 650-930-5000
+fax 650-930-5010
+
+EMAILS:
+- Customer support & technical inquiries: support@corp.visto.com
+- Press and analysts: pr@corp.visto.com
+- Sales inquiries: sales@corp.visto.com
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- More storage is available for a charge of $25 per year for each additional 25 MB block.
+
+==================================================================================================
+                                             Involv
+==================================================================================================
+www.involv.com
+- Intranet app for focusing on web based apps and providing a company
+portal. Also does calendars, project management, discussions, file sharing
+and viewing
+- Free service for up to 15 members
+- Involv corp founded in Dec 1998 with IP from ChangePoint. Based in Canada. Changepoint completed $4.5M 3rd round in Jun 1999 and $5.5M 4th round in Oct 1999.
+
+ADDRESS:
+involv Corporation
+155 Commerce Valley Drive East
+Thornhill, Ontario, Canada
+L3T 7T2
+Phone: 905-886-6226
+Fax: 905-886-5776
+
+EMAILS:
+info@involv.com
+partners@involv.com
+
+MANAGEMENT: n/a
+
+USERS:n/a
+
+COMPANY STATUS:
+involv is a Canadian Controlled Private Company (CCPC) owned by Brokercom Inc. and the employees of involv.
+
+PAID SERVICES AND PROMOTIONS OFFERED: n/a
+
+PROTOCOLS:
+WebDAV -- WEB FOLDERS SUPPORT:n/a
+
+SIGNED UP: no
+
+==================================================================================================
+                                             DriveWay
+==================================================================================================
+www.driveway.com
+www.i-filezone.com
+- 25Mb free
+- Atrieva, SF and Seattle, started 1993. 1997 started doing online backup.
+- Partners include Microsoft, Hewlett-Packard, IBM, Prodigy, USA.NET and Netscape.
+- i-Filezone launched in Apr 99 and gained 750,000 users by Aug 99. Gains 7-10k users per day.
+- "In our tests, the Java-based backup application it used was slow at all times of the day and froze Netscape Navigator on several occasions." http://www.zdnet.com/products/stories/reviews/0,4161,406135,00.html
+
+ADDRESS:
+380 Brannan St.
+San Francisco, CA 94107
+Phone: 415-908-4200 or 415.247.8778
+Fax: 415-247-8850
+
+EMAILS:
+customer support: support@driveway.com
+press release: mike@bohle.com
+business development: bizdev@driveway.com
+
+VP of MARKETING:Larry Jones
+PRESIDENT and CEO: Christopher S. Logan
+
+USERS:
+March 06, 2000 - 30 million+ adults 
+
+FINANCING RECEIVED:
+- Backed by private and venture funding.
+- March 15, 2000 - Driveway has secured an additional $10 million in a Series D Preferred round of financing. EMC and Lycos were the investors in the round, which brings the company's total private funding to $62 million.
+- January 11, 2000 - "Driveway Raises $43.5 Million in Latest Funding Round... (the whole investment story at http://www.hoovers.com/cgi-bin/offsite?esc=yes&url=http://corp.driveway.com/corp/releases.html
+
+COMPANY STATUS:private
+
+SALES RANGE: 1999 Sales (mil.): $0.3
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+current promotions:
+- the first time you share a file with a friend - get an additional 5 MB of space
+- tell up to 20 friends about Driveway - receive 2MB of space for every friend who registers and activates a Driveway account
+- take Driveway Surveys (up to 30 MB) - get 10 MB for each one
+- Additonal space can be purchased in 100 MB increments, up to 500 MB total per account.
+planned:
+90 Days - $29.95 per additional 100 MB
+1 Year Cost - $107.95 per additional 100 MB
+(annual plans save 10%)
+
+PROTOCOLS:
+WebDAV: Yes
+FTP: Yes
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             XDrive
+==================================================================================================
+www.xdrive.com
+- 25Mb free
+- Web and drive letter based (Using ftpNetDrive)
+- XDrive, Santa Monica,  founded in 1999
+- Size indeterminate but taking out full page ads
+
+ADDRESS:
+3002 Pennsylvania Ave.
+Santa Monica, CA 90404
+Phone: 310-586-6848
+Fax: 310-264-9221
+
+EMAILS:
+Strategic Partnerships: alliances@xdrive.com
+Advertising: advertising@xdrive.com
+Business Development/Advertising Sales: 310-586-6848 phone
+310-264-9221 fax
+
+PRESIDENT and CEO: Brett O'Brien
+
+USERS:
+- February 2000 - the site drew nearly 1.4 million unique visitors, or an average of 67,000 unique visitors per day 
+- March 2000 - 15,000+ new members joining daily, 1.000.000+ active, registered members
+
+FINANCING RECEIVED:
+- $20 million, venture partners include: Goldman Sachs, Ecompanies, Wit Capital, Alex Brown, and David Bohnett (founder of GeoCities)
+
+COMPANY STATUS:private
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- promotion:
+Tell a Friend - 5MB free if a friend you refer signs up
+Share a File - 5MB free if a friend you share a file with signs up
+Repeat Visits - 10MB free after 10 visits to X:drive
+- purchase:
+Additional 25 MB (17 floppy disks) for $4.95 a month
+100 MB for $9.95 a month
+1 GB for $19.95 a month
+
+PROTOCOLS:
+WebDAV: NO
+FTP: NO
+Client software: Yes, uses HTTP cgi-based message exchange with custom format 
+                      of directory listing.
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                          Punch Networks
+==================================================================================================
+http://www.punchnetworks.com/
+- Sponsored by Excite. They don't host.
+- Server version for $4995 for 50 publishers, unlimited viewers. Shipping
+Nov 1999.
+- Manual Checkin and out from browser
+- Delta transfers
+- They call it WebDrive for personal, WebGroups for sharing
+- PunchNetworks is based in Seattle. Started in 1995. Raised $7.7 Million in
+Aug 1999
+- Patents on automatic updating of data
+
+ADDRESS:
+1417 Fourth Avenue, Third Floor
+Seattle, WA 98101
+206.343.7661 (Ph.)
+206.667.9202 (Fax)
+
+MANAGEMENT:
+- Director of Business evelopment: Jay Epperson, Phone: 206-343-7661 x111, Email: jepperson@punchnetworks.com
+- VP of marketing: John Williams, Phone: 206-343-7661 x113,
+Email: jwilliams@punchnetworks.com
+- president and CEO: Dan Campi
+
+COMPANY STATUS:private
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+purchase
+- limited use of Punch WebGroups is available free of charge.
+- pricing structure for WebGroups is:
+a) up to 2 WebGroups created and/or up to 10mb of storage Free with each WebGroup account
+b) 3 to 10 WebGroups created for $9.95/month, with up to 100mb of storage included
+c) 11 or more WebGroups created for $19.95/month, with up to 100 mb of storage included
+d) additional storage space is available for purchase at 100mb increments
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             Free Drive
+==================================================================================================
+www.freedrive.com
+- 50Mb free
+- FreeDrive announced June 1999.
+- FreeDrive is supported by: Opt-In E-mail Marketing, Banner Advertising, E-Commerce Partnerships and Electronic Relationship Marketing.  Every FreeDrive subscriber agrees to accept 1 banner ad per page and 1 weekly promotional e-mail - Affliate program $0.25 per user or 25% banner ad revenue
+- Owned by Nextec.net, Chicago. Privately funded, started in 1993 to provide secure futures trading communication. Has about 25 employees.
+- Also has a web based electronic publisher and intranet collaboration suite.
+- Version 3.0 released Dec-99 was supposed to be faster but is still really slow.
+- (Updated 21-Dec-99 MD)
+
+ADDRESS:
+901 West Jackson Boulevard
+Chicago
+Illinois 60607, USA
+
+EMAILS:
+Affiliate Program inquiries: affiliate.support@freedrive.com
+Strategic partnerships: partners@freedrive.com
+
+MANAGEMENT:
+VP of business development: Michael Ferconio
+CEO: Mark Rittmanic
+
+COMPANY STATUS: private
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+Affiliate Program - FreeDrive Affiliate earns money from offering a co-branded FreeDrive at its Web site. In the pay-per-subscriber plan, FreeDrive pays Affiliates $0.25 for every subscriber who signs-up and activates a FreeDrive account from the co-branded FreeDrive.
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             Intranets
+==================================================================================================
+www.intranets.com
+- Bill Gross of ideaLabs is a co-founder and majority shareholder
+- 25Mb storage with calendars and contact list
+- Free, shows ads
+- Lists 6 management
+- Launched Aug, 1999 with 13,000 orgs from NaviSite.
+- Somehow related to FreeDrive
+- Headquarters in Woburn, MA and office in Palo Alto
+
+ADDRESS:
+Intranets.com, Inc.
+18 Commerce Way
+Woburn, MA 01801 USA
+Directions
+(781) 932-0960 tel
+(781) 032-3355 fax
+
+MANAGEMENT:
+VP of sales and business development: Jay Gordon
+business development manager: Joyce Jones,jjones@intranets.com
+VP of marketing: Rick Faulk
+president and CEO: Steve Crummey
+
+USERS:
+- March 6, 2000 - 130,000 registered sites
+- February 28, 2000 - more than 125,000 organizations registered 
+
+FINANCING RECEIVED:
+investors:
+- idealab! - a Pasedena, CA, founder Bill Gross, Internet businesses
+- Hikari Tsushin - distributor and reseller of telecommunications services in Japan
+- Lazard Freres Technology Partners - specialist in start-up ventures
+- FBR Technology Venture Partners - investment and asset management firm, Washington, D.C.
+- MDT Advisors - investment firm, Boston, Massachusetts
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- There are no set-up or ongoing service fees except for a nominal charge for additional disk space above 25MB. Additional disk space is available to all member sites for a nominal fee. Should your site exceed the 25 MB limit, we will notify you so that you can purchase the additional space.
+
+PROTOCOLS:
+WebDAV -- WEB FOLDERS SUPPORT: n/a
+
+SIGNED UP:
+no
+registration of new members at
+http://mygroup.intranets.com/register_member.asp?command=step2
+I was not able to get through although I tried several times - no idea about registration code :-(
+
+==================================================================================================
+                                           Storage Point
+==================================================================================================
+http://www.storagepoint.com/default.asp
+- 20Mb free, plus premium
+- Also has contact manager and calendar
+- Calls it WebDrive and has a trademark.
+- Claims it is faster than others.
+- WebDrive for Windows integrates into Windows but uses drag and drop.
+Announced Sep 1999.
+- Mirrors C: drive structure (?)
+- No sharing
+- Doesn't show banner ads
+- StoragePoint, San Diego, lists 5 management. Founded in Jan 1998. 8
+employees.
+- No funding mentioned
+
+ADDRESS:
+15950 Bernardo Center Drive
+Suite J
+San Diego, CA 92127
+
+EMAILS:
+sales dpt: sales@storagepoint.com , phone: 858-676-3900
+
+MANAGEMENT:
+VP of business development: John Strahl
+VP of marketing: Robert Chalfant
+president and CEO: Scott Zimmerman
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- 20MB of space for free
+- Premium Monthly StoragePoint account - 50MB, ability to purchase increased storage capacity whenever you need it
+- Premium Annual StoragePoint account - 50MB - $49.95/year
+- You can buy extra blocks of file storage space at any time, and you can add them together in any combination.
+Extra 50MB*/month: $6.95
+Extra 50MB*/year: $39.95
+Extra 100MB*/month: $12.95
+Extra 100MB*/year: $59.95
+Extra 250MB*/month: $24.95
+Extra 250MB*/year: $99.95
+Extra 1000MB*/month: $69.95
+Extra 1000MB*/year: $199.95
+These services are available only to Premium Monthly and Premium Annual accounts
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: Yes, uses namespace to let access files, simple and unstable.
+                 Uses HTTPS so no reverse-engineering.
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             Click2Send
+==================================================================================================
+www.click2send.com
+- Aimed towards sending files to others
+- Basic: send up to 50Mb at a time for free (total 120Mb), files deleted after 10 days
+- Enterprise: 75Mb per file, long term storage
+- Click2Send, Mountain View, founded in 1998, lists 2 management
+- Partner in Cisco's "Hosted Application Initiative". Announced April 1999
+- No funding mentioned
+- (Updated Jan-14-2000)
+
+ADDRESS:
+click2send.com, Inc.
+1250 Borregas Ave.
+Sunnyvale, CA 94089
+Phone: (408) 752-8400
+Fax: (408) 752-8595
+Email: info@click2send.com
+
+PRESIDENT and CEO: Charlene Steele Vaughn
+
+FINANCING RECEIVED: privately financed
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- larger file transfers - up to 75MB per file
+- conversion and streaming of media files via the click2send network, including audio/video (.AVI and .WAV) into streaming media for immediate viewing without waiting for the file to download first - even over dialup connections 
+- long-term storage of files in secure click2send Safe Deposit Boxes 
+- multiple files (up to 6) may be sent at a time
+- session-tracking to monitor movement of corporate digital assets
+- full security of Verisign SSL tunneling with each transmission available
+- customized screens with corporate logos/brands to integrate with company intranet while simultaneously offering immediate "turn-on" with minimal IT department effort
+- group registration based on company E-mail or HR directories.
+
+PROTOCOLS:
+WebDAV -- WEB FOLDERS SUPPORT: n/a
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             i-drive
+==================================================================================================
+www.idrive.com
+- 25Mb free
+- Geared towards MP3 files, partner with MP3.com
+- Can save MP3.com files directly on iDrive which is really fast. "Sideload"
+can do this for other sites.
+- "Filo" is desktop software that stores bookmarks and pages
+- "Sync" is desktop software that keeps your local files in sync
+- Located, in SF, founded in 1998, privately held, lists 6 management
+- Partners with Sun
+- Funded by 3 VC firms, amounts not mentioned
+
+ADDRESS:
+Main Office
+842 Folsom Street
+San Francisco, CA 94107
+Tel 415-356-2280
+Fax 415-356-2299
+
+VP of BUSINESS DEVELOPMENT: Lou Perrelli, lou@mail.idrive.com
+Tel 415-356-2280
+
+USERS:
+January 2000 - 1.5 million+ registered accounts
+
+FINANCING RECEIVED:
+i-drive.com is a privately held company and is funded by Global Retail Partners, Information Technology Ventures, Draper Fisher Jurvetson, Partners Group (Switzerland) and ZDNet.
+
+COMPANY STATUS: private
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- ! i-drive offers unlimited, secure online disk space for any content or file you collect from the Web and 50 megs of space for your desktop files
+
+PROTOCOLS:
+<Eu> WebDAV: Yes
+<Eu> FTP: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                          Magical Desk
+==================================================================================================
+www.magicaldesk.com
+- File storage, calendar, email, address book, to do, bookmarks
+- 5Mb free, 20Mb for $5/mo, 50Mb for $10/mo
+- MagicalViewer translates docs into HTML, costs $5/mo
+- Magically, Inc., Mtn View. Founded 1998. Private.
+
+ADDRESS:
+Magically, Inc.
+200 Main Street, Suite 21B
+Redwood City, California 94063
+650-363-2489 phone
+650-298-8468 fax
+
+MANAGEMENT:
+VP of development: Aaron Tse
+VP of marketing and strategic planning: Robert D. Sprague
+president and CEO: Michael T. Yahng
+
+COMPANY STATUS: private
+
+SALES RANGE: Under $1m
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- 5MB of hard disk space, one POP email account, a personal
+calendar, address book, To-Do List, Internet Bookmarks, and a Dynamic HTML Editor to customize your desktop.
+- 20MB of storage for $5.00 per month, or 50MB of storage for $10.00 per month
+- one free POP email account. You can subscribe to our premium POP service, which provides five additional POP accounts for $10.00 a month
+- the MagicalViewer service can translate applications into HTML, allowing you to view over 250 different applications, such as MS Word, WordPerfect and Power Point. MagicalViewer comes with a free three-month trial period.
+After the trial period the cost is $5.00 per month
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client Software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             Fusion one
+==================================================================================================
+www.fusionone.com
+- Sync desktop software for files, email and bookmarks
+- 25Mb free storage on www.edock.com
+- Products still in beta
+- Focuses on PDAs, translates data into different formats so, for instance,
+a contact in Outlook can be used on a PalmPilot
+- FusionPak delta transfers. Patent pending
+- Los Gatos based. FOunded 1998. Lists 5 management, 6 board including
+people from Cisco, El Dorado Ventures, InSoft, eBay, Nokia and Concentric.
+- Initial $2.2M financing. $7.4M from Nokia and 3Com in 2nd round.
+
+ADDRESS:
+55 Almaden Blvd., Ste. 800
+San Jose, CA 95113
+408-282-1200 (phone)
+408-282-2345 (fax)
+
+management:
+VP of business development: John Sullivan
+VP of marketing and sales: Don Albert
+preident and CEO: Richard M. Onyon
+
+FINANCING RECEIVED:
+fusionOne is has received funding from corporate partners, Nokia Ventures and 3Com Ventures, as well as from leading venture capital firm, El Dorado Ventures.
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: Yes, uses  HTTPS
+
+SIGNED UP:
+yes - for free beta
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             HotOffice
+==================================================================================================
+www.hotoffice.com
+- File storage, email, calendar, contact, discussions
+- 40Mb free per company with ads (avail Dec 1999)
+- 20Mb, $12.95 per month per user
+- Based in FL, lists 5 management, funded by Intel, Staples and VCs raised
+$14.8M
+- PC Magazine Editors Choice
+
+ADDRESS:
+5201 Congress Ave., Suite C-232
+Boca Raton, FL 33487 Phone: 561-995-0005
+Fax: 561-995-5990
+Tollfree: 888-446-8633
+
+EMAILS:
+info@hotoffice.com
+support@hotoffice.com
+
+MANAGEMENT:
+VP of business development: Mary Golubski
+VP of marketing: Mickey Freeman
+CEO: R. Michael Franz
+president: Stephen Rattner
+
+USERS:
+- October 1999 - ...announced a strategic partnership with
+household-name companies that will give HotOffice access to more than 16 million potential small businesses
+
+COMPANY STATUS: private
+
+SALES RANGE: $5m to $10m
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+Subscription Version
+After your free trial, HotOffice is just $12.95 per user per month -- a fraction of what you would pay to buy hardware and software, and hire technicians to set up and maintain your own intranet. Plus, the price drops to $11.95 per user per month if you have 21-49 users, and $9.95 per user per month if you have more than 50 users. You can add or remove users at any time. You get 20 MB of storage included with each user, and additional storage is available in 20 MB increments at $2.50 per month. Keep in mind that each HotOffice account must be billed as one account; individual members of your intranet cannot be billed separately. Note: If an individual member of a HotOffice orders any third-party fee-based services through the Business Center, that person will be asked for credit card information.
+
+Ad-Supported Free Version
+The ad-supported version of HotOffice is free of any user fees (excluding any fees from Business Center service providers). Your first 40 MB of storage per company is free. Additional storage is available for $2.50 per 20 MB per month. Note: If an individual member of a HotOffice orders any third-party fee-based services through the Business Center, that person will be asked for credit card information.
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+Secret word identification: katecheta
+
+==================================================================================================
+                                             eRoom
+==================================================================================================
+www.eroom.com
+- Drag-and drop file transfers, checkin/out, some workflow, instant
+messaging, discussions, polls, inboxes for mail, COM interface
+- Workplace collaboration. Geared towards MS apps
+- Has over 200 enterprise customers
+- Server price about $10k, needs MS IIS and uses ASP
+- 5Mb client that integrates into Explorer also web only interface
+- Instinctive based in Cambridge MA. $16M 3rd round Sep 1999
+
+ADDRESS:
+eRoom Technology, Inc.
+725 Concord Avenue
+Cambridge, MA 02138
+T: 617-497-6300
+F: 617-497-5055
+
+EMAILS
+General: sales@eroom.com , phone 617-497-6300 Ext. 4
+Customer Support: support@eroom.com , phone 617-497-6300 Ext. 6
+
+MANAGEMENT:
+VP of business development: Barry Ruditsky
+VP of marketing: Michele Hagan
+president and CEO: Jeffrey Beir
+
+PAID SERVICES AND PROMOTIONS OFFERED: paid service only
+
+WebDAV -- WEB FOLDERS SUPPORT: support for the WebDAV
+
+SIGNED UP:
+no 
+
+==================================================================================================
+                                             DocSpace
+==================================================================================================
+http://www.docspace.com/
+- The DocSpace Company is the leading provider of award-winning, 100% Web-based applications for secure file delivery, storage and collaboration
+- "Advanced" security including server side encryption, digital certificates and signing
+- Says it is a "File Service Provider (FSP)"
+- version control
+- 25Mb free, $10/mo for 100Mb, $25 for 250Mb
+- Founded in 1997, VC backed
+- Updated Jan-18-00, MD
+
+ADDRESS:
+Critical Path
+320 First Street
+San Francisco, CA
+94105 U.S.A.
+Telephone: (415) 808-8800
+Fax:(415) 808-8777
+Email: sales@cp.net
+
+MANAGEMENT:
+VP of business development: Karl Klessig
+VP of marketing: Sharon Wienbar
+CEO: Doug Hickey
+
+USERS:
+- from Hoovers, April 2000 - currently reaches more than 55 million end-users through its customer relationships and more than 20 million
+- from Hoovers - Critical Path handles the mail for about 50 million e-mailboxes keeping nearly 1,400 customers (corporations, Internet service providers, Web hosting companies, and telecom providers) from going postal 
+
+SALES RANGE: $16.2
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+Express_: A secure Web-based courier.
+Drive_: A secure virtual hard drive for any size or type of file.
+Manager_: A secure virtual workspace for collaboration on files.
+Admin_: A value-added business tool for monitoring and managing Critical Path Secure File Services accounts.
+
+WebDAV -- WEB FOLDERS SUPPORT: n/a
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             zkey
+==================================================================================================
+www.zkey.com
+www.zcentral.com
+- File storage, address book, calendar, email, conferencing
+- Gimmick is the "zkey" which is allows others to see your contact info
+- "One-Touch" automated formfill and login
+- 20Mb free storage
+- No drag-and-drop
+- Zcentral.com owned by SDN Online, LA based, announced Apr 1999
+- No indication of management or funding. However full page ad in Business
+2.0.
+- Computer Currents: "it's a little slow, partially because it redraws the whole screen for every little change you make, and you can't upload existing address books"
+
+ADDRESS:
+Zkey.com
+548 S. Spring Street, 12th floor
+Los Angeles, CA 90013
+Phone: 213-408-4200
+Fax: 213-438-0211
+General email: contact@zkey.com
+
+FINANCING RECEIVED:
+Zkey.com is a wholly owned subsidiary of SDN Online, Inc.
+For Investor Relations information, please contact Jay Udani at
+jayu@sdnonline.com.
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             onProject
+==================================================================================================
+www.onproject.com
+- Aimed towards project management with shared task lists, gantt charts, discussions and file storage.
+- $14.95 per month per project
+- Located in Morristown, NJ. Started by people from HP and AT&T. Venture funded.
+
+ADDRESS:
+55 Madison Avenue
+Morristown, New Jersey 07960
+Phone: (973) 971-9970
+Fax: (973) 971-9971
+info@onproject.com
+
+EMAILS:
+Partnership: Peter Clough,peterc@onproject.com
+Affiliates: Jason Murgio,jasonm@onproject.com
+Sales and Consultants: Max Basenese, maxb@onproject.com
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+Multiple Project Discounts
+1-3 projects $14.95 per month
+4-8 projects $24.95 per month
+9-19 projects $39.95 per month
+20-49 projects $64.95 per month
+50-100 projects $79.95 per month
+100+ projects For each group of up to 50 additional projects it is $15.00 per month (ie: 150 projects = $94.95 per month, 250 projects = $124.95 per month)
+Our billing options:
+Quarterly billing to a credit card number
+Quarterly/monthly invoice for multiple projects
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             SiteScape
+==================================================================================================
+www.sitescape.com
+- Bought AltaVista forum from Compaq
+- Focused on Intranet management for forums
+- Online discussions, document sharing and co-authoring, calendar chat, private team pages, 
+- Forum software is $4000, workflow additional $3000
+- Located in Alexandria, VA 
+- No indication of management or funding however had a 2 page ad in Business 2.0.
+
+ADDRESS:
+2030 Eastwood Road
+Suite 6, Wilmington
+NC 28403
+phone (910) 256-5038
+fax (910) 256-5074
+
+MANAGEMENT:
+VP of marketing: Carl Vernon Venters III, chip@sitescape.com
+president and CEO: Timothy P. Butler, tbutler@sitescape.com
+
+FINANCING RECEIVED:
+- March 17, 2000 - Massachusetts Technology Development Corporation (MTDC)has announced an investment in Maynard-based SiteScape, Inc
+
+COMPANY STATUS:private
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+SiteScape Forum Version 5.0 : $6,995
+SiteScape Forum Plus Version 5.0 : $9,990
+SiteScape Forum Workflow Add-on : $2,995
+
+WebDAV -- WEB FOLDERS SUPPORT: n/a
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                           Yahoo Briefcase
+==================================================================================================
+http://briefcase.yahoo.com
+- Web based
+- Max 5Mb files, 10Mb total
+- No drag-and-drop transfers, have to type name of each file.
+
+ADDRESS:
+3420 Central Expwy.
+Santa Clara, CA 95051   
+Phone: 408-731-3300
+Fax: 408-731-3301
+
+MANAGEMENT:
+VP of business development: Ellen Siminoff
+president and CEO: Tim Koogle
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- boosted free disk space to 15MB
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream_us (someone else has already registered teamstream)
+Password: bluefiat
+
+==================================================================================================
+                                             vJungle
+==================================================================================================
+www.vjungle.com
+- Showing banner ads
+- 35 employees in India and Bellevue, lists 6 management people, doesn't state funding
+- Provides email, web site, file sharing, contacts, resources, calendars, chat.
+- No drag-and-drop file sharing.
+
+ADDRESS:
+vJungle.com
+330-120th Ave NE
+Ridgewood Corporate Plaza
+Building C, Suite 200
+Bellevue, WA 98005
+Phone: 425.450.0045
+Fax: 425.450.0041
+Email: info@vJungle.com
+
+MANAGEMENT:
+VP of business development: Chad Thompson
+senior director of marketing: Ann Markley
+founder and CEO: Deepak Amin
+
+USERS:
+- February 2000 - 2,000 customers
+
+FINANCING RECEIVED:
+- February 2000 - Online since November 1999, $3 million in funding from tech-savvy investors such as Andy Bechtolsheim, a Cisco Systems executive and co-founder of Sun Microsystems
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- we will be adding enhanced services that will be offered for a modest fee, but your basic services will stay free
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             Freeworks
+==================================================================================================
+http://www.freeworks.com/
+- Provides management and administrative solutions to individuals in small businesses
+- No file storage now, geared towards handling business paperwork
+- Has action items, purchase requests, employee lists, expense report, vacation requests and travel request and forms.
+- Founded in January 1999 by four senior managers from Intuit
+- 21 employees
+- Based in Mtn View.
+
+ADDRESS:
+Freeworks.com
+444 Castro St., Suite 818
+Mountain View, CA 94041
+
+EMAILS:
+partnership inquiries: bizdev@freeworks.com
+
+MANAGEMENT: 
+VP of Pproduct development: Wallace Colyer
+VP of marketing: Tapan Bhat
+president and CEO: David Stubenvoll
+
+USERS:
+- October 1999 - 35 million small business employees
+
+PAID SERVICES AND PROMOTIONS OFFERED: all for free
+
+WebDAV -- WEB FOLDERS SUPPORT: n/a
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             QuickTeam
+==================================================================================================
+www.quickteam.com
+- The one place your team members can go to communicate, collaborate, and contribute to a project. 
+- Express is free. Professional is $12.95 per month per user or $899 for 5 users hosted on your own server
+- Document storage, chat, paging, discussions, whiteboard, events, issues, contacts, scheduler with Gantt (simple, no dependencies)
+- No drag-and-drop document sharing
+- 25Mb free file storage.
+- Good home page with news and task list
+- Java, Browser based
+- Company Thoughstar started 1997 in Utah. Lists 4 management. QuickTeam first announced Jan 1999, available in Sept 99?
+- Apparently internally funded.
+
+ADDRESS:
+ThoughtStar
+45 West 10000 South
+Suite 415
+Sandy, Utah 84070
+(801) 255-4700 (tel)
+(801) 255-4775 (fax)
+
+EMAILS:
+- sales: sales@thoughtstar.com ,(801) 255-4700 option 3
+- marketing: marketing@thoughtstar.com ,(801) 255-4700 option 4
+
+MANAGEMENT:
+VP of sales: John B. Enslow, john@thoughtstar.com , 801-255-4700
+VP of marketing: Greg N. Heaps, greg@thoughtstar.com,801-255-4700
+president and CEO: David L. Carter, dcarter@thoughtstar.com , 801-255-4700
+
+FINANCING RECEIVED:
+- January 2000 - Thoughtstar today announced it has received a $400,000 investment from JapanWorks Co., L.L.C., a Provo ... The investment from JapanWorks brings the total private funding raised for Thoughtstar to more than $2 million
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- QuickTeam Express is a limited feature version of QuickTeam
+- QuickTeam Professional - additional features and benefits not found in Express. Buy QuickTeam Professional and host it yourself for only $899 SRP for a server and 5 user starter pack. Or lease QuickTeam Professional for $12.95 per user per month and leave the hosting to us.
+- Earn extra cash by joining QuickTeam's Affiliate Program - earn up to 20% commission for QuickTeam customers referred through your site.
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             JustOn
+==================================================================================================
+www.juston.com
+- Internet file storage and sharing. 
+- Also stores Internet bookmarks
+- 50Mb free space
+- Browser based
+- Bought by Novell, Jan 2000
+- Founded 1999, based in Palo Alto, private, lists 4 management.
+- Partnership with RealNames to find files
+- (Reviewed MD Jan-20-2000)
+
+ADDRESS:
+Novell, Inc. c/o JustOn, Inc.
+2211 North First Street
+San Jose, CA 95131
+phone:650.328.9200 
+fax: 650.328.9219 
+email: info@juston.com
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+Username: TeamStream
+Password: bluefiat
+
+==================================================================================================
+                                             MyFreeDesk
+==================================================================================================
+www.myfreedesk.com
+- 50Mb free space
+- Initially available for Windows and Linux PCs as well as certain versions of the Macintosh platform, applications include a fully featured word processor, spreadsheet, presentation program, database, email manager and Web page editor.
+- Planning on allowing rental of programs.
+- Java based, first time takes a long time to download files. Then it is still slow but not too bad. Commands are not Microsoft compatible. Can't print. 
+- Uses Applix technology.
+- Service started Jan-2000, Located in MN. Lists 5 principles but no funding indication.
+- (Reviewed MD Jan-27-2000)
+
+ADDRESS:
+FreeDesk.com, Inc.
+2550 University Avenue West, Suite 240N
+Saint Paul, Minnesota 55114
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: Yes, file-sharing software
+
+SIGNED UP:
+Name: TeamStre (name limited to 8 letters)
+Password: bluefiat
+
+==================================================================================================
+                                             QuickPlace
+==================================================================================================
+www.quickplace.com
+- Lotus
+- Java and ActiveX based client
+- threaded discussion, document libraries, team calendar, and comprehensive indexing and tracking for all information
+- Drag-n-drop transfers. 
+- 2.0 is in beta adds other features and it looks pretty good.
+- Viewing of MS Word and other common documents directly from browser.
+- Can either rent host or buy server package. Host rents at $14.95 per user per month for 150Mb. Server purchase is $1222 and $49 per client.
+- (Reviewed MD Feb-1-2000)
+
+==================================================================================================
+                                             NetDocuments
+==================================================================================================
+www.netdocuments.com
+- Web based, ActiveX
+- NetDocuments Explorer is like Web Folders
+- Stresses security
+- NetEnvelopes provides automatic synchronization of changes, can be e-mailed like our collaborative e-mail solution.
+- 10Mb free, 100Mb is $4.95/month
+- Files shared with others automatically appear in their Inbox Folder
+- Company is NetVoyage in Utah, founded in 1987 doing document management
+- Lists 5 management. Has some partnerships but no stated funding.
+- (Reviewed MD May-3-00)
+
+==================================================================================================
+                                         FreeDiskSpace
+==================================================================================================
+www.freediskspace.com
+- sharing files, backing up files, secure file access
+- Drag-and-drop in beta using a Web Folders like solution
+- 25MB standard 300Mb if users provide personal information and accept e-mail offerings
+- access to your stored files from any PC, Mac, PDA, Handheld or Linux computer
+- programms: Free Mac Space, Free PDA Space, Free Linux Space, Free PC Space, Free MP3 Space
+
+ADDRESS:
+121 Second Street
+5th Floor
+San Francisco, CA
+94105-3608
+Tel:(415)882-2130
+
+EMAILS:
+Tech Support: support@myspace.com
+Advertising information: ads@myspace.com
+General Information: info@myspace.com
+Affiliate Program: affiliates@myspace.com
+Partners: partners@myspace.com
+
+MANAGEMENT:
+VP of marketing, PR and Internet strategy: Ari Freeman , ari@myspace.com
+VP of business development: Christopher Dworin , chris@myspace.com
+CEO: Ricky Aaron , rickyaaron@myspace.com
+
+FINANCING RECEIVED:
+- April 7, 2000  - HP is providing MySpace.com with up to $14.6 million in financing to fund technology infrastructure and other start-up costs
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: Yes, impl. as a namespace (HTTP)
+
+
+RESEARCHED BY:
+Klara
+
+
+Small Players
+--------------
+
+==================================================================================================
+                                            OpenDesk
+==================================================================================================
+www.opendesk.com
+- Intranet oriented. Has company home page, organizer, files, company directory, business tools, etc
+- Opendesk.com is a division of HBE Software, an Open Source Web technology firm based in Montreal, Quebec.
+
+==================================================================================================
+                                             Agilion
+==================================================================================================
+www.agillion.com
+
+ADDRESS:
+Agillion Corporate Headquarters
+7600 North Capital of Texas Highway
+Building B, Suite 220
+Austin, TX 78731
+(512) 682-8000 phone
+(512) 306-7331 fax
+
+EMAILS:
+Partner Opportunities: partners@agillion.com
+
+MANAGEMENT:
+VP of marketing, sales and business development: Mary Oliver
+president and CEO: Steve Papermaster, sp@agillion.com
+
+FINANCING RECEIVED:
+- October 1999  - Moss and Papermaster are currently raising $30 million
+- March 2000 -  ... last year led a group including Cisco Systems, Chase Hambrecht & Quist and Morgan Stanley Dean Witter in a first-round financing that brought $45 million into Agillion, believed to be the largest single VC round of 1999 in the business community of Austin ... The $45 million came
+atop $3.5 million in seed financing for Agillion
+
+COMPANY STATUS: private
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- subscription Internet Business Service - $29.95 per subscriber per month
+- each subscription begins with a 60-day free trial period
+- basic service includes an unlimited number of shared contacts and Notes, Personal Pages, 50MB per user of file storage space, and a personal e-mail account of 10MB
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+username: TeamStream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                           Portable Office
+==================================================================================================
+www.portableoffice.com
+- File storage, email, calendar, bookmarks, chat, message board, fax, reminders, photo storage.
+- Standalone app to allow running services locally and then synchronizing back to server. Avail early this year.
+- 9Mb free space
+- Launched Nov 98 by World To Go Inc, Winnipeg 
+- No funding mentioned
+- (Reviewed MD Feb-11-2000)
+
+ADDRESS:
+World To Go Inc.
+617-70 Arthur Street
+Winnipeg, Manitoba
+Canada
+R3B 1G7
+Tel. # (204)- 943-4397
+Fax # (204)- 943-4487
+
+EMAILS:
+deck@portableoffice.com
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+100% free
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                             SwapDrive
+==================================================================================================
+www.swapdrive.com
+- Java based interface
+- 25 MB free
+- 5 guys working after hours, all have various stakes
+- No funding, looking for money
+- Released June, 1999
+- Marc Wallace, Arlington VA
+- No sharing
+
+ADDRESS:
+SwapDrive.com
+P.O. Box 7241
+Arlington, VA 22207
+
+EMAILS:
+sdsupport@swapdrive.com
+marketing@swapdrive.com
+
+MANAGEMENT:
+CEO: Marc Wallace
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- January 1999 - the company announced that it has introduced what it believes to be the lowest price on the Internet for the purchase of additional capacity. 100 megabytes have been priced at $2.99 per month or $24.99 per year
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: Yes (couldn't login, though)
+
+SIGNED UP:
+username: TeamStream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                             NetFloppy
+==================================================================================================
+www.netfloppy.com
+www.imacfloppy.com
+- 3Mb free
+- Started as iMac backup in 1998, added PC in 1999
+- Has FlyCast ads but seems to be 1 guy in a garage
+- No sharing
+
+EMAILS:
+webmaster@iMacFloppy.com
+faq@iMacFloppy.com
+NetFloppy@iMacFloppy.com
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+free to all users, supported by advertisers
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                             FileHome
+==================================================================================================
+http://www.filehome.com/
+- Provides Web Folder storage
+- 25Mb for $4.95.
+- Geared towards corporations
+
+EMAILS:
+info@filehome.com
+
+MANAGEMENT: n/a
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- 25MB Package - 1 Web Folder - http://user.filehome.com :
+  1 User Account - $4.99/mo
+  2 User Account - $6.99/mo
+  3 User Account - $8.99/mo
+  4 User Account - $10.99/mo
+  5 User Account - $12.99/mo
+  Additional User Accounts - $1.99/each
+- 50MB Package - 1 Web Folder - http://user.filehome.com
+  1 User Account - $9.99/mo
+  2 User Account - $14.99/mo
+  3 User Account - $17.99/mo
+  4 User Account - $20.99/mo
+  5 User Account - $23.99/mo
+  Additional User Accounts - $2.99/each
+- 100MB Package - 1 Web Folder - http://user.filehome.com
+  1 User Account - $19.99/mo
+  2 User Account - $29.99/mo
+  3 User Account - $34.99/mo
+  4 User Account - $39.99/mo
+  5 User Account - $45.99/mo
+  Additional User Accounts - $4.99/each
+Additional Options
+- Secure Server (SSL) - get the added security of encrypting your files when you copy and save them to your Web Folders.  $299/year (non refundable)
+- The Ultimate Business Package - This deluxe package includes everything in the normal packages plus: Exclusive use of one of our Dell brand servers, Ability to search your Web Folders via Internet Explorer, Up to 4GB of disk space 
+- Ultra2 SCSI hard drives, Daily backups of your files, Mirrored hard drives - Keeps a copy of your files on an identical hard drive 
+- If one drive fails the other drive automatically takes over, Maintenance 
+- We run and maintain everything, all you do is access your files 24 hours 7 days a week anywhere in the world 
+- Pricing (requires a 1 year contract)
+50 User Accounts - $399/mo
+75 User Accounts - $499/mo
+100 User Accounts - $599/mo
+150 User Accounts - $699/mo
+
+SIGNED UP:
+We are no longer accepting new customers
+We are currently in the process of developing new features and services 
+Check back often to learn about new beta testing opportunities
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                    MyDocBox, SpaceForFree, NetLockers
+==================================================================================================
+MyDocBox - www.mydocbox.com
+
+SpaceForFree - www.spaceforfree.com
+- project run by NetLockers (see next paragraph)
+- free file storage up to 20MB with no warranty or guarantee against data loss, files stored for up to 21 inactive days
+- paid membership: Option 1  - two year account, 15MB extra storage space (35MB total), $20.99 for 2 years
+                             Option 2 - one year account, 10MB extra storage space (30MB total) , $10.99  for one year
+
+NetLockers - http://netlockers.com
+- NetLockers.com is a privately held company 
+- online calendar, document/file storage, Web-based e-mail, address books, voice communication, fax retrieval and storage, voice e-mail, and software
+- NetLockers' file storage system is combining an HTML interface with Office 2000 Web Folders capability
+- web folders look and act just like regular folders and are built into Windows 98 Second Edition, Internet Explorer 5.0, and Office 2000
+- partners: Net Writers.com, Rocket Talk, CANBOX, PKZIP
+
+- all services provided by the GreatDomains.com
+
+ADDRESS:
+Great Domains
+tel: (818) 753-3760
+fax: (818) 753-6011
+
+EMAILS:
+preset form at http://www.greatdomains.com/emailus.asp
+
+MANAGEMENT:
+CEO: Jeffrey Tinsley
+president : Steve Newman
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- Buy a domain name with no fees
+- Free Web Pages
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+ 
+==================================================================================================
+                                             FreeBack 
+==================================================================================================
+www.freeback.com
+- Java based file storage and access 
+- headquartered in Reston, Virginia , a privately-held corporation 
+- FreeBack currently offers up to 50MB of disk space for free
+- Reminder Email service 
+
+EMAILS:
+support@freeback.com
+sales@freeback.com
+suggest@freeback.com
+privacy@freeback.com
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- 10MB of free storage space (up to 50MB of free disk space)
+- compression algorithm that can squeeze several times that amount into your personal storage area (files are compressed before they are sent to FreeBack's server, so transmission times are shortened)
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+
+==================================================================================================
+                                             zDisk
+==================================================================================================
+www.zdisk.com
+
+ADDRESS:
+zDisk.com 
+900 4th Ave., Suite 2950 
+Seattle, WA 98164 USA 
+Phone (206) 652-0767 
+Fax  (206) 652-9397 
+
+EMAILS:
+for new business, media relations and investor relations: 
+mfeldman@zdisk.com 
+
+MANAGEMENT:
+VP of business development: Thomas A. Weiland
+president and CEO: Matthew Feldman, 206-652-0767, mfeldman@tufans.com
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- 10MB of free storage
+- additional space can be purchased online in increments of 50 MB for $1.99
+- no limit to the file size or storage space
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+ 
+==================================================================================================
+                                             HostFile
+==================================================================================================
+www.hostfile.com
+- contact: sales@hostfile.com
+- file storage from $3.85 per month: 25 MB of disk space, 2000 MB of data transfer per month, email forwarding, POP3 or auto responder address @hostfile.com, use of the host file manager, file access through our SSL Secure Server, multiple internet connections via diverse backbones, top of the line Cisco Routers running BGP4, online documentation, FAQ's and basic email support, tape backups, T3 connectivity
+- host file manager for WWW access to private file storage (Java application, allows you to access, change, upload and download your files through a Web browser interface), web folders for collaboration using MS Office 2000 (based on the HTML standard), web site hosting 
+- three month contracts (renewed automatically unless canceled)
+
+ADDRESS:
+Infoproducts Corporation
+161 Golf Club Drive
+Key West, Florida 33040
+
+EMAILS:
+sales@hostfile.com 
+partners@hostfile.com 
+webster@hostfile.com 
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- Host File Manager for WWW access to private file storage
+- Web Folders for collaboration using MS Office 2000
+- Web Site Hosting 
+- File Storage (file storage from $3.85 per month, 25 MB of disk space, 2,000 MB of data transfer per month, 1 email forwarding, POP3 or auto responder address @hostfile.com, use of the Host File Manager software application, file access through our SSL Secure Server, Mmultiple internet connections via diverse backbones, top of the line Cisco Routers running BGP4, online documentation, FAQ's and basic email support, tape backups, T3 connectivity 99.9% Uptime!, other available options: FTP access to your data, additional MBs of disk space, additional MBs of data transfer per month, additional email forwarding, POP3 and auto responders 
+
+webDAV: web folders support 
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                           FileMonkey 
+==================================================================================================
+www.filemonkey.com
+- service provided as a personal, internet accessble hard drive
+- 5Mb free
+- free storage space available from computers running Netscape Navigator 4.5 or Internet Explorer 5.0
+- no information about the company, or specific services, or prices, or anything ...
+
+EMAILS:
+webmaster@filemonkey.com 
+info@filemonkey.com 
+
+MANAGEMENT: n/a
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+
+==================================================================================================
+                                             DiskWise 
+==================================================================================================
+www.diskwise.com
+- free, internet based file storage and sharing service 
+- "version control" - when you upload a new version of a file, DiskWise keeps the old version(s) accessible
+- "new version notification" - DiskWise.com will notify you via email whenever anyone uploads a new version of a particular file
+- you get 20 megabytes of free online storage space, each time you suggest DiskWise.com to someone else and they sign up, you get an additional 10 megabytes of storage space, up to a limit of 50 megabytes
+- "file distribution and reference system" - an e-mail notification will be sent to you if someone else uploads a newer version of the file
+- DiskWise for Intranets 
+
+EMAILS:
+feedback@diskwise.com 
+support@diskwise.com 
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- file storage system (20 MB free, additional 10MB for each person you refer - up to 50 MB total)
+- file transfer system
+- collaboration system
+- file distribution and reference system
+- free, advertiser-supported service
+
+SIGNED UP:
+email: klara@maxlock.com
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                             My Docs Online
+==================================================================================================
+http://www.mydocsonline.com/
+- 20Mb free
+- WebDAV support
+- Drag and drop
+- 1/4 page b/w ad in The Industry Standard
+- Palm device synchronization
+- Founded in 1999, private, based in Naples, FL. Partners with AvantGO for handheld support. Probably small, no mention of management nor investors.
+
+ADDRESS:
+My Docs Online, Inc.
+8951 Bonita Beach Rd, Suite 525-366
+Bonita Springs, FL 34135
+toll-free (888) 686-1181 
+main phone (941) 495-1181
+
+EMAILS:
+General Inquiries: info@mydocsonline.com
+Marketing: marketing@mydocsonline.com
+Support: support@mydocsonline.com
+Feedback: feedback@mydocsonline.com
+
+COMPANY STATUS: private
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- up to 20 MB of your stuff on the Web for free
+- more space purchase:
+50 Megabytes/3 months   $9.95 
+50 Megabytes/1 year  $24.95 
+100 Megabytes/3 months  $12.95 
+100 Megabytes/1 year  $34.95 
+200 Megabytes/3 months  $19.95 
+200 Megabytes/1 year  $59.95 
+300 Megabytes/3 months  $29.95 
+300 Megabytes/1 year  $84.95 
+
+PROTOCOLS:
+WebDAV: Yes
+FTP: No
+Client software: No
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+==================================================================================================
+                                             FilesAnywhere
+==================================================================================================
+www.filesanywhere.com
+www.oware.com (Corporate site)
+- 50Mb free
+- Browswer based
+- "E-Send" send by email and "E-Link" send links
+- Officeware Corp, Euless TX, 1995, writes apps for large companies
+- No management or funding listed
+
+EMAILS:
+filesanywhere@oware.com 
+
+PAID SERVICES AND PROMOTIONS OFFERED:
+- 50MB FREE Web File Storage
+- additional space purchase:
+100MB - monthly plan $3.95, annual plan $42.00
+200MB - monthly plan $5.95, annual plan $64.00
+500MB - monthly plan $11.95, annual plan $129.00
+1000MB - monthly plan $19.95, annual plan $215.00
+2000MB - monthly plan $34.95, annual plan $369.00
+
+PROTOCOLS:
+WebDAV: No
+FTP: No
+Client software: No
+
+SIGNED UP:
+username: teamstream
+password: bluefiat
+
+RESEARCHED BY:
+Klara
+
+(Doc ID: /MKT/TEAMDRIVE/INTSTORE Maz-3-2000 MD)

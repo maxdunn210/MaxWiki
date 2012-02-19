@@ -1,0 +1,74 @@
+-------------------
+26-Sep-2007 Max Dunn
+
+Changed stylesheet names. Before all were "styles.css" and "print.css". Now the main stylesheet
+in /stylesheets are "main.css" and "main_print.css". The theme stylesheets in "/themes/*/stylesheets" 
+are "theme.css" and "theme_print.css". The site specific stylesheets in "/files/*" are
+"site.css" and "site_print.css".
+
+After upgrading, clear all the cache files.
+
+-------------------
+9-Feb-2007 Max Dunn
+SVN version = 411
+DB schema version = 25
+
+To update:
+* Change footer and add '<div class='right_block'>' to copyright
+* Change footer and add '<div class='right_block'><b>'
+* If edit icon on right, add 'MY_CONFIG[:footer_edit_on_right] = false' to theme_environment.rb
+* Update theme stylesheets, if necessary, change to .middle_column_narrow and .middle_column_wide
+* Expire all cached pages
+
+-------------------
+12-Jan-2007 Max Dunn
+SVN version = 362
+DB schema version = 21
+
+The big change implemented was multi-hosting. In the default configuration, you can still run single host
+but the cache directory will change. Here are the instructions for upgrading to this version:
+
+# Run svn update and rake db:migrate as normal
+# Start the app, go into Admin -> Configuration. Update the params and save
+# Delete config/theme_setting.rb
+# Update local_environment.rb to look like local_environment.rb.template
+# Update config/database.yml to add the "encoding: utf8" (see the database.yml.template file)
+# Update .htaccess (or httpd.conf) to point to the cache directory
+
+If Multihost is NOT installed:
+
+  Change .htaccess like this to find cached pages in the /public/cache:
+     
+      RewriteRule ^$ cache/index.html [QSA]
+      RewriteRule ^([^.]+)$ cache/$1.html [QSA]
+      RewriteCond %{REQUEST_FILENAME} !-f
+      RewriteRule ^(.*)$ dispatch.cgi [QSA,L]
+      
+  If instead you put these changes in httpd.conf use a slightly different format:
+      
+      RewriteRule ^/?$ /cache/index.html [QSA]
+      RewriteRule ^/?([^.]+)$ /cache/$1.html [QSA]
+      RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+      RewriteRule ^(.*)$ dispatch.cgi [QSA,L]
+
+If Multihost is installed (even if you are not using multi-hosts):
+
+  
+  Put these rules in .htaccess to find the cached pages:
+   
+    RewriteRule ^$ cache/%{HTTP_HOST}/index.html [QSA]
+    RewriteRule ^([^.]+)$ cache/%{HTTP_HOST}/$1.html [QSA]
+    RewriteRule ^(.*):80(.*)$ $1$2 [QSA]
+    RewriteRule ^(.*):(.*)$ $1_$2 [QSA]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ dispatch.cgi [QSA,L]
+    
+  If instead you use the httpd.conf for configuration, use this variation:
+    
+    RewriteRule ^/?$ /cache/%{HTTP_HOST}/index.html [QSA]
+    RewriteRule ^/?([^.]+)$ /cache/%{HTTP_HOST}/$1.html [QSA]
+    RewriteRule ^(.*):80(.*)$ $1$2 [QSA]
+    RewriteRule ^(.*):(.*)$ $1_$2 [QSA]
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ balancer://mongrel_cluster%{REQUEST_URI} [P,QSA,L]
+   

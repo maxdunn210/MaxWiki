@@ -1,0 +1,20 @@
+<% if !@page.new_record? && @controller.controller_name == 'wiki' && @controller.action_name == 'show' &&
+   !MY_CONFIG[:hide_byline_on_page] %>    
+  <% if MY_CONFIG[:hide_byline_if_not_logged_in] %>
+    <div class="byline role_Editor" style="display:none" >    
+  <% else %>
+    <div class="byline">    
+  <% end %>
+    <%= revision_link %> on <%= format_date(@page.revised_at) %> 
+    <% if MY_CONFIG[:hide_byline_author_link]  %>   
+      by <%= @page.author.name %>
+    <% else %>
+      by <%= author_link(@page) %>
+    <% end %>
+    <%= "(#{@page.author.ip})" if @page.author.respond_to?(:ip) %>
+    <% if @wiki.count_pages? %>
+      <% total_chars = @page.content.length %>
+      (<%= total_chars %> characters / <%= sprintf("%-.1f", (total_chars / 2275 rescue 0)) %> pages)
+    <% end %>
+  </div>
+<% end %>

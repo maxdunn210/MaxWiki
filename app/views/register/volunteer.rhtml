@@ -1,0 +1,113 @@
+<%
+  @title = 'Register'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h1>Volunteer Job Selection</h1>
+
+<p>Tri-Cities Little League thrives on parents willing 
+to put their time and effort into making this a great 
+experience for the kids. Without you, Tri-Cities couldn't 
+survive.</p>
+
+<p>The league requires parents to participate as volunteers 
+at two levels: Team Level and League Level. Team level   
+volunteer responsibilities include field setup and tear down,
+score keeping, bringing snacks for the players, team mom, etc.
+All these activities are organized  and coordinated by the 
+team manager. The League Level volunteer responsibilities 
+include the parent's participation as a Team 
+<a href="/Manager-Coach">Manager, Coach</a>, 
+<a href="/Umpire">Umpire</a>,
+<a href="/Snack-Shack-Aux">Snack Shack Supervisor/Staff</a>,
+<a href="/Spec-Events-Assist">Special Events Assistant</a>, 
+<a href="/Fund-Spons-Assist">Fundraiser, Sponsor Assistant</a>,
+<a href="/Equipment-Assist">Equipment Assistant</a>, 
+<a href="/Uniform-Assist">Uniforms Assistant</a> or other 
+<a href="/Help-Needed">Help as Needed</a> activities. These 
+activities are coordinated by the board. </p>
+
+<p>If you are unable to participate as a League Level
+volunteer, Tri-Cities Little League requires an additional 
+contribution of $75.00. The additional contribution 
+will be added to your registration fee. This contribution
+does <b>NOT</b> absolve you of your Team Level volunteer 
+responsibilities</p>
+
+<h3>Parents/Legal Guardians</h3>
+<table>
+<tr>
+<td style="vertical-align:top">
+	<b>Parent 1</b><br>
+	<b><%=h @adult1.full_name %> </b><br>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+	<b>Parent 2</b><br>
+	<b><%=h @adult2.full_name %> </b><br>
+</td>
+</tr>
+</table>
+<br>
+
+<%= no_cache %>
+<%= survey('volunteer') %>
+
+<h3>Volunteer Positions</h3>
+<table>
+<tr>
+<td style="vertical-align:top">
+    <a href="/Manager-Coach">Manager-Coach</a>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+    <a href="/Snack-Shack-Aux">Snack Shack Supervisor/Staff</a>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+    <a href="/Umpire">Umpire</a>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top">
+    <a href="/Spec-Events-Assist">Special Events Assistant</a>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+    <a href="/Fund-Spons-Assist">Fundraiser, Sponsor Assistant</a>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+    <a href="/Equipment-Assist">Equipment Assistant</a>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top">
+    <a href="/Uniform-Assist">Uniforms Assistant</a>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td style="vertical-align:top">
+    <a href="/Help-Needed">Help as Needed</a>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+

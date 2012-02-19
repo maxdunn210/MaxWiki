@@ -1,0 +1,21 @@
+<% 
+  @title = @page.plain_name 
+
+  if @left_column_show
+    @left_column_partial = 'col_render'
+    @left_column_hash = {:col_name => @left_column_name, :col_page => @left_column_page}
+  end  
+
+  if @right_column_show
+    @right_column_partial = 'col_render'
+    @right_column_hash = {:col_name => @right_column_name, :col_page => @right_column_page}
+  end
+%>  
+
+<% if @page.kind == Page::TITLED  %>
+  <h1><%= @page.name %></h1>
+<% elsif @page.kind == Page::POST %>
+  <%= render(:partial => 'blog/post_title', :locals => {:post => @page}) %>
+<% end %>
+
+<%= render_with_erb(@page.display_content) %>

@@ -1,0 +1,30 @@
+<%
+  @title = 'Import Users'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu'
+%>
+
+<h1>Import Users</h1>
+
+<h2>Added</h2>
+
+<% if @good_emails.empty? %>
+<p>(None)</p>
+<% else %>
+<ul>
+<% for email in @good_emails %>
+  <li><%= email %></li>
+<% end %>
+</ul>
+<% end %>
+
+<h2>Problems</h2>
+
+<% if @bad_emails.empty? %>
+<p>(None)</p>
+<% else %>
+<ul>
+<% for email in @bad_emails %>
+  <li><%= email %></li>
+<% end %>
+</ul>
+<% end %>

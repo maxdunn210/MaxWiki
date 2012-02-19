@@ -1,0 +1,7 @@
+<% connection = webdav_get_connection(connection) %>
+
+ Server: <%= text_field_tag('webdav_server', "#{connection[:server]}#{connection[:path]}", :size => 50) %><br>
+ Username: <%= text_field_tag('webdav_username', connection[:username], :size => 20) %>
+ Password: <%= password_field_tag('webdav_password', connection[:password], :size => 15) %>
+
+ 

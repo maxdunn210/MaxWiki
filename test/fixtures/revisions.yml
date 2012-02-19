@@ -1,0 +1,2874 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  created_at          :datetime      not null
+#  updated_at          :datetime      not null
+#  revised_at          :datetime      not null
+#  page_id             :integer(11)   default(0), not null
+#  content             :text          default(), not null
+#  author              :string(60)    
+#  ip                  :string(60)    
+#
+
+--- 
+textile_sample: 
+  updated_at: 2006-03-07 09:20:21 -08:00
+  wiki_id: 1 
+  page_id: 48
+  author: Max Dunn
+  id: 140
+  revised_at: 2006-03-07 09:20:21 -08:00
+  ip: 127.0.0.1
+  content: |
+    h1. Test Textile
+
+    This page has some plain textile on it to test converting to html. 
+
+    h2. Textile Tests
+
+    *Bold Text* _italic text_
+
+    * Bullet A
+    * Bullet B
+
+    # Item 1
+    # Item 2
+
+    table(bordered).
+    |Cell 1|Cell 2|
+    |Cell 3|Cell 4|
+
+    Line 1/
+    Line 2/
+    Line 3
+
+    h2. Link Tests
+    
+    [[Test]] Link to existing page
+
+    [[Test new page]] Link to a new page
+    
+    !/images/add.gif! Test image
+    
+    h2. Preformatted test
+    
+    <code>
+    <pre>
+    Preformatted code.
+    <h1>Sample Code</h1>
+    </pre>
+    </code>
+    
+    h2. Nowiki test
+
+    <div class="left_block"><nowiki>
+    <a href="/HomePage">
+      <img alt="Tri-Cites Little League Baseball" border="0" src="/themes/baseball/images/TCLLinitialslogo2.gif" width="54" height="52"></a>
+    <a href="/HomePage">
+    <img border="0" src="/themes/baseball/images/tcll_text.gif"></a>
+    </nowiki></div>
+    
+    h2. Include test
+    
+    [[!include Test Include]]
+    
+    Include End
+    
+  created_at: 2006-03-07 09:20:21 -08:00
+test_include:
+  updated_at: 2006-03-07 09:49:36 -08:00
+  page_id: 58
+  author: Max Dunn
+  wiki_id: 1 
+  id: 150
+  revised_at: 2006-03-07 09:49:36 -08:00
+  ip: 127.0.0.1
+  content: |
+    <%%= left_menu(
+    "About Us",
+    "Contact Us") %>
+    <hr>
+    [[Navigation|Search]]
+  created_at: 2006-03-07 09:49:36 -08:00
+html_sample: 
+  updated_at: 2006-03-07 09:20:57 -08:00
+  page_id: 49
+  wiki_id: 1 
+  author: Max Dunn
+  id: 141
+  revised_at: 2006-03-07 09:20:57 -08:00
+  ip: 127.0.0.1
+  content_type: html
+  content: |
+    <h1>Test Textile</h1>
+    
+            <p>This page has some plain textile on it to test converting to html.</p>
+    
+    
+            <h2>Textile Tests</h2>
+    
+            <p><strong>Bold Text</strong> <em>italic text</em></p>
+    
+    
+    <ul>
+            <li>Bullet A</li>
+            <li>Bullet B</li>
+    </ul>
+    
+    <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+    </ol>
+    
+            <table class='bordered'>
+                    <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                    </tr>
+                    <tr>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                    </tr>
+            </table>
+    
+    
+    
+            <p>Line 1<br />
+    Line 2<br />
+    Line 3</p>
+
+    
+    
+            <h2>Link Tests</h2>
+    
+            <p><a class='existing_page_link' href='/Test'>Test</a> Link to existing page</p>
+    
+    
+            <p><span class='new_page_link'><a href='/Test+new+page'>Test new page?</a></span> Link to a new page</p>
+    
+    
+            <p><img src='/images/add.gif' alt='' /> Test image</p>
+    
+    
+            <h2>Preformatted test</h2>
+    
+    <code>
+    <pre>
+    Preformatted code.
+    &lt;h1&gt;Sample Code&lt;/h1&gt;
+    </pre>
+    </code>
+            <h2>Nowiki test</h2>
+    
+    <div class='left_block'>
+    <a href='/HomePage'>
+      <img alt='Tri-Cites Little League Baseball' border='0' src='/themes/baseball/images/TCLLinitialslogo2.gif' width='54' height='52'></a>
+    <a href='/HomePage'>
+    <img border='0' src='/themes/baseball/images/tcll_text.gif'></a>
+    </div>
+    <p>My email is: max@test.com</p>
+
+            <h2>Include test</h2>
+    
+    <%%= include 'Test Include' %>
+
+            <p>Include End</p>
+
+  created_at: 2006-03-07 09:20:57 -08:00
+test_textile: 
+  updated_at: 2006-02-28 09:50:19 -08:00
+  page_id: 35
+  wiki_id: 1 
+  author: Max Dunn
+  id: 121
+  revised_at: 2006-02-28 09:50:18 -08:00
+  ip: 127.0.0.1
+  content_type: textile
+  content: "h1 Test Textile Page"
+  created_at: 2006-02-28 09:43:15 -08:00
+test_html: 
+  updated_at: 2006-02-18 23:12:03 -08:00
+  page_id: 13
+  wiki_id: 1 
+  author: Max Dunn
+  id: 118
+  revised_at: 2006-02-18 23:12:02 -08:00
+  ip: 127.0.0.1
+  content_type: html
+  content: "<h1>Test HTML Page</h1>"
+  created_at: 2006-02-18 23:08:56 -08:00
+navigation: 
+  updated_at: 2005-12-20 12:40:21 -08:00
+  page_id: 24
+  wiki_id: 1 
+  author: Admin
+  id: 63
+  revised_at: 2005-12-20 12:40:20 -08:00
+  ip: 127.0.0.1
+  content: "<%%= render(:partial => 'navigation') %>"
+  created_at: 2005-12-20 12:18:38 -08:00
+survey: 
+  updated_at: 2006-02-17 07:39:57 -08:00
+  page_id: 32
+  wiki_id: 1 
+  author: Max1
+  id: 113
+  revised_at: 2006-02-17 07:31:09 -08:00
+  ip: 127.0.0.1
+  content_type: html
+  content: "<h1>Survey</h1>\n\n<%%= survey('Signup') %>"
+  created_at: 2006-02-17 07:31:09 -08:00
+survey_results: 
+  updated_at: 2005-12-20 12:43:49 -08:00
+  page_id: 8
+  wiki_id: 1 
+  author: Admin
+  id: 48
+  revised_at: 2005-12-19 21:57:38 -08:00
+  ip: 127.0.0.1
+  content: "<h1>Survey Results</h1>\n\n<%%= survey_results('Signup') %>"
+  created_at: 2005-12-19 21:55:58 -08:00
+revision_Welcome: 
+  updated_at: 2005-12-22 11:24:56 -08:00
+  wiki_id: 1 
+  page_id: 28
+  author: Admin
+  id: 81
+  revised_at: 2005-12-22 11:24:55 -08:00
+  ip: 127.0.0.1
+  content_type: html
+  content: "<h1>Welcome</h1>\n
+  [%= no_cache %]\n
+  [% if check_cookies %]\n
+  <p>You are now logged in to [%= config_site_name %] as &lsquo;[%= session_user_name %]&rsquo; with role &lsquo;[%= session_role_name %]&rsquo;.</p>\n
+  <div style=\"display: none;\" class=\"role_Editor\">\n
+  <h2>Editing a Page</h2>\n
+  <p><img align=\"bottom\" alt=\"Edit Icon\" src=\"/images/text_editor_small.gif\" />On any page where this edit icon appears at the bottom, you can edit the page by clicking on the icon.</p>\n
+  </div>\n
+  [% else %]\n
+  <p>Cookies are not enabled. Please enable cookies to continue.</p>\n
+  [% end %]\n"
+  created_at: 2005-12-22 11:00:25 -08:00
+revision_menu: 
+  updated_at: 2006-02-13 16:55:27 -08:00
+  wiki_id: 1 
+  page_id: 5
+  author: Max
+  id: 100
+  revised_at: 2006-02-10 11:41:54 -08:00
+  ip: 127.0.0.1
+  content: "* [[HomePage|Home]]\n
+  * [[About Us]]\n
+  * [[Registration]]\n
+  * [[Schedules]] \n
+  * [[Volunteering]] \n
+  * [[Teams]] \n
+  * [[FAQ|FAQs]]  \n
+  * <%%= link_to \"My Account\", :controller => \"user\", :action => \"index\" %%> \n
+  * <div class=\"role_Admin\" style=\"display:none\">\n
+  <%%= link_to(\"Admin\", {:controller => \"reg_admin\", :action => \"index\"}) %%> </div>"
+  created_at: 2006-02-10 11:25:26 -08:00
+revision_136: 
+  updated_at: 2006-03-07 10:11:38 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max Dunn
+  id: 136
+  revised_at: 2006-03-03 13:35:36 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n\r\n<%%= render_component :controller => 'events', :action => 'list', :params => { :no_layout => true } %>\r\n"
+  created_at: 2006-03-03 13:17:42 -08:00
+revision_108: 
+  updated_at: 2006-02-18 15:58:34 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 108
+  revised_at: 2006-02-13 11:09:05 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n\r\nMax edit 11:08"
+  created_at: 2006-02-13 10:50:46 -08:00
+revision_1: 
+  updated_at: 2005-11-19 17:30:07 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 1
+  revised_at: 2005-11-19 16:52:22 -08:00
+  ip: 127.0.0.1
+  content: "This is the test home page.\r
+
+    \r
+
+    |11|12|\r
+
+    |21|22|"
+  created_at: 2005-11-19 16:50:32 -08:00
+revision_49: 
+  updated_at: 2005-12-20 17:13:13 -08:00
+  page_id: 3
+  wiki_id: 1
+  author: Admin
+  id: 49
+  revised_at: 2005-12-19 21:58:45 -08:00
+  ip: 127.0.0.1
+  content: "        h1. Volunteering...\r\n\r\nTri-Cities Little League thrives on parents willing to put their time and effort into making this a great experience for the kids. Without you, Tri-Cities couldn’t survive. And it's a great way to meet new people. You CAN make a difference. Here are a list of opportunities:\r\n\r\nh6. Manager or Coach\r\n\r\nBeing a manager or coach is a very rewarding experience! Whether you plan to manage or coach a team, help out at practices occasionally, or just want to know how to help your own child improve, Tri-Cities is committed to helping you learn to teach baseball skills. We sponsor periodic coaching clinics, including the highly-recommended 'Al & Al Clinic.' To become a manager or coach, you must complete the Volunteer Application. If you feel you are not getting the opportunities you are looking for, please talk to Rich Guardino, this year’s Coaching Coordinator.\r\n\r\nh6. Umpire\r\n\r\nWe’ll be happy to train you! Learning to be an umpire is a great way to learn about the rules, and help out the league on an ad hoc basis. You’ll also learn first-hand why it’s so important never to yell at the umpires. (In fact, yelling at the umpire from the stands is strictly forbidden unless you are wearing an umpire's uniform.)\r\n\r\nh6. Field Maintenance (every game and practice)\r\n\r\nWe are very lucky to have a beautiful venue where our children can play baseball. The fields look this good because of a lot of hard work before the season and regular maintenance during the season. Fields need to be set up before every game, and dragged and watered afterward. This is NOT the manager's responsibility! It is a responsibility we all share, so please pitch in with dragging and watering the fields when asked, or better yet, ask how you can help out.\r\n\r\nh6. Snack Shack Duty\r\n\r\nThe snack shack is an important source of revenue for the league, and helps subsidize the equipment, uniforms, field maintenance supplies, etc. Every team is responsible for running the Snack Shack on their designated days (usually 2 or 3 days during the season). Please support the Snack Shack by volunteering when asked, and using the Snack Shack for on-site team events.\r\n\r\nh6. Team Parent\r\n\r\nThe team parent is the organizational link for his/her child's team. This may include setting up your team's schedules for after game snack, snack shack, field maintenance, scorekeeping and end of season party, etc. \r\n\r\nh6. Scorekeeping\r\n\r\nEvery team is responsible for keeping score when they are the \"home\" team. This would entail keeping track of time for the umpire, and recording every player's \"at bat\" (ball/strike count, hits, walks, stolen bases, outs, etc). No experience necessary.\r\n\r\nh6. Scoreboard\r\n\r\nThe \"home\" team is also responsible for running the scoreboard during the game.  This would entail keeping track of the ball/strike count, outs and runs scored for each team."
+  created_at: 2005-12-19 21:58:46 -08:00
+revision_137: 
+  updated_at: 2006-03-03 16:15:05 -08:00
+  page_id: 31
+  wiki_id: 1 
+  author: Max Dunn
+  id: 137
+  revised_at: 2006-03-03 16:15:04 -08:00
+  ip: 127.0.0.1
+  content: "[[!include teams_menu]]"
+  created_at: 2006-03-03 16:14:29 -08:00
+revision_109: 
+  updated_at: 2006-03-06 12:35:29 -08:00
+  page_id: 20
+  wiki_id: 1 
+  author: Max
+  id: 109
+  revised_at: 2006-02-13 16:45:37 -08:00
+  ip: 127.0.0.1
+  content: "h1.Boundaries\r
+
+    \r
+
+    Boys and girls ages 5-17 who live in the neighborhood bounded by \r
+
+    the following perimeter are eligible to play Tri-Cities Baseball.\r
+
+    \r
+
+    * Lawrence Expressway, I-280, De Anza Blvd and Bollinger Rd.\r
+
+    \r
+
+    <div id=\"map\" style=\"width: 525px; height: 500px\"></div>\r
+
+    <hr>\r
+
+    <div id=\"message\"></div>\r
+
+    \r
+
+    action_name = <%%= controller.action_name %><br>\r
+
+    @page.plain_name = <%%= @page.plain_name %><br>\r
+
+    boundary_page = %= boundary_page %"
+  created_at: 2006-02-13 16:29:50 -08:00
+revision_2: 
+  updated_at: 2005-12-15 16:20:25 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 2
+  revised_at: 2005-11-19 17:30:06 -08:00
+  ip: 127.0.0.1
+  content: "This is the test home page.\r
+
+    \r
+
+    [[Test1]]\r
+
+    "
+  created_at: 2005-11-19 17:30:07 -08:00
+revision_77: 
+  updated_at: 2005-12-20 19:52:38 -08:00
+  page_id: 16
+  wiki_id: 1 
+  author: Admin
+  id: 77
+  revised_at: 2005-12-20 19:52:37 -08:00
+  ip: 127.0.0.1
+  content: "h1. About Us\r
+
+    \r
+
+    Tri-Cities Pacific Little League is one of the original South Bay youth baseball
+    organizations. A Little League region encompasses at least 20,000 people, and in
+    1964 when Tri-Cities was founded, the region included Cupertino, Sunnyvale, and
+    Santa Clara. We now serve part of Cupertino exclusively. Tri-Cities is part of
+    Little League District 44, which includes 14 leagues in the area.\r
+
+    \r
+
+    h1. League levels\r
+
+    \r
+
+    Tri-Cities has six levels of baseball for children from ages 5-17.\r
+
+    \r
+
+    * T-Ball (ages 5-6)\r
+
+    * Farm  (ages 6-11)\r
+
+    * Minors (ages 8-12)\r
+
+    * Majors (ages 10-12)\r
+
+    * Juniors (ages 13-14\r
+
+    * Seniors (ages 15-17)\r
+
+    \r
+
+    Please refer to the \"League Levels\" page for a complete description of each of
+    the  above levels. \r
+
+    \r
+
+    h1. Boundaries\r
+
+    \r
+
+    Players who live in the neighborhoods bounded by I-280, Lawrence Expressway,
+    Bollinger Road and De Anza Boulevard are eligible to play Tri-Cities Baseball.
+    Please refer to the \"Boundaries\" page for a detailed map of the area.\r
+
+    \r
+
+    h1. Eligibility\r
+
+    \r
+
+    Tri-Cities Little League is open to all children between the ages of 5 and 17 as
+    of April 30th of each year. The league is open to players who live within the
+    established physical boundaries, subject to adherence to established rules and
+    required parental support. In addition, player candidates must have parental or
+    legal guardian consent.\r
+
+    \r
+
+    h1. Operations\r
+
+    \r
+
+    Tri-Cities Little League is an all-volunteer league. Many parents devote their
+    personal time to support and operate the league. Please read more on the
+    volunteering section.\r
+
+    \r
+
+    Tri-Cities Little League thrives on parents willing to put their time and effort
+    into making this a great experience for the kids. Without you, Tri-Cities
+    couldn’t survive. And it's a great way to meet new people. You CAN make a
+    difference."
+  created_at: 2005-12-20 19:52:38 -08:00
+revision_138: 
+  updated_at: 2006-03-06 12:20:37 -08:00
+  page_id: 2
+  wiki_id: 1 
+  author: Max Dunn
+  id: 138
+  revised_at: 2006-03-06 12:20:37 -08:00
+  ip: 127.0.0.1
+  content: "<%% @body_tag = %q/onload=\"GMap()\"/ %>\r\n\r\nh1. Boundary Test
+    Page\r\n\r\n<div id=\"map\">Old</div>\r\n<hr>\r\n<div
+    id=\"message\"></div>\r\n\r\n\r\n<nowiki>\r\n<script
+    type=\"text/javascript\">\r\n\r\n    function GMap() {\r\n     
+    document.all.map.innerText = 'This is a test';\r\n   
+    }\r\n</script>\r\n</nowiki>"
+  created_at: 2006-03-06 11:56:37 -08:00
+revision_3: 
+  updated_at: 2006-03-06 11:56:37 -08:00
+  page_id: 2
+  wiki_id: 1 
+  author: Admin
+  id: 3
+  revised_at: 2005-11-19 17:30:29 -08:00
+  ip: 127.0.0.1
+  content: Test 1 Page
+  created_at: 2005-11-19 17:30:29 -08:00
+revision_78: 
+  updated_at: 2005-12-24 15:17:00 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 78
+  revised_at: 2005-12-21 20:54:45 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                             h1. Welcome\r\n\r\nWelcome to the official site of Tri-Cities Little League where baseball is our universal language and kids worldwide come together to play ball.  Our goal is to promote the game, build friendships, skills and teamwork, and most of all, have a lot of fun.\r\n\r\nh1. News\r\n\r\n* **Early Bird Discount**. Register for the 2006 season on or before December 31st, 2005 and take advantage of our \"Early Bird\" discount.\r\n\r\n* **Online Registration**. We now make it easy for you to register for Spring 2006 with our new [[online registration]]. Register your child online, 24/7 directly from home. We still have walk-in and mail-in registration as well.\r\n\r\n* **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and times.\r\n\r\n* **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties for this position are mostly administrative dealing with scheduling of umpires for league games this season. If interested, email us at president@tricitiesbaseball.org\r\n\r\n* **Volunteers**. Tri-Cities Little League thrives on parents willing to put their time and effort into making this a great experience for the kids. Without [[volunteers]], Tri-Cities couldn’t survive. You CAN make a difference. No prior experience necessary.\r\n\r\n* **Boundaries**. Do you live within the Tri-Cities [[boundaries]]? Check to see if you can play with Tri-Cities. \r\n\r\n* **Stay Informed**\r\nFor up-to-date information, refer to this website or join our email list:\r\ntcll-interest@yahoogroups.com.\r\nYou can join it yourself by going directly to the Yahoo! Group:<br>\r\nhttp://sports.groups.yahoo.com/group/tcll-interest/\r\n "
+  created_at: 2005-12-21 20:54:45 -08:00
+revision_139: 
+  updated_at: 2006-03-06 12:48:42 -08:00
+  page_id: 20
+  wiki_id: 1 
+  author: Max Dunn
+  id: 139
+  revised_at: 2006-03-06 12:48:41 -08:00
+  ip: 127.0.0.1
+  content: "<%% @body_tag = 'onload=\"initMap()\"' %>\r\n\r\nh1.Boundaries\r\n\r\nBoys and
+    girls ages 5-17 who live in the neighborhood bounded by \r\nthe following
+    perimeter are eligible to play Tri-Cities Baseball.\r\n\r\n* Lawrence
+    Expressway, I-280, De Anza Blvd and Bollinger Rd.\r\n\r\n<div id=\"map\"
+    style=\"width: 525px; height: 500px\"></div>\r\n<hr>\r\n<div
+    id=\"message\"></div>\r\n\r\n\r\n<nowiki>\r\n<script
+    src=\"http://maps.google.com/maps?file=api&v=1&key=ABQIAAAA8DtRUA2hIGjH2UUZfpM-2hRWTrwz32jsthNsHTueZGNBFRv2fBS-JqAaRR_dCmbLpN8HCyMz4h2g7Q\"
+    type=\"text/javascript\"></script>\r\n\r\n<script type=\"text/javascript\">\r\n 
+    //<![CDATA[\r\n\r\n\r\n    function initMap() {\r\n      // Display Info Windows
+    Above Markers\r\n      //\r\n      // In this example, we show a custom info
+    window above each marker by\r\n      // listening to the click event for each
+    marker. We take advantage of function\r\n      // closures to customize the info
+    window content for each marker.\r\n      \r\n      // Center the map on
+    Cupertino\r\n      var map = new GMap(document.getElementById(\"map\"));\r\n    
+    map.addControl(new GLargeMapControl());\r\n      map.addControl(new
+    GMapTypeControl());\r\n      map.centerAndZoom(new GPoint(-122.01686382293701,
+    37.31932181336203), 3);\r\n      \r\n      // Creates a marker whose info window
+    displays the given number\r\n      function createMarker(point, text, url) {\r\n
+    var marker = new GMarker(point);\r\n      \r\n        // Show this marker's
+    index in the info window when it is clicked\r\n\tvar html = \"<b><a href='\" +
+    url + \"'>\" + text + \"</a></b>\" \r\n        GEvent.addListener(marker,
+    \"click\", function() {\r\n          marker.openInfoWindowHtml(html);\r\n       
+    });\r\n      \r\n        return marker;\r\n      }\r\n      \r\n    
+    GEvent.addListener(map, \"click\", function(overlay, point) {\r\n\t//var center
+    = map.getCenterLatLng();\r\n\tvar latLngStr = 'new GPoint(' + point.x + ', ' +
+    point.y + ');';\r\n\tdocument.getElementById(\"message\").innerHTML =
+    latLngStr;\r\n      });\r\n      \r\n//      GEvent.addListener(map, 'click',
+    function(overlay, point) {\r\n//            map.openInfoWindow(point,\r\n//\t\t 
+    document.createTextNode(\"You are here\"));\r\n//\t});\r\n\r\n      \r\n      //
+    Add a polyline for TCLL Boundaries\r\n      var tcpoints = [];\r\n     
+    tcpoints.push(new GPoint(-122.0322, 37.3344)); \r\n      tcpoints.push(new
+    GPoint(-122.0217,  37.3343));\r\n      tcpoints.push(new GPoint(-121.9955,
+    37.3208));\r\n      tcpoints.push(new GPoint(-121.9963,  37.3090)); \r\n     
+    tcpoints.push(new GPoint(-122.0077, 37.3104)); \r\n      tcpoints.push(new
+    GPoint(-122.0214, 37.3095));\r\n      tcpoints.push(new GPoint(-122.0322,
+    37.3124));\r\n      tcpoints.push(new GPoint(-122.0322, 37.3344)); \r\n\r\n     
+    tcRed = new GPolyline(tcpoints, \"#ff0000\");\r\n      tcGreen = new
+    GPolyline(tcpoints, \"#00ff00\");\r\n      map.addOverlay(tcRed);\r\n    \r\n   
+    map.addOverlay(createMarker(new GPoint(-122.02016830444336, 37.31850270698815),
+    \r\n\t\t\t\t      \"Tri-Cities Little
+    League\",\r\n\t\t\t\t\t\"http://www.tricitiesbaseball.org\"));\r\n     }\r\n   
+    //]]>\r\n</script>\r\n\r\n</nowiki>"
+  created_at: 2006-03-06 12:35:28 -08:00
+revision_20: 
+  updated_at: 2005-12-17 14:09:18 -08:00
+  page_id: 6
+  wiki_id: 1 
+  author: Admin
+  id: 20
+  revised_at: 2005-12-17 12:41:02 -08:00
+  ip: 127.0.0.1
+  content: "                                \r\n\r\ntable{border:1px solid black}.\r\n|foo|fie|\r\n|{background:#ddd}.fo|fum|\r\n\r\n|*Tri-Cities Sponsors*|\r\n|Thank you to all of the sponsors who support\r\nTri-Cities Little League!|\r\n|Hanson Permanente\r\n Cement, Inc.|\r\n| Cicero’s Pizza |\r\n\r\n Frankie, Johnnie\r\n& Luigi Too!\r\n\r\n Elephant Bar\r\n\r\n Valley Athletic\r\n\r\n Pacific Northstar Mechanical\r\n\r\n Ted Johnston\r\n Family Day Care\r\n\r\n FARNUM\r\nInspection Service\r\n"
+  created_at: 2005-12-17 11:59:07 -08:00
+revision_4: 
+  updated_at: 2005-12-15 17:31:05 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 4
+  revised_at: 2005-12-15 16:50:11 -08:00
+  ip: 127.0.0.1
+  content: "h1. Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    h1. News\r
+
+    \r
+
+    * *Early Bird Discount*. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * *Online Registration*. We now make it easy for you to register for Spring 2006
+    with our new online registration. Register your child online, 24/7 directly from
+    home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * *Tryouts for the Spring 2006 Season*. Tryouts will begin at the end of January
+    for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and
+    times.\r
+
+    \r
+
+    * *Umpire-in-Chief Needed!* No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us. (Put email here)\r
+
+    \r
+
+    * *Volunteers*. Tri-Cities Little League thrives on parents willing to put their
+    time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * *Boundaries*. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * *Stay Informed*\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-15 16:20:25 -08:00
+revision_79: 
+  updated_at: 2006-02-17 07:24:25 -08:00
+  page_id: 9
+  wiki_id: 1 
+  author: Admin
+  id: 79
+  revised_at: 2005-12-21 21:04:53 -08:00
+  ip: 127.0.0.1
+  content: "h1. Sponsorship\r
+
+    \r
+
+    Interested in sponsoring Tri-Cities? Send an email to
+    president@tricitiesbaseball.org for more information.\r
+
+    "
+  created_at: 2005-12-21 21:04:07 -08:00
+revision_50: 
+  updated_at: 2005-12-20 12:46:44 -08:00
+  page_id: 15
+  author: Admin
+  wiki_id: 1 
+  id: 50
+  revised_at: 2005-12-19 22:04:18 -08:00
+  ip: 127.0.0.1
+  content: "        \t\t\t\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align: center\">\r\n<img border=\"0\" src=\"/images/index.1.jpg\">\r\n</p>\r\n"
+  created_at: 2005-12-19 22:02:55 -08:00
+revision_21: 
+  updated_at: 2005-12-17 14:30:25 -08:00
+  wiki_id: 1 
+  page_id: 1
+  author: Admin
+  id: 21
+  revised_at: 2005-12-17 12:07:44 -08:00
+  ip: 127.0.0.1
+  content: "h1. Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    h1. News\r
+
+    \r
+
+    * **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    * **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    * **Volunteers**. Tri-Cities Little League thrives on parents willing to put
+    their time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * **Stay Informed**\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-17 12:07:01 -08:00
+revision_22: 
+  updated_at: 2005-12-17 15:15:43 -08:00
+  page_id: 6
+  wiki_id: 1 
+  author: Admin
+  id: 22
+  revised_at: 2005-12-17 14:12:54 -08:00
+  ip: 127.0.0.1
+  content: "                                                \r\n\r\ntable{border:1px solid black}.\r\n|foo|fie|\r\n|{background:#ddd}.fo|fum|\r\n\r\n|*Tri-Cities Sponsors*|\r\n|Thank you to all of the sponsors who support\r\nTri-Cities Little League!|\r\n|Hanson Permanente\r\n Cement, Inc.|\r\n| Cicero’s Pizza |\r\n\r\n Frankie, Johnnie\r\n& Luigi Too!\r\n\r\n Elephant Bar\r\n\r\n Valley Athletic\r\n\r\n Pacific Northstar Mechanical\r\n\r\n Ted Johnston\r\n Family Day Care\r\n\r\n FARNUM\r\nInspection Service\r\n"
+  created_at: 2005-12-17 14:09:18 -08:00
+revision_6: 
+  updated_at: 2005-12-15 19:43:06 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 6
+  revised_at: 2005-12-15 18:35:02 -08:00
+  ip: 127.0.0.1
+  content: "h1. Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    h1. News\r
+
+    \r
+
+    * *Early Bird Discount*. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * *Online Registration*. We now make it easy for you to register for Spring 2006
+    with our new online registration. Register your child online, 24/7 directly from
+    home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * *Tryouts for the Spring 2006 Season*. Tryouts will begin at the end of January
+    for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and
+    times.\r
+
+    \r
+
+    * *Umpire-in-Chief Needed!* No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us. (Put email here)\r
+
+    \r
+
+    * *Volunteers*. Tri-Cities Little League thrives on parents willing to put their
+    time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * *Boundaries*. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * *Stay Informed*\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-15 17:31:05 -08:00
+revision_51: 
+  updated_at: 2005-12-19 22:08:40 -08:00
+  page_id: 10
+  wiki_id: 1 
+  author: Admin
+  id: 51
+  revised_at: 2005-12-19 22:08:40 -08:00
+  ip: 127.0.0.1
+  content: "                                                                \r\n\r\nh1. Frequently Asked Questions\r\n\r\nh6. When does the season begin and how long does it last?\r\n\r\nOnce the teams are announced, practices begin usually the first or second week of February. This gives each team about 4 weeks of practice before the regular season begins (usually the first or second Saturday in March).\r\n\r\nOnce the regular season begins, there are 10 weeks of games (not including Spring Break) plus 2 weeks of makeup and playoff games. It ends with Closing Ceremonies on the first or second Saturday of June. Please refer to the [[Schedules]] page for dates and times of all Tri-Cities events.\r\n\r\nIf your child is selected onto a Tournament or All-Star team, or if his/her team is representing the league in the TOCs (Tournament of Champions), practices and post season play begins after Closing Ceremonies and could last through mid-July. Please take this into consideration when planning your summer vacations.\r\n\r\nh6. Does my child have to come to tryouts?\r\n\r\nYour child must attend tryouts if he or she plans on playing in Minors, Majors, Juniors or Seniors. T-Ball and Farm candidates do not have to attend (placement is determined by league age level).\r\n\r\nh6. My child has never played baseball before - what level should he sign up for?\r\n\r\n5-6 year-olds --> T-ball<br>\r\n7-8 year-olds --> Farm<br>\r\n9-12 year-olds must attend try-outs and will be placed appropriately\r\n\r\nh6. My child wants to play on his friend's team.  How do I request that?\r\n\r\nRequests for a child to be placed on a team with a friend can be made on the Registration Form, however the placement cannot be guaranteed.\r\n\r\nh6. Is my credit card number secure on your site?\r\n\r\nAll online payments made through Tri-Cities Little League are processed by \"PayPal\":https://www.paypal.com/cgi-bin/webscr?cmd=xpt/general/Privacy-outside, which enables you to pay without sharing your financial information with us. Not only does PayPal help keep your financial information private, they guarantee 100% protection against unauthorized payments sent from your account.\r\n\r\nh6. When do practices begin?\r\n\r\nPractices typically begin the first or second week of February. This gives each team about 4 weeks to practice before the regular season begins.\r\n\r\nh6. Where are Tri-Cities Little League games played?\r\n\r\nT-Ball, Farm, Minor and Major League games are played at \"Wilson Park\":http://maps.yahoo.com/py/maps.py?Pyt=Tmap&addr=19980%20Rodrigues%20Ave&csz=95014&Get+Map=Get+Map and the \"Cupertino American Field\":http://maps.yahoo.com/py/maps.py?Pyt=Tmap&addr=5905%20Rainbow%20Dr&csz=95129&Get+Map=Get+Map at Miller Middle School. Junior League games are played at \"Hyde Middle School\":http://maps.yahoo.com/py/maps.py?Pyt=Tmap&addr=920%20Hyde%20Ave&csz=95014&Get+Map=Get+Map and Senior League games at \"Cupertino High School\":http://maps.yahoo.com/py/maps.py?Pyt=Tmap&addr=10300%20Finch%20Ave&csz=95014&Get+Map=Get+Map.\r\n\r\nh6. Who do I contact if I have more questions?\r\n\r\ninfo@tricitiesbaseball.org\r\n "
+  created_at: 2005-12-19 22:07:26 -08:00
+revision_23: 
+  updated_at: 2005-12-17 15:12:37 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 23
+  revised_at: 2005-12-17 14:30:25 -08:00
+  ip: 127.0.0.1
+  content: "\r
+
+    h1. Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    h1. News\r
+
+    \r
+
+    * **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    * **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    * **Volunteers**. Tri-Cities Little League thrives on parents willing to put
+    their time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * **Stay Informed**\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-17 14:30:25 -08:00
+revision_7: 
+  updated_at: 2005-12-16 17:21:08 -08:00
+  wiki_id: 1 
+  page_id: 4
+  author: Admin
+  id: 7
+  revised_at: 2005-12-15 18:36:03 -08:00
+  ip: 127.0.0.1
+  content: "<a href=\"registration.htm\">\r\n\t\t\t<img border=\"0\"
+    src=\"/images/btn_register.gif\" width=\"123\" height=\"21\"></a>
+    \r\n<p>\r\nThis is a test\r\n</p>\r\n<p>&nbsp;</p>\r\n\r\n"
+  created_at: 2005-12-15 18:36:03 -08:00
+revision_111: 
+  updated_at: 2006-02-17 08:45:47 -08:00
+  wiki_id: 1 
+  page_id: 9
+  author: Max
+  id: 111
+  revised_at: 2006-02-17 07:24:25 -08:00
+  ip: 127.0.0.1
+  content: "h1.Sponsorship\r
+
+    \r
+
+    Interested in sponsoring Tri-Cities? Send an email to
+    president@tricitiesbaseball.org for more information.\r
+
+    "
+  created_at: 2006-02-17 07:24:25 -08:00
+revision_52: 
+  updated_at: 2005-12-20 12:52:54 -08:00
+  page_id: 16
+  wiki_id: 1 
+  author: Admin
+  id: 52
+  revised_at: 2005-12-19 22:10:49 -08:00
+  ip: 127.0.0.1
+  content: "h1. About Us\r
+
+    \r
+
+    Tri-Cities Pacific Little League is one of the original South Bay youth baseball
+    organizations. A Little League region encompasses at least 20,000 people, and in
+    1964 when Tri-Cities was founded, the region included Cupertino, Sunnyvale, and
+    Santa Clara. We now serve part of Cupertino exclusively. Tri-Cities is part of
+    Little League District 44, which includes 14 leagues in the area.\r
+
+    \r
+
+    h1. League levels\r
+
+    \r
+
+    Tri-Cities has six levels of baseball for children from ages 5-17.\r
+
+    \r
+
+    * T-Ball (ages 5-6)\r
+
+    * Farm  (ages 6-11)\r
+
+    * Minors (ages 8-12)\r
+
+    * Majors (ages 10-12)\r
+
+    * Juniors (ages 13-14\r
+
+    * Seniors (ages 15-17)\r
+
+    \r
+
+    Please refer to the \"League Levels\" page for a complete description of each of
+    the  above levels. \r
+
+    \r
+
+    h1. Boundaries\r
+
+    \r
+
+    Players who live in the neighborhoods bounded by I-280, Lawrence Expressway,
+    Bollinger Road and De Anza Boulevard are eligible to play Tri-Cities Baseball.
+    Please refer to the \"Boundaries\" page for a detailed map of the area.\r
+
+    \r
+
+    h1. Eligibility\r
+
+    \r
+
+    Tri-Cities Little League is open to all children between the ages of 5 and 17 as
+    of April 30th of each year. The league is open to players who live within the
+    established physical boundaries, subject to adherence to established rules and
+    required parental support. In addition, player candidates must have parental or
+    legal guardian consent.\r
+
+    \r
+
+    h1. Operations\r
+
+    \r
+
+    Tri-Cities Little League is an all-volunteer league. Many parents devote their
+    personal time to support and operate the league. Please read more on the
+    volunteering section.\r
+
+    \r
+
+    Tri-Cities Little League thrives on parents willing to put their time and effort
+    into making this a great experience for the kids. Without you, Tri-Cities
+    couldn’t survive. And it's a great way to meet new people. You CAN make a
+    difference."
+  created_at: 2005-12-19 22:10:50 -08:00
+revision_24: 
+  updated_at: 2005-12-17 21:53:41 -08:00
+  wiki_id: 1 
+  page_id: 1
+  author: Admin
+  id: 24
+  revised_at: 2005-12-17 15:12:37 -08:00
+  ip: 127.0.0.1
+  content: "        \r\nh1. Welcome\r\n\r\nWelcome to the official site of Tri-Cities Little League where baseball is our universal language and kids worldwide come together to play ball.  Our goal is to promote the game, build friendships, skills and teamwork, and most of all, have a lot of fun.\r\n\r\nh1. News\r\n\r\n* **Early Bird Discount**. Register for the 2006 season on or before December 31st, 2005 and take advantage of our \"Early Bird\" discount.\r\n\r\n* **Online Registration**. We now make it easy for you to register for Spring 2006 with our new online registration. Register your child online, 24/7 directly from home. We still have walk-in and mail-in registration as well.\r\n\r\n* **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and times.\r\n\r\n* **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties for this position are mostly administrative dealing with scheduling of umpires for league games this season. If interested, email us at president@tricitiesbaseball.org\r\n\r\n* **Volunteers**. Tri-Cities Little League thrives on parents willing to put their time and effort into making this a great experience for the kids. Without volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior experience necessary.\r\n\r\n* **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if you can play with Tri-Cities. \r\n\r\n* **Stay Informed**\r\nFor up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-17 15:12:37 -08:00
+revision_8: 
+  updated_at: 2005-12-15 20:28:59 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 8
+  revised_at: 2005-12-15 19:43:06 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left-->\r
+
+    \r
+
+    h1. Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    h1. News\r
+
+    \r
+
+    * *Early Bird Discount*. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * *Online Registration*. We now make it easy for you to register for Spring 2006
+    with our new online registration. Register your child online, 24/7 directly from
+    home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * *Tryouts for the Spring 2006 Season*. Tryouts will begin at the end of January
+    for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and
+    times.\r
+
+    \r
+
+    * *Umpire-in-Chief Needed!* No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us. (Put email here)\r
+
+    \r
+
+    * *Volunteers*. Tri-Cities Little League thrives on parents willing to put their
+    time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * *Boundaries*. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * *Stay Informed*\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-15 19:43:06 -08:00
+revision_53: 
+  updated_at: 2005-12-20 12:33:44 -08:00
+  wiki_id: 1 
+  page_id: 17
+  author: Admin
+  id: 53
+  revised_at: 2005-12-19 22:26:20 -08:00
+  ip: 127.0.0.1
+  content: "                                                                \r\n\r\n<ul class=\"submenu\">\r\n<li id=\"submenu_header\">IN THIS SECTION...</li>\r\n<li id=\"current\">[[About Us]]</li>\r\n<li>[[Tri-Cities Board]]</li>\r\n<li>[[Boundaries]]</li>\r\n<li>[[League Levels]]</li>\r\n<li>[[Contact Us]]</li>\r\n</ul>\r\n\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n"
+  created_at: 2005-12-19 22:13:41 -08:00
+revision_25: 
+  updated_at: 2005-12-17 17:16:33 -08:00
+  page_id: 6
+  wiki_id: 1 
+  author: Admin
+  id: 25
+  revised_at: 2005-12-17 15:48:14 -08:00
+  ip: 127.0.0.1
+  content: "        \r\n<div style=\"background:#ddd;\">\r\nh5.Tri-Cities Sponsors \r\n\r\nThank you to all of the sponsors who support Tri-Cities Little League!\r\n\r\n| Hanson Permanente Cement, Inc. |\r\n| Cicero’s Pizza |\r\n| Frankie, Johnnie & Luigi Too! |\r\n| Elephant Bar |\r\n| Valley Athletic |\r\n| Pacific Northstar Mechanical |\r\n| Ted Johnston |\r\n| Family Day Care |\r\n| FARNUM Inspection Service |\r\n\r\n</div>\r\n\r\n<br clear=\"all\">"
+  created_at: 2005-12-17 15:15:42 -08:00
+revision_9: 
+  updated_at: 2005-12-15 21:24:42 -08:00
+  wiki_id: 1 
+  page_id: 1
+  author: Admin
+  id: 9
+  revised_at: 2005-12-15 20:45:03 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left -->\r
+
+    \r
+
+    h1. Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    h1. News\r
+
+    \r
+
+    * *Early Bird Discount*. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * *Online Registration*. We now make it easy for you to register for Spring 2006
+    with our new online registration. Register your child online, 24/7 directly from
+    home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * *Tryouts for the Spring 2006 Season*. Tryouts will begin at the end of January
+    for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and
+    times.\r
+
+    \r
+
+    * *Umpire-in-Chief Needed!* No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us. (Put email here)\r
+
+    \r
+
+    * *Volunteers*. Tri-Cities Little League thrives on parents willing to put their
+    time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * *Boundaries*. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * *Stay Informed*\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-15 20:28:58 -08:00
+revision_82: 
+  updated_at: 2005-12-22 15:09:31 -08:00
+  page_id: 22
+  wiki_id: 1 
+  author: Admin
+  id: 82
+  revised_at: 2005-12-22 15:09:31 -08:00
+  ip: 127.0.0.1
+  content: "h1. Contact Us\r
+
+    \r
+
+    Line 1\r
+
+    Line 2\r
+
+    Line 3"
+  created_at: 2005-12-22 15:09:31 -08:00
+revision_54: 
+  updated_at: 2005-12-19 22:36:26 -08:00
+  wiki_id: 1 
+  page_id: 18
+  author: Admin
+  id: 54
+  revised_at: 2005-12-19 22:36:26 -08:00
+  ip: 127.0.0.1
+  content: "        \r\nh1. 2005-06 Tri-Cities Board\r\n\r\ntable(table).\r\n|Steve Campbell|President|\r\n|Dan Levin|Vice-President|\r\n|Monica Goldberg|Secretary|\r\n|Steve Cousins|Treasurer|\r\n|Kathy Spillar|Player Agent|\r\n|Joel Franks|Junior/Seniors Player Agent|\r\n|Perry Farnum|Safety Officer|\r\n|Suzanne Dunn|League Information Officer|\r\n|Rich Guardino|Coaching Coordinator|\r\n|TBD|Umpire Director|\r\n|Ted Roberts|Majors/Minors Director|\r\n|Rich Iocavetta|Farm/T-Ball Director|\r\n|Tom Lopes|Equipment Manager|\r\n|Trevor LaSpina|Field Maintenance Manager|\r\n|Julie Schieman<|Snack Shack Co-Director|\r\n|Theresa Waite|Snack Shack Co-Director|\r\n|Deirdre Lum|Uniforms|\r\n|Sanjiv Bhargava|Member at Large|\r\n|Nathan La Rue|Member at Large|\r\n|Joe Mardesich|Member at Large|"
+  created_at: 2005-12-19 22:34:39 -08:00
+revision_142: 
+  updated_at: 2006-03-07 09:43:44 -08:00
+  page_id: 50
+  author: Max Dunn
+  wiki_id: 1 
+  id: 142
+  revised_at: 2006-03-07 09:43:44 -08:00
+  ip: 127.0.0.1
+  content: "<div id=\"breadcrumb\">[[HomePage|Home]] > [[Schedules]] > <%%= @page_name
+    %></div>\r
+
+    <hr>\r
+
+    \r
+
+    <ul class=\"submenu\">\r
+
+    <li id=\"submenu_header\">Schedules...</li>\r
+
+    <%%= tag_li_current(\"Schedules|General\") %>[[Schedules|General]]</li>\r
+
+    <%%= tag_li_current(\"Seniors\") %>[[Seniors Schedule|Seniors]]</li>\r
+
+    <%%= tag_li_current(\"Juniors\") %>[[Juniors Schedule|Juniors]]</li>\r
+
+    <%%= tag_li_current(\"Majors\") %>[[Majors Schedule|Majors]]</li>\r
+
+    <%%= tag_li_current(\"Minors\") %>[[Minors Schedule|Minors]]</li>\r
+
+    <%%= tag_li_current(\"Farm\") %>[[Farm Schedule|Farm]]</li>\r
+
+    <%%= tag_li_current(\"T-Ball\") %>[[T-Ball Schedule|T-Ball]]</li>\r
+
+    </ul>\r
+
+    \r
+
+    \r
+
+    "
+  created_at: 2006-03-07 09:43:44 -08:00
+revision_26: 
+  updated_at: 2005-12-17 21:46:59 -08:00
+  wiki_id: 1 
+  page_id: 6
+  author: Admin
+  id: 26
+  revised_at: 2005-12-17 17:26:13 -08:00
+  ip: 127.0.0.1
+  content: "                                                        \r\n<div style=\"background:#ddd;\">\r\n\r\nh5. Tri-Cities Sponsors \r\n\r\n_Thank you_ to all of the sponsors who support Tri-Cities Little League!\r\n\r\n!/images/symanteclogo.gif!\r\n\r\nHanson Permanente Cement, Inc.\r\n\r\n\"Cicero’s Pizza\":http://www.cicerospizza.com/\r\n\r\n\"Frankie, Johnnie & Luigi Too!\":http://www.fjlsanjose.com/\r\n\r\nElephant Bar\r\n\r\nValley Athletic \r\n\r\nPacific Northstar Mechanical \r\n\r\nTed Johnston \r\n\r\nFamily Day Care \r\n\r\nFARNUM Inspection Service \r\n\r\n</div>\r\n\r\n<br clear=\"all\">"
+  created_at: 2005-12-17 17:16:33 -08:00
+revision_83: 
+  updated_at: 2005-12-22 21:14:21 -08:00
+  wiki_id: 1 
+  page_id: 12
+  author: Admin
+  id: 83
+  revised_at: 2005-12-22 15:47:40 -08:00
+  ip: 127.0.0.1
+  content: "<div id=\"breadcrumb\">[[HomePage|Home]] &gt; Registration</div>\r\n\r\n<hr>\r\n
+    \r\n<p>&nbsp;</p>\r\n<center>                                                   
+    !{border:0}./images/btn_register.gif!:/store/register</center>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<center>!/images/benjamin.jpg!</center>\r\n\r\np=.
+    _\"I just like baseball. I also like the drills that they do.\"_\r\n"
+  created_at: 2005-12-22 15:47:00 -08:00
+revision_55: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  page_id: 19
+  wiki_id: 1 
+  author: Admin
+  id: 55
+  revised_at: 2005-12-19 22:37:57 -08:00
+  ip: 127.0.0.1
+  content: "\r
+
+    \r
+
+    \r
+
+    <ul class=\"submenu\">\r
+
+    <li id=\"submenu_header\">IN THIS SECTION...</li>\r
+
+    <li>[[About Us]]</li>\r
+
+    <li id=\"current\">[[Tri-Cities Board]]</li>\r
+
+    <li>[[Boundaries]]</li>\r
+
+    <li>[[League Levels]]</li>\r
+
+    <li>[[Contact Us]]</li>\r
+
+    </ul>\r
+
+    "
+  created_at: 2005-12-19 22:37:57 -08:00
+revision_27: 
+  updated_at: 2005-12-19 21:48:54 -08:00
+  page_id: 6
+  wiki_id: 1 
+  author: Admin
+  id: 27
+  revised_at: 2005-12-17 21:52:05 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                        \r\n<div style=\"background:#ddd;\">\r\n\r\n<center>\r\n\r\n<br/>\r\n\r\nh5. Tri-Cities Sponsors \r\n\r\nThank you to all of the sponsors who support Tri-Cities Little League!\r\n\r\n!/images/symanteclogo.gif!:http://www.symantec.com\r\n\r\nHanson Permanente Cement, Inc.\r\n\r\n\"Cicero’s Pizza\":http://www.cicerospizza.com/\r\n\r\n\"Frankie, Johnnie & Luigi Too!\":http://www.fjlsanjose.com/\r\n\r\n\"Elephant Bar\":http://www.elephantbar.com/\r\n\r\nValley Athletic \r\n\r\nPacific Northstar Mechanical \r\n\r\nTed Johnston \r\n\r\nFamily Day Care \r\n\r\n\"FARNUM Inspection Service \":http://www.farnuminspection.com/\r\n\r\n<br/>\r\n\r\n</center>\r\n\r\n</div>\r\n\r\n<br clear=\"all\">"
+  created_at: 2005-12-17 21:46:59 -08:00
+revision_115: 
+  updated_at: 2006-02-17 08:46:14 -08:00
+  page_id: 9
+  author: Max2
+  wiki_id: 1 
+  id: 115
+  revised_at: 2006-02-17 08:46:13 -08:00
+  ip: 127.0.0.1
+  content: "h1.Sponsorship\r
+
+    \r
+
+    Interested in sponsoring Tri-Cities? Send an email to
+    president@tricitiesbaseball.org for more information.\r
+
+    "
+  created_at: 2006-02-17 08:45:47 -08:00
+revision_144: 
+  updated_at: 2006-03-07 09:45:19 -08:00
+  page_id: 51
+  wiki_id: 1 
+  author: Max Dunn
+  id: 144
+  revised_at: 2006-03-07 09:45:19 -08:00
+  ip: 127.0.0.1
+  content: h1. Seniors Schedule
+  created_at: 2006-03-07 09:45:19 -08:00
+revision_28: 
+  updated_at: 2005-12-21 20:54:46 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 28
+  revised_at: 2005-12-17 22:27:33 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                \r\nh1. Welcome\r\n\r\nWelcome to the official site of Tri-Cities Little League where baseball is our universal language and kids worldwide come together to play ball.  Our goal is to promote the game, build friendships, skills and teamwork, and most of all, have a lot of fun.\r\n\r\nh1. News\r\n\r\n* **Early Bird Discount**. Register for the 2006 season on or before December 31st, 2005 and take advantage of our \"Early Bird\" discount.\r\n\r\n* **Online Registration**. We now make it easy for you to register for Spring 2006 with our new [[online registration]]. Register your child online, 24/7 directly from home. We still have walk-in and mail-in registration as well.\r\n\r\n* **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and times.\r\n\r\n* **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties for this position are mostly administrative dealing with scheduling of umpires for league games this season. If interested, email us at president@tricitiesbaseball.org\r\n\r\n* **Volunteers**. Tri-Cities Little League thrives on parents willing to put their time and effort into making this a great experience for the kids. Without [[volunteers]], Tri-Cities couldn’t survive. You CAN make a difference. No prior experience necessary.\r\n\r\n* **Boundaries**. Do you live within the Tri-Cities [[boundaries]]? Check to see if you can play with Tri-Cities. \r\n\r\n* **Stay Informed**\r\nFor up-to-date information, refer to this website or join our email list:\r\ntcll-interest@yahoogroups.com.\r\nYou can join it yourself by going directly to the Yahoo! Group:<br>\r\nhttp://sports.groups.yahoo.com/group/tcll-interest/\r\n "
+  created_at: 2005-12-17 21:53:41 -08:00
+revision_116: 
+  updated_at: 2006-02-18 16:03:31 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max Admin
+  id: 116
+  revised_at: 2006-02-18 15:58:34 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n\r\nMax edit 3:58"
+  created_at: 2006-02-18 15:58:34 -08:00
+revision_84: 
+  updated_at: 2005-12-22 16:06:45 -08:00
+  page_id: 17
+  wiki_id: 1 
+  author: Admin
+  id: 84
+  revised_at: 2005-12-22 16:06:44 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                       <div id=\"breadcrumb\">[[HomePage|Home]] &gt; About Us</div>\r\n\r\n<hr>\r\n\r\n<ul class=\"submenu\">\r\n<li id=\"submenu_header\">IN THIS SECTION...</li>\r\n<li id=\"current\">[[About Us]]</li>\r\n<li>[[Tri-Cities Board]]</li>\r\n<li>[[Boundaries]]</li>\r\n<li>[[League Levels]]</li>\r\n<li>[[Contact Us]]</li>\r\n</ul>\r\n\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n"
+  created_at: 2005-12-22 16:05:32 -08:00
+revision_56: 
+  updated_at: 2006-02-13 16:29:51 -08:00
+  page_id: 20
+  wiki_id: 1 
+  author: Admin
+  id: 56
+  revised_at: 2005-12-19 22:39:54 -08:00
+  ip: 127.0.0.1
+  content: "\r
+
+    h1. Boundaries"
+  created_at: 2005-12-19 22:39:54 -08:00
+revision_145: 
+  updated_at: 2006-03-07 09:45:45 -08:00
+  page_id: 52
+  author: Max Dunn
+  wiki_id: 1 
+  id: 145
+  revised_at: 2006-03-07 09:45:45 -08:00
+  ip: 127.0.0.1
+  content: h1. Juniors Schedule
+  created_at: 2006-03-07 09:45:45 -08:00
+revision_29: 
+  updated_at: 2005-12-19 21:54:20 -08:00
+  page_id: 7
+  wiki_id: 1 
+  author: Admin
+  id: 29
+  revised_at: 2005-12-17 22:44:14 -08:00
+  ip: 127.0.0.1
+  content: "              \r\nh1. Schedules                                  \r\n\r\ntable(table#table1).\r\n|_.Date  |_.Event |_.Location |_.Time|\r\n|12/14/2005 |Walk-in Registration |Creekside Park |7p-9p|\r\n|01/07/2006 |Walk-in Registration |Wilson Park |10a-2p|\r\n|01/11/2006 |Walk-in Registration |Creekside Park |7p-9p|\r\n|01/28/2006 |Spring 2006 Try-outs |Wilson Park |TBD|\r\n|01/29/2006 |Spring 2006 Try-outs |Wilson Park |TBD|\r\n|01/31/2006 |Spring 2006 Try-outs (make-up) |Wilson Park |TBD|\r\n|03/11/2006 |Opening Ceremonies |Wilson Park |TBD|\r\n|TBD |Picture Day |Wilson Park |TBD|\r\n|TBD |Pancake Breakfast |Wilson Park |TBD|\r\n|04/15-23/2006 |Spring Break (no games) | &nbsp; | &nbsp; |\r\n|TBD |Playoffs |Wilson Park |TBD|\r\n|06/10/2006 |Closing Ceremonies |Wilson Park |TBD|"
+  created_at: 2005-12-17 22:34:41 -08:00
+revision_117: 
+  updated_at: 2006-02-28 11:12:14 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max Dunn
+  id: 117
+  revised_at: 2006-02-18 16:03:31 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n\r\nMax edit 4:03"
+  created_at: 2006-02-18 16:03:31 -08:00
+revision_85: 
+  updated_at: 2006-02-11 09:46:18 -08:00
+  wiki_id: 1 
+  page_id: 12
+  author: Admin
+  id: 85
+  revised_at: 2005-12-22 21:14:21 -08:00
+  ip: 127.0.0.1
+  content: "<div id=\"breadcrumb\">[[HomePage|Home]] &gt; Registration</div>\r\n\r\n<hr>\r\n
+    \r\n<p>&nbsp;</p>\r\n<center>                                                   
+    !{border:0}./images/btn_register.gif!:/tric/register</center>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<center>!/images/benjamin.jpg!</center>\r\n\r\np=.
+    _\"I just like baseball. I also like the drills that they do.\"_\r\n"
+  created_at: 2005-12-22 21:14:21 -08:00
+revision_57: 
+  updated_at: 2006-12-20 08:09:48 -08:00
+  page_id: 21
+  wiki_id: 1 
+  author: Admin
+  id: 57
+  revised_at: 2006-12-19 22:40:23 -08:00
+  ip: 127.0.0.1
+  content: "\r
+
+    h1. League Levels"
+  created_at: 2005-12-19 22:40:23 -08:00
+revision_86: 
+  updated_at: 2006-02-11 09:45:13 -08:00
+  page_id: 11
+  wiki_id: 1 
+  author: Admin
+  id: 86
+  revised_at: 2005-12-24 15:15:34 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                                                                                                \r\nh1. Registration\r\n\r\nYou may register for the current Tri-Cities season in any of the following ways:\r\n\r\nh2. Online\r\n\r\nRegistration is available \"online\":/register now through January21, 2006. Save time and paperwork! Birth certificate and proof of residency will be checked at a later date.\r\n\r\nh2. Walk-In\r\n\r\nGo to the \"online registration\":/register and fill out the form. Then bring your child's original birth certificate or passport, medical insurance information and your driver's license and proof of residency. Walk-in registration for the Spring 2006 season will be held on the following dates:\r\n\r\ntable(table).\r\n|December 14, 2005 | 7p - 9p | Creekside Park|\r\n|January 07, 2006 | 10a - 2p | Wilson Park|\r\n|January 11, 2006 | 7p - 9p | Creekside Park|\r\n\r\nh2. By Mail\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Mail your payment to:\r\n\r\n<blockquote>\r\nTri-Cities Little League<br>\r\nP.O. Box 146<br>\r\nCupertino, CA 95015-0146\r\n</blockquote>\r\n\r\nPlease write your children's name on the check.\r\n\r\nRegistration must be postmarked prior to January 21, 2006. Birth certificate and proof of residency will be checked at a later date."
+  created_at: 2005-12-24 15:15:34 -08:00
+revision_58: 
+  updated_at: 2005-12-22 15:09:32 -08:00
+  page_id: 22
+  wiki_id: 1 
+  author: Admin
+  id: 58
+  revised_at: 2005-12-19 22:40:48 -08:00
+  ip: 127.0.0.1
+  content: "\r
+
+    h1. Contact Us"
+  created_at: 2005-12-19 22:40:49 -08:00
+revision_146: 
+  updated_at: 2006-03-10 12:39:45 -08:00
+  page_id: 53
+  wiki_id: 1 
+  author: Max Dunn
+  id: 146
+  revised_at: 2006-03-07 10:06:54 -08:00
+  ip: 127.0.0.1
+  content: "h1. Majors Schedule\r
+
+    \r
+
+    <%%= render_component :controller => 'events', :action => 'list_games', :params
+    => { :no_layout => true, :team => 'Majors' } %>"
+  created_at: 2006-03-07 09:46:11 -08:00
+revision_119: 
+  updated_at: 2006-02-28 10:03:53 -08:00
+  page_id: 33
+  author: Max Dunn
+  wiki_id: 1 
+  id: 119
+  revised_at: 2006-02-28 10:03:52 -08:00
+  ip: 127.0.0.1
+  content: "<div id=\"breadcrumb\">[[HomePage|Home]] > [[Teams]] > <%%= @page_name %></div>\r
+
+    <hr>\r
+
+    \r
+
+    <ul class=\"submenu\">\r
+
+    <li id=\"submenu_header\">Teams...</li>\r
+
+    <%%= tag_li_current(\"Majors: Giants\") %>[[Majors: Giants]]</li>\r
+
+    <%%= tag_li_current(\"Majors: Mariners\") %>[[Majors: Mariners]]</li>\r
+
+    <%%= tag_li_current(\"Minors: As\") %>[[Minors: As]]</li>\r
+
+    <%%= tag_li_current(\"Minors: Giants\") %>[[Minors: Giants]]</li>\r
+
+    <%%= tag_li_current(\"Minors: Padres\") %>[[Minors: Padres]]</li>\r
+
+    <%%= tag_li_current(\"Minors: Yankees\") %>[[Minors: Yankees]]</li>\r
+
+    </ul>"
+  created_at: 2006-02-28 09:22:11 -08:00
+revision_87: 
+  updated_at: 2006-12-24 15:17:54 -08:00
+  wiki_id: 1 
+  page_id: 1
+  author: Admin
+  id: 87
+  revised_at: 2006-12-24 15:17:53 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                             h1. Welcome\r\n\r\nWelcome to the official site of Tri-Cities Little League where baseball is our universal language and kids worldwide come together to play ball.  Our goal is to promote the game, build friendships, skills and teamwork, and most of all, have a lot of fun.\r\n\r\nh1. News\r\n\r\n* **Early Bird Discount**. Register for the 2006 season on or before December 31st, 2005 and take advantage of our \"Early Bird\" discount.\r\n\r\n* **Online Registration**. We now make it easy for you to register for Spring 2006 with our new \"online registration\":/register. Register your child online, 24/7 directly from home. We still have walk-in and mail-in registration as well.\r\n\r\n* **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and times.\r\n\r\n* **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties for this position are mostly administrative dealing with scheduling of umpires for league games this season. If interested, email us at president@tricitiesbaseball.org\r\n\r\n* **Volunteers**. Tri-Cities Little League thrives on parents willing to put their time and effort into making this a great experience for the kids. Without [[volunteering|volunteers]], Tri-Cities couldn’t survive. You CAN make a difference. No prior experience necessary.\r\n\r\n* **Boundaries**. Do you live within the Tri-Cities [[boundaries]]? Check to see if you can play with Tri-Cities. \r\n\r\n* **Stay Informed**\r\nFor up-to-date information, refer to this website or join our email list:\r\ntcll-interest@yahoogroups.com.\r\nYou can join it yourself by going directly to the Yahoo! Group:<br>\r\nhttp://sports.groups.yahoo.com/group/tcll-interest/\r\n "
+  created_at: 2005-12-24 15:17:00 -08:00
+revision_59: 
+  updated_at: 2005-12-20 08:09:48 -08:00
+  page_id: 21
+  wiki_id: 1 
+  author: Admin
+  id: 59
+  revised_at: 2005-12-20 08:09:48 -08:00
+  ip: 127.0.0.1
+  content: "        \r\nh1. League Levels\r\n\r\nTri-Cities has six levels of baseball for children from ages 5-17.\r\n\r\nh5. T-Ball\r\n\r\nT-Ball is for children ages 5-6.\r\n\r\nIn T-Ball, children hit the ball from a tee at home plate and run to first base. The last batter runs all the way around to home plate. The fielders get the ball and throw it to first base. Each inning, the players in the field rotate so they get to try every position. The number of fielders in T-Ball is variable, so that everyone can always play. Every player bats once each inning. Score is not kept in T-Ball.\r\n\r\nh5. Farm\r\n\r\nFarm is for children ages 6-11. Farm is a non-competitive level that teaches more about the game of baseball, and prepares children for the next level which has ‘live’ pitching.\r\n\r\nIn Farm, a pitching machine is used for consistency early in the season, and later a coach may pitch from his knee. Balls and strikes are not called – instead, the child must hit one of 6 good pitches. Up to 10 players may take the field each inning in a Farm game, and the game may proceed with as few as 5 players on a team.\r\n\r\nChildren get equal playing time, and rotate to different positions that they can play safely, e.g. players will play first base when they can safely catch a ball thrown to them. Score is not kept in Farm games (kids may keep track, but adults should not talk about the score even if they know). There are no umpires in Farm, so calls are made by a designated adult nearby and gracefully accepted by everyone else (no matter what they saw). An inning in Farm ends when a team gets 3 outs, or 5 runs are scored.\r\n\r\nh5. Minors\r\n\r\nMinors is aimed at skill development and fun. Children must try out and be drafted for Minors, and the ages are 8-12. The league has no formal standings, and every team makes it to the playoffs. We do keep score in the games, and keep statistics on individual performance to use for feedback and at year’s end to select postseason teams. Kids do the pitching, and umpires call balls and strikes, and make calls in the field. Base stealing is allowed in Minors. Minors games have a run limit in all but the last inning of each game.\r\n\r\nAll of the children get equal playing time (assuming they come to practice regularly). Where they play depends on their abilities. Not every child will pitch every week – some will, and some may never pitch in a game – but all will get a chance to try if they want to and work at it. The same goes for other positions. During the regular season, we do continuous batting (every kid bats).\r\n\r\nThe Minors teams play just under half of their games against teams from Cupertino American, the league just across Bollinger. Nine players must be present for a Minors game to be played, so players must make every effort to attend each game and practice (2-4 per week), and must let their coach know in advance if they cannot make it.\r\n\r\nh5. Majors\r\n\r\nTri-Cities Majors is a competitive league for 10-12 year olds. A Majors-level post-season team could conceivably make it to the Little League World Series in Williamsport, PA.\r\n\r\nThe rules are similar to Minors, other than no continuous batting, and no maximum runs in an inning. Players are guaranteed a chance to bat and play 3 innings in the field each game, but playing time above the minimum is based on skill and the game situation. The fields in Majors are the same size as the fields in the lower levels (60 feet from base to base, and 46 feet from the pitcher’s mound to home), and as a result the time batters have to see a pitch in Majors is about the same as the time a player in the Major leagues would have!\r\n\r\nh5. Juniors\r\n\r\nThe Juniors level is for 13-14 year olds, and is played on a standard field with 90 feet between bases and 60 feet from the mound to home plate – the same as in the major leagues. Juniors will play most of their games with players from other leagues within District 44. Like many sports at this level, Juniors practice frequently during the season, sometimes as much as 5 times a week.\r\n\r\nh5. Seniors\r\n\r\nSeniors is for players aged 15-17. Players on the Tri-Cities seniors often also play for their high-school team.\r\n\r\n "
+  created_at: 2005-12-20 08:09:48 -08:00
+revision_147: 
+  updated_at: 2006-03-07 09:46:31 -08:00
+  page_id: 54
+  wiki_id: 1 
+  author: Max Dunn
+  id: 147
+  revised_at: 2006-03-07 09:46:31 -08:00
+  ip: 127.0.0.1
+  content: h1. Minors Schedule
+  created_at: 2006-03-07 09:46:31 -08:00
+revision_88: 
+  updated_at: 2005-12-24 15:19:40 -08:00
+  wiki_id: 1 
+  page_id: 29
+  author: Admin
+  id: 88
+  revised_at: 2005-12-24 15:19:39 -08:00
+  ip: 127.0.0.1
+  content: "h1. Admin\r
+
+    \r
+
+    The admins for this web site are:\r
+
+    \r
+
+    * [[Suzanne Dunn]]\r
+
+    * [[Max Dunn]]\r
+
+    * [[Steve Cousins]]"
+  created_at: 2005-12-24 15:19:18 -08:00
+revision_148: 
+  updated_at: 2006-03-07 09:46:46 -08:00
+  page_id: 55
+  wiki_id: 1 
+  author: Max Dunn
+  id: 148
+  revised_at: 2006-03-07 09:46:45 -08:00
+  ip: 127.0.0.1
+  content: h1. Farm Schedule
+  created_at: 2006-03-07 09:46:46 -08:00
+revision_89: 
+  updated_at: 2006-01-31 20:45:04 -08:00
+  page_id: 30
+  wiki_id: 1 
+  author: Admin
+  id: 89
+  revised_at: 2006-01-31 20:19:28 -08:00
+  ip: 127.0.0.1
+  content: "&copy;2005 - Tri-Cities Pacific Little League"
+  created_at: 2006-01-31 20:18:59 -08:00
+revision_149: 
+  updated_at: 2006-03-07 09:47:01 -08:00
+  page_id: 56
+  wiki_id: 1 
+  author: Max Dunn
+  id: 149
+  revised_at: 2006-03-07 09:47:00 -08:00
+  ip: 127.0.0.1
+  content: h1. T-Ball Schedule
+  created_at: 2006-03-07 09:47:01 -08:00
+revision_31: 
+  updated_at: 2005-12-21 21:04:07 -08:00
+  wiki_id: 1 
+  page_id: 9
+  author: Admin
+  id: 31
+  revised_at: 2005-12-17 22:43:21 -08:00
+  ip: 127.0.0.1
+  content: "\r\n          \r\nh1. Sponsorship\r\n\r\nInterested in sponsoring Tri-Cities?
+    Send an email to president@tricitiesbaseball.org for more information.\r\n\r\n "
+  created_at: 2005-12-17 22:42:26 -08:00
+revision_60: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  page_id: 23
+  wiki_id: 1 
+  author: Admin
+  id: 60
+  revised_at: 2005-12-20 09:01:23 -08:00
+  ip: 127.0.0.1
+  content: "<ul class=\"submenu\">\r\n<li id=\"submenu_header\">IN THIS SECTION...</li>
+  <li>[[About Us]]</li>\r\n<li>[[Tri-Cities Board]]</li>\r\n<li>[[Boundaries]]</li>\r\n<li id=\"current\">[[League Levels]]</li>\r\n<li>[[Contact Us]]</li>\r\n</ul>\r\n"
+  created_at: 2005-12-20 09:01:24 -08:00
+revision_32: 
+  updated_at: 2005-12-19 22:07:26 -08:00
+  page_id: 10
+  wiki_id: 1 
+  author: Admin
+  id: 32
+  revised_at: 2005-12-17 22:53:54 -08:00
+  ip: 127.0.0.1
+  content: "h1. Frequently Asked Questions
+    
+    h4. When does the season begin and how long does it last?
+    
+    Once the teams are announced, practices begin usually the first or second week of February. This gives each team about 4 weeks of practice before the regular season begins (usually the first or second Saturday in March).\r\n\r\nOnce the regular season begins, there are 10 weeks of games (not including Spring Break) plus 2 weeks of makeup and playoff games. It ends with Closing Ceremonies on the first or second Saturday of June. Please refer to the [[Schedules]] page for dates and times of all Tri-Cities events.
+    
+    If your child is selected onto a Tournament or All-Star team, or if his/her team is representing the league in the TOCs (Tournament of Champions), practices and post season play begins after Closing Ceremonies and could last through mid-July. Please take this into consideration when planning your summer vacations.\r\n\r\nh4. Does my child have to come to tryouts?
+    
+    Your child must attend tryouts if he or she plans on playing in Minors, Majors, Juniors or Seniors. T-Ball and Farm candidates do not have to attend (placement is determined by league age level).
+    
+    h4. My child has never played baseball before - what level should he sign up for?
+    
+    5-6 year-olds --> T-ball\r\n7-8 year-olds --> Farm\r\n9-12 year-olds must attend try-outs and will be placed appropriately
+    
+    h4. My child wants to play on his friend's team.  How do I request that?
+    
+    Requests for a child to be placed on a team with a friend can be made on the Registration Form, however the placement cannot be guaranteed.
+    
+    h4. Is my credit card number secure on your site?
+    
+    All online payments made through Tri-Cities Little League are processed by \"PayPal\":https://www.paypal.com/cgi-bin/webscr?cmd=xpt/general/Privacy-outside, which enables you to pay without sharing your financial information with us. Not only does PayPal help keep your financial information private, they guarantee 100% protection against unauthorized payments sent from your account.
+    
+    h4. When do practices begin?
+    
+    Practices typically begin the first or second week of February. This gives each team about 4 weeks to practice before the regular season begins.
+    
+    "
+  created_at: 2005-12-17 22:45:48 -08:00
+revision_120: 
+  updated_at: 2006-02-28 09:39:45 -08:00
+  page_id: 34
+  wiki_id: 1 
+  author: Max Dunn
+  id: 120
+  revised_at: 2006-02-28 09:39:45 -08:00
+  ip: 127.0.0.1
+  content: "h1. Majors: Giants Home Page\r
+
+    "
+  created_at: 2006-02-28 09:39:45 -08:00
+revision_61: 
+  updated_at: 2005-12-20 12:01:41 -08:00
+  page_id: 11
+  wiki_id: 1 
+  author: Admin
+  id: 61
+  revised_at: 2005-12-20 09:21:29 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                                                                                                                                \r\n<div style=\"background-color: #C0C0C0; padding: 4px\">\r\n\r\nh6. Registration Steps\r\n\r\n# Complete Forms\r\n# Check Information\r\n# Submit Payment\r\n# Provide Documents at:\r\n* Walk-in registration\r\n* Try-outs\r\n* Opening Day\r\n\r\nh6. Registration Period\r\n\r\nRegistrations are accepted during open registration. After open \r\nregistration closes, registrations will be placed on a wait list and players will be assigned a team if and when space becomes available.\r\n\r\nh6. Boundaries\r\n\r\nAll registrants must live within the physical [[boundaries]] designated for Tri-Cities Little League and show proof of residency.\r\n\r\n</div>\r\n\r\n<p>&nbsp;</p>  \r\n                    \r\n<div style=\"background-color: #FFCD57; padding: 4px\">                \r\n\r\ntable(table).\r\n|*Fees:*|Reg.|Early Bird|\r\n| _8 &amp; under_ |$125|=.$115|\r\n| _9-12 yrs_ |$155|=.$145|\r\n| _13-16 yrs_ |$170|=.$160|\r\n\r\n\r\n* Early Bird discount valid until December 31, 2005\r\n* Age determination is the child's age as of 04/30/06\r\n* Additional Siblings: take $10 off the Reg. or Early Bird fee\r\n* Scholarships available\r\n\r\n</div>\r\n"
+  created_at: 2005-12-20 09:21:29 -08:00
+revision_33: 
+  updated_at: 2005-12-19 16:14:28 -08:00
+  page_id: 11
+  wiki_id: 1 
+  author: Admin
+  id: 33
+  revised_at: 2005-12-17 23:07:18 -08:00
+  ip: 127.0.0.1
+  content: "                                                \r\n\r\nh1. Registration\r\n\r\nYou may register for the current Tri-Cities season in any of the following ways:\r\n\r\nh2. Online\r\n\r\nRegistration is available \"online\":/store/register now through January21, 2006. Save time and paperwork! Birth certificate and proof of residency will be checked at a later date.\r\n\r\nh2. Walk-In\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Then bring your child's original birth certificate or passport, medical insurance information and your driver's license and proof of residency. Walk-in registration for the Spring 2006 season will be held on the following dates:\r\n\r\n|December 14, 2005 |7p - 9p |Creekside Park|\r\n|January 07, 2006 |10a - 2p |Wilson Park| \r\n|January 11, 2006 |7p - 9p |Creekside Park|\r\n \r\nh2. By Mail\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Mail your payment to:\r\n\r\n<blockquote>\r\nTri-Cities Little League<br>\r\nP.O. Box 146<br>\r\nCupertino, CA 95015-0146\r\n</blockquote>\r\n\r\nPlease write your children's name on the check.\r\n\r\nRegistration must be postmarked prior to January 21, 2006. Birth certificate and proof of residency will be checked at a later date."
+  created_at: 2005-12-17 22:58:23 -08:00
+revision_90: 
+  updated_at: 2006-02-11 08:06:46 -08:00
+  page_id: 30
+  wiki_id: 1 
+  author: Max
+  id: 90
+  revised_at: 2006-01-31 20:45:04 -08:00
+  ip: 127.0.0.1
+  content: "&copy;2006 - Tri-Cities Pacific Little League"
+  created_at: 2006-01-31 20:45:04 -08:00
+revision_34: 
+  updated_at: 2005-12-19 11:07:54 -08:00
+  page_id: 12
+  wiki_id: 1 
+  author: Admin
+  id: 34
+  revised_at: 2005-12-17 23:19:54 -08:00
+  ip: 127.0.0.1
+  content: "                                                        \r\n{border:0}.\r\n!/images/btn_register.gif!:/store/register\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n!/images/benjamin.jpg!\r\n\r\n_\"I just like baseball. I also like the drills that they do.\"_\r\n\r\n "
+  created_at: 2005-12-17 23:10:38 -08:00
+revision_122: 
+  updated_at: 2006-02-28 09:57:21 -08:00
+  page_id: 36
+  wiki_id: 1 
+  author: Max Dunn
+  id: 122
+  revised_at: 2006-12-28 09:57:20 -08:00
+  ip: 127.0.0.1
+  content: "h1. Majors: Mariners Home Page"
+  created_at: 2006-02-28 09:57:21 -08:00
+revision_91: 
+  updated_at: 2006-12-01 18:53:11 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 91
+  revised_at: 2006-12-01 13:59:22 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n<%%= 3 + 4 %>\r\n\r\n<p>\r\n            \r\n<div style=\"background-color: #FFCD57\">                \r\n\r\n|*Fees:*|Reg.|Early Bird|\r\n| _8 &amp; under_ |$125|=.$115|\r\n| _9-12 yrs_ |$155|=.$145|\r\n| _13-16 yrs_ |$170|=.$160|\r\n\r\n* Early Bird discount valid until December 31, 2005\r\n* Age determination is the child's age as of 04/30/06\r\n* Additional Siblings: take $10 off the Reg. or Early Bird fee\r\n* Scholarships available\r\n\r\n</div>\r\n"
+  created_at: 2006-02-01 13:59:23 -08:00
+revision_62: 
+  updated_at: 2005-12-24 15:15:34 -08:00
+  page_id: 11
+  wiki_id: 1 
+  author: Admin
+  id: 62
+  revised_at: 2005-12-20 12:05:41 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                                                                                                \r\nh1. Registration\r\n\r\nYou may register for the current Tri-Cities season in any of the following ways:\r\n\r\nh2. Online\r\n\r\nRegistration is available \"online\":/store/register now through January21, 2006. Save time and paperwork! Birth certificate and proof of residency will be checked at a later date.\r\n\r\nh2. Walk-In\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Then bring your child's original birth certificate or passport, medical insurance information and your driver's license and proof of residency. Walk-in registration for the Spring 2006 season will be held on the following dates:\r\n\r\ntable(table).\r\n|December 14, 2005 | 7p - 9p | Creekside Park|\r\n|January 07, 2006 | 10a - 2p | Wilson Park|\r\n|January 11, 2006 | 7p - 9p | Creekside Park|\r\n\r\nh2. By Mail\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Mail your payment to:\r\n\r\n<blockquote>\r\nTri-Cities Little League<br>\r\nP.O. Box 146<br>\r\nCupertino, CA 95015-0146\r\n</blockquote>\r\n\r\nPlease write your children's name on the check.\r\n\r\nRegistration must be postmarked prior to January 21, 2006. Birth certificate and proof of residency will be checked at a later date."
+  created_at: 2005-12-20 12:01:41 -08:00
+revision_HomePage_Wiki2: 
+  updated_at: 2006-02-28 09:57:58 -08:00
+  page_id: 37
+  wiki_id: 2
+  author: Max Wiki2
+  id: 123
+  revised_at: 2006-02-28 09:57:57 -08:00
+  ip: 127.0.0.1
+  content: "<h1>Home Page Wiki 2</h1>"
+  created_at: 2006-02-28 09:57:58 -08:00
+revision_92: 
+  updated_at: 2006-02-01 19:40:59 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 92
+  revised_at: 2006-02-01 18:53:11 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n<%%= 3 + 4 %>\r\n<p>\r\n\r\n<%%= admin? %>\r\n\r\n<p>\r\n"
+  created_at: 2006-02-01 18:53:11 -08:00
+revision_151: 
+  updated_at: 2006-03-07 10:11:38 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max Dunn
+  id: 151
+  revised_at: 2006-03-07 10:11:38 -08:00
+  ip: 127.0.0.1
+  content: "<%%= render_component :controller => 'events', :action => 'list_games', :params
+    => { :no_layout => true, :level => 'Majors' } %>\r
+
+    "
+  created_at: 2006-03-07 10:11:38 -08:00
+revision_35: 
+  updated_at: 2005-12-20 12:42:54 -08:00
+  wiki_id: 1 
+  page_id: 12
+  author: Admin
+  id: 35
+  revised_at: 2005-12-19 11:31:45 -08:00
+  ip: 127.0.0.1
+  content: "            \r\n<p>&nbsp;</p>\r\n<center>                                                                                                                                      !{border:0}./images/btn_register.gif!:/store/register</center>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<center>!/images/benjamin.jpg!</center>\r\n\r\np=. _\"I just like baseball. I also like the drills that they do.\"_\r\n\r\n\r\n "
+  created_at: 2005-12-19 11:07:54 -08:00
+revision_124: 
+  updated_at: 2006-02-28 09:58:23 -08:00
+  page_id: 38
+  author: Max Dunn
+  wiki_id: 1 
+  id: 124
+  revised_at: 2006-02-28 09:58:22 -08:00
+  ip: 127.0.0.1
+  content: "[[!include Teams_Menu]]"
+  created_at: 2006-02-28 09:58:23 -08:00
+revision_93: 
+  updated_at: 2006-02-02 11:57:08 -08:00
+  page_id: 14
+  author: Max
+  wiki_id: 1 
+  id: 93
+  revised_at: 2006-02-01 19:51:38 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n<%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n"
+  created_at: 2006-02-01 19:40:59 -08:00
+revision_64: 
+  updated_at: 2005-12-20 12:41:46 -08:00
+  page_id: 25
+  author: Admin
+  wiki_id: 1 
+  id: 64
+  revised_at: 2005-12-20 12:41:45 -08:00
+  ip: 127.0.0.1
+  content: "                \r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; [[About Us]] &gt; Contact Us</div>\r\n\r\n<hr>\r\n\r\n<ul class=\"submenu\">\r\n<li id=\"submenu_header\">IN THIS SECTION...</li>\r\n<li>[[About Us]]</li>\r\n<li>[[Tri-Cities Board]]</li>\r\n<li>[[Boundaries]]</li>\r\n<li>[[League Levels]]</li>\r\n<li id=\"current\">[[Contact Us]]</li>\r\n</ul>"
+  created_at: 2005-12-20 12:19:43 -08:00
+revision_36: 
+  updated_at: 2005-12-20 12:22:41 -08:00
+  page_id: 4
+  wiki_id: 1 
+  author: Admin
+  id: 36
+  revised_at: 2005-12-19 11:28:18 -08:00
+  ip: 127.0.0.1
+  content: "\r
+
+    <p style=\"text-align: center\">        \r
+
+    <a href=\"registration.htm\">\r
+
+    <img border=\"0\" src=\"/images/btn_register.gif\"></a></p>\r
+
+    \r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    \r
+
+    <div style=\"background-color: #C0C0C0\">\r
+
+    <center>\r
+
+    <br/>\r
+
+    <h5> Instructional Links </h5>\r
+
+    \r
+
+    <p><a href=\"http://www.thejugscompany.com/coaches/\">Drills for the Hitting
+    Net</a></p>\r
+
+    \r
+
+    <a
+    href=\"http://www.alandalbaseball.com/KnowYourBaseball/pages/mainFrame.asp\">\r
+
+    Coaching Instruction, Manuals, Videos</font></a>\r
+
+    <p>\r
+
+    <a href=\"http://eteamz.com/baseball/instruction/tips/\">\r
+
+    eteamz Tips &amp; Drills</a>\r
+
+    <p>\r
+
+    <a href=\"http://www.asabaseball.com/\">\r
+
+    All Star Academy of Baseball </a>\r
+
+    <p>\r
+
+    <a href=\"http://www.hwob.com/\">\r
+
+    Hardtke World of Baseball</a>\r
+
+    <p>\r
+
+    <a href=\"http://www.baseballscorecard.com/\">\r
+
+    How to score</a>\r
+
+    <p>&nbsp;</p>\r
+
+    \r
+
+    </center>\r
+
+    </div>\r
+
+    \r
+
+    "
+  created_at: 2005-12-19 11:28:18 -08:00
+revision_153: 
+  updated_at: 2006-03-10 12:39:45 -08:00
+  page_id: 53
+  wiki_id: 1 
+  author: Max Dunn
+  id: 153
+  revised_at: 2006-03-10 12:39:45 -08:00
+  ip: 127.0.0.1
+  content: "h1. Majors Schedule\r
+
+    \r
+
+    <%%= schedule :level => 'Majors' %%>"
+  created_at: 2006-03-10 12:39:45 -08:00
+revision_65: 
+  updated_at: 2005-12-20 14:30:03 -08:00
+  page_id: 4
+  wiki_id: 1 
+  author: Admin
+  id: 65
+  revised_at: 2005-12-20 12:24:12 -08:00
+  ip: 127.0.0.1
+  content: "                  \r\n\r\n                    \r\n<p>&nbsp;</p>\r\n<center>                                                                                                                                      !{border:0}./images/btn_register.gif!:Registration\r\n</center>\r\n\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n\r\n<div style=\"background-color: #C0C0C0\" >\r\n<center>\r\n<br/>\r\n<h5> Instructional Links </h5>\r\n\r\n<p><a href=\"http://www.thejugscompany.com/coaches/\">Drills for the Hitting Net</a></p>\r\n\r\n<a href=\"http://www.alandalbaseball.com/KnowYourBaseball/pages/mainFrame.asp\">\r\nCoaching Instruction, Manuals, Videos</font></a>\r\n<p>\r\n<a href=\"http://eteamz.com/baseball/instruction/tips/\">\r\neteamz Tips &amp; Drills</a>\r\n<p>\r\n<a href=\"http://www.asabaseball.com/\">\r\nAll Star Academy of Baseball </a>\r\n<p>\r\n<a href=\"http://www.hwob.com/\">\r\nHardtke World of Baseball</a>\r\n<p>\r\n<a href=\"http://www.baseballscorecard.com/\">\r\nHow to score</a>\r\n<p>&nbsp;</p>\r\n\r\n</center>\r\n</div>\r\n\r\n"
+  created_at: 2005-12-20 12:22:41 -08:00
+revision_125: 
+  updated_at: 2006-02-28 09:58:47 -08:00
+  page_id: 39
+  wiki_id: 1 
+  author: Max Dunn
+  id: 125
+  revised_at: 2006-02-28 09:58:47 -08:00
+  ip: 127.0.0.1
+  content: "h1. Minors: Giants Home Page"
+  created_at: 2006-02-28 09:58:47 -08:00
+revision_66: 
+  updated_at: 2005-12-22 16:05:32 -08:00
+  page_id: 17
+  author: Admin
+  wiki_id: 1 
+  id: 66
+  revised_at: 2005-12-20 12:37:44 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                        \r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; About Us</div>\r\n\r\n<hr>\r\n\r\n<ul class=\"submenu\">\r\n<li id=\"submenu_header\">IN THIS SECTION...</li>\r\n<li id=\"current\">[[About Us]]</li>\r\n<li>[[Tri-Cities Board]]</li>\r\n<li>[[Boundaries]]</li>\r\n<li>[[League Levels]]</li>\r\n<li>[[Contact Us]]</li>\r\n</ul>\r\n\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n"
+  created_at: 2005-12-20 12:33:44 -08:00
+revision_38: 
+  updated_at: 2005-12-19 12:45:49 -08:00
+  page_id: 14
+  author: Admin
+  wiki_id: 1 
+  id: 38
+  revised_at: 2005-12-19 12:06:22 -08:00
+  ip: 127.0.0.1
+  content: "\r
+
+    <div style=\"background-color: #FFCD57\">                \r
+
+    \r
+
+    |*Fees:*|Reg.|Early Bird|\r
+
+    |_.8 &amp; under|$125|$115|\r
+
+    |_.9-12 yrs|$155|$145|\r
+
+    |_.13-16 yrs|$170|$160|\r
+
+    \r
+
+    * Early Bird discount valid until December 31, 2005\r
+
+    * Age determination is the child's age as of 04/30/06\r
+
+    * Additional Siblings: take $10 off the Reg. or Early Bird fee\r
+
+    * Scholarships available\r
+
+    </div>\r
+
+    "
+  created_at: 2005-12-19 12:05:01 -08:00
+revision_126: 
+  updated_at: 2006-02-28 09:59:11 -08:00
+  page_id: 40
+  author: Max Dunn
+  wiki_id: 1 
+  id: 126
+  revised_at: 2006-02-28 09:59:10 -08:00
+  ip: 127.0.0.1
+  content: "[[!include Teams_Menu]]"
+  created_at: 2006-02-28 09:59:11 -08:00
+revision_95: 
+  updated_at: 2006-02-02 20:04:13 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 95
+  revised_at: 2006-02-02 11:58:14 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n<%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n"
+  created_at: 2006-02-02 11:57:08 -08:00
+revision_67: 
+  updated_at: 2005-12-20 12:39:13 -08:00
+  page_id: 19
+  wiki_id: 1 
+  author: Admin
+  id: 67
+  revised_at: 2005-12-20 12:39:12 -08:00
+  ip: 127.0.0.1
+  content: "        \r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; [[About Us]] &gt; Tri-Cities Board</div>\r\n\r\n<hr>\r\n\r\n<ul class=\"submenu\">\r\n<li id=\"submenu_header\">IN THIS SECTION...</li>\r\n<li>[[About Us]]</li>\r\n<li id=\"current\">[[Tri-Cities Board]]</li>\r\n<li>[[Boundaries]]</li>\r\n<li>[[League Levels]]</li>\r\n<li>[[Contact Us]]</li>\r\n</ul>\r\n"
+  created_at: 2005-12-20 12:39:13 -08:00
+revision_39: 
+  updated_at: 2006-02-01 13:59:23 -08:00
+  page_id: 14
+  author: Admin
+  wiki_id: 1 
+  id: 39
+  revised_at: 2005-12-19 12:46:41 -08:00
+  ip: 127.0.0.1
+  content: "                \r\n<div style=\"background-color: #FFCD57\">                \r\n\r\n|*Fees:*|Reg.|Early Bird|\r\n| _8 &amp; under_ |$125|=.$115|\r\n| _9-12 yrs_ |$155|=.$145|\r\n| _13-16 yrs_ |$170|=.$160|\r\n\r\n* Early Bird discount valid until December 31, 2005\r\n* Age determination is the child's age as of 04/30/06\r\n* Additional Siblings: take $10 off the Reg. or Early Bird fee\r\n* Scholarships available\r\n\r\n</div>\r\n"
+  created_at: 2005-12-19 12:45:49 -08:00
+revision_127: 
+  updated_at: 2006-02-28 09:59:32 -08:00
+  page_id: 41
+  author: Max Dunn
+  wiki_id: 1 
+  id: 127
+  revised_at: 2006-02-28 09:59:32 -08:00
+  ip: 127.0.0.1
+  content: "h1. Minors: Padres Home Page"
+  created_at: 2006-02-28 09:59:32 -08:00
+revision_96: 
+  updated_at: 2006-02-03 07:19:09 -08:00
+  page_id: 14
+  author: Max
+  wiki_id: 1 
+  id: 96
+  revised_at: 2006-02-02 20:04:13 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n<%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n\r\n<p>\r\n"
+  created_at: 2006-02-02 20:04:13 -08:00
+revision_68: 
+  updated_at: 2005-12-20 12:41:10 -08:00
+  page_id: 23
+  author: Admin
+  wiki_id: 1 
+  id: 68
+  revised_at: 2005-12-20 12:41:10 -08:00
+  ip: 127.0.0.1
+  content: "                \r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; [[About Us]] &gt; League Levels</div>\r\n\r\n<hr>\r\n\r\n<ul class=\"submenu\">\r\n<li id=\"submenu_header\">IN THIS SECTION...</li>\r\n<li>[[About Us]]</li>\r\n<li>[[Tri-Cities Board]]</li>\r\n<li>[[Boundaries]]</li>\r\n<li id=\"current\">[[League Levels]]</li>\r\n<li>[[Contact Us]]</li>\r\n</ul>\r\n"
+  created_at: 2005-12-20 12:41:10 -08:00
+revision_128: 
+  updated_at: 2006-02-28 09:59:56 -08:00
+  page_id: 42
+  author: Max Dunn
+  wiki_id: 1 
+  id: 128
+  revised_at: 2006-02-28 09:59:55 -08:00
+  ip: 127.0.0.1
+  content: "[[!include Teams_Menu]]"
+  created_at: 2006-02-28 09:59:56 -08:00
+revision_97: 
+  updated_at: 2006-02-03 08:46:23 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 97
+  revised_at: 2006-02-03 07:58:44 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<# %= link_to('Admin Menu', {:controller => 'reg_admin', :action => 'index'}) %>\r\n<p>\r\n\r\n<%%= self.class %>\r\n<p>\r\n<# %= self.methods.sort.each {|m| \"#{m} + <br>\"} %>\r\n"
+  created_at: 2006-02-03 07:19:08 -08:00
+revision_10: 
+  updated_at: 2005-12-16 09:32:28 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 10
+  revised_at: 2005-12-15 21:24:42 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left -->\r
+
+    \r
+
+    category: test\r
+
+    \r
+
+    h1. Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    h1. News\r
+
+    \r
+
+    * *Early Bird Discount*. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * *Online Registration*. We now make it easy for you to register for Spring 2006
+    with our new online registration. Register your child online, 24/7 directly from
+    home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * *Tryouts for the Spring 2006 Season*. Tryouts will begin at the end of January
+    for Minors, Majors, Juniors and Seniors. See the Schedules for all dates and
+    times.\r
+
+    \r
+
+    * *Umpire-in-Chief Needed!* No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us. (Put email here)\r
+
+    \r
+
+    * *Volunteers*. Tri-Cities Little League thrives on parents willing to put their
+    time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * *Boundaries*. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * *Stay Informed*\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-15 21:24:42 -08:00
+revision_69: 
+  updated_at: 2005-12-22 15:47:00 -08:00
+  page_id: 12
+  wiki_id: 1 
+  author: Admin
+  id: 69
+  revised_at: 2005-12-20 12:42:53 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; Registration</div>\r\n\r\n<hr>\r\n                \r\n<p>&nbsp;</p>\r\n<center>                                                                                                                                      !{border:0}./images/btn_register.gif!:/store/register</center>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<center>!/images/benjamin.jpg!</center>\r\n\r\np=. _\"I just like baseball. I also like the drills that they do.\"_\r\n\r\n\r\n "
+  created_at: 2005-12-20 12:42:54 -08:00
+revision_129: 
+  updated_at: 2006-02-28 10:00:18 -08:00
+  page_id: 43
+  wiki_id: 1 
+  author: Max Dunn
+  id: 129
+  revised_at: 2006-02-28 10:00:18 -08:00
+  ip: 127.0.0.1
+  content: "h1. Minors: Yankees Home Page"
+  created_at: 2006-02-28 10:00:18 -08:00
+revision_98: 
+  updated_at: 2006-02-03 11:24:00 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 98
+  revised_at: 2006-02-03 08:46:22 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<# %= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n"
+  created_at: 2006-02-03 08:46:23 -08:00
+revision_11: 
+  updated_at: 2005-12-16 10:11:37 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 11
+  revised_at: 2005-12-16 09:37:27 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left -->\r
+
+    \r
+
+    category: test\r
+
+    \r
+
+    # Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    # News\r
+
+    \r
+
+    - **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    - **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    - **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    - **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    - *Volunteers*. Tri-Cities Little League thrives on parents willing to put their
+    time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * *Boundaries*. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * *Stay Informed*\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-16 09:32:28 -08:00
+revision_99: 
+  updated_at: 2006-02-10 11:27:13 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 99
+  revised_at: 2006-02-03 11:23:59 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n"
+  created_at: 2006-02-03 11:24:00 -08:00
+revision_12: 
+  updated_at: 2005-12-16 17:14:46 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 12
+  revised_at: 2005-12-16 10:24:53 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left -->\r
+
+    \r
+
+    category: test\r
+
+    \r
+
+    # Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    # News\r
+
+    \r
+
+    - **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    - **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    - **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    - **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    - **Volunteers**. Tri-Cities Little League thrives on parents willing to put
+    their time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    - **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    - **Stay Informed**\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-16 10:11:34 -08:00
+revision_13: 
+  updated_at: 2005-12-16 18:01:15 -08:00
+  page_id: 1
+  author: Admin
+  wiki_id: 1 
+  id: 13
+  revised_at: 2005-12-16 17:14:43 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left -->\r
+
+    \r
+
+    # Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    # News\r
+
+    \r
+
+    - **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    - **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    - **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    - **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    - **Volunteers**. Tri-Cities Little League thrives on parents willing to put
+    their time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    - **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    - **Stay Informed**\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-16 17:14:44 -08:00
+revision_101: 
+  updated_at: 2006-02-11 10:28:17 -08:00
+  wiki_id: 1 
+  page_id: 14
+  author: Max
+  id: 101
+  revised_at: 2006-02-10 11:28:44 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n"
+  created_at: 2006-02-10 11:27:13 -08:00
+revision_130: 
+  updated_at: 2006-02-28 10:00:43 -08:00
+  page_id: 44
+  wiki_id: 1 
+  author: Max Dunn
+  id: 130
+  revised_at: 2006-02-28 10:00:42 -08:00
+  ip: 127.0.0.1
+  content: "[[!include Teams_Menu]]"
+  created_at: 2006-02-28 10:00:43 -08:00
+revision_42: 
+  updated_at: 2005-12-19 17:16:24 -08:00
+  page_id: 11
+  author: Admin
+  wiki_id: 1 
+  id: 42
+  revised_at: 2005-12-19 16:18:35 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                        \r\n\r\nh1. Registration\r\n\r\nYou may register for the current Tri-Cities season in any of the following ways:\r\n\r\nh2. Online\r\n\r\nRegistration is available \"online\":/store/register now through January21, 2006. Save time and paperwork! Birth certificate and proof of residency will be checked at a later date.\r\n\r\nh2. Walk-In\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Then bring your child's original birth certificate or passport, medical insurance information and your driver's license and proof of residency. Walk-in registration for the Spring 2006 season will be held on the following dates:\r\n\r\ntable{padding-right: 10px}.\r\n|December 14, 2005 | 7p - 9p | Creekside Park|\r\n|January 07, 2006 | 10a - 2p | Wilson Park|\r\n|January 11, 2006 | 7p - 9p | Creekside Park|\r\n\r\nh2. By Mail\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Mail your payment to:\r\n\r\n<blockquote>\r\nTri-Cities Little League<br>\r\nP.O. Box 146<br>\r\nCupertino, CA 95015-0146\r\n</blockquote>\r\n\r\nPlease write your children's name on the check.\r\n\r\nRegistration must be postmarked prior to January 21, 2006. Birth certificate and proof of residency will be checked at a later date."
+  created_at: 2005-12-19 16:14:28 -08:00
+revision_102: 
+  updated_at: 2006-12-11 09:18:29 -08:00
+  wiki_id: 1 
+  page_id: 30
+  author: Max
+  id: 102
+  revised_at: 2006-12-11 08:06:45 -08:00
+  ip: 127.0.0.1
+  content: "&copy;2006 - Tri-Cities Pacific Little League - \r\n<%% if !logged_in? -%>\r\n 
+    <%%= link_to('Login', {:controller => 'user', :action => 'login'}) -%>\r\n<%% else
+    -%>\r\n  <%%= link_to('Logout', {:controller => 'user', :action => 'logout'})
+    -%>\r\n<%% end -%> "
+  created_at: 2006-02-11 08:06:45 -08:00
+revision_71: 
+  updated_at: 2005-12-20 12:46:44 -08:00
+  page_id: 15
+  wiki_id: 1 
+  author: Admin
+  id: 71
+  revised_at: 2005-12-20 12:46:44 -08:00
+  ip: 127.0.0.1
+  content: "                \t\t\t\r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; Volunteering</div>\r\n\r\n<hr>\r\n       \r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align: center\">\r\n<img border=\"0\" src=\"/images/index.1.jpg\">\r\n</p>\r\n"
+  created_at: 2005-12-20 12:46:44 -08:00
+revision_14: 
+  updated_at: 2006-12-19 11:28:18 -08:00
+  page_id: 4
+  wiki_id: 1 
+  author: Admin
+  id: 14
+  revised_at: 2006-12-16 17:59:38 -08:00
+  ip: 127.0.0.1
+  content: "<a href=\"registration.htm\">\r
+
+    <img border=\"0\" src=\"/images/btn_register.gif\"></a> \r
+
+    \r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    <p>&nbsp;</p>\r
+
+    \r
+
+    <div style=\"background-color: #C0C0C0\" >\r
+
+    <center>\r
+
+    <br/>\r
+
+    <h5> Instructional Links </h5>\r
+
+    \r
+
+    <p><a href=\"http://www.thejugscompany.com/coaches/\">Drills for the Hitting
+    Net</a></p>\r
+
+    \r
+
+    <a
+    href=\"http://www.alandalbaseball.com/KnowYourBaseball/pages/mainFrame.asp\">\r
+
+    Coaching Instruction, Manuals, Videos</font></a>\r
+
+    <p>\r
+
+    <a href=\"http://eteamz.com/baseball/instruction/tips/\">\r
+
+    eteamz Tips &amp; Drills</a>\r
+
+    <p>\r
+
+    <a href=\"http://www.asabaseball.com/\">\r
+
+    All Star Academy of Baseball </a>\r
+
+    <p>\r
+
+    <a href=\"http://www.hwob.com/\">\r
+
+    Hardtke World of Baseball</a>\r
+
+    <p>\r
+
+    <a href=\"http://www.baseballscorecard.com/\">\r
+
+    How to score</a>\r
+
+    <p>&nbsp;</p>\r
+
+    \r
+
+    </center>\r
+
+    </div>\r
+
+    \r
+
+    "
+  created_at: 2005-12-16 17:21:08 -08:00
+revision_15: 
+  updated_at: 2005-12-16 21:14:16 -08:00
+  page_id: 1
+  author: Admin
+  wiki_id: 1 
+  id: 15
+  revised_at: 2005-12-16 18:05:17 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left -->\r
+
+    \r
+
+    # Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    # News\r
+
+    \r
+
+    * **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    * **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    * **Volunteers**. Tri-Cities Little League thrives on parents willing to put
+    their time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * **Stay Informed**\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-16 18:01:15 -08:00
+revision_131: 
+  updated_at: 2006-02-28 10:01:14 -08:00
+  page_id: 45
+  author: Max Dunn
+  wiki_id: 1 
+  id: 131
+  revised_at: 2006-02-28 10:01:14 -08:00
+  ip: 127.0.0.1
+  content: "[[!include Teams_Menu]]"
+  created_at: 2006-02-28 10:01:14 -08:00
+revision_103: 
+  updated_at: 2006-02-11 09:18:29 -08:00
+  page_id: 30
+  author: Max
+  wiki_id: 1 
+  id: 103
+  revised_at: 2006-02-11 09:18:29 -08:00
+  ip: 127.0.0.1
+  content: "&copy;2006 - Tri-Cities Pacific Little League"
+  created_at: 2006-02-11 09:18:29 -08:00
+revision_72: 
+  updated_at: 2005-12-20 12:47:13 -08:00
+  page_id: 26
+  wiki_id: 1 
+  author: Admin
+  id: 72
+  revised_at: 2005-12-20 12:47:13 -08:00
+  ip: 127.0.0.1
+  content: "        \r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; Sponsoring</div>\r\n\r\n<hr>\r\n       "
+  created_at: 2005-12-20 12:47:13 -08:00
+revision_43: 
+  updated_at: 2005-12-19 21:30:03 -08:00
+  page_id: 11
+  wiki_id: 1 
+  author: Admin
+  id: 43
+  revised_at: 2005-12-19 17:30:58 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                                                \r\n\r\nh1. Registration\r\n\r\nYou may register for the current Tri-Cities season in any of the following ways:\r\n\r\nh2. Online\r\n\r\nRegistration is available \"online\":/store/register now through January21, 2006. Save time and paperwork! Birth certificate and proof of residency will be checked at a later date.\r\n\r\nh2. Walk-In\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Then bring your child's original birth certificate or passport, medical insurance information and your driver's license and proof of residency. Walk-in registration for the Spring 2006 season will be held on the following dates:\r\n\r\ntable{border:1px solid black}.\r\n|December 14, 2005 &nbsp;&nbsp; | 7p - 9p &nbsp;&nbsp; | Creekside Park|\r\n|January 07, 2006 | 10a - 2p | Wilson Park|\r\n|January 11, 2006 | 7p - 9p | Creekside Park|\r\n\r\nh2. By Mail\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Mail your payment to:\r\n\r\n<blockquote>\r\nTri-Cities Little League<br>\r\nP.O. Box 146<br>\r\nCupertino, CA 95015-0146\r\n</blockquote>\r\n\r\nPlease write your children's name on the check.\r\n\r\nRegistration must be postmarked prior to January 21, 2006. Birth certificate and proof of residency will be checked at a later date."
+  created_at: 2005-12-19 17:16:24 -08:00
+revision_44: 
+  updated_at: 2005-12-20 09:21:29 -08:00
+  page_id: 11
+  author: Admin
+  wiki_id: 1 
+  id: 44
+  revised_at: 2005-12-19 21:41:01 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                                                                                \r\n\r\nh1. Registration\r\n\r\nYou may register for the current Tri-Cities season in any of the following ways:\r\n\r\nh2. Online\r\n\r\nRegistration is available \"online\":/store/register now through January21, 2006. Save time and paperwork! Birth certificate and proof of residency will be checked at a later date.\r\n\r\nh2. Walk-In\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Then bring your child's original birth certificate or passport, medical insurance information and your driver's license and proof of residency. Walk-in registration for the Spring 2006 season will be held on the following dates:\r\n\r\ntable(table).\r\n|December 14, 2005 | 7p - 9p | Creekside Park|\r\n|January 07, 2006 | 10a - 2p | Wilson Park|\r\n|January 11, 2006 | 7p - 9p | Creekside Park|\r\n\r\nh2. By Mail\r\n\r\nGo to the \"online registration\":/store/register and fill out the form. Mail your payment to:\r\n\r\n<blockquote>\r\nTri-Cities Little League<br>\r\nP.O. Box 146<br>\r\nCupertino, CA 95015-0146\r\n</blockquote>\r\n\r\nPlease write your children's name on the check.\r\n\r\nRegistration must be postmarked prior to January 21, 2006. Birth certificate and proof of residency will be checked at a later date."
+  created_at: 2005-12-19 21:30:03 -08:00
+revision_104: 
+  updated_at: 2006-02-11 09:45:13 -08:00
+  page_id: 11
+  author: Max
+  wiki_id: 1 
+  id: 104
+  revised_at: 2006-02-11 09:45:12 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                                                                                                \r\nh1. Registration\r\n\r\nYou may register for the current Tri-Cities season in any of the following ways:\r\n\r\nh2. Online\r\n\r\nRegistration is available \"online\":/register now through January21, 2006. Save time and paperwork! Birth certificate and proof of residency will be checked at a later date.\r\n\r\nh2. Walk-In\r\n\r\nGo to the \"online registration\":/register and fill out the form. Then bring your child's original birth certificate or passport, medical insurance information and your driver's license and proof of residency. Walk-in registration for the Spring 2006 season will be held on the following dates:\r\n\r\ntable(table).\r\n|December 14, 2005 | 7p - 9p | Creekside Park|\r\n|January 07, 2006 | 10a - 2p | Wilson Park|\r\n|January 11, 2006 | 7p - 9p | Creekside Park|\r\n\r\nh2. By Mail\r\n\r\nGo to the \"online registration\":/register and fill out the form. Mail your payment to:\r\n\r\n<blockquote>\r\nTri-Cities Little League<br>\r\nP.O. Box 146<br>\r\nCupertino, CA 95015-0146\r\n</blockquote>\r\n\r\nPlease write your children's name on the check.\r\n\r\nRegistration must be postmarked prior to January 21, 2006. Birth certificate and proof of residency will be checked at a later date."
+  created_at: 2006-02-11 09:45:13 -08:00
+revision_132: 
+  updated_at: 2006-02-28 10:05:20 -08:00
+  page_id: 46
+  author: Max Dunn
+  wiki_id: 1 
+  id: 132
+  revised_at: 2006-12-28 10:05:20 -08:00
+  ip: 127.0.0.1
+  content: "h1. Teams Home Pages\r
+
+    \r
+
+    In this section are the home pages for each of the teams. Etc, etc, etc...."
+  created_at: 2006-02-28 10:05:20 -08:00
+revision_133: 
+  updated_at: 2006-02-28 10:05:45 -08:00
+  page_id: 47
+  author: Max Dunn
+  wiki_id: 1 
+  id: 133
+  revised_at: 2006-02-28 10:05:44 -08:00
+  ip: 127.0.0.1
+  content: "[[!include Teams_Menu]]"
+  created_at: 2006-02-28 10:05:45 -08:00
+revision_73: 
+  updated_at: 2005-12-20 12:47:39 -08:00
+  page_id: 27
+  author: Admin
+  wiki_id: 1 
+  id: 73
+  revised_at: 2005-12-20 12:47:38 -08:00
+  ip: 127.0.0.1
+  content: "        \r\n<div id=\"breadcrumb\">[[HomePage|Home]] &gt; FAQ</div>\r\n\r\n<hr>\r\n       "
+  created_at: 2005-12-20 12:47:39 -08:00
+revision_105: 
+  updated_at: 2006-02-11 09:46:18 -08:00
+  page_id: 12
+  author: Max
+  wiki_id: 1 
+  id: 105
+  revised_at: 2006-02-11 09:46:18 -08:00
+  ip: 127.0.0.1
+  content: "<div id=\"breadcrumb\">[[HomePage|Home]] &gt; Registration</div>\r\n\r\n<hr>\r\n
+    \r\n<p>&nbsp;</p>\r\n<center>                                                   
+    !{border:0}./images/btn_register.gif!:/register</center>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<center>!/images/benjamin.jpg!</center>\r\n\r\np=.
+    _\"I just like baseball. I also like the drills that they do.\"_\r\n"
+  created_at: 2006-02-11 09:46:18 -08:00
+revision_18: 
+  updated_at: 2005-12-17 09:47:09 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 18
+  revised_at: 2005-12-16 21:16:45 -08:00
+  ip: 127.0.0.1
+  content: "<!--left HomePage_left -->\r
+
+    \r
+
+    # Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    # News\r
+
+    \r
+
+    * **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    * **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    * **Volunteers**. Tri-Cities Little League thrives on parents willing to put
+    their time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * **Stay Informed**\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-16 21:14:16 -08:00
+revision_46: 
+  updated_at: 2005-12-19 21:52:20 -08:00
+  page_id: 6
+  wiki_id: 1 
+  author: Admin
+  id: 46
+  revised_at: 2005-12-19 21:52:20 -08:00
+  ip: 127.0.0.1
+  content: "                                                                                                                                \r\n<div style=\"background:#ddd; padding: 10px 4px; text-align: center\">\r\n\r\nh6. Tri-Cities Sponsors \r\n\r\nThank you to all of the sponsors who support Tri-Cities Little League!\r\n\r\n!/images/symanteclogo.gif!:http://www.symantec.com\r\n\r\nHanson Permanente Cement, Inc.\r\n\r\n\"Cicero’s Pizza\":http://www.cicerospizza.com/\r\n\r\n\"Frankie, Johnnie & Luigi Too!\":http://www.fjlsanjose.com/\r\n\r\n\"Elephant Bar\":http://www.elephantbar.com/\r\n\r\nValley Athletic \r\n\r\nPacific Northstar Mechanical \r\n\r\nTed Johnston \r\n\r\nFamily Day Care \r\n\r\n\"FARNUM Inspection Service \":http://www.farnuminspection.com/\r\n\r\n</div>\r\n"
+  created_at: 2005-12-19 21:48:54 -08:00
+revision_74: 
+  updated_at: 2005-12-20 19:52:38 -08:00
+  page_id: 16
+  author: Admin
+  wiki_id: 1 
+  id: 74
+  revised_at: 2005-12-20 12:52:53 -08:00
+  ip: 127.0.0.1
+  content: "        \r\nh1. About Us\r\n\r\nTri-Cities Pacific Little League is one of the original South Bay youth baseball organizations. A Little League region encompasses at least 20,000 people, and in 1964 when Tri-Cities was founded, the region included Cupertino, Sunnyvale, and Santa Clara. We now serve part of Cupertino exclusively. Tri-Cities is part of Little League District 44, which includes 14 leagues in the area.\r\n\r\nh1. League levels\r\n\r\nTri-Cities has six levels of baseball for children from ages 5-17.\r\n\r\n* T-Ball (ages 5-6)\r\n* Farm  (ages 6-11)\r\n* Minors (ages 8-12)\r\n* Majors (ages 10-12)\r\n* Juniors (ages 13-14\r\n* Seniors (ages 15-17)\r\n\r\nPlease refer to the \"League Levels\" page for a complete description of each of the  above levels. \r\n\r\nh1. Boundaries\r\n\r\nPlayers who live in the neighborhoods bounded by I-280, Lawrence Expressway, Bollinger Road and De Anza Boulevard are eligible to play Tri-Cities Baseball. Please refer to the \"Boundaries\" page for a detailed map of the area.\r\n\r\nh1. Eligibility\r\n\r\nTri-Cities Little League is open to all children between the ages of 5 and 17 as of April 30th of each year. The league is open to players who live within the established physical boundaries, subject to adherence to established rules and required parental support. In addition, player candidates must have parental or legal guardian consent.\r\n\r\nh1. Operations\r\n\r\nTri-Cities Little League is an all-volunteer league. Many parents devote their personal time to support and operate the league. Please read more on the volunteering section.\r\n\r\nTri-Cities Little League thrives on parents willing to put their time and effort into making this a great experience for the kids. Without you, Tri-Cities couldn’t survive. And it's a great way to meet new people. You CAN make a difference."
+  created_at: 2005-12-20 12:52:54 -08:00
+revision_106: 
+  updated_at: 2006-02-13 10:50:46 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max
+  id: 106
+  revised_at: 2006-02-11 10:29:40 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n"
+  created_at: 2006-02-11 10:28:16 -08:00
+revision_134: 
+  updated_at: 2006-03-03 11:24:00 -08:00
+  page_id: 14
+  author: Max Dunn Editor
+  wiki_id: 1 
+  id: 134
+  revised_at: 2006-02-28 11:12:42 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n\r\nMax edit 4:03"
+  created_at: 2006-02-28 11:12:13 -08:00
+revision_135: 
+  updated_at: 2006-03-03 13:17:42 -08:00
+  page_id: 14
+  wiki_id: 1 
+  author: Max Dunn
+  id: 135
+  revised_at: 2006-03-03 11:23:59 -08:00
+  ip: 127.0.0.1
+  content: "    \r\n3 + 4 = <%%= 3 + 4 %>\r\n<p>\r\n\r\nAdmin = <%%= admin? %>\r\n<p>\r\n\r\n<%%= link_to(\"Admin Menu\", {:controller => \"reg_admin\", :action => \"index\"}) %>\r\n<p>\r\n\r\n<%% if admin? %>\r\n[[admin_reg|Admin]]\r\n<%% end %>\r\n\r\n<%%= render_component :controller => 'events', :action => 'list' %>"
+  created_at: 2006-03-03 11:24:00 -08:00
+revision_19: 
+  updated_at: 2005-12-17 12:07:01 -08:00
+  page_id: 1
+  wiki_id: 1 
+  author: Admin
+  id: 19
+  revised_at: 2005-12-17 09:47:08 -08:00
+  ip: 127.0.0.1
+  content: ":category: 3col\r
+
+    \r
+
+    # Welcome\r
+
+    \r
+
+    Welcome to the official site of Tri-Cities Little League where baseball is our
+    universal language and kids worldwide come together to play ball.  Our goal is
+    to promote the game, build friendships, skills and teamwork, and most of all,
+    have a lot of fun.\r
+
+    \r
+
+    # News\r
+
+    \r
+
+    * **Early Bird Discount**. Register for the 2006 season on or before December
+    31st, 2005 and take advantage of our \"Early Bird\" discount.\r
+
+    \r
+
+    * **Online Registration**. We now make it easy for you to register for Spring
+    2006 with our new online registration. Register your child online, 24/7 directly
+    from home. We still have walk-in and mail-in registration as well.\r
+
+    \r
+
+    * **Tryouts for the Spring 2006 Season**. Tryouts will begin at the end of
+    January for Minors, Majors, Juniors and Seniors. See the Schedules for all dates
+    and times.\r
+
+    \r
+
+    * **Umpire-in-Chief Needed!** No previous umpiring experience needed. The duties
+    for this position are mostly administrative dealing with scheduling of umpires
+    for league games this season. If interested, email us at
+    <president@tricitiesbaseball.org>\r
+
+    \r
+
+    * **Volunteers**. Tri-Cities Little League thrives on parents willing to put
+    their time and effort into making this a great experience for the kids. Without
+    volunteers, Tri-Cities couldn’t survive. You CAN make a difference. No prior
+    experience necessary.\r
+
+    \r
+
+    * **Boundaries**. Do you live within the Tri-Cities boundaries? Check to see if
+    you can play with Tri-Cities. \r
+
+    \r
+
+    * **Stay Informed**\r
+
+    For up-to-date information, refer to this website or join our email list:"
+  created_at: 2005-12-17 09:47:09 -08:00
+revision_47: 
+  updated_at: 2005-12-19 21:54:20 -08:00
+  page_id: 7
+  wiki_id: 1 
+  author: Admin
+  id: 47
+  revised_at: 2005-12-19 21:54:19 -08:00
+  ip: 127.0.0.1
+  content: "                      \r\nh1. Schedules                                  \r\n\r\ntable(table).\r\n|_.Date  |_.Event |_.Location |_.Time|\r\n|12/14/2005 |Walk-in Registration |Creekside Park |7p-9p|\r\n|01/07/2006 |Walk-in Registration |Wilson Park |10a-2p|\r\n|01/11/2006 |Walk-in Registration |Creekside Park |7p-9p|\r\n|01/28/2006 |Spring 2006 Try-outs |Wilson Park |TBD|\r\n|01/29/2006 |Spring 2006 Try-outs |Wilson Park |TBD|\r\n|01/31/2006 |Spring 2006 Try-outs (make-up) |Wilson Park |TBD|\r\n|03/11/2006 |Opening Ceremonies |Wilson Park |TBD|\r\n|TBD |Picture Day |Wilson Park |TBD|\r\n|TBD |Pancake Breakfast |Wilson Park |TBD|\r\n|04/15-23/2006 |Spring Break (no games) | &nbsp; | &nbsp; |\r\n|TBD |Playoffs |Wilson Park |TBD|\r\n|06/10/2006 |Closing Ceremonies |Wilson Park |TBD|"
+  created_at: 2005-12-19 21:54:20 -08:00
+revision_75: 
+  updated_at: 2005-12-20 14:37:46 -08:00
+  page_id: 4
+  wiki_id: 1 
+  author: Admin
+  id: 75
+  revised_at: 2005-12-20 14:32:23 -08:00
+  ip: 127.0.0.1
+  content: "<p>&nbsp;</p>\r
+
+    <center>\r
+
+    !{border:0}./images/btn_register.gif!:Registration\r
+
+    </center>\r
+
+    \r
+
+    "
+  created_at: 2005-12-20 14:30:03 -08:00
+revision_107: 
+  updated_at: 2006-03-03 16:14:30 -08:00
+  page_id: 31
+  wiki_id: 1 
+  author: Max
+  id: 107
+  revised_at: 2006-02-13 11:24:23 -08:00
+  ip: 127.0.0.1
+  content: "Local test, revised at 11:24"
+  created_at: 2006-02-13 10:49:04 -08:00

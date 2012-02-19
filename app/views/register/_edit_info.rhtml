@@ -1,0 +1,371 @@
+<!-- Show the errors, if any -->
+<%- if @player %> <%= error_messages_for 'player' %> <% end -%>
+<%- if @household %> <%= error_messages_for 'household' %> <% end -%>
+<%- if @adult1 %> <%= error_messages_for 'adult1' %> <% end -%>
+<%- if @adult2 %> <%= error_messages_for 'adult2' %> <% end -%>
+<%- if @emer_contact %> <%= error_messages_for 'emer_contact' %> <% end -%>
+<%- if @doctor %> <%= error_messages_for 'doctor' %> <% end -%>
+<!--[form:player]-->
+
+<table>
+	<tr>
+		<td><label for="player_firstname">First </label></td>
+		<td><%= text_field 'player', 'firstname'  %></td>
+		<td><label for="player_lastname">Last </label></td>
+		<td><%= text_field 'player', 'lastname'  %></td>
+	</tr>
+	<tr>
+		<td>
+		<p><label for="player_birthday">Birthday</label></p>
+		</td>
+		<td colspan="2"><%= date_select 'player', 'birthday', :order => [:month, :day, :year], :start_year => reg_birthday_start_year, 
+		  :end_year => reg_birthday_end_year %><p>
+		</p>
+		</td>
+		<td>
+		<div id="league_age">
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="household_address">Address</label></td>
+		<td><%= text_field 'household', 'address'  %></td>
+  </tr>
+  <tr>  
+		<td><label for="household_city">City</label></td>
+		<td><%= text_field 'household', 'city' %></td>
+
+		<td>State</td>
+    <td><input size="3" type="text" value="CA" disabled />
+    <label for="household_zip">Zip</label>
+		<%= text_field 'household', 'zip', :size => 10  %></td>
+	</tr>
+	<tr>
+		<td><label for="player_grade">Grade</label></td>
+		<td><%= select(:player, :grade, ['Kindergarten',
+					   '1st',
+					   '2nd',
+					   '3rd',
+					   '4th',
+					   '5th',
+					   '6th',
+					   '7th',
+					   '8th',
+					   '9th',
+					   '10th',
+					   '11th',
+					   '12th'
+					   ]) %></td>
+		<td><label for="player_school">School</label></td>
+		<td><%= select(:player, :school, ['Blue Hills',
+					'Collins',
+					'Chinese Immersion',
+					'Cupertino High',
+					'Cupertino Middle',
+					'De Vargas',
+					'Dilworth',
+					'Eaton',
+					'Eisenhower',
+					'Faria',
+					'Fremont High',
+					'Garden Gate',
+					'Homestead High',
+					'Hyde Middle',
+					'Kennedy Middle',
+					'Lawson Middle',
+					'Lincoln',
+					'Lynbrook High',
+					'McAuliffe',
+					'Meyerholz',
+					'Miller Middle',
+					'Monta Vista High',
+					'Montclaire',
+					'John Muir',
+					'Murdock-Portal',
+					'Nimitz',
+					'Regnart',
+					'Sedgwick',
+					'Stevens Creek',
+					'Stocklmeir',
+					'West Valley',
+					'(Other)'
+					]) %></td>
+	</tr>
+	<tr>
+		<td><label for="player_teacher">Teacher</label></td>
+		<td><%= text_field 'player', 'teacher'  %></td>
+	</tr>
+</table>
+<br>
+
+<h3>Baseball Experience</h3>
+<table>
+	<tr>
+		<td><label for="player_years_exp">Years Played</label></td>
+		<td><%= select(:player, :years_exp, [0,1,2,3,4,5,6,7,8,9,10,11,12]) %></td>
+		<td><label for="player_lastlevel">Last Level Played</label></td>
+		<td><%= select(:player, :lastlevel, last_level_list) %></td>
+	</tr>
+	<tr>
+		<td><label for="player_shirtsize">Shirt Size</label></td>
+		<td><%= select(:player, :shirtsize, ['Youth Small',
+					   'Youth Medium',
+					   'Youth Large',
+					   'Youth XL',
+					   'Adult Small',
+					   'Adult Medium',
+					   'Adult Large',
+					   'Adult XL'
+					   ]) %></td>
+		<td><label for="player_pantsize">Pants Size</label></td>
+		<td><%= select(:player, :pantsize, ['Youth Small',
+					   'Youth Medium',
+					   'Youth Large',
+					   'Youth XL',
+					   'Adult Small',
+					   'Adult Medium',
+					   'Adult Large',
+					   'Adult XL'
+					   ]) %></td>
+	</tr>
+	<tr>
+		<td colspan="4"><label for="player_note">My child would like to play with:</label><br>
+<%= text_field 'player', 'note', :size => 75 %><br>
+<i>At the lower levels, we will attempt to place friends on a team with each other. 
+		<br>
+		This is more difficult to do at the more competitive levels, so for Minors division 
+		<br>
+		and above there are no guarantees.</i></td>
+	</tr>
+</table>
+ <br>
+ 
+<h3>Parents/Legal Guardians</h3>
+<table>
+	<tr>
+		<td>
+		<table>
+			<tr>
+				<td><label for="adult1_firstname">First</label></td>
+				<td><%= text_field 'adult1', 'firstname'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult1_lastname">Last</label></td>
+				<td><%= text_field 'adult1', 'lastname'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult1_home_phone">Home #</label></td>
+				<td><%= text_field 'adult1', 'home_phone'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult1_work_phone">Work #</label></td>
+				<td><%= text_field 'adult1', 'work_phone'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult1_cell_phone">Cell #</label></td>
+				<td><%= text_field 'adult1', 'cell_phone'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult1_email">Email</label></td>
+				<td><%= text_field 'adult1', 'email', :size => 30  %></td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		<table>
+			<tr>
+				<td><label for="adult2_firstname">First</label></td>
+				<td><%= text_field 'adult2', 'firstname'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult2_lastname">Last</label></td>
+				<td><%= text_field 'adult2', 'lastname'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult2_home_phone">Home #</label></td>
+				<td><%= text_field 'adult2', 'home_phone'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult2_work_phone">Work #</label></td>
+				<td><%= text_field 'adult2', 'work_phone'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult2_cell_phone">Cell #</label></td>
+				<td><%= text_field 'adult2', 'cell_phone'  %></td>
+			</tr>
+			<tr>
+				<td><label for="adult2_email">Email</label></td>
+				<td><%= text_field 'adult2', 'email', :size => 30  %></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<br>
+
+<h3>Health Information</h3>
+<label for="player_limitation_no"><i>Participation in Little League Baseball requires 
+the ability to run, throw, swing a bat, and catch a ball. Additionally, participation 
+requires the capacity to understand the rules of the game. Does your child have 
+any current condition that limits his/her ability to participate in this activity?</i></label>
+<%= radio_button(:player, :limitation, 'No') %> No<%= radio_button(:player, :limitation, 'Yes') %>Yes<p>
+</p>
+<p></p>
+<table>
+	<tr>
+		<td><label for="doctor_healthplan">Health Plan</label></td>
+		<td><%= text_field 'doctor', 'healthplan'  %></td>
+		<td><label for="doctor_policy_num">Policy Number</label></td>
+		<td><%= text_field 'doctor', 'policy_num'  %></td>
+	</tr>
+</table>
+<br>
+
+<h3>Physician</h3>
+<table>
+	<tr>
+		<td><label for="doctor_physician_name">Name</label></td>
+		<td><%= text_field 'doctor', 'physician_name' %></td>
+		<td><label for="doctor_physician_tel">Phone</label></td>
+		<td><%= text_field 'doctor', 'physician_tel', :size=>15 %></td>
+	</tr>
+	<tr>
+		<td><label for="doctor_physician_addr">Address</label></td>
+		<td colspan="3"><%= text_field 'doctor', 'physician_addr', :size=>50  %></td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td><label for="player_allergies">Allergies (or &#39;none&#39;)</label></td>
+		<td><%= text_field 'player', 'allergies'  %></td>
+	</tr>
+</table>
+<br>
+
+<h3>Emergency Contact</h3>
+<p>(In case the parents/guardians cannot be reached)</p>
+<table>
+	<tr>
+		<td><label for="emer_contact_firstname">First</label></td>
+		<td><%= text_field 'emer_contact', 'firstname'  %></td>
+	</tr>
+	<tr>
+		<td><label for="emer_contact_lastname">Last</label></td>
+		<td><%= text_field 'emer_contact', 'lastname'  %></td>
+	</tr>
+	<tr>
+		<td><label for="emer_contact_relationship">Relationship</label></td>
+		<td><%= text_field 'emer_contact', 'relationship'  %></td>
+	</tr>
+	<tr>
+		<td><label for="emer_contact_home_phone">Home #</label></td>
+		<td><%= text_field 'emer_contact', 'home_phone'  %></td>
+	</tr>
+	<tr>
+		<td><label for="emer_contact_work_phone">Work #</label></td>
+		<td><%= text_field 'emer_contact', 'work_phone'  %></td>
+	</tr>
+	<tr>
+		<td><label for="emer_contact_cell_phone">Cell #</label></td>
+		<td><%= text_field 'emer_contact', 'cell_phone'  %></td>
+	</tr>
+	<tr>
+		<td><label for="emer_contact_email">Email</label></td>
+		<td><%= text_field 'emer_contact', 'email', :size => 30  %></td>
+	</tr>
+</table>
+
+<% if Role.check_role(ROLE_ADMIN) -%> 
+<br>
+<h3>Admin Information</h3>
+<table>
+   <tr>
+      <td><label for="player_info_checked">Info checked?</label></td>
+	  <td><%= check_box 'player', 'info_checked' %></td>
+	  <td>&nbsp;&nbsp;</td>
+      <td><label for="player_address_checked">Address checked?</label></td>
+	  <td><%= check_box 'player', 'address_checked' %></td>
+   </tr>	
+   <tr>
+	  <td><label for="player_age_checked">Age checked?</label></td>
+	  <td><%= check_box 'player', 'age_checked'  %></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><label for="player_waiver_required">Waiver required?</label></td>
+	  <td><%= check_box 'player', 'waiver_required' %></td>
+   </tr>
+   <tr>
+	  <td><label for="player_form_printed">Form printed?</label></td>
+	  <td><%= check_box :player, :form_printed %></td>
+	  <td>&nbsp;&nbsp;</td>
+      <td><label for="player_signed_form_received">Signed form received?</label></td>
+	  <td><%= check_box 'player', 'signed_form_received' %></td>
+   </tr>	
+   <tr>
+      <td><label for="player_tryout_required">Tryout reguired?</label></td>
+	  <td><%= check_box 'player', 'tryout_required' %></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><label for="player_tryout_date">Tryout date:</label></td>
+	  <td><%= date_select 'player', 'tryout_date', :order => [:month, :day, :year], :start_year => 2009, :end_year => 2012, :include_blank => true %></td>
+   </tr>	
+   <tr>
+	  <td><label for="team">Level and Team:</label></td>
+	  <td colspan=4><%= select(:player, :team_id, Team.picklist(:home_league_only => true), { :include_blank => true } ) %></td>
+   </tr>	
+
+   <table>
+      <tr>
+		 <td><label for="remarks">Remarks:</label></td>
+		 <td><%= text_field :player, :remarks %></td>
+      </tr>	
+   </table>
+   
+   <h3>Fees and Deposits</h3>
+   <table>
+   	  <tr>
+         <td>&nbsp;</td>
+         <td><b>Amount</b></td>
+         <td>&nbsp;&nbsp;</td>
+	     <td><b>Paid On</b></td>
+         <td>&nbsp;&nbsp;</td>
+		 <td><b>Paid By:</b></td>
+  	  </tr>	
+	   	  
+      <tr>
+		 <td><label for="player_fee_due">Registration Fee:</label></td>
+		 <td><%= text_field 'player', 'fee_paid', :size=>3 %></td>
+		 <td>&nbsp;</td>
+		 <td><%= date_select 'player', 'fee_paid_on', :order => [:month, :day, :year], :start_year => 2009, :end_year => 2012 %></td>
+		 <td>&nbsp;</td>
+	     <td><%= text_field :player, :fee_paid_by, :size=>20 %></td>
+	  </tr>	
+   
+      <tr>
+		 <td><label for="volunteer_fee">Volunteer Fee:</label></td>
+		 <td><%= text_field :household, 'volunteer_feepaid', :size=>3 %></td>
+		 <td>&nbsp;</td>
+		 <td><%= date_select :household, 'volunteer_feepaid_on', :order => [:month, :day, :year], :start_year => 2009, :end_year => 2012 %></td>
+		 <td>&nbsp;</td>
+	     <td><%= text_field :household, :volunteer_feepaid_by, :size=>20 %></td>
+	  </tr>	
+   
+      <tr>
+		 <td><label for="snackshack_deposit">Deposit:</label></td>
+		 <td><%= text_field :household, :snackshack_deposit, :size=>3 %></td>
+		 <td>&nbsp;</td>
+		 <td><%= date_select :household, :snackshack_depositpaid_on, :order => [:month, :day, :year], :start_year => 2009, :end_year => 2012 %></td>
+		 <td>&nbsp;</td>
+	     <td><%= text_field :household, :snackshack_depositpaid_by, :size=>20 %></td>
+	  </tr>	
+   
+      <tr>
+		 <td><label for="snackshack_refund">Refund:</label></td>
+		 <td><%= text_field :household, :snackshack_refund, :size=>3 %></td>
+		 <td>&nbsp;</td>
+		 <td><%= date_select :household, :snackshack_refunded_on, :order => [:month, :day, :year], :start_year => 2009, :end_year => 2012 %></td>
+		 <td>&nbsp;</td>
+	     <td><%= text_field :household, :snackshack_refunded_by, :size=>20 %></td>
+	  </tr>	
+   </table>
+
+</table>
+<% end -%><!--[eoform:player]-->

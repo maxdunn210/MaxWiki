@@ -1,0 +1,15 @@
+<%= error_messages_for 'survey' %>
+
+<table>
+<!--[form:survey]-->
+<tr><td><label for="survey_name">Name</label></td>
+<td><%= text_field 'survey', 'name'  %></td></tr>
+
+<tr><td><label for="survey_description">Description</label></td>
+<td><%= text_field 'survey', 'description'  %></td></tr>
+
+<tr><td><label for="survey_submit_page">Submit Page</label></td>
+<td><%= text_field 'survey', 'submit_page' %></td></tr>
+<!--[eoform:survey]-->
+
+</table>

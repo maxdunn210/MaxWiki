@@ -1,0 +1,11 @@
+<%
+  @title = "Search"
+%>
+
+<div id="webdav_browser">
+  <%= render :partial => 'webdav_browser', 
+    :locals => { :connection => 'browser', :drag => false, :list_height => 0, :show_checkout => true,
+    :suppress_head => true}  %>
+</div>
+
+  

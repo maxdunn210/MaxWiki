@@ -1,0 +1,14 @@
+<div id="footer">
+
+  <% if MY_CONFIG[:footer_edit_on_right]  %>
+    <%= render_layout_section('footer') %>
+    <%= render_layout_edit_links('footer') %>
+  <% else %>
+    <%= render_layout_edit_links('footer') %>
+    <%= render_layout_section('footer') %>
+  <% end %>
+  
+  <% if MY_CONFIG[:byline_under_footer] %>
+    <%= render :partial => 'layouts/byline' %>
+  <% end %>
+</div>

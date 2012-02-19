@@ -1,0 +1,539 @@
+# Schema as of Wed Apr 05 20:13:53 Pacific Daylight Time 2006 (schema version 7)
+#
+#  id                  :integer(11)   not null
+#  created_at          :datetime      not null
+#  updated_at          :datetime      not null
+#  wiki_id              :integer(11)   default(0), not null
+#  locked_by           :string(60)    
+#  name                :string(60)    
+#  locked_at           :datetime      
+#
+
+--- 
+textile_sample: 
+  name: Textile Sample
+  link: textile_sample
+  updated_at: 2006-03-07 09:20:21 -08:00
+  locked_by: 
+  id: 48
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:20:21 -08:00
+html_sample: 
+  name: HTML Sample
+  link: html_sample
+  updated_at: 2006-03-07 09:20:57 -08:00
+  locked_by: 
+  id: 49
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:20:57 -08:00
+test_include: 
+  name: Test Include
+  link: test_include
+  updated_at: 2006-03-07 09:49:36 -08:00
+  locked_by: 
+  id: 58
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:49:36 -08:00
+test_textile: 
+  name: Test Textile
+  link: test_textile
+  updated_at: 2006-02-28 09:50:19 -08:00
+  locked_by: Max Dunn
+  id: 35
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:43:15 -08:00
+test_html:
+  name: Test HTML
+  link: test_html
+  updated_at: 2006-02-18 23:12:03 -08:00
+  locked_by: Max Dunn
+  id: 13
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-19 11:33:33 -08:00
+navigation: 
+  name: Navigation
+  link: navigation
+  updated_at: 2005-12-20 12:40:21 -08:00
+  locked_by: Admin
+  id: 24
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-20 12:18:38 -08:00
+survey: 
+  name: Survey
+  link: survey
+  updated_at: 2006-02-17 07:41:27 -08:00
+  locked_by: Max1
+  id: 32
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-17 07:25:04 -08:00
+survey_results: 
+  name: SurveyResults
+  link: surveyresults
+  updated_at: 2006-03-07 09:44:28 -08:00
+  locked_by: Max Dunn
+  id: 8
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-17 22:40:37 -08:00  
+orphan: 
+  name: Orphan page with no revisions
+  link: orphan_page_with_no_revisions
+  updated_at: 2006-02-17 07:41:27 -08:00
+  locked_by: 
+  id: 9999
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-17 07:25:04 -08:00
+page_46_teams: 
+  name: Teams
+  link: teams
+  updated_at: 2006-03-03 15:30:45 -08:00
+  locked_by: Max Dunn
+  id: 46
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 10:05:20 -08:00
+page_41_minors_padres: 
+  name: "Minors: Padres"
+  parent_id: 46
+  link: Minors+Padres
+  updated_at: 2006-02-28 09:59:32 -08:00
+  locked_by: 
+  id: 41
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:59:32 -08:00
+page_47: 
+  name: Teams_left
+  link: teams_left
+  updated_at: 2006-03-03 16:11:58 -08:00
+  locked_by: Max Dunn
+  id: 47
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 10:05:45 -08:00
+page_25: 
+  name: Contact Us_left
+  link: contact_us_left
+  updated_at: 2005-12-20 12:41:46 -08:00
+  locked_by: Admin
+  id: 25
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-20 12:19:43 -08:00
+page_1: 
+  name: HomePage
+  link: 'homepage'
+  updated_at: 2006-12-06 15:46:49 -08:00
+  locked_by: Max Dunn
+  id: 1
+  wiki_id: 1
+  locked_at: 2006-03-06 15:46:49 -08:00
+  created_at: 2005-11-19 16:50:32 -08:00
+page_14: 
+  name: Editor Only
+  link: editor_only
+  updated_at: 2006-12-07 21:23:43 -08:00
+  locked_by: Max Dunn
+  id: 14
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-19 12:05:01 -08:00
+  access_read: Editor
+  access_write: Editor
+page_36: 
+  name: Admin Only
+  link: admin_only
+  updated_at: 2006-12-28 09:57:21 -08:00
+  locked_by: 
+  id: 36
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:57:21 -08:00
+  access_read: Admin
+  access_write: Admin
+page_HomePage_Wiki2: 
+  name: "HomePage"
+  link: 'homepage'
+  updated_at: 2006-02-28 09:57:58 -08:00
+  locked_by: 
+  id: 37
+  wiki_id: 2
+  locked_at: 
+  created_at: 2006-02-28 09:57:58 -08:00
+page_Welcome: 
+  name: Welcome
+  link: welcome
+  updated_at: 2005-12-22 11:24:56 -08:00
+  locked_by: Admin
+  id: 28
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-22 11:00:25 -08:00
+page_15: 
+  name: volunteering_left
+  link: volunteering_left
+  updated_at: 2005-12-20 12:46:45 -08:00
+  locked_by: Admin
+  id: 15
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-19 22:02:55 -08:00
+page_2: 
+  name: Test
+  link: test
+  updated_at: 2006-03-06 12:24:34 -08:00
+  locked_by: Max Dunn
+  id: 2
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-11-19 17:30:29 -08:00
+page_26: 
+  name: Sponsoring_left
+  link: sponsoring_left
+  updated_at: 2005-12-20 12:47:13 -08:00
+  locked_by: 
+  id: 26
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-20 12:47:13 -08:00
+page_27: 
+  name: FAQ_left
+  link: faq_left
+  updated_at: 2005-12-20 12:47:39 -08:00
+  locked_by: 
+  id: 27
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-20 12:47:39 -08:00
+page_3: 
+  name: volunteering
+  link: volunteering
+  updated_at: 2005-12-20 17:14:09 -08:00
+  locked_by: Admin
+  id: 3
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-15 16:55:57 -08:00
+page_existing: 
+  name: About Us
+  link: about_us
+  updated_at: 2006-02-17 08:08:13 -08:00
+  locked_by: Max2
+  id: 16
+  wiki_id: 1
+  locked_at: 2006-02-17 08:08:13 -08:00
+  created_at: 2005-12-19 22:10:50 -08:00
+page_38: 
+  name: "Plus Page"
+  link: "Plus+Page"
+  updated_at: 2006-02-28 09:58:23 -08:00
+  locked_by: 
+  id: 38
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:58:23 -08:00
+page_17: 
+  name: About Us_left
+  link: About+Us_left
+  updated_at: 2006-03-03 14:16:24 -08:00
+  locked_by: Max Dunn
+  id: 17
+  wiki_id: 1
+  locked_at: 2006-03-03 14:16:24 -08:00
+  created_at: 2005-12-19 22:13:41 -08:00
+page_4: 
+  name: HomePage_left
+  link: homepage_left
+  updated_at: 2006-12-23 14:11:31 -08:00
+  locked_by: Admin
+  id: 4
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-15 18:36:03 -08:00
+page_50: 
+  name: schedule_left_menu
+  link: schedule_left_menu
+  updated_at: 2006-12-07 09:43:44 -08:00
+  locked_by: 
+  id: 50
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:43:44 -08:00
+page_51: 
+  name: Seniors Schedule
+  link: seniors_schedule
+  updated_at: 2006-03-07 09:45:19 -08:00
+  locked_by: 
+  id: 51
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:45:19 -08:00
+page_29: 
+  name: Admin
+  link: admin
+  updated_at: 2005-12-24 15:19:40 -08:00
+  locked_by: Admin
+  id: 29
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-24 15:19:18 -08:00
+page_5: 
+  name: menu
+  link: menu
+  updated_at: 2006-12-13 16:56:39 -08:00
+  locked_by: Max
+  id: 5
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-16 20:18:35 -08:00
+page_18: 
+  name: Tri-Cities Board
+  link: tri_cities_Board
+  updated_at: 2005-12-19 22:36:26 -08:00
+  locked_by: Admin
+  id: 18
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-19 22:34:39 -08:00
+page_39: 
+  name: "Minors: Giants"
+  link: Minors:+Giants
+  updated_at: 2006-02-28 09:58:47 -08:00
+  locked_by:
+  id: 39
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:58:47 -08:00
+page_40: 
+  name: "Minors: Giants_left"
+  link: minors_giants_left
+  updated_at: 2006-02-28 09:59:11 -08:00
+  locked_by: 
+  id: 40
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:59:11 -08:00
+page_19: 
+  name: Tri-Cities Board_left
+  link: tricities_board_left
+  updated_at: 2005-12-20 12:39:52 -08:00
+  locked_by: Admin
+  id: 19
+  wiki_id: 1
+  locked_at: 2005-12-20 12:39:52 -08:00
+  created_at: 2005-12-19 22:37:57 -08:00
+page_6: 
+  name: HomePage_right
+  link: homepage_right
+  updated_at: 2006-12-21 20:53:37 -08:00
+  locked_by: Admin
+  id: 6
+  wiki_id: 1
+  locked_at: 2005-12-21 20:53:37 -08:00
+  created_at: 2005-12-17 11:59:07 -08:00
+page_30: 
+  name: footer
+  link: footer
+  updated_at: 2006-12-11 21:41:14 -08:00
+  locked_by: Max
+  id: 30
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-01-31 20:18:59 -08:00
+page_52: 
+  name: Juniors Schedule
+  link: juniors_schedule
+  updated_at: 2006-03-07 09:45:45 -08:00
+  locked_by: 
+  id: 52
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:45:45 -08:00
+page_53: 
+  name: Majors Schedule
+  link: majors_schedule
+  updated_at: 2006-03-07 10:06:54 -08:00
+  locked_by:
+  id: 53
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:46:11 -08:00
+page_31: 
+  name: Test_left
+  link: test_left
+  updated_at: 2006-03-03 16:15:05 -08:00
+  locked_by: Max Dunn
+  id: 31
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-13 10:49:04 -08:00
+page_7: 
+  name: Schedules
+  link: schedules
+  updated_at: 2006-01-25 20:28:33 -08:00
+  locked_by: Admin
+  id: 7
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-17 22:34:41 -08:00
+page_20: 
+  name: Boundaries
+  link: boundaries
+  updated_at: 2006-03-06 13:16:01 -08:00
+  locked_by: Max Dunn
+  id: 20
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-19 22:39:54 -08:00
+page_42: 
+  name: "Minors: Padres_left"
+  link: minors_padres_left
+  updated_at: 2006-02-28 09:59:56 -08:00
+  locked_by: 
+  id: 42
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:59:56 -08:00
+page_43: 
+  name: "Minors: Yankees"
+  link: minors_yankees"
+  updated_at: 2006-02-28 10:00:18 -08:00
+  locked_by: 
+  id: 43
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 10:00:18 -08:00
+page_21: 
+  name: League Levels
+  link: league_levels
+  updated_at: 2005-12-20 09:20:53 -08:00
+  locked_by: Admin
+  id: 21
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-19 22:40:23 -08:00
+page_10: 
+  name: FAQ
+  link: faq
+  updated_at: 2006-01-31 17:50:30 -08:00
+  locked_by: Admin
+  id: 10
+  wiki_id: 1
+  locked_at: 2006-01-31 17:50:30 -08:00
+  created_at: 2005-12-17 22:45:48 -08:00
+page_54: 
+  name: Minors Schedule
+  link: Minors_schedule
+  updated_at: 2006-03-07 09:46:31 -08:00
+  locked_by: 
+  id: 54
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:46:31 -08:00
+page_55: 
+  name: Farm Schedule
+  link: farm_schedule
+  updated_at: 2006-03-07 09:46:46 -08:00
+  locked_by: 
+  id: 55
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:46:46 -08:00
+page_33: 
+  name: Teams_Menu
+  link: teams_menu
+  updated_at: 2006-02-28 10:33:54 -08:00
+  locked_by: Max Dunn
+  id: 33
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:22:11 -08:00
+page_11: 
+  name: Registration
+  link: registration
+  updated_at: 2006-03-06 15:44:49 -08:00
+  locked_by: Max Dunn
+  id: 11
+  wiki_id: 1
+  locked_at: 2006-03-06 15:44:49 -08:00
+  created_at: 2005-12-17 22:58:23 -08:00
+page_9: 
+  name: Sponsoring
+  link: sponsoring
+  updated_at: 2006-02-19 22:04:16 -08:00
+  locked_by: Max Dunn
+  id: 9
+  wiki_id: 1
+  locked_at: 2006-02-19 22:04:16 -08:00
+  created_at: 2005-12-17 22:42:26 -08:00
+page_22: 
+  name: Contact Us
+  link: contact_us
+  updated_at: 2005-12-22 15:09:32 -08:00
+  locked_by: Admin
+  id: 22
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-19 22:40:49 -08:00
+page_44: 
+  name: "Minors: Yankees_left"
+  link: "minors_yankees_left"
+  updated_at: 2006-02-28 10:00:43 -08:00
+  locked_by: 
+  id: 44
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 10:00:43 -08:00
+page_45: 
+  name: "Majors: Mariners_left"
+  link: "majors_mariners_left"
+  updated_at: 2006-02-28 10:01:14 -08:00
+  locked_by: 
+  id: 45
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 10:01:14 -08:00
+page_23: 
+  name: League Levels_left
+  link: league_levels_left
+  updated_at: 2005-12-20 12:41:10 -08:00
+  locked_by: Admin
+  id: 23
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-20 09:01:24 -08:00
+page_12: 
+  name: Registration_left
+  link: registration_left
+  updated_at: 2006-02-11 09:47:20 -08:00
+  locked_by: Max
+  id: 12
+  wiki_id: 1
+  locked_at: 
+  created_at: 2005-12-17 23:10:38 -08:00
+page_34: 
+  name: "Majors: Giants"
+  link: "majors_giants"
+  updated_at: 2006-02-28 09:56:33 -08:00
+  locked_by: Max Dunn
+  id: 34
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-02-28 09:39:45 -08:00
+page_56: 
+  name: T-Ball Schedule
+  link: t-ball_schedule
+  updated_at: 2006-03-07 09:47:01 -08:00
+  locked_by: 
+  id: 56
+  wiki_id: 1
+  locked_at: 
+  created_at: 2006-03-07 09:47:01 -08:00

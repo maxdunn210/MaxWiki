@@ -1,0 +1,28 @@
+# Logfile created on Thu Dec 04 17:21:53 -0800 2008 by /
+D, [2008-12-04T17:21:53.232241 #3667] DEBUG -- : TRACING ON Thu Dec 04 17:21:53 -0800 2008
+Thu Dec 04 17:22:11 -0800 2008 REQUEST /_action/fckeditor/command
+--- !map:Mongrel::HttpParams 
+SERVER_NAME: local.maxwiki.com
+PATH_INFO: /_action/fckeditor/command
+HTTP_ACCEPT_ENCODING: gzip,deflate
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4
+SCRIPT_NAME: /
+SERVER_PROTOCOL: HTTP/1.1
+HTTP_ACCEPT_LANGUAGE: en-us,en;q=0.5
+HTTP_HOST: local.maxwiki.com:3000
+REMOTE_ADDR: 127.0.0.1
+SERVER_SOFTWARE: Mongrel 1.0.1
+HTTP_KEEP_ALIVE: "300"
+REQUEST_PATH: /_action/fckeditor/command
+HTTP_REFERER: http://local.maxwiki.com:3000/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=/_action/fckeditor/command
+HTTP_COOKIE: __utma=76796041.910386949.1227631007.1228246135.1228423814.7; __utmz=76796041.1227631007.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utmc=76796041; role=Admin; maxwiki=db90742bcda210db8e9af6513771220f; __utma=10789417.263490027.1228438344.1228438344.1228438344.1; __utmb=10789417; __utmc=10789417; __utmz=10789417.1228438344.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none)
+HTTP_ACCEPT_CHARSET: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+HTTP_VERSION: HTTP/1.1
+REQUEST_URI: /_action/fckeditor/command?Command=GetFoldersAndFiles&Type=Image&CurrentFolder=%2F&uuid=1228440130394
+SERVER_PORT: "3000"
+GATEWAY_INTERFACE: CGI/1.2
+QUERY_STRING: Command=GetFoldersAndFiles&Type=Image&CurrentFolder=%2F&uuid=1228440130394
+HTTP_ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_CONNECTION: keep-alive
+REQUEST_METHOD: GET
+

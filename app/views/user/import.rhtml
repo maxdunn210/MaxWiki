@@ -1,0 +1,17 @@
+<%
+  @title = 'Import Users'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu'
+%>
+
+<h1>Import Users</h1>
+
+<p>This utility creates users from a list of email addresses. Each user will have a random password
+assigned and will be sent an email with this information. Duplicates will not be added.</p>
+
+<%= form_tag :controller => 'user', :action => 'import' %>
+<label for="emails">Email list:</label>
+<br/>
+<%= text_area_tag 'emails', nil, :size => "75x20" %>
+<br/>
+<%= submit_tag 'Save' %>
+<%= end_form %>

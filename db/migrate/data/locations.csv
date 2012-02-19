@@ -1,0 +1,54 @@
+id,name,short_name,parent_location_id
+1,World,World,0
+2,United States,US,1
+101,Alabama ,AL,2
+102,Alaska ,AK,2
+103,Arizona ,AZ,2
+104,Arkansas ,AR,2
+105,California ,CA,2
+106,Colorado ,CO,2
+107,Connecticut ,CT,2
+108,Delaware ,DE,2
+109,District of Columbia ,DC,2
+110,Florida ,FL,2
+111,Georgia ,GA,2
+112,Hawaii ,HI,2
+113,Idaho ,ID,2
+114,Illinois ,IL,2
+115,Indiana ,IN,2
+116,Iowa ,IA,2
+117,Kansas ,KA,2
+118,Kentucky ,KY,2
+119,Louisiana ,LA,2
+120,Maine ,ME,2
+121,Maryland ,MD,2
+122,Massachusetts ,MA,2
+123,Michigan ,MI,2
+124,Minnesota ,MN,2
+125,Mississippi ,MS,2
+126,Missouri ,MO,2
+127,Montana ,MT,2
+128,Nebraska ,NE,2
+129,Nevada ,NV,2
+130,New Hampshire ,NH,2
+131,New Jersey ,NJ,2
+132,New Mexico ,NM,2
+133,New York ,NY,2
+134,North Carolina ,NC,2
+135,North Dakota ,ND,2
+136,Ohio ,OH,2
+137,Oklahoma ,OK,2
+138,Oregon ,OR,2
+139,Pennsylvania ,PA,2
+140,Rhode Island ,RI,2
+141,South Carolina ,SC,2
+142,South Dakota ,SD,2
+143,Tennessee ,TN,2
+144,Texas ,TX,2
+145,Utah ,UT,2
+146,Vermont ,VT,2
+147,Virginia ,VA,2
+148,Washington ,WA,2
+149,West Virginia ,WV,2
+150,Wisconsin ,WI,2
+151,Wyoming ,WY,2

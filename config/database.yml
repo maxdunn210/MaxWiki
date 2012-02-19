@@ -1,0 +1,44 @@
+  <%   
+  #database = :mysql
+  #database = :mysqljdbc
+  database = :postgres
+  %>
+  
+login: &login
+  <% if database == :mysqljdbc %>
+  adapter: jdbc
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost/maxwiki
+  username: root
+  password: happyfeet
+  encoding: utf8    
+  <% elsif database == :mysql %>
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: happyfeet
+  encoding: utf8 
+  <% else %>
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: happyfeet
+  encoding: unicode
+  min_messages: error
+  <% end %>
+  
+development:
+  database: maxwiki
+  <<: *login
+
+production:
+  database: maxwiki
+  <<: *login
+
+# Warning: The database defined as 'test' will be erased and
+# re-generated from your development database when you run 'rake'.
+# Do not set this db to the same as development or production.
+test:
+  database: test
+  <<: *login
+

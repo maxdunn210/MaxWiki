@@ -1,0 +1,46 @@
+<%
+  @title = 'Register'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<% if @screen %>
+  <br>
+  <%= render_partial 'show_buttons' %>
+<% else %>
+
+<div id="middle_column">
+
+<div class='no_print'>
+
+<script language="Javascript1.2">
+<!--
+// please keep these lines on when you copy the source
+// made by: Nicolas - http://www.javascript-page.com
+
+var message = "Print this Page";
+
+function printpage() {
+window.print();  
+}
+
+document.write("<form><input type=button "
++"value=\""+message+"\" onClick=\"printpage()\"></form>");
+
+//-->
+</script>
+
+<% if Role.check_role(ROLE_ADMIN) %> 
+  <%= button_to('Mark as Printed and Goto Next',  :action => 'mark_as_printed_and_print_next', :id => @player) %>
+<% end %>  
+</div>
+
+<% end %>
+
+<%= render(:partial => 'show_info') %>
+
+<% if @screen -%>
+  <br>
+  <%= render_partial 'show_buttons' %>
+<% else %>
+  </div>  
+<% end -%>

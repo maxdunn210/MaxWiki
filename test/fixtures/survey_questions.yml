@@ -1,0 +1,138 @@
+--- 
+Signup_Experience: 
+  id: 1
+  survey_id: 1
+  name: Experience
+  choices: Just interested, Hobbyist, Expert, Use for work
+  mandatory: false
+  html_options: ""
+  input_type: select
+  question: Ruby on Rails experience?
+  display_order: !int:Fixnum 50
+  wiki_id: 1
+Signup_Session: 
+  id: 2
+  survey_id: 1
+  name: Session
+  choices: No, Yes, Maybe
+  mandatory: false
+  html_options: ""
+  input_type: select
+  question: Would you consider leading a session?
+  display_order: !int:Fixnum 20
+  wiki_id: 1
+Signup_Topic: 
+  id: 3
+  survey_id: 1
+  name: Topic
+  choices: ""
+  mandatory: false
+  html_options: ":rows => 2"
+  input_type: text_area
+  question: What would the session be about?
+  display_order: !int:Fixnum 30
+  wiki_id: 1
+Signup_Demo: 
+  id: 4
+  survey_id: 1
+  name: Demo
+  choices: No, Yes, Maybe
+  mandatory: false
+  html_options: ""
+  input_type: select
+  question: Will you be showing a demo of a Ruby on Rails application?
+  display_order: !int:Fixnum 40
+  wiki_id: 1
+Survey_different_wiki: 
+  id: 5
+  survey_id: 1
+  name: WikiTest
+  choices: No, Yes, Maybe
+  mandatory: false
+  html_options: ""
+  input_type: select
+  question: This shouldn't be found because it is on a different wiki
+  display_order: !int:Fixnum 40
+  wiki_id: 100
+Volunteer_Who: 
+  id: 6
+  survey_id: 3
+  name: Who
+  choices: Parent 1, Parent 2, Both, None ($75.00)
+  mandatory: true
+  html_options: ""
+  input_type: select
+  question: Who will volunteer?
+  display_order: !int:Fixnum 10
+  wiki_id: 1
+Volunteer_Positions: 
+  id: 7
+  survey_id: 3
+  name: Positions
+  choices: None (+$75.00), Manager / Coach, Umpire, Snack Shack Supervisor, Snack Shack Staff, Special Events Assistant, Fundraiser / Sponsors Assistant, Equipment Assistant, Uniforms Assistant, Help as Needed
+  mandatory: false
+  html_options: ""
+  input_type: select
+  question: Volunteer Positions
+  display_order: !int:Fixnum 20
+  wiki_id: 1
+Volunteer_OtherPositions: 
+  id: 8
+  survey_id: 3
+  name: Other Positions
+  choices: ""
+  mandatory: false
+  html_options: ""
+  input_type: text_field
+  question: Other volunteer positions that you might be interested in helping with?
+  display_order: !int:Fixnum 30
+  wiki_id: 1
+Volunteer_About: 
+  id: 9
+  survey_id: 3
+  name: About
+  choices: Returning Player, Referred by other Player, School Flyer, Newspaper Flyer, Other
+  mandatory: false
+  html_options: ""
+  input_type: select
+  question: How did you hear about us?
+  display_order: !int:Fixnum 50
+  wiki_id: 1
+Volunteer_AboutOther: 
+  id: 10
+  survey_id: 3
+  name: Other Specify
+  choices: ""
+  mandatory: false
+  html_options: ""
+  input_type: text_field
+  question: Other? Please specify
+  display_order: !int:Fixnum 60
+  wiki_id: 1
+Volunteer_Sponsorship: 
+  id: 11
+  survey_id: 3
+  name: Sponsorship
+  choices: Yes, No
+  mandatory: false
+  html_options: ""
+  input_type: select
+  question: Will you or your company be interested in sponsoring TCLL?
+  display_order: !int:Fixnum 70
+  wiki_id: 1
+Volunteer_SponsorshipInfo: 
+  id: 12
+  survey_id: 3
+  name: Sponsorship Info
+  choices: ""
+  mandatory: false
+  html_options: ""
+  input_type: text_field
+  question: Please add any pertinent sponsorship information
+  display_order: !int:Fixnum 80
+  wiki_id: 1
+  
+  
+
+
+   

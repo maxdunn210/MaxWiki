@@ -1,0 +1,32 @@
+<%
+  @title = 'Signup'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<% unless params['no_layout'] %>
+<h3>Signup</h3>
+<% end %>
+<%= error_messages_for 'user' %>
+
+<% unless params['no_layout'] %>
+  <% unless MY_CONFIG[:signup_text].nil? || MY_CONFIG[:signup_text].empty? || User.signup_closed? %>
+  <%= MY_CONFIG[:signup_text] %><br/><br/>
+  <hr>
+  <% end %>
+  <% unless MY_CONFIG[:signup_closed_text].nil? || MY_CONFIG[:signup_closed_text].empty? || !User.signup_closed? %>
+  <%= MY_CONFIG[:signup_closed_text] %><br/><br/>
+  <hr>
+  <% end %>
+
+<% end %>
+
+<%= form_tag :controller => 'user', :action => 'signup' %>
+  <%= render :partial => 'edit' %>
+  <%= render :partial => 'password' %>
+    <% unless @wiki.config[:signup_survey].blank? %>
+      <hr>
+      <%= survey(@wiki.config[:signup_survey], :submit => false) %>
+    <% end %>
+  <br/>  
+  <%= submit_tag 'Signup' %>
+<%= end_form %>

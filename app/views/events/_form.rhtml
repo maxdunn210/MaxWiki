@@ -1,0 +1,14 @@
+<%= error_messages_for 'event' %>
+
+<%= hidden_field 'event', 'kind' %>
+
+<%= 
+case @event.kind
+  when Event::GAME
+    render_partial 'form_game'
+  when Event::PRACTICE
+    render_partial 'form_practice'
+  else
+    render_partial 'form_event'
+end    
+%>

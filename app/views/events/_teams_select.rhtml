@@ -1,0 +1,21 @@
+<table class="table_spacing">
+<tr>
+  <td<%- if @event.kind == Event::GAME -%> width=220<%- end -%>>
+		<label for="event_home_team_id">
+		  <%= @event.kind == Event::GAME ? 'Home' : 'Team' -%>
+		</label><br/>
+		<%= select(:event, :home_team_id, Team.picklist(:level_id => @last_level)) %>
+	</td>
+  <%- if @event.kind == Event::GAME -%>
+	<td>
+		<label for="event_visitor_team_id">Visitor</label><br/>
+		<%= select(:event, :visitor_team_id, Team.picklist(:level_id => @last_level)) %>
+	</td>
+	<%- end -%>
+	<td>
+      <div id="indicator" style="display:none">
+        <%= image_tag("indicator.gif") %> Updating...
+      </div>
+	</td>
+</tr>	
+</table>

@@ -1,0 +1,28 @@
+
+To try this out, move readme.rhtml into the views directory of some controller of your 
+main application. For example, create test_controller.rb in app/controllers, then put 
+this in app/views/test/readme.rhtml, then call /test/readme .
+
+This engine has some partials to be used by your application, but no top-level templates
+other than the readme.rhtml example.
+
+The *only* thing you need in your application's environment.rb are definitions in MY_CONFIG:
+
+DDM_CONFIG = {}
+DDM_CONFIG[:flickr_key] = '....'
+DDM_CONFIG[:youtube_key] = '....'
+DDM_CONFIG[:amazon_key] = '....'
+DDM_CONFIG[:drag_and_drop_media] = :html
+
+The first three items are keys you need to get from those vendors (easy to do online).
+
+The last item is a configuration that's best left as is if you are happy with the html the
+engine provides for the media to be dropped into your app. If you need more detailed info, 
+there is also a REST style format.... you should probably take a look at the (simple) code
+before you start using that!
+
+rake test:plugins will fail if valid keys are not specified in environment.rb.... you either
+need to get the keys, or comment out the tests you're not interested in.
+
+There is javascript and style information that the engine's magic will pull in from here (the
+public folder) but you can obviously override them to suit the styles of your application.

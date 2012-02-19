@@ -1,0 +1,67 @@
+<table>
+<tr>
+
+<% if all_fees_paid %>
+<td>
+<%= form_tag :action => 'document' %>
+  <%= submit_tag "Continue" %>
+    &nbsp;
+<%= end_form %>
+</td>
+<% else %>
+<td>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+			<input type="hidden" name="cmd" value="_cart">
+			<input type="hidden" name="upload" value="1">
+			<input type="hidden" name="no_shipping" value="1">
+			<input type="hidden" name="business" value="malloy.brent@gmail.com">
+			<input type="hidden" name="return" value="http://tricitiesbaseball.org/store/register/document">
+			<input type="hidden" name="cancel_return" value="http://tricitiesbaseball.org/store/register/paylater">
+			<input type="hidden" name="currency_code" value="USD">
+			
+			<% i = 1; @players.each do |p| %>
+  			<% if p.fee_paid == 0%>
+    			<input type="hidden" name="item_name_<%= i %>" value="Tri-Cities Baseball Registration for <%=h p.full_name %> 					(age <%= p.league_age %> )">
+    			<input type="hidden" name="amount_<%= i %>" value="<%= (p.net_fee) %>">
+    			<input type="hidden" name="quantity_<%= i %>" value="1">
+    			<% i += 1 %>
+  			<% end %>
+			<% end %>
+			
+  			<% if @deposit_fee != 0%>
+    			<input type="hidden" name="item_name_<%= i %>" value="Tri-Cities Baseball Snack Shack Deposit">
+    			<input type="hidden" name="amount_<%= i %>" value="<%= (@deposit_fee) %>">
+    			<input type="hidden" name="quantity_<%= i %>" value="1">
+    			<% i += 1 %>
+  			<% end %>
+  			
+			<% if @volunteer_fee != 0%>
+    			<input type="hidden" name="item_name_<%= i %>" value="Tri-Cities Baseball Volunteer Fee">
+    			<input type="hidden" name="amount_<%= i %>" value="<%= (@volunteer_fee) %>">
+    			<input type="hidden" name="quantity_<%= i %>" value="1">
+    			<% i += 1 %>
+  			<% end %>
+			
+			<input name="commit" type="submit" value="Pay Now"  hspace="15">
+		</form>
+</td>
+
+<td>
+<%= form_tag :action => 'pay_later' %>
+  <%= submit_tag "Pay Later" %>
+  &nbsp;
+<%= end_form %>
+</td>
+
+<% end %>
+
+<td>
+<%= form_tag :action => 'volunteer' %>
+  <%= submit_tag "Back" %>
+    &nbsp;
+<%= end_form %>
+</td>
+
+</tr>
+</table>

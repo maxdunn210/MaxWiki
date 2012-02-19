@@ -1,0 +1,13 @@
+<% @page_title = "Admin List" -%>
+
+<h1>Admin List</h1>
+
+
+<table>
+<% for user in @all_users -%>
+<tr>
+  <td><%= user.name %></td>
+  <td><%= link_to("(delete)", :action => :delete_user, :id => user.id) %></td>
+</tr>
+<% end -%>
+</table>

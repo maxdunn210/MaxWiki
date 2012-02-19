@@ -1,0 +1,27 @@
+<%= error_messages_for 'email' %>
+
+<table>
+<!--[form:email]-->
+<tr><td><label for="email_status">Status</label></td>
+<td><%= text_field 'email', 'status'  %></td></tr>
+
+<tr><td><label for="email_created_at">Created at</label></td>
+<td><%= datetime_select 'email', 'created_at'  %></td></tr>
+
+<tr><td><label for="email_updated_at">Updated at</label></td>
+<td><%= datetime_select 'email', 'updated_at'  %></td></tr>
+
+<tr><td><label for="email_from">From</label></td>
+<td><%= text_field 'email', 'from'  %></td></tr>
+
+<tr><td><label for="email_to">To</label></td>
+<td><%= text_field 'email', 'to'  %></td></tr>
+
+<tr><td><label for="email_last_send_attempt">Last send attempt</label></td>
+<td><%= text_field 'email', 'last_send_attempt'  %></td></tr>
+
+<tr><td><label for="email_mail">Mail</label></td>
+<td><%= text_area 'email', 'mail'  %></td></tr>
+<!--[eoform:email]-->
+
+</table>

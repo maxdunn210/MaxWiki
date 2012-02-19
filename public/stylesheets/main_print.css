@@ -1,0 +1,21 @@
+/* Redefined styles for printing */
+
+.edit_block, .no_print, #menu, #left_column, #right_column, #buffer_header, #buffer_header_short, #buffer_footer { 
+  display: none;
+}  
+
+#middle_column, #footer, .left_block, .middle_block, .right_block {
+   width: auto;
+   margin: 0 5%;
+   padding: 0;
+   border: 5px;
+   overflow: visible !important;
+   float: none !important;
+ }  
+ 
+ #container {
+  margin: 0px auto;
+  padding: 0px;
+  overflow: visible !important;
+  float: none !important;
+}

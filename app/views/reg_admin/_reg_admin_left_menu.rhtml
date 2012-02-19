@@ -1,0 +1,25 @@
+<ul class="left_menu">
+  <li class="submenu"><%= tag_href_selected('Admin Menu',{:controller => "reg_admin"},"reg_admin-index") %></li>
+  <%= tag_li_href_selected("Users", {:controller => "reg_admin", :action => "list_users"}, "list_users") %>
+  <%= tag_li_href_selected("Import Users", {:controller => "user", :action => "import"}, "user-import") %>
+  <%= tag_li_href_selected("Export Users", {:controller => "reg_admin", :action => "export_users"}, "export_users") %>
+  <% if MY_CONFIG[:tric] %>
+  <%= tag_li_href_selected("Players", {:controller => "reg_admin", :action => "list_players"}, "list_players") %>
+  <%= tag_li_href_selected("Export Players", {:controller => "reg_admin", :action => "export_players"}, "export_players") %>
+  <%= tag_li_href_selected("Teams", {:controller => "teams", :action => "index"}, "team") %>
+  <% end %>
+  <%= tag_li_href_selected("Events", {:controller => "events", :action => "index"}, "events-index") %>
+  <%= tag_li_href_selected("Import Events", {:controller => "events", :action => "import"}, "events-import") %>
+  <%= tag_li_href_selected("Lookups", {:controller => "lookups", :action => "index"}, "lookups") %>
+  <%= tag_li_href_selected("Mailers", {:controller => "mailers", :action => "list"}, "mailers") %>
+  <%= tag_li_href_selected("Mailer Groups", {:controller => "mailer_groups", :action => "list"}, "mailer_groups") %>
+  <%= tag_li_href_selected("Mailer Subscriptions", {:controller => "mailer_subscriptions", :action => "list"}, "mailer_subscriptions") %>
+  <%= tag_li_href_selected("Emails", {:controller => "emails", :action => "list"}, "emails-list") %>
+  <%= tag_li_href_selected("Send Emails", {:controller => "emails", :action => "send_emails"}, "send_emails") %>
+  <%= tag_li_href_selected("Surveys", {:controller => "surveys", :action => "index"}, "survey") %>
+  <hr>  
+  <%= tag_li_href_selected("Expire Cache", {:controller => "admin", :action => "expire_cache"}, "expire_cache") %>
+  <%= tag_li_href_selected("Delete Old Sessions", {:controller => "admin", :action => "delete_old_sessions"}, "delete_old_sessions") %>
+  <%= tag_li_href_selected("Configuration", {:controller => "wiki_config", :action => "index"}, "config") %>
+</ul>	
+	

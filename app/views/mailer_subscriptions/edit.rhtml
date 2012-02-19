@@ -1,0 +1,28 @@
+<%-
+  @title = 'Mailer Subscriptions'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Edit Mailer Subscription</h1>
+
+<%= form_tag :controller => 'mailer_subscriptions', :action => 'update', :id => @mailer_subscription %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<%= end_form %>
+
+<table>
+	<tr>
+		<td>
+		<%= form_tag :controller => 'mailer_subscriptions', :action => 'index' %> 
+		  <%= submit_tag "Cancel" %>
+		<%= end_form %>
+		</td>
+		
+		<td>
+		<%= form_tag :controller => 'mailer_subscriptions', :action => 'destroy', :id => @mailer_subscription %>
+		  <%= submit_tag "Delete" %>
+		  &nbsp;
+		<%= end_form %>
+		</td>
+	</tr>
+</table>

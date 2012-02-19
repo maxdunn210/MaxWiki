@@ -1,0 +1,22 @@
+<%
+  @title = 'Register'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h1>Confirm Delete</h1>
+
+<p></p>Are you sure you want to delete <%=h @player.full_name %>?<p/>
+
+<table>
+	<tr>
+	<td>
+		<%= form_tag :action => 'destroy', :id => @player %> <%= submit_tag "Delete" %>
+		<%= end_form %>
+	</td>
+	<td>
+		<%= form_tag :action => 'show', :id => @player %> <%= submit_tag "Cancel" %>
+		<%= end_form %>
+	</td>
+	</tr>
+</table>
+<p>&nbsp;</p>

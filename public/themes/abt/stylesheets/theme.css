@@ -1,0 +1,67 @@
+a {
+  color: rgb(116,14,28);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+/*** Header main banner ***/
+#header {
+        height: 128px;
+        margin: 0px auto;
+        padding: 0px;
+  color: white;
+  /* "repeat-x" is for when text size is made larger in browser */
+        background: url(../images/header.png) repeat-x;
+}
+
+/*** Header navigation top ***/
+#header .left_block {
+        float: left;
+        overflow: hidden;
+        width: 170px;
+        display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+}
+                                                                  
+#header .middle_block {
+        float: left;
+        overflow: hidden;
+        width: 450px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 10px;
+}
+
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+  background-color: white;
+  margin-top: 10px;  
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#footer {
+  margin: 0px auto;
+  padding: 0px;
+  border-top: solid 2px rgb(33,99,140);
+  border-bottom: solid 1px rgb(150,150,150);
+  font-size: 10px;
+}
+
+
+
+

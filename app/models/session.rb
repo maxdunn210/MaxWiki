@@ -1,0 +1,3 @@
+class Session < MaxWikiActiveRecord
+ 
+end

@@ -1,0 +1,348 @@
+body { 
+ font-size: 13px; 
+ font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; 
+ border-width: 0; 
+ background: white;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active    { 
+  color: #4f72bf; 
+  font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; 
+  font-weight: 600; 
+  text-decoration: none 
+}
+
+a:hover    { 
+  text-decoration: underline 
+}
+
+a:active {
+text-decoration: none;
+}
+
+/*****************/
+/*   MAIN BODY   */
+/*****************/
+
+#border {
+	margin: 0px auto;
+	background: url(../images/Header/HeaderPixel10.gif) repeat-x;
+}
+
+#container {
+	width: 760px;
+	margin: 0px auto;
+	padding: 0px;
+	background-color: rgb(255,255,255);
+}
+
+/*** Correction for non-IE browsers ***/
+#container {
+	overflow: hidden;
+}
+
+/*** Correction for IE 5.01 ***/
+#container {
+	float: none;
+}
+
+/*** Correction for Safari 1.x ***/
+* > #footer, * > form, * > #notes, * > .output {
+	position: relative;
+	z-index: 1000;
+}
+
+body .edit_block { 
+  font-size: 10px;
+  font-weight: normal;
+}  
+
+/**************/
+/*   HEADER   */
+/**************/
+
+/*** Header main banner ***/
+#header {
+  position: relative;
+	height: 70px;
+	margin: 0px 0px 0px 0px auto;
+	padding: 0px 0px 0px 0px;
+	color: black;
+	background: white url(../images/Header/HeaderPixel10.gif) repeat-x;
+}
+
+/*** Header navigation top ***/
+#header .left_block {
+	float: left;
+	overflow: hidden;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#header .middle_block {
+	float: left;
+	overflow: hidden;
+  padding-left: 80px;
+  margin-top: 34px;
+}
+
+#header .right_block {
+	float: right;
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 5px;
+  padding-right: 100px;
+}
+
+#header .edit_block { 
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+}  
+
+#header a, 
+#header a:hover, 
+#header .selected {
+  color: grey;
+}
+
+/*** Header navigation bottom ***/
+#menu {
+  clear: both; 
+  font-size: 11px;
+  line-height: 21px;
+  margin: 0px auto;
+  border: 0px;		
+  color: black;
+  background: none;
+}
+
+#menu  .edit_block { 
+  float:right;
+  margin-right: 7px;
+  margin-top: 0px;
+}  
+
+#menu ul {	
+	margin: 0px;
+  padding: 0px;
+}	
+
+#menu li {
+	float: left;
+	margin: 0px;
+	padding: 0 0 0 8px;
+  white-space: nowrap;
+  border-left: 0px;
+	background: url('../images/Header/tab_left.gif') no-repeat left top;
+}
+
+#menu a,
+#menu a:hover,
+#menu .selected  {
+  float: left;
+  font-weight: bold;
+  font-size: 11px;
+  color: rgb(245,245,245);
+  text-decoration:none;
+  padding: 0px 10px 0px 10px;
+}  
+
+#menu a {
+	background: url('../images/Header/tab_right.gif') no-repeat right top;
+}  
+  
+#menu a:hover,
+#menu .selected a  {
+  color: rgb(225,225,225);
+}
+
+#menu .selected {
+  background-image: url('../images/Header/tab_over_left.gif');
+}
+ 
+#menu .selected a {
+  background-image: url('../images/Header/tab_over_right.gif');
+}
+
+/*** Correction for IE5 ***/
+* html .tabs a {width:1%;}
+
+/***   Buffer between heading and content area   ***/
+#buffer_header {
+  clear: both;
+	height: 0px;
+	margin: 0px auto;
+	padding: 0px;
+	font-size: 0px;
+	background-color: inherit;
+}
+
+/***********************/
+/***   LEFT COLUMN   ***/
+/***********************/
+
+#left_column {
+  border-right: 0px;
+}
+
+/*************************/
+/***   MIDDLE COLUMN   ***/
+/*************************/
+
+.middle_column_narrow {
+  width: 540px; 
+}
+
+.middle_column_wide {
+  width: 590px;
+}
+
+.middle_column_full {
+  width: 700px;
+}
+
+#middle_column {
+	border-left: 0px;
+}
+
+#middle_column h1 {
+	display: block;
+	margin: 3px 0px 10px 0px;
+	padding: 0px;
+	background-color: inherit;
+	color: rgb(50,50,50);
+  font-size: 16px;
+}
+
+#middle_column h2, 
+#middle_column h3 {
+  clear: both;
+	display: block;
+	margin: 0px 0px 5px 0px;
+	padding: 4px 0px 4px 5px;	
+  font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 14px;
+  font-weight: 700; 
+  text-align: center;
+	color: white;
+	background-color: #0057a3;
+}
+
+#middle_column h3 {
+  clear: none; 
+}
+
+#middle_column h4 {
+  color: black;
+	font-weight: bold;
+  text-decoration: none;
+	font-size: 14px;
+  margin: 0px 0px 0px 0px;
+	padding: 6px 0px 0px 0px;	
+}
+
+#middle_column h5 {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#middle_column .edit_block { 
+  clear: both;
+  float: right;
+}  
+
+/************************/
+/***   RIGHT COLUMN   ***/
+/************************/
+
+/*****************/
+/***   FOOTER   **/
+/*****************/
+
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+  background-color: white;
+}
+
+#footer {
+	width: 760px;  /* Needed for IE6 */
+	height: 100px;
+	color: rgb(100,100,100);
+	font-size: 10px;
+  border-top: 0px;
+  border-bottom: 0px;
+  background: url('../images/Header/footertemplate.gif') no-repeat;
+}
+
+#footer .edit_block { 
+  position: absolute;
+  top: 1px;
+  left: 2px;
+}
+
+#bottom {
+  clear: both;
+	width: 760px;
+	background: url('../images/bottom.gif') bottom center repeat-y;
+}
+
+.byline { 
+  float: right;
+  font-size: 11px; 
+  font-style: italic; 
+  padding-top: 80px;
+  padding-right: 55px; 
+  color: #999; 
+}
+
+/*****************/
+/***  PBCC     **/
+/*****************/
+.B10 { font-size: 10px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.B12 { font-size: 12px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.B14 { font-size: 14px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B16 { font-size: 16px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B18 { font-size: 18px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B24 { font-size: 24px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.B26 { font-size: 26px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B32 { font-size: 32px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G10 { color: #76797c; font-size: 10px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G12 { color: #76797c; font-size: 12px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G14 { color: #76797c; font-size: 14px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G16 { color: #76797c; font-size: 16px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G18 { color: #76797c; font-size: 18px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G24 { color: #76797c; font-size: 24px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G26 { color: #76797c; font-size: 26px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G28 { color: #76797c; font-size: 28px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G32 { color: #76797c; font-size: 32px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G36 { color: #76797c; font-size: 36px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W10 { color: #ffffff; font-size: 10px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W12 { color: #ffffff; font-size: 12px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W14 { color: #ffffff; font-size: 14px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.W16 { color: #ffffff; font-size: 16px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W18 { color: #ffffff; font-size: 18px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.W24 { color: #ffffff; font-size: 24px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W26 { color: #ffffff; font-size: 26px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.W28 { color: #ffffff; font-size: 28px }
+.W32 { color: #ffffff; font-size: 32px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.bdrleft { border-left: 1px solid #a1a5a9 }
+.bdrright { border-right: 1px solid #a1a5a9 }
+.bdrtop { padding-top: 5px; padding-bottom: 5px; border-top: 1px solid #a1a5a9 }
+.bdrbottom  { padding-top: 5px; padding-bottom: 5px; border-bottom: 1px solid #a1a5a9 }
+.bdrrightleft { border-right: 1px solid #a1a5a9; border-left: 1px solid #a1a5a9 }
+.bdrtopbottom { border-top: 1px solid #a1a5a9; border-bottom: 1px solid #a1a5a9 }
+.bdall { border: solid 1pt #a1a5a9; }
+.bold { font-weight: 700; }
+.darkblue { background-color: #0057a3; }
+.mediumblue { background-color: #5c91c5; }
+.lightblue { background-color: #9cbcdd; }
+.indented { padding-left: 18pt; }
+

@@ -1,0 +1,28 @@
+<% @title = 'Export Survey Report' %>
+
+<h1>Survey Report</h1>
+
+<p>The table below is designed to be copied and pasted into a spreadsheet.</p>
+
+<h3><%= @survey.name %> Survey</h3>
+
+<table>
+  <tr>
+    <th>Submitted By</th>
+    <th>Submitted On</th>
+    <% for question in @survey_questions %>
+      <th><%= question.name %></th>
+    <% end %>
+  </tr>
+
+  <% for gather in @survey_gathered %>
+    <tr>
+      <td><%= gather[:submitter_name] %></td>
+      <td><%= gather[:updated_at].strftime('%Y-%m-%d %H:%M') %></td>
+      <% for answer_text in gather[:answers] %>
+        <td><%= h answer_text %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+

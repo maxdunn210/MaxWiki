@@ -1,0 +1,36 @@
+<% @title = "MaxWiki System Setup" %>
+
+<h1>Create MaxWiki System</h1>
+
+<p>
+You have now successfully installed and started MaxWiki. The first thing we need to do
+is to setup the system. The system contains information that applies to all the wikis that
+you may setup. The name and description below are not used anywhere except for administrative
+purposes.
+</p>
+
+<%= form_tag :controller => 'admin', :action => 'create_system' %>
+
+<%= error_messages_for 'system' %>
+
+<table>
+  <tr>
+    <td>
+      <label for="system_name">Name</label>
+    </td>
+    <td><%= text_field 'system', 'name' %></td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="system_description">Description</label>
+    </td>
+    <td><%= text_field 'system', 'description' %></td>
+  </tr>
+
+</table>
+
+<p><%= submit_tag "Create System" %></p>
+
+<%= end_form %>
+

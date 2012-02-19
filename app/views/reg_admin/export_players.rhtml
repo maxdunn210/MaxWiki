@@ -1,0 +1,132 @@
+<% @title = 'Export Players' %>
+
+<h1>Player Report</h1>
+
+<% if @players.empty? -%>
+  <%= render_partial 'no_players' %>
+<% else -%>
+  The table below is designed to be copied and pasted into a spreadsheet.
+  <table>
+    <tr>
+      <th>League Age</th>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Zip</th>
+      <th>Parent 1</th>
+      <th>P1 Home</th>
+      <th>P1 Work</th>
+      <th>P1 Cell</th>
+      <th>P1 Email</th>
+      <th>Parent 2</th>
+      <th>P2 Home</th>
+      <th>P2 Work</th>
+      <th>P2 Cell</th>
+      <th>P2 Email</th>
+      <th>Years Exp.</th>
+      <th>Last Level Played</th>
+      <th>Wants to Play With</th>
+      <th>Birthday</th>
+      <th>Grade</th>
+      <th>School</th>
+      <th>Teacher</th>
+      <th>Shirt</th>
+      <th>Pants</th>
+      <th>Fee Paid</th>
+      <th>Payment Date</th>
+      <th>Paid By</th>
+      <th>Created On</th>
+      <th>Updated On</th>
+      <th>Referred By</th>
+      <th>Age Checked</th>
+      <th>Waiver Required</th>
+      <th>Level</th>
+      <th>Team Name</th>
+      <th>Manager</th>
+      <th>Address Checked?</th>
+      <th>Form Printed?</th>
+      <th>Form Signed?</th>
+      <th>Info Confirmed?</th>
+      <th>Tryout Required?</th>
+      <th>Tryout Date</th>
+      <th>Volunteer Fee</th>
+      <th>Volunteer Fee Date</th>
+      <th>Volunteer Fee Paid By</th>
+      <th>Deposit</th>
+      <th>Deposit Date</th>
+      <th>Deposit Paid By</th>
+      <th>Refund</th>
+      <th>Refund Date</th>
+      <th>Refunded By</th>
+      <th>Remarks</th>
+    </tr>
+
+    <% for player in @players %>
+      <%
+        household = Household.find(player.household_id) rescue nil;
+        parent1 = Adult.find(:first, :conditions => 'household_id='+player.household_id.to_s+' and adultnum=1');
+        parent2 = Adult.find(:first, :conditions => 'household_id='+player.household_id.to_s+' and adultnum=2');
+        next if household.nil? || parent1.nil? || parent2.nil?
+      %>
+      <tr>
+        <td><%= h player.league_age %></td>
+        <td><%= h player.lastname %></td>
+        <td><%= h player.firstname %></td>
+        <td><%= h household.address %></td>
+        <td><%= h household.city %></td>
+        <td><%= h household.zip %></td>
+        <td><%= h parent1.full_name %></td>
+        <td><%= h parent1.home_phone %></td>
+        <td><%= h parent1.work_phone %></td>
+        <td><%= h parent1.cell_phone %></td>
+        <td><%= h parent1.email %></td>
+        <td><%= h parent2.full_name %></td>
+        <td><%= h parent2.home_phone %></td>
+        <td><%= h parent2.work_phone %></td>
+        <td><%= h parent2.cell_phone %></td>
+        <td><%= h parent2.email %></td>
+        <td><%= h player.years_exp %></td>
+        <td><%= h player.lastlevel %></td>
+        <td><%= h player.note %></td>
+        <td><%= h player.birthday %></td>
+        <td><%= h player.grade %></td>
+        <td><%= h player.school %></td>
+        <td><%= h player.teacher %></td>
+        <td><%= h player.shirtsize %></td>
+        <td><%= h player.pantsize %></td>
+        <td><%= sprintf("$%-10.2f",player.fee_paid.to_f) %></td>
+        <td><%= h player.fee_paid_on %></td>
+        <td><%= h player.fee_paid_by %></td>
+        <td><%= h player.created_at.iso8601 rescue '' %></td>
+        <td><%= h player.updated_at.iso8601 rescue '' %></td>
+        <td><%= h player.referred_by %></td>
+        <td><%= h ApplicationHelper::to_yesno(player.age_checked) %></td>
+        <td><%= h ApplicationHelper::to_yesno(player.waiver_required) %></td>
+        <td><%= h player.team.level.name rescue '' %></td>
+        <td><%= h player.team.name rescue '' %></td>
+        <td><%= h player.team.manager rescue '' %></td>
+        <td><%= h ApplicationHelper::to_yesno(player.address_checked) %></td>
+        <td><%= h ApplicationHelper::to_yesno(player.form_printed) %></td>
+        <td><%= h ApplicationHelper::to_yesno(player.signed_form_received) %></td>
+        <td><%= h ApplicationHelper::to_yesno(player.info_checked) %></td>
+        <td><%= h ApplicationHelper::to_yesno(player.tryout_required) %></td>
+        <td><%= h player.tryout_date %></td>
+        <td><%= sprintf("$%-10.2f",household.volunteer_feepaid.to_f) %></td>
+        <td><%= h household.volunteer_feepaid_on %></td>
+        <td><%= h household.volunteer_feepaid_by %></td>
+        <td><%= sprintf("$%-10.2f",household.snackshack_deposit.to_f) %></td>
+        <td><%= h household.snackshack_depositpaid_on %></td>
+        <td><%= h household.snackshack_depositpaid_by %></td>
+        <td><%= sprintf("$%-10.2f",household.snackshack_refund.to_f) %></td>
+        <td><%= h household.snackshack_refunded_on %></td>
+        <td><%= h household.snackshack_refunded_by %></td>
+        <td><%= h player.remarks %></td>
+      </tr>
+    <% end %>
+
+  </table>
+
+  <p>&nbsp;</p>
+
+<% end %>

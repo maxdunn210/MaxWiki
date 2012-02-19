@@ -1,0 +1,17 @@
+<%
+  @title = "#{@config_title} Configuration"
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1><%= @title %></h1>
+
+<%= form_tag :action => 'update' %>
+<%= hidden_field_tag('template', params[:template]) %>
+<%= render(:partial => @config_template) %>
+  <br>
+  <%= submit_tag 'Update' %>
+<%= end_form %>
+
+<%= form_tag :action => 'index' %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>

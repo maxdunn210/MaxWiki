@@ -1,0 +1,49 @@
+<%
+  @title = 'Edit My Information'
+  @left_column_partial = 'layouts/auto_left_menu'
+%>
+
+<h3><%= @title %></h3>
+<%= error_messages_for('user') %>
+
+<p>Username: <%= @user.login %></p>
+
+<%= form_tag :controller => 'user', :action => 'edit' %>
+<table>
+  <tr>
+    <td>
+      <label for="user_firstname">First</label>
+    </td>
+    <td><%= text_field 'user', 'firstname' %></td>
+    <td>
+      <label for="user_lastname">Last</label>
+    </td>
+    <td><%= text_field 'user', 'lastname' %></td>
+  </tr>
+  <tr>
+    <td>
+      <label for="user_email">Email</label>
+    </td>
+    <td><%= text_field 'user', 'email' %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<br />
+
+<table>
+  <tr>
+    <td><%= submit_tag "Update" %></td>
+    <td><%= link_to 'Cancel', :action => 'index' %></td>
+  </tr>
+</table>
+
+<%= end_form %>
+
+<% if @user.auth_provider == User %>
+  <%= form_tag :controller => 'user', :action => 'delete' %>
+    <%= submit_tag "Delete My Account" %>
+  <%= end_form %>
+<% end %>
+

@@ -1,0 +1,15 @@
+<%
+  @title = 'Events'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>New <%= @event.kind %></h1>
+
+<%= form_tag :controller => 'events', :action => 'create' %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "Create" %>
+<%= end_form %>
+
+<%= form_tag :controller => 'events', :action => 'redirect_to_last_list' %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>

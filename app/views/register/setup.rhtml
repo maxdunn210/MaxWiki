@@ -1,0 +1,19 @@
+<%
+  @title = 'Setup Account'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h1><%= @title %></h1>
+
+<% if logged_in? %>
+
+<p>You are currently logged in. Please continue to the next step.</p>
+
+<% else %>
+
+<p>The first step in the registration process is to login or signup for a new account. (If you don't remember your password
+you can also reset your password.)</p>
+
+<% end %>
+
+<%= render_partial 'signup_buttons' %>

@@ -1,0 +1,104 @@
+/*** Styles for audiclubgoldengate site ***/
+
+/* Colors
+  Blue rgb(133,145,255)
+  Lighter blue rgb(159,168,255)
+  Green rgb(157,255,135)
+  Light green rgb(210,255,201)
+*/
+
+/******** Widths ********/
+#border, #top, #bottom { width: 820px; }
+#container, #header, #footer { width: 800px; }
+#left_column { width: 150px; }
+.middle_column_narrow { width: 470px; }
+.middle_column_wide { width: 620px; }
+.middle_column_full { width: 780px; }
+#right_column { width: 150px; }
+#right_column .box { width: 150px; }
+
+
+/****** General ******/
+body { 
+  font: 75% Verdana, Kalimati, Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  background: rgb(150,150,150);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: rgb(0,153,204);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#border {
+  margin: 0px auto;
+  background: url(border.gif) top center repeat-y;
+  background-color: rgb(255,255,255);
+}
+
+/*** Header main banner ***/
+#header {
+  position: relative;
+  color: gray;
+  width: 775px;
+	height: 140px;
+	background: url(bg_head.gif) no-repeat;
+}
+
+#header a, 
+#header a:hover, 
+#header .selected {
+  margin: 0px;
+  padding: 1px 3px 1px 3px;
+  color: gray;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/****** Menu ******/
+
+#menu {
+  color: black;
+	background: white;
+}
+
+#menu a, 
+#menu li a {
+  font-weight: normal;
+	color: rgb(0,153,204);
+}
+
+#menu li a {
+  padding: 0px 10px 0px 10px;
+  border-right: solid 1px black;	
+}
+
+#menu a:hover, 
+#menu .selected {
+  color: #00ADE6;
+  font-weight: normal;  
+  text-decoration: underline;
+}
+
+/****** Left Column ******/
+
+.left_menu a:hover, 
+.left_menu a.selected,
+.left_menu a:visited.selected {
+	border-left: solid 5px rgb(159,168,255);				
+	background-color: rgb(255,255,255);	
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+
+/****** Footer ******/
+
+#footer {
+	border-top: solid 1px rgb(159,168,255);
+}

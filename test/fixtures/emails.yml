@@ -1,0 +1,20 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+email_joe:
+  id: 1
+  wiki_id: 1 
+  mailer_id: 1
+  user_id: 1
+  from: 'from@test.com'
+  to: 'joe@test.com'
+  status: Sent
+  mail: "Test email"
+email_suzy:
+  id: 2
+  wiki_id: 1 
+  mailer_id: 1
+  user_id: 2
+  from: 'from@test.com'
+  to: 'suzy@test.com'
+  status: Sent
+  mail: "Test email"
+  

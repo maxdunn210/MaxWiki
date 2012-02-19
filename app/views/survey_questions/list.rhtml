@@ -1,0 +1,58 @@
+<%-
+  @title = 'Survey Questions'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Questions for '<%= @survey.name %>' Survey</h1>
+
+<%- if  @survey_questions.blank? -%>
+
+<p>(No Survey Question records)</p>
+
+<%- else -%>  
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('survey_questions.name', :caption => 'Name') %>
+	    <%= sort_header_tag('question', :caption => 'Question') %>
+	    <%= sort_header_tag('display_order', :caption => 'Order') %>
+	    <%= sort_header_tag('input_type', :caption => 'Type') %>
+	    <%= sort_header_tag('choices', :caption => 'Choices') %>
+	    <%= sort_header_tag('mandatory', :caption => 'Mandatory') %>
+	    <%= sort_header_tag('html_options', :caption => 'Html options') %>
+  </tr>
+	  
+	<% for survey_question in @survey_questions -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(survey_question.name.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'survey_questions', :action => 'edit', 
+					    :id => survey_question.id, :survey_id => @survey_id
+					else
+					  display_name
+					end
+					-%></td>
+		      <td><%=h survey_question.question %></td>
+		      <td><%=h survey_question.display_order %></td>
+		      <td><%=h survey_question.input_type %></td>
+		      <td><%=h survey_question.choices %></td>
+		      <td><%=h survey_question.mandatory %></td>
+		      <td><%=h survey_question.html_options %></td>
+	  </tr>
+	<% end -%>
+</table>
+</div>
+
+<%= pagination_template(@survey_questions) %>
+
+<% end -%>
+  
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'survey_questions', :action => 'new', :survey_id => @survey_id %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

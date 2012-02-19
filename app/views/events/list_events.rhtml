@@ -1,0 +1,36 @@
+<%
+  @title = 'Events'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<% unless @suppress_head %>
+  <h1>Event Schedule</h1>
+<% end %>  
+
+<%= no_cache %>
+
+<table class='bordered'>
+  <tr>
+    <%= sort_header_tag('date_time, events.name', :caption => 'Date') %>
+    <%= sort_header_tag('events.name, date_time', :caption => 'Event') %>
+    <%= sort_header_tag('date_time, events.name', :caption => 'Time') %>
+    <%= sort_header_tag('location.short_name, date_time', :caption => 'Location') %>
+    <%= sort_header_tag('note, date_time', :caption => 'Note') %>
+  </tr>
+  
+<% for event in @events %>
+  <tr>
+			<td><%= list_edit_link(format_event_date(event.date_time), :controller => 'events', :action => 'edit', :id => event) %></td>
+      <td><%= event.name %></td>
+      <td><%= format_event_time_and_duration(event.date_time, event.length) %></td>
+      <td><%= page_link(event.location.short_name, event.location.page_name) rescue '' %></td>
+      <td><%= format_notes(event, @team) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= pagination_template(@events, :show_past => true) %>
+<br />
+<br />  
+<%= add_buttons Event::EVENT %>  

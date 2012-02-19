@@ -1,0 +1,14 @@
+<% if @posts.blank? %>
+  <p>No blog posts.</p>
+<% else %>
+<% @posts.each do |post| %>
+  <%= render :partial => "post_title", :locals => {:post => post, :show_link => true} %>
+ 
+ <%# The following line should be in the left column so text is displayed without a space %> 
+ <%= render_with_erb(post.display_content({:blog_summary => true})) %>
+  <p>&nbsp;</p>
+<% end %>
+
+<% end %>
+
+<%= blog_pagination(@posts, @post_parent) %>

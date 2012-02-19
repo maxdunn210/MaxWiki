@@ -1,0 +1,36 @@
+--- 
+mailer_group_minors_giants: 
+  name: "Team: Minors Giants"
+  user_filter: (adultnum = 1 or adultnum = 2) and level.name = 'Majors' and team.name = 'Giants'
+  id: 1
+  description: Minor Giants Mailing Group
+  auto_subscribe: false
+  wiki_id: 1
+mailer_general: 
+  name: General
+  user_filter: ""
+  id: 2
+  description: General Announcements
+  auto_subscribe: false
+  wiki_id: 1
+mailer_group_10013: 
+  name: Announcements
+  user_filter: ""
+  id: !int:Fixnum 10013
+  description: Ruby on Rails Camp 2006 Announcements
+  auto_subscribe: true
+  wiki_id: !int:Fixnum 10012
+mailer_group_10005: 
+  name: Mailer Group Test 1
+  user_filter: paid = 1
+  id: !int:Fixnum 10005
+  description: Maxwiki
+  auto_subscribe: true
+  wiki_id: !int:Fixnum 1
+mailer_group_10009: 
+  name: Mailer Group Test 2
+  user_filter: ""
+  id: !int:Fixnum 10009
+  description: MaxWiki 2
+  auto_subscribe: false
+  wiki_id: !int:Fixnum 1

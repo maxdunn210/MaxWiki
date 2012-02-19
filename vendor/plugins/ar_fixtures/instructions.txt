@@ -1,0 +1,13 @@
+http://nubyonrails.com/articles/2005/12/27/dump-or-slurp-yaml-reference-data
+
+# Dump user table to db/users.yml
+ruby script/runner "User.dump_to_file" 
+# Or
+ruby script/runner "User.to_fixture" 
+
+# Read it back into the database
+ruby script/runner "User.load_from_file"
+
+It adds two class methods that let you dump_to_file and load_from_file. The contents are written to the ‘db’ directory with the table name as the filename. When you call Model.load_from_file, existing data in that table is deleted and reloaded, but primary key id’s are kept intact.
+
+An additional Model.to_fixture method makes fixtures from existing data. It writes a file to ./test/fixtures/models.yml that can be loaded normally in your unit and functional tests.

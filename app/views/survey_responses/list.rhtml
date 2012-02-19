@@ -1,0 +1,43 @@
+<%-
+  @title = 'Survey Responses'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Responses for '<%= @survey.name %>' Survey</h1>
+
+<div class='scroll_area'>
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('submitter_name', :caption => 'Submitter name') %>
+	    <% for question in @survey.survey_questions %>
+  	    <th><%= question.name %></th>
+ 	    <% end %>
+  </tr>
+	  
+	<% for response in @survey_responses -%>
+	  <tr>
+		    	<td><%=
+					display_name = h(response.submitter_name.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'survey_responses', :action => 'edit', :id => response.id 
+					else
+					  display_name
+					end
+					-%></td>
+			<% for question in @survey.survey_questions %>
+			  <% answer = response.find_answer_by_question_id(question.id) %>
+		      <td><%= answer.nil? ? '&nbsp;' : h(answer.answer) %></td>
+		  <% end %>    
+	  </tr>
+	<% end -%>
+</table>
+</div>
+
+<%= pagination_template(@survey_responses) %>
+
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'survey_responses', :action => 'new' %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

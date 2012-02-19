@@ -1,0 +1,28 @@
+<%%-
+  @title = '<%= plural_name.titleize %>'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Edit <%= singular_name.titleize %></h1>
+
+<%%= start_form_tag :controller => '<%= controller_name %>', :action => 'update', :id => @<%= singular_name %> %>
+  <%%= render :partial => 'form' %>
+  <%%= submit_tag 'Save' %>
+<%%= end_form_tag %>
+
+<table>
+	<tr>
+		<td>
+		<%%= start_form_tag :controller => '<%= controller_name %>', :action => 'index' %> 
+		  <%%= submit_tag "Cancel" %>
+		<%%= end_form_tag %>
+		</td>
+		
+		<td>
+		<%%= start_form_tag :controller => '<%= controller_name %>', :action => 'destroy', :id => @<%= singular_name %> %>
+		  <%%= submit_tag "Delete" %>
+		  &nbsp;
+		<%%= end_form_tag %>
+		</td>
+	</tr>
+</table>

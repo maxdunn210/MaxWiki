@@ -1,0 +1,6 @@
+<% if defined?(show_link) && show_link %>
+  <h2><%= wiki_link(post.name) %></h2>
+<% else %>  
+  <h2><%= post.name %></h2>
+<% end %>  
+ <h5><img src='/images/bracket.gif'> Posted by: <%= creator_link(post) %> on <%= format_date(post.created_at) %></h5>

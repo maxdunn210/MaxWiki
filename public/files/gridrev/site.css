@@ -1,0 +1,168 @@
+/* Colors
+ * Dark blue rgb(0, 30,89)
+ * Light blue rgb(61, 133, 198)
+ */
+
+/******** Widths ********/
+#border, #top, #bottom { width: 800px; }
+#container, #header, #footer { width: 800px; }
+
+body { 
+  font-family: Helvetica, Arial, Trebuchet MS, Verdana;
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #444;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  background-color: #1E2731;
+	background-attachment: scroll;
+}
+
+#container {
+  background: url('../attachments/gridrev/HomePage/background.jpg') no-repeat left bottom;
+}
+
+#header {
+  height: 0px;
+  background: none;
+}
+
+#menu {
+  height: 100px;
+  line-height: 60px;
+  background: none;
+}	
+
+#menu a,
+#menu li a {
+  font-size: 16px;
+	font-weight: normal;
+}
+
+#menu li a {
+  border-right: solid 2px white; 
+}
+
+#menu ul.menu {
+  margin: 0;
+  padding: 0;
+  color: rgb(200, 200, 200);
+  background: none;
+  border-top: none;
+  border-bottom: none;
+	padding-top: 10px;
+  border-left: none;
+}
+
+#menu ul.menu li  {
+  color:  rgb(200, 200, 200);
+  display: inline;
+  list-style: none;
+}
+
+#menu ul.menu a:hover,
+#menu ul.menu a.selected,
+#menu ul.menu a.selected:hover {
+  color:  white;
+  background: none;
+}
+
+/* set the color of the selected menu items */
+#menu ul.menu li a:hover,
+#menu ul.menu li a.selected {
+	color: white;
+}	
+
+/* set the style of the non-selected menu items */
+#menu ul.menu li a {
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+} 
+
+#left_column {
+  background: none;
+  border-right: none;
+}
+
+.left_menu {  
+  padding-top: 10px;
+  border-bottom: none;
+}	
+	
+.left_menu a,
+.left_menu a:visited,
+.left_menu a:hover, 
+.left_menu .selected,
+.left_menu a:visited.selected {
+  font-weight: bold;
+	font-size: 14px;
+  text-align: right;
+  text-decoration: none;
+	color: rgb(0, 30,89);
+}
+
+.left_menu a:hover, 
+.left_menu .selected {
+  border-left: solid 5px rgb(0, 111, 186);        
+  background-color: rgb(178, 212, 234); 
+}
+
+
+#middle_column {
+  color: white;
+	border-left: none;
+}
+
+#middle_column h1,
+#middle_column h2,
+#middle_column h3,
+#middle_column h4 {
+  clear: both;
+  border-bottom: none; 
+  text-decoration: none;
+}
+
+#middle_column h1 {
+  color: white;
+  font-size: 1.8em;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-shadow: 0.1em 0.1em 0.2em rgb(100,100,100);
+}
+
+#middle_column h2 {
+  color: white;
+  font-style: italic;
+  font-size: 1.3em;
+  text-shadow: 0.1em 0.1em 0.2em rgb(100,100,100);
+}
+
+#middle_column h3 {
+  color: rgb(240,240,240);
+  font-size: 1.1em;
+  text-shadow: 0.1em 0.1em 0.2em rgb(100,100,100);
+}
+
+#buffer_footer {
+  height: 140px;
+  background-color: none;
+}
+
+#footer {
+  border-top: none;
+  border-bottom: none;
+}
+
+#footer,
+#footer .left_block,
+#footer .middle_block,
+#footer .right_block,
+#footer .edit_block {
+  background: none;
+  color: white;
+}
+
+#footer a {
+  color: rgb(200, 200, 200);
+}

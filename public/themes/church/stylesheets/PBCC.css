@@ -1,0 +1,46 @@
+
+a    { color: #4f72bf; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 600; text-decoration: none }
+a:hover    { color: #4f72bf; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 600; text-decoration: underline }
+.TemplateBodySpace  { padding: 5pt 10pt; border-top: 0 none; border-right: 0 none; border-bottom: 0; border-left: 0 none }
+Body      { font-size: 16px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; margin: 0; padding: 0; border-width: 0; }
+Table  { font-size: 13px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.B10 { font-size: 10px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.B12 { font-size: 12px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.B14 { font-size: 14px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B16 { font-size: 16px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B18 { font-size: 18px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B24 { font-size: 24px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.B26 { font-size: 26px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.B32 { font-size: 32px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G10 { color: #76797c; font-size: 10px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G12 { color: #76797c; font-size: 12px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G14 { color: #76797c; font-size: 14px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G16 { color: #76797c; font-size: 16px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G18 { color: #76797c; font-size: 18px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G24 { color: #76797c; font-size: 24px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G26 { color: #76797c; font-size: 26px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G28 { color: #76797c; font-size: 28px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.G32 { color: #76797c; font-size: 32px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.G36 { color: #76797c; font-size: 36px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W10 { color: #ffffff; font-size: 10px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W12 { color: #ffffff; font-size: 12px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.HeaderTitle { color: #ffffff; font-size: 14px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700; }
+.W14 { color: #ffffff; font-size: 14px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.W16 { color: #ffffff; font-size: 16px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W18 { color: #ffffff; font-size: 18px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.W24 { color: #ffffff; font-size: 24px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif }
+.W26 { color: #ffffff; font-size: 26px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.W28 { color: #ffffff; font-size: 28px }
+.W32 { color: #ffffff; font-size: 32px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif; font-weight: 700 }
+.bdrleft { border-left: 1px solid #a1a5a9 }
+.bdrright { border-right: 1px solid #a1a5a9 }
+.bdrtop { padding-top: 5px; padding-bottom: 5px; border-top: 1px solid #a1a5a9 }
+.bdrbottom  { padding-top: 5px; padding-bottom: 5px; border-bottom: 1px solid #a1a5a9 }
+.bdrrightleft { border-right: 1px solid #a1a5a9; border-left: 1px solid #a1a5a9 }
+.bdrtopbottom { border-top: 1px solid #a1a5a9; border-bottom: 1px solid #a1a5a9 }
+.bdall { border: solid 1pt #a1a5a9; }
+.bold { font-weight: 700; }
+.darkblue { background-color: #0057a3; }
+.mediumblue { background-color: #5c91c5; }
+.lightblue { background-color: #9cbcdd; }
+.indented { padding-left: 18pt; }

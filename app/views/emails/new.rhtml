@@ -1,0 +1,15 @@
+<%-
+  @title = 'Emails'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>New Email</h1>
+
+<%= form_tag :controller => 'emails', :action => 'create' %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "Create" %>
+<%= end_form %>
+
+<%= form_tag :controller => 'emails', :action => 'index' %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>

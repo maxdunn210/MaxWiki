@@ -1,0 +1,76 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>
+    <%= config_site_name %> - <%= @title %>
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+  <meta name="robots" content="<%= @robots_metatag_value %>" />
+
+  <!-- Google Sitemap verification -->
+  <META name="verify-v1" content="<%= @wiki.config[:google_sitemap_verification] %>" />
+  
+  <%= stylesheet_link_tag "styles.css", :media => "all" %>
+  <%= stylesheet_link_tag "print.css", :media => "print" %>
+  <% unless @wiki.config[:theme].nil? || @wiki.config[:theme].empty? %>
+    <%= stylesheet_link_tag "/themes/#{@wiki.config[:theme]}/stylesheets/styles.css", :media => "all" %>
+    <%= stylesheet_link_tag "/themes/#{@wiki.config[:theme]}/stylesheets/print.css", :media => "print" %>
+  <% end %>  
+  <%= stylesheet_link_tag "/images/calendar/theme", :media => "all" %>
+  <%= stylesheet_link_tag "okaapi.css", :media => "all", :plugin => "okaapi_plugin" %>
+  <%= stylesheet_link_tag "okaapi_maxwiki.css", :media => "all", :plugin  => "okaapi_plugin" %>
+  <%= javascript_include_tag :defaults, "calendar", "calendar-en", "calendar-setup"%> 
+  <%= javascript_include_tag '../fckeditor/fckeditor' %>
+  
+  <%= role_script %>
+  
+  <style type="text/css">
+    <%= @style_additions %>
+    <%= @wiki ? @wiki.additional_style : '' %>
+  </style>
+  
+  <% if @wiki %>
+  	<%= auto_discovery_link_tag(:rss, :controller => 'wiki', :action => 'rss_with_headlines') %>
+  	<%= auto_discovery_link_tag(:rss, :controller => 'wiki', :action => 'rss_with_content') %>
+  <% end %>
+  
+</head>
+
+<% if @body_tag -%>
+  <body <%= @body_tag %>>
+<% else -%>
+  <body>
+<% end -%>
+
+	<div id="top"></div>
+	<div id="border">
+		<div id="container">
+			<%= render(:partial => 'layouts/header') %>
+			
+			<% unless MY_CONFIG[:hide_menu] %>
+			  <%= render(:partial => 'layouts/menu') %>
+            <% end %>
+
+      <% if MY_CONFIG[:tric] && (@page.nil? || @page.name != "HomePage") %>
+        <div id="buffer_header_short"></div>
+      <% else %>
+        <div id="buffer_header"></div>
+      <% end %>
+            
+         <div id="okaapi">             
+           <%= @content_for_layout %>
+         </div>
+
+		<div id="buffer_footer"></div>
+			<%= render(:partial => 'layouts/footer') %>
+		</div> <!-- container -->
+	</div> <!-- border -->
+	<div id="bottom"></div>
+</body>
+</html>

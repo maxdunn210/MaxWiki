@@ -1,0 +1,46 @@
+# The host_map only applies if you are using the MaxWiki multi-host
+MY_CONFIG[:host_map] = [
+  {:host => 'local.maxwiki.com:3000', :name => 'maxwiki'},
+  {:host => 'local.maxwiki.com', :name => 'maxwiki'},
+  {:host => 'local.tricitiesbaseball.org:3000', :name => 'tric'},
+  {:host => 'local.tricitiesbaseball.org', :name => 'tric'},
+  {:host => 'test:3000', :redirect_to => 'local.maxwiki.com:3000'}
+]
+
+#MY_CONFIG[:jooconverter] = "/usr/lib/jooconverter-2.1.0/jooconverter-2.1.0.jar" # Linux
+#MY_CONFIG[:jooconverter] = "/Applications/jooconverter-2.1.0/lib/jooconverter-2.1.0.jar" # Mac
+
+ActionMailer::Base.smtp_settings = {
+  :address => "mail.domain.com",
+  :port => 25,
+  :domain => "domain.com",
+  :user_name => "login@domain.com",
+  :password => "my_password",
+  :authentication => :login
+} 
+
+module UserSystem
+  CONFIG = {
+    # Email charset
+    :mail_charset => 'utf-8',
+
+    # Security token lifetime in hours
+    :security_token_life_hours => 24,
+
+    # Two column form input
+    :two_column_input => true,
+
+    # Set to true to allow delayed deletes (i.e., delete of record
+    # doesn't happen immediately after user selects delete account,
+    # but rather after some expiration of time to allow this action
+    # to be reverted).
+    :delayed_delete => false,
+
+    # Default is one week
+    :delayed_delete_days => 7,
+  }
+end
+
+# Logging and session
+ActionController::CgiRequest::DEFAULT_SESSION_OPTIONS.update(:session_expires => Time.now.next_year)
+ActionController::CgiRequest::DEFAULT_SESSION_OPTIONS[:session_key] = 'maxwiki'

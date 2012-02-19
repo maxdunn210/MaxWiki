@@ -1,0 +1,24 @@
+<div id="plugins" class="plugins">
+
+<div style="margin-bottom: 10px"><font style="font-size:17px;font-weight:bold">Plugins: </font><%= image_tag("indicator1.gif", :id => "plugin_indicator", :class => "plugin_indicator", :style => "display:none") %></div>
+
+<form>
+
+<% check_it = true %>	
+<% plugins(@page.name).each do |plugin| %>
+
+  <input type=radio name="edit_plugin_radio_buttons" id="<%=plugin[:value]%>" value="<%=plugin[:value]%>" 
+          <%= 'checked=true' if check_it  %>
+    onclick="<%= remote_function(:update => 'edit_plugin',
+                                 :url => plugin[:url],
+                                 :loading => "Element.show('plugin_indicator')",
+                                 :complete => "Element.hide('plugin_indicator')" )%>" >
+  <label for="<%=plugin[:value]%>"><%= plugin[:label] %></label><br/>
+  <% check_it = false %>
+
+<% end %>
+
+
+</form>
+</div>
+

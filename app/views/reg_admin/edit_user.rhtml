@@ -1,0 +1,27 @@
+<%
+  @title = 'Users'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>Edit User</h1>
+
+<%= form_tag :action => 'edit_user', :id => @user %>
+  <%= render_partial 'form' %>
+  <br>
+  <%= submit_tag 'Update' %>
+<%= end_form %>
+
+<table>
+<tr>
+<td>
+<%= form_tag :action => 'list_users' %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>
+</td>
+<td>
+<%= form_tag :action => 'delete_user', :id => @user %> 
+  <%= submit_tag "Delete" %>
+<%= end_form %>
+</td>
+</tr>
+</table>

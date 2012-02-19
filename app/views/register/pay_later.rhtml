@@ -1,0 +1,29 @@
+<%
+  @title = 'Register'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h1>Pay Later</h1>
+
+<% if @players.empty? -%>
+   <%= render_partial 'no_players' %>
+<% else -%>
+
+Your total fee is <%=h sprintf("$%-10.2f",@total_fee) %>
+<%= tag_discount(@earlybird_discount, @sibling_discount, @late_fee) %>
+
+<p>To pay by check or money order, mail a check to:</p>
+<div>
+<blockquote>
+Tri-Cities Little League<br>PO Box 146<br>Cupertino, CA  95015-0146
+</blockquote>
+</div>
+<p>Please write your children's name on the check.</p>
+
+<p>Checks must be postmarked or received by <%= late_date %>. 
+All applications received after this date will 
+incur a $10 late fee if accepted, pending space availability.</p>
+   
+<%= render_partial 'pay_later_buttons' %>
+
+<% end -%>

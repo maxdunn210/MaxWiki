@@ -1,0 +1,14 @@
+
+<% unless MY_CONFIG[:hide_breadcrumb] %>
+    <div id="breadcrumb">
+      <%= link_to('Home', {:controller => 'wiki', :action => 'show', :link => 'HomePage'}) %>
+      &gt; 
+      <%= link_to(controller.controller_name.humanize.titlecase, {:controller => controller.controller_name}) %>
+      &gt; 
+      <%= controller.action_name.humanize.titlecase %> 
+    </div>
+    <hr />
+<% end %>    
+
+<%= render :partial => "#{controller.controller_name}_left_menu" %>
+

@@ -1,0 +1,16 @@
+<%= error_messages_for 'team' %>
+
+<!--[form:team]-->
+<p><label for="team_name">Team name</label><br/>
+<%= text_field 'team', 'name'  %></p>
+
+<p><label for="team_league_id">League</label><br/>
+<%= select(:team, :league_id, Lookup::list(Lookup::LEAGUE)) %></p>
+
+<p><label for="team_level_id">Level</label><br/>
+<%= select(:team, :level_id, Lookup::list(Lookup::LEVEL)) %></p>
+
+<p><label for="team_manager">Manager</label><br/>
+<%= text_field 'team', 'manager'  %></p>
+<!--[eoform:team]-->
+

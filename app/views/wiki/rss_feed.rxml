@@ -1,0 +1,21 @@
+xml.rss('version' => '2.0') do
+  xml.channel do
+    xml.title(@wiki.config[:site_name])
+    xml.link(url_for(:only_path => false, :web => @web_name, :action => @link_action, :link => 'homepage'))
+    xml.description(@wiki.description)
+    xml.language('en-us')
+    xml.ttl('40')
+
+    for page in @pages_by_revision
+      xml.item do
+        xml.title(page.plain_name)
+        unless @hide_description
+          xml.description(page.display_content)
+        end
+        xml.pubDate(page.revised_at.getgm.strftime('%a, %d %b %Y %H:%M:%S Z'))
+        xml.guid(url_for(:only_path => false, :web => @web_name, :action => @link_action, :link => page.link))
+        xml.link(url_for(:only_path => false, :web => @web_name, :action => @link_action, :link => page.link))
+      end
+    end
+  end
+end

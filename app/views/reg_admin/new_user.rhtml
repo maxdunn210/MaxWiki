@@ -1,0 +1,15 @@
+<%
+  @title = 'Users'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+%>
+
+<h1>New User</h1>
+
+<%= form_tag :action => 'new_user' %>
+  <%= render_partial 'form' %>
+  <br>
+  <%= submit_tag "Continue" %>
+<%= end_form %>
+<%= form_tag :action => 'list_users' %> 
+  <%= submit_tag "Cancel" %>
+<%= end_form %>

@@ -1,0 +1,20 @@
+--- 
+survey_Signup: 
+  id: 1
+  submit_page: Signup Results
+  name: Signup
+  description: Signup questions
+  wiki_id: 1
+survey_TwoDay: 
+  id: 2
+  submit_page: Two Day Results
+  name: TwoDay
+  description: Two day questions
+  wiki_id: 1
+survey_Volunteer: 
+  id: 3
+  submit_page: volunteer_confirm
+  name: Volunteer
+  description: Volunteer Questions
+  wiki_id: 1
+  

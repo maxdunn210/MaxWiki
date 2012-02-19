@@ -1,0 +1,20 @@
+<table class="table_spacing">
+<tr>
+	<td>
+		<%= calendar 'event', 'date_time',
+		 { :class => 'date' },
+		 { :firstDay => 1, :range => [2006, 2015], :step => 1, :showOthers => true }
+		%>
+	</td>
+	<td>
+		<p><label for="event_date_time">Time</label><br/>
+		<%= select_time @event.date_time, {:prefix => 'time', :minute_step => 5}  %></p>
+		
+		<p><label for="event_length">Duration in minutes</label><br/>
+		<%= text_field 'event', 'length', :size => 3  %></p>
+		
+	  <p><label for="event_location_id">Location</label><br/>
+		<%= select(:event, :location_id, Lookup::list(Lookup::LOCATION)) %></p>
+	</td>
+</tr>
+</table>

@@ -1,0 +1,90 @@
+<%
+  @title = "Edit Info for #{@page.name}"
+  @left_column_partial = 'wiki/navigation'
+%>
+
+<h1><%= @title %></h1>
+
+<!-- Show the errors, if any -->
+<%- if @page %> <%= error_messages_for 'page' %> <% end -%>
+
+<%= form_tag :action => 'update', :id => @page.id %>
+<table>
+  <tr>
+    <td colspan='3'><b>Page:</b></td>
+  </tr>
+  <tr>
+    <td><label for="page_name">Name</label></td>
+    <td><%= text_field 'page', 'name' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="page_link">Name</label></td>
+    <td><%= text_field 'page', 'link' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="page_created_at">Created at</label></td>
+    <td><%= text_field 'page', 'created_at' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="page_updated_at">Updated at</label></td>
+    <td><%= text_field 'page', 'updated_at' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan='3'><b>First Revision:</b></td>
+  </tr>
+  <tr>
+    <td><label for="first_author">Author</label></td>
+    <td><%= text_field 'first', 'author' %></td>
+    <td>&nbsp;</td>
+  </tr>  <tr>
+    <td><label for="first_created_at">Created at</label></td>
+    <td><%= text_field 'first', 'created_at' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="first_updated_at">Updated at</label></td>
+    <td><%= text_field 'first', 'updated_at' %></td>
+    <td>&nbsp;</td>
+  </tr> 
+  <tr>
+    <td><label for="first_revised_at">Revised at</label></td>
+    <td><%= text_field 'first', 'revised_at' %></td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <% if @first.id != @last.id %>
+  <tr>
+    <td colspan='3'><b>Last Revision:</b></td>
+  </tr>
+  <tr>
+    <td><label for="last_author">Author</label></td>
+    <td><%= text_field 'last', 'author' %></td>
+    <td>&nbsp;</td>
+  </tr>  <tr>
+    <td><label for="last_created_at">Created at</label></td>
+    <td><%= text_field 'last', 'created_at' %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><label for="last_updated_at">Updated at</label></td>
+    <td><%= text_field 'last', 'updated_at' %></td>
+    <td>&nbsp;</td>
+  </tr> 
+  <tr>
+    <td><label for="last_revised_at">Revised at</label></td>
+    <td><%= text_field 'last', 'revised_at' %></td>
+    <td>&nbsp;</td>
+  </tr> 
+  <% end %>
+  
+  </table>
+  
+  <br>
+  <%= submit_tag 'Update' %>
+<%= end_form %>
+

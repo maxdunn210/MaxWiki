@@ -1,0 +1,19 @@
+<%
+  @title = 'Confirm Delete'
+  @left_column_partial = 'layouts/auto_left_menu' 
+%>
+
+<h3><%= @title %></h3>
+<%= error_messages_for('user') %>
+
+<p>Are you sure you want to delete this account?</p>
+<ul>
+<li><b>Name:</b> <%= @user.full_name %></li>
+<li><b>Email:</b> <%= @user.email %></li>
+</ul>
+
+ 	<%= form_tag :controller => 'user', :action => 'delete', :confirm => 'yes'%> 
+  <%= submit_tag "Delete" %>
+<%= end_form %>
+
+

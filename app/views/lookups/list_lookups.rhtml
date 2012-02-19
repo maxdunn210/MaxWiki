@@ -1,0 +1,51 @@
+<%-
+  @title = 'Lookups'
+  @left_column_partial = 'reg_admin/reg_admin_left_menu' 
+-%>
+
+<h1>Lookups</h1>
+
+<%- if  @lookups.nil? or @lookups.empty? -%>
+
+<p>(No Lookup records)</p>
+
+<%- else -%>  
+
+<table class='bordered'>
+  <tr>
+	    <%= sort_header_tag('kind, display_order, name', :caption => 'Kind') %>
+	    <%= sort_header_tag('name', :caption => 'Name') %>
+	    <%= sort_header_tag('short_name, display_order, name', :caption => 'Short Name') %>
+	    <%= sort_header_tag('display_order, name', :caption => 'Display Order') %>
+	    <%= sort_header_tag('page_name, display_order, name', :caption => 'Page Name') %>
+  </tr>
+	  
+	<% for lookup in @lookups -%>
+	  <tr>
+<td>
+		    	<%=
+					display_name = h(lookup.kind.to_s.strip)
+					if Role.check_role(ROLE_EDITOR)
+		  			display_name = "(Blank)" if display_name.empty? 
+					  link_to display_name, :controller => 'lookups', :action => 'edit_lookup', :id => lookup.id 
+					else
+					  display_name
+					end
+					-%></td>
+		      <td><%= lookup.name %></td>
+		      <td><%= lookup.short_name %></td>
+		      <td><%= lookup.display_order %></td>
+		      <td><%= page_link(lookup.page_name)  %></td>
+	  </tr>
+	<% end -%>
+</table>
+
+<%= pagination_template(@lookups) %>
+
+<% end -%>
+  
+<% if Role.check_role(ROLE_EDITOR) -%>  
+	<%= form_tag :controller => 'lookups', :action => 'new_lookup' %>
+	  <%= submit_tag "Add Another" %>
+	<%= end_form %>
+<% end %>

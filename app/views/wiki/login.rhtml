@@ -1,0 +1,23 @@
+<% @title = "#{@wiki_name} Login" %><% @hide_navigation = true %>
+
+<p>
+<%= form_tag({ :controller => 'wiki', :action => 'authenticate'},
+    { 'name' => 'loginForm', 'id' => 'loginForm', 'method' => 'post'})
+%>
+    <p>
+    This wiki is password-protected. Please enter the password.
+    <% if @wiki.published? %>
+      If you don't have the password, you can view this wiki as a <%= link_to 'read-only version', :action => 'published', :id => 'HomePage' %>.
+    <% end %>
+    </p>
+    <p>
+    <b>Password: </b>
+    <input type="password" name="password" id="password" />
+    <input type="submit" value="Login" default="yes" />
+    </p>
+<%= end_form %>
+</p>
+
+<script language="JavaScript">
+  document.forms["loginForm"].elements["password"].focus();
+</script>

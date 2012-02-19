@@ -1,0 +1,101 @@
+
+
+     
+
+<%= stylesheet_link_tag "../plugin_assets/drag_and_drop_media/stylesheets/drag_and_drop_media", :media => "all" %>   
+<%= javascript_include_tag :defaults %> 
+<%= javascript_include_tag "../plugin_assets/drag_and_drop_media/javascripts/drag_and_drop_media" %> 
+   
+<h1> DragAndDropMedia Engine </h1>
+
+<p>
+This engine provides a partial that serves as a search and drag and drop front end 
+for media Web API's from YouTube, Flickr, DaveTV, Amazon and Itunes. It will provide
+search fields and thumbnails as visual search results. These can then be dragged and
+dropped elsewhere on the page; double click offers an alternate selection effect.
+</p>
+<p>
+There are two parts to this - embedding the search & results user interface; and providing
+a target for the results.
+</p>
+<p>
+This page provides examples for both the
+<span onclick="Element.toggle('components');Element.toggle('radio_buttons');" 
+     style="text-decoration: underline;color:blue;cursor:pointer" >
+radio button or embedded components</span> &nbsp; placement scenario of the engine. 
+In the radio button case, 
+the search userinterface is posted into a given div as a partial. In the embedded components
+case, the userinterface is rendered as a partial using <tt>render_component</tt>. You can't
+put the same component in the same page twice at this point - it does not seem to be necessary.
+</p>
+<p>
+The media items can be dropped elsewhere as html (which may include images, flash players,
+etc.). The insertion can be done on the client (using direct javascript), or on the server 
+(by rendering from a template explicitly). Also, there are two paths to receive the media - via
+drag and drop, or via double click.
+</p>
+<p>
+This page implements two examples. For drag and drop, <tt>drop_receiving_element</tt> 
+is used to define the droppable div, and to define the server side controller and action
+to process the html of the media into a partial that is rendered into the div.
+</p>
+<p>
+For double-click, a javascript function is directly called client-side, and the innerHTML
+of the target div is replaced directly. Both examples are easy to follow in the source
+template of this page.
+</p>
+
+
+
+
+<div id="components">
+  <% plugins = [{:service=>'flickr',:key=>'d27c153d7883e4730498ceee63c1bacc'],
+                {:service=>'youtube',:key=>'u8VJg3uvnM4'} ] %>
+  <% plugins.each do |plugin| %>
+    <%= render_component :controller => 'drag_and_drop_media',
+                         :action => plugin[:service],
+                         :key => plugin[:key] %>
+  <% end %>
+</div>
+<div id="radio_buttons" style="display:none">
+  <% plugins = [{:service=>'itunes',:key=>''},
+                {:service=>'amazon',:key=>'0XPTBGCTMB4S1B18QC82'},
+                {:service=>'davetv',:key=>''}] %>
+  <% plugins.each do |plugin| %>                 
+    <input type=radio name='plugin_radio_button'
+           onclick="<%= remote_function( :update => "plugin",
+                                         :url => { :controller => "drag_and_drop_media", 
+                                                   :action => plugin,
+                                                   :start_visible => 'yes',
+                                                   :hideable => 'no' } ) %> " > 
+    <%= plugin %>
+  <% end %>
+  <div id="plugin">
+  </div>
+</div>
+
+<div id="drag_and_drop_media_drop_area" >
+  Drop/Doubleclick it here !
+</div>
+
+<!-- this function is called for double clicks;
+     drag_and_drop_media_map holds the html to be dropped
+     replace $('...') with the div you want to use -->
+<script>
+function drag_and_drop_media_dblclick( id ) {
+  $('drag_and_drop_media_drop_area').innerHTML = mapArray[id];
+}
+</script>
+
+<!-- this helper calls action drop in the drag_and_drop_media controller with
+     the html that's supposed to be dropped; replace appropriate div names
+     and hover class;
+     of course, you can also call java script directly from here on the client
+     side (e.g. insert html directly into innerHTML), depending on your needs -->
+<%= drop_receiving_element("drag_and_drop_media_drop_area",
+                            :hoverclass => "drag_and_drop_media_droppable",
+                            :update => "drag_and_drop_media_drop_area",     
+                            :with => "'id='+escape(drag_and_drop_media_map[element.id])",
+                            :url => { :controller => "drag_and_drop_media", 
+                                      :action => "drop" } ) %> 
+                                      

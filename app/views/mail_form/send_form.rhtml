@@ -1,0 +1,14 @@
+<%-
+  @title = 'Mail Form Sent'
+-%>
+
+<% if @sent_ok %>
+<h1>Mail Form Sent</h1>
+
+<p>Thank you for your response. The information sent was:</p>
+<% else %>
+<p>The information was not sent. For reference, here is what you entered:</p>
+<% end %>
+
+<%= render(:partial => 'mail_info') %>
+
