@@ -7,8 +7,8 @@
 body, table, td { 
   font-size: 9pt; 
   font-family: Verdana; 
-  color:#000000; 
-  font-weight: regular;
+  color: #000000; 
+  font-weight: normal;
 }
 
 body {  
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5 {
   font-family: Comic Sans MS; 
   font-size: 10pt; 
   color:#336699; 
-  font-weight: regular;
+  font-weight: normal;
 }
 
 h1 {
@@ -60,12 +60,12 @@ h1 {
 }
 
 /******** Widths ********/
-#border, #top, #bottom { width: 910px; }
-#container, #header, #footer { width: 890px; }
+#border, #top, #bottom { width: 1024px; } /* was 910 */
+#container, #header, #footer { width: 1024px; } /* was 890 */
 #left_column { width: 250px; }
-.middle_column_narrow { width: 330px; }
-.middle_column_wide { width: 580px; }
-.middle_column_full { width: 739px; }
+.middle_column_narrow { width: 464px; } /* was 330 */
+.middle_column_wide { width: 712px; } /* was 580 */
+.middle_column_full { width: 873px; } /* was 739 */
 #right_column { width: 150px; }
 #right_column .box { width: 150px; }
 	
@@ -86,6 +86,10 @@ h1 {
   background: url(../images/bg.jpg);
 }
 
+#header .left_block {
+  width: 250px;
+}
+
 #container {
   background: url(../images/bg.jpg); 
 }
@@ -99,8 +103,7 @@ h1 {
 /****** Buffer ******/
 
 #buffer_header {
-  background: url(../images/round_top_640.png) right no-repeat;
-  height: 16px;
+  height: 0px;
 }
 
 /****** Left Column ******/
@@ -136,7 +139,7 @@ h1 {
 .left_menu a:visited {
   font-family: Comic Sans MS; 
   font-size: 12pt; 
-  font-weight: regular;
+  font-weight: normal;
   display: inline;
 	color: white;
 	background: url(../images/bg.jpg); 
@@ -153,7 +156,7 @@ h1 {
 	/* IE needs this repeated */
   font-family: Comic Sans MS; 
   font-size: 12pt; 
-  font-weight: regular;
+  font-weight: normal;
 	text-decoration: none;
 }
 
@@ -164,6 +167,9 @@ h1 {
 	padding-right: 30px;
 	border-left: solid 0px;	
   background-color: #EFECFE;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 
 #middle_column .edit_block { 
@@ -208,8 +214,7 @@ h1 {
 }
 
 #buffer_footer {
-  background: url(../images/round_bottom_640.png) right no-repeat;
-  height: 16px;
+  height: 0px;
 }
 
 
