@@ -5,3 +5,4 @@ tmp/
 .project
 *.tmproj
 .rvm*
+public/files/attachments/
