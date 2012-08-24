@@ -12,7 +12,7 @@ body, table, td {
 }
 
 body {  
-  background: url(../images/bg.jpg); 
+  background: url(../images/bfk_background.gif); 
 }
 
 a:link,
@@ -65,7 +65,7 @@ h1 {
 #left_column { width: 250px; }
 .middle_column_narrow { width: 464px; } /* was 330 */
 .middle_column_wide { width: 712px; } /* was 580 */
-.middle_column_full { width: 873px; } /* was 739 */
+.middle_column_full { width: 946px; } /* 1024 - 60px padding */
 #right_column { width: 150px; }
 #right_column .box { width: 150px; }
 	
@@ -76,28 +76,54 @@ h1 {
 }
 
 #border {
-  background: url(../images/bg.jpg); 
+  background: none;
 }
 
 /***** Header *****/
 
 #header {
-	height: 140px;
-  background: url(../images/bg.jpg);
+	height: 120px;
+  background: none;
 }
 
 #header .left_block {
-  width: 250px;
+  width: 0px;
 }
 
+#header .middle_block {
+  width: 1024px;
+  text-align: center;
+}
+
+
 #container {
-  background: url(../images/bg.jpg); 
+  background: none;
 }
 
 /****** Menu ******/
 
 #menu {
-  height: 0;
+  background: none;
+  margin-left: 0px;
+  height: 25px;
+  margin-bottom: 25px;
+}
+
+#menu a, #menu li a {
+  font-size: 13px;
+}
+
+#menu .last {
+  border-right: none;
+}
+
+#menu ul.submenu {
+  position: absolute;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  bottom: -26px;
+  left: 0px;
 }
 
 /****** Buffer ******/
@@ -114,7 +140,7 @@ h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   border-right: solid 0px;		
-  background: url(../images/bg.jpg); 
+  background: none;
 }
 
 .left_menu {
@@ -142,7 +168,7 @@ h1 {
   font-weight: normal;
   display: inline;
 	color: white;
-	background: url(../images/bg.jpg); 
+	background: none;
 	border-left: 0px;				
 	text-decoration: none;
   text-align: left;
@@ -199,7 +225,7 @@ h1 {
 #footer .right_block,
 #footer .edit_block {
 	color: white;
-	background: url(../images/bg.jpg); 
+	background: none;
 	font-size: 11px;
 }
 
