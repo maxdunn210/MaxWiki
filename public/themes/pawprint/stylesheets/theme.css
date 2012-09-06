@@ -65,7 +65,7 @@ h1 {
 #left_column { width: 250px; }
 .middle_column_narrow { width: 464px; } /* was 330 */
 .middle_column_wide { width: 712px; } /* was 580 */
-.middle_column_full { width: 946px; } /* 1024 - 60px padding */
+.middle_column_full { width: 962px; }
 #right_column { width: 150px; }
 #right_column .box { width: 150px; }
 	
@@ -97,7 +97,7 @@ h1 {
 
 
 #container {
-  background: none;
+  background: #578AE5;
 }
 
 /****** Menu ******/
